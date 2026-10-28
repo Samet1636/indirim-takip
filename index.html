@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Market İndirimleri</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏷️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --shelf: #E4E9EE;
+  --label: #FFFFFF;
+  --ink: #1A2330;
+  --muted: #677385;
+  --line: #CDD5DE;
+  --sticker: #FFD23F;
+  --sticker-ink: #2A2000;
+  --price: #C8102E;
+  --soon: #2F6FD6;
+  --migros: #F28C28;
+  --bim: #D21F2B;
+  --a101: #00A0DF;
+  --sok: #F2C300;
+  color-scheme: light;
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --shelf: #141A21; --label: #1E2630; --ink: #EDF1F5; --muted: #98A3B3;
+    --line: #2E3946; --price: #FF5C70; --soon: #6FA2FF;
+    color-scheme: dark;
+  }
+}
+*, *::before, *::after { box-sizing: inherit; }
+html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+body {
+  margin: 0; background: var(--shelf); color: var(--ink);
+  font: 400 15px/1.45 "Barlow", "Segoe UI", system-ui, sans-serif;
+}
+.num { font-family: "Barlow Condensed", "Arial Narrow", "Segoe UI", sans-serif; }
+
+header {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5;
+  background: var(--shelf); border-bottom: 1px solid var(--line);
+  padding: 14px 16px 12px;
+}
+body::before {
+  content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px);
+  z-index: 10; background: var(--shelf);
+}
+.top { max-width: 1100px; margin: 0 auto; }
+.title-row { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+h1 { margin: 0; font: 700 28px/1 "Barlow Condensed", "Arial Narrow", sans-serif; letter-spacing: -.01em; }
+#meta { color: var(--muted); font-size: 13px; text-align: right; }
+
+.controls { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; align-items: center; }
+#q {
+  flex: 1 1 220px; min-width: 0; font: inherit; color: var(--ink);
+  background: var(--label); border: 1px solid var(--line); border-radius: 10px;
+  padding: 9px 12px;
+}
+select {
+  font: inherit; color: var(--ink); background: var(--label);
+  border: 1px solid var(--line); border-radius: 10px; padding: 9px 10px;
+}
+.chips { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; }
+#markets { padding-right: 10px; margin-right: 4px; border-right: 1px solid var(--line); }
+.chip {
+  font: 500 14px/1 "Barlow", sans-serif; white-space: nowrap; cursor: pointer;
+  border: 1px solid var(--line); background: var(--label); color: var(--ink);
+  padding: 8px 12px; border-radius: 999px;
+}
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--label); border-color: var(--ink); }
+:focus-visible { outline: 3px solid var(--soon); outline-offset: 2px; }
+
+main { max-width: 1100px; margin: 0 auto; padding: 16px; }
+#grid {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
+}
+
+/* Her ürün bir raf etiketi */
+.tag {
+  position: relative; display: flex; flex-direction: column;
+  background: var(--label); border-radius: 4px 4px 12px 12px;
+  border-top: 5px solid var(--market, var(--muted));
+  padding: 10px 12px 12px; min-height: 100%;
+}
+.tag a { color: inherit; text-decoration: none; display: contents; }
+.market { font-size: 12px; font-weight: 600; color: var(--muted); }
+.pic {
+  width: 100%; aspect-ratio: 1; object-fit: contain; margin: 6px 0 8px;
+  background: #fff; border-radius: 6px;
+}
+.pic.empty { background: var(--shelf); }
+.name {
+  font-size: 14px; line-height: 1.3; margin: 0 0 8px;
+  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+}
+.prices { margin-top: auto; display: flex; flex-direction: column-reverse; align-items: flex-start; gap: 2px; }
+.now { font-weight: 700; font-size: 34px; line-height: .9; color: var(--price); white-space: nowrap; }
+.now sup { font-size: .5em; vertical-align: .75em; margin-left: 1px; }
+.now .tl { font-size: .5em; margin-left: 2px; }
+.was { color: var(--muted); font-size: 14px; text-decoration: line-through; white-space: nowrap; }
+
+/* Köşedeki indirim çıkartması */
+.sticker {
+  position: absolute; top: 26px; right: 8px; transform: rotate(8deg);
+  background: var(--sticker); color: var(--sticker-ink);
+  font: 700 17px/1 "Barlow Condensed", "Arial Narrow", sans-serif;
+  padding: 8px 9px; border-radius: 999px; min-width: 48px; min-height: 48px;
+  display: grid; place-items: center; text-align: center;
+}
+.sticker.soon { background: var(--soon); color: #fff; font-size: 13px; line-height: 1.05; }
+
+.state { text-align: center; color: var(--muted); padding: 48px 16px; max-width: 46ch; margin: 0 auto; }
+.state code { background: var(--label); padding: 2px 6px; border-radius: 4px; }
+#more {
+  display: block; margin: 20px auto 8px; font: 600 15px/1 "Barlow", sans-serif;
+  background: var(--ink); color: var(--label); border: 0; border-radius: 10px; padding: 12px 20px; cursor: pointer;
+}
+[hidden] { display: none !important; }
+@media (max-width: 420px) {
+  header { position: static; padding: 12px 10px 10px; }
+  h1 { font-size: 24px; }
+  #meta { font-size: 12px; }
+  #q { flex-basis: 150px; }
+  #grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .now { font-size: 28px; }
+  main { padding: 10px; }
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="top">
+    <div class="title-row">
+      <h1>Market İndirimleri</h1>
+      <div id="meta"></div>
+    </div>
+    <div class="controls">
+      <input id="q" type="search" placeholder="Ürün ara: süt, deterjan…" aria-label="Ürün ara">
+      <select id="sort" aria-label="Sırala">
+        <option value="disc">En çok indirim</option>
+        <option value="cheap">En düşük fiyat</option>
+        <option value="name">A'dan Z'ye</option>
+      </select>
+    </div>
+    <div class="controls">
+      <div class="chips" id="markets" role="group" aria-label="Market"></div>
+      <div class="chips" id="status" role="group" aria-label="Durum">
+        <button class="chip" data-v="geçerli" aria-pressed="true">Şu an geçerli</button>
+        <button class="chip" data-v="yakında" aria-pressed="false">Yakında gelecek</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <ul id="grid"></ul>
+  <p class="state" id="state">İndirimler yükleniyor…</p>
+  <button id="more" hidden>Daha fazla göster</button>
+</main>
+
+<script>
+const DATA_URL = "data/discounts_today.json";
+const PAGE = 120;
+const MARKET_NAMES = { migros: "Migros", bim: "BİM", a101: "A101", sok: "ŞOK", carrefour: "CarrefourSA" };
+const MONTHS = ["Ocak","Şubat","Mart","Nisan","Mayıs","Haziran","Temmuz","Ağustos","Eylül","Ekim","Kasım","Aralık"];
+
+let all = [];
+const state = { market: "hepsi", status: "geçerli", q: "", sort: "disc", shown: PAGE };
+
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[c]));
+const norm = (s) => String(s || "").toLocaleLowerCase("tr").normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+const trDate = (iso) => { if (!iso) return ""; const [y, m, d] = iso.split("-").map(Number); return `${d} ${MONTHS[m - 1]}`; };
+
+function priceHTML(p) {
+  const [lira, kurus] = Number(p).toFixed(2).split(".");
+  const liraTr = Number(lira).toLocaleString("tr-TR");
+  return `${liraTr}<sup>,${kurus}</sup><span class="tl">₺</span>`;
+}
+
+function card(o) {
+  const name = MARKET_NAMES[o.market] || o.market;
+  let sticker = "";
+  if (o.durum === "yakında") sticker = `<span class="sticker soon">${esc(trDate(o.valid_from)).replace(" ", "<br>")}</span>`;
+  else if (o.discount_pct) sticker = `<span class="sticker">%${Math.round(o.discount_pct)}</span>`;
+  else if (o.is_campaign) sticker = `<span class="sticker">Aktüel</span>`;
+  const img = o.image_url
+    ? `<img class="pic" src="${esc(o.image_url)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.removeAttribute('src');this.classList.add('empty')">`
+    : `<div class="pic empty"></div>`;
+  const was = o.regular_price ? `<span class="was">${Number(o.regular_price).toLocaleString("tr-TR", { minimumFractionDigits: 2 })} ₺</span>` : "";
+  const body = `
+      <span class="market">${esc(name)}</span>${sticker}
+      ${img}
+      <p class="name">${esc(o.name)}</p>
+      <div class="prices"><span class="now num">${priceHTML(o.price)}</span>${was}</div>`;
+  return `<li class="tag" style="--market: var(--${esc(o.market)}, var(--muted))">${
+    o.url ? `<a href="${esc(o.url)}" target="_blank" rel="noopener">${body}</a>` : body}</li>`;
+}
+
+function render() {
+  const q = norm(state.q);
+  let list = all.filter(o =>
+    (state.market === "hepsi" || o.market === state.market) &&
+    (o.durum || "geçerli") === state.status &&
+    (!q || norm(o.name).includes(q)));
+  const by = {
+    disc: (a, b) => (b.discount_pct || 0) - (a.discount_pct || 0) || a.price - b.price,
+    cheap: (a, b) => a.price - b.price,
+    name: (a, b) => a.name.localeCompare(b.name, "tr"),
+  }[state.sort];
+  list.sort(by);
+
+  $("grid").innerHTML = list.slice(0, state.shown).map(card).join("");
+  $("more").hidden = list.length <= state.shown;
+  const st = $("state");
+  st.hidden = list.length > 0;
+  if (!list.length) st.textContent = state.status === "yakında"
+    ? "Seçtiğin markette yakında başlayacak bir kampanya yok."
+    : "Bu filtrelere uyan indirimli ürün yok. Aramayı ya da market seçimini değiştir.";
+}
+
+function buildMarketChips() {
+  const markets = [...new Set(all.map(o => o.market))];
+  const items = [["hepsi", "Tümü"], ...markets.map(m => [m, MARKET_NAMES[m] || m])];
+  $("markets").innerHTML = items.map(([v, label]) =>
+    `<button class="chip" data-v="${esc(v)}" aria-pressed="${v === state.market}">${esc(label)}</button>`).join("");
+}
+
+function wireChips(groupId, key) {
+  $(groupId).addEventListener("click", (e) => {
+    const b = e.target.closest(".chip"); if (!b) return;
+    state[key] = b.dataset.v; state.shown = PAGE;
+    $(groupId).querySelectorAll(".chip").forEach(c => c.setAttribute("aria-pressed", c === b));
+    render();
+  });
+}
+
+async function init() {
+  try {
+    const res = await fetch(DATA_URL, { cache: "no-store" });
+    if (!res.ok) throw new Error(res.status);
+    all = await res.json();
+  } catch (err) {
+    $("state").innerHTML = location.protocol === "file:"
+      ? "Sayfa doğrudan dosyadan açıldığı için veri okunamıyor. Proje klasöründe <code>python -m http.server</code> çalıştırıp <code>localhost:8000</code> adresini aç."
+      : `İndirim listesi yüklenemedi (${esc(err.message)}). <code>data/discounts_today.json</code> dosyasının yayınlandığını kontrol et.`;
+    return;
+  }
+  const last = all.map(o => o.scraped_on).filter(Boolean).sort().pop();
+  $("meta").innerHTML = `${all.length} indirim<br>${last ? esc(trDate(last)) + " güncellendi" : ""}`;
+  buildMarketChips();
+  wireChips("markets", "market");
+  wireChips("status", "status");
+  $("q").addEventListener("input", (e) => { state.q = e.target.value; state.shown = PAGE; render(); });
+  $("sort").addEventListener("change", (e) => { state.sort = e.target.value; render(); });
+  $("more").addEventListener("click", () => { state.shown += PAGE; render(); });
+  render();
+}
+init();
+</script>
+</body>
+</html>

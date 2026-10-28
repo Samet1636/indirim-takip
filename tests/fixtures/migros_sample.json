@@ -1,0 +1,6 @@
+{"successful": true, "data": {"searchInfo": {"storeProductInfos": [
+  {"id": 1, "name": "Pınar Süt Tam Yağlı 1 L", "prettyName": "pinar-sut-tam-yagli-1-l-p-1a", "shownPrice": 4495, "regularPrice": 5495, "status": "IN_SALE"},
+  {"id": 2, "name": "Sütaş Süt 1 L", "prettyName": "sutas-sut-1-l-p-2b", "shownPrice": 4750, "regularPrice": 4750, "status": "IN_SALE"},
+  {"id": 3, "name": "Stokta Yok Süt", "prettyName": "x-p-3c", "shownPrice": 3000, "status": "OUT_OF_STOCK"},
+  {"id": 4, "name": "Fiyatsız", "prettyName": "y-p-4d", "shownPrice": null}
+]}}}

@@ -1,0 +1,55 @@
+name: Günlük indirim taraması
+
+on:
+  schedule:
+    - cron: "0 4 * * *"      # her gün 04:00 UTC = 07:00 Türkiye
+  workflow_dispatch:          # Actions sekmesinden elle de çalıştırılabilsin
+
+permissions:
+  contents: write             # sonuçları repoya kaydetmek için
+  pages: write                # siteyi yayınlamak için
+  id-token: write
+
+concurrency:
+  group: tarama
+  cancel-in-progress: false
+
+jobs:
+  tara-ve-yayinla:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r requirements.txt
+
+      - name: Marketleri tara
+        run: python run.py
+        continue-on-error: true   # bir market hata verse de eldeki veriyle devam et
+
+      - name: Sonuçları repoya kaydet
+        run: |
+          git config user.name "indirim-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/prices.db data/discounts_today.json
+          git commit -m "Günlük tarama $(date -u +%F)" || echo "Değişiklik yok"
+          git push
+
+      - name: Site dosyalarını hazırla
+        run: |
+          mkdir -p _site/data
+          cp index.html _site/
+          cp data/discounts_today.json _site/data/
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4
