@@ -6861,6 +6861,20 @@
  },
  {
   "market": "migros",
+  "name": "Nescafe Xpress Karamel 3 x 250 Ml",
+  "url": "https://www.migros.com.tr/nescafe-xpress-karamel-3-x-250-ml-p-7b406e",
+  "image_url": "https://images.migrosone.com/sanalmarket/product/08077422/8077422_1-d3e0cb-105x105.jpg",
+  "category": "Soğuk Kahve",
+  "price": 174.9,
+  "regular_price": 225.0,
+  "discount_pct": 22.3,
+  "is_campaign": 0,
+  "valid_from": null,
+  "scraped_on": "2026-11-13",
+  "durum": "geçerli"
+ },
+ {
+  "market": "migros",
   "name": "Nescafe Xpress Vanilya 3 x  250 Ml",
   "url": "https://www.migros.com.tr/nescafe-xpress-vanilya-3-x-250-ml-p-7ad72a",
   "image_url": "https://images.migrosone.com/sanalmarket/product/08050474/8050474_1-491c19-105x105.jpg",
