@@ -74,3 +74,16 @@ def test_sok_real_page():
     omo = next(p for p in items if p["name"].startswith("Omo Express Fresh Beyaz"))
     assert omo["price"] == 249.0 and omo["original"] == 469.0
     assert omo["url"].endswith("-p-282763") and omo["image"].startswith("https://images.ceptesok.com/")
+
+
+def test_a101_search_api():
+    from pathlib import Path
+    from scrapers.a101 import parse_a101_search
+    data = json.loads((Path(__file__).parent / "fixtures" / "a101_search_sample.json").read_text(encoding="utf-8"))["data"]
+    offers = parse_a101_search(data)
+    assert len(offers) == 89
+    jacobs = next(o for o in offers if o.name.startswith("Jacobs Southeast"))
+    assert jacobs.price == 229.0 and jacobs.regular_price == 459.0 and jacobs.discount_pct == 50.1
+    assert jacobs.url.endswith("_p-30000967") and jacobs.image_url.startswith("https://cdn2.a101.com.tr/")
+    pepsi = next(o for o in offers if o.name.startswith("Pepsi"))
+    assert pepsi.price == 79.5 and pepsi.regular_price is None and pepsi.is_campaign

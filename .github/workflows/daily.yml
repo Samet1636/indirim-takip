@@ -29,6 +29,9 @@ jobs:
 
       - run: pip install -r requirements.txt
 
+      - name: A101 için tarayıcıyı kur
+        run: python -m playwright install --with-deps chromium
+
       - name: Marketleri tara
         run: python run.py
         continue-on-error: true   # bir market hata verse de eldeki veriyle devam et

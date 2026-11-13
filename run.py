@@ -24,6 +24,7 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--only", choices=SCRAPERS.keys())
     ap.add_argument("--dump", action="store_true")
+    ap.add_argument("--goster", action="store_true", help="A101 için tarayıcı penceresini göster")
     ap.add_argument("--db", default="data/prices.db")
     args = ap.parse_args()
 
@@ -36,7 +37,10 @@ def main() -> int:
         if args.only and name != args.only:
             continue
         try:
-            offers = cls(dump_dir=dump_dir).scrape()
+            scraper = cls(dump_dir=dump_dir)
+            if args.goster:
+                scraper.headful = True
+            offers = scraper.scrape()
             n = db.save_offers(conn, offers)
             disc = sum(o.is_discounted for o in offers)
             logging.info("%s: %d ürün kaydedildi, %d tanesi indirimde", name, n, disc)
