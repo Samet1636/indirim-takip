@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: "0 4 * * *"      # her gün 04:00 UTC = 07:00 Türkiye
   workflow_dispatch:          # Actions sekmesinden elle de çalıştırılabilsin
+  push:                       # bilgisayardan A101 sonucu gelince siteyi hemen güncelle
+    paths:
+      - "data/imports/**"
 
 permissions:
   contents: write             # sonuçları repoya kaydetmek için
@@ -29,11 +32,15 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: A101 için tarayıcıyı kur
-        run: python -m playwright install --with-deps chromium
-
+      # A101 burada taranmıyor (Cloudflare GitHub sunucularını engelliyor); bilgisayardan
+      # gelen data/imports/a101.json dosyası içe aktarılıyor.
       - name: Marketleri tara
-        run: python run.py
+        run: |
+          if [ "${{ github.event_name }}" = "push" ]; then
+            python run.py --no-scrape --import-dir data/imports
+          else
+            python run.py --skip a101 --import-dir data/imports
+          fi
         continue-on-error: true   # bir market hata verse de eldeki veriyle devam et
 
       - name: Sonuçları repoya kaydet
@@ -42,6 +49,7 @@ jobs:
           git config user.email "bot@users.noreply.github.com"
           git add data/prices.db data/discounts_today.json
           git commit -m "Günlük tarama $(date -u +%F)" || echo "Değişiklik yok"
+          git pull --rebase
           git push
 
       - name: Site dosyalarını hazırla

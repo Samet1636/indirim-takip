@@ -66,3 +66,20 @@ def test_old_campaigns_hidden_and_upcoming_marked(tmp_path):
                           mk("gelecek", "2026-11-03")])
     rows = {r["name"]: r["durum"] for r in db.todays_discounts(conn, today="2026-10-28")}
     assert rows == {"guncel": "geçerli", "gelecek": "yakında"}
+
+
+def test_export_import_roundtrip_and_stale(tmp_path):
+    import dataclasses
+    from models import Offer
+    from run import load_offers
+    offers = [Offer(market="a101", market_product_id="1", name="Kahve", price=229.0,
+                    regular_price=459.0, is_campaign=True, scraped_on="2026-11-13")]
+    f = tmp_path / "a101.json"
+    f.write_text(json.dumps([dataclasses.asdict(offers[0]) | {"discount_pct": 50.1}], ensure_ascii=False),
+                 encoding="utf-8")
+    back = load_offers(f)
+    assert back == offers
+    conn = db.connect(tmp_path / "t.db")
+    db.save_offers(conn, back)
+    assert len(db.todays_discounts(conn, today="2026-11-14")) == 1      # 1 günlük: gösterilir
+    assert db.todays_discounts(conn, today="2026-11-20") == []          # bayat: gizlenir

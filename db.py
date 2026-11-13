@@ -78,21 +78,25 @@ def save_offers(conn: sqlite3.Connection, offers: list[Offer]) -> int:
 
 
 def todays_discounts(conn: sqlite3.Connection, today: str | None = None,
-                     max_age_days: int = 7) -> list[dict]:
+                     max_age_days: int = 7, stale_days: int = 3) -> list[dict]:
     """Uygulamada gösterilecek indirimler.
 
     Kampanya ürünlerinde (BİM aktüel gibi) başlangıcı max_age_days günden eski olan
     dönemler listeden çıkarılır; ileri tarihli dönemler 'yakında' olarak işaretlenir.
     Eski kayıtlar veritabanında kalır (fiyat geçmişi için), sadece listede gösterilmez.
+    Bir marketin son taraması stale_days günden eskiyse (ör. A101'i tarayan bilgisayar
+    birkaç gün açılmadıysa) o marketin bayat verisi de gösterilmez.
     """
     today_d = date.fromisoformat(today) if today else date.today()
     cutoff = (today_d - timedelta(days=max_age_days)).isoformat()
+    stale = (today_d - timedelta(days=stale_days)).isoformat()
     rows = conn.execute(
         """SELECT *,
                   CASE WHEN valid_from > :today THEN 'yakında' ELSE 'geçerli' END AS durum
            FROM todays_discounts
-           WHERE valid_from IS NULL OR valid_from >= :cutoff
+           WHERE (valid_from IS NULL OR valid_from >= :cutoff)
+             AND scraped_on >= :stale
            ORDER BY durum, COALESCE(discount_pct, 0) DESC, market, name""",
-        {"today": today_d.isoformat(), "cutoff": cutoff},
+        {"today": today_d.isoformat(), "cutoff": cutoff, "stale": stale},
     ).fetchall()
     return [dict(r) for r in rows]
