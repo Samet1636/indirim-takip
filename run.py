@@ -12,10 +12,12 @@ import logging
 from pathlib import Path
 
 import db
+from scrapers.a101 import A101Scraper
 from scrapers.bim import BimScraper
 from scrapers.migros import MigrosScraper
+from scrapers.sok import SokScraper
 
-SCRAPERS = {"migros": MigrosScraper, "bim": BimScraper}
+SCRAPERS = {"migros": MigrosScraper, "bim": BimScraper, "a101": A101Scraper, "sok": SokScraper}
 
 
 def main() -> int:

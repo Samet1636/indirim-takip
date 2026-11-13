@@ -20,7 +20,7 @@ def test_parse_tr_price():
 
 
 def test_migros_parser():
-    offers = parse_migros_payload(json.loads((FIX / "migros_sample.json").read_text()))
+    offers = parse_migros_payload(json.loads((FIX / "migros_sample.json").read_text(encoding="utf-8")))
     assert [o.name for o in offers] == ["Pınar Süt Tam Yağlı 1 L", "Sütaş Süt 1 L"]
     pinar, sutas = offers
     assert pinar.price == 44.95 and pinar.regular_price == 54.95
@@ -30,7 +30,7 @@ def test_migros_parser():
 
 
 def test_bim_parser():
-    html = (FIX / "bim_sample.html").read_text()
+    html = (FIX / "bim_sample.html").read_text(encoding="utf-8")
     offers = parse_bim_html(html, "2026-10-31")
     assert [(o.name, o.price) for o in offers] == [
         ("Robot Süpürge", 7999.0), ("Filtre Kahve Makinesi", 1299.5)]
@@ -47,11 +47,22 @@ def test_parse_tr_date():
 
 def test_db_roundtrip(tmp_path):
     conn = db.connect(tmp_path / "t.db")
-    offers = parse_migros_payload(json.loads((FIX / "migros_sample.json").read_text()))
-    offers += parse_bim_html((FIX / "bim_sample.html").read_text())
+    offers = parse_migros_payload(json.loads((FIX / "migros_sample.json").read_text(encoding="utf-8")))
+    offers += parse_bim_html((FIX / "bim_sample.html").read_text(encoding="utf-8"))
     db.save_offers(conn, offers)
     db.save_offers(conn, offers)          # aynı gün ikinci çalıştırma tekrar kayıt üretmemeli
     rows = db.todays_discounts(conn)
     names = {r["name"] for r in rows}
     assert names == {"Pınar Süt Tam Yağlı 1 L", "Robot Süpürge", "Filtre Kahve Makinesi"}
     assert conn.execute("SELECT COUNT(*) FROM price_snapshots").fetchone()[0] == 4
+
+
+def test_old_campaigns_hidden_and_upcoming_marked(tmp_path):
+    from models import Offer
+    conn = db.connect(tmp_path / "t.db")
+    mk = lambda pid, vf: Offer(market="bim", market_product_id=pid, name=pid, price=10,
+                               is_campaign=True, valid_from=vf, scraped_on="2026-10-28")
+    db.save_offers(conn, [mk("eski", "2026-10-13"), mk("guncel", "2026-10-27"),
+                          mk("gelecek", "2026-11-03")])
+    rows = {r["name"]: r["durum"] for r in db.todays_discounts(conn, today="2026-10-28")}
+    assert rows == {"guncel": "geçerli", "gelecek": "yakında"}

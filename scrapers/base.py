@@ -20,12 +20,36 @@ HEADERS = {
 }
 
 
+BROWSER_HEADERS = {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7",
+}
+
+
+def _browser_session():
+    """Gerçek Chrome gibi görünen oturum (bot korumalı siteler için).
+    curl_cffi kurulu değilse None döner."""
+    try:
+        from curl_cffi import requests as creq
+    except ImportError:
+        return None
+    s = creq.Session(impersonate="chrome")
+    s.headers.update(BROWSER_HEADERS)
+    return s
+
+
 class BaseScraper:
     market: str = ""
+    impersonate_browser: bool = False   # True: bot korumasına takılan siteler için Chrome taklidi
 
     def __init__(self, dump_dir: Optional[Path] = None, delay: tuple[float, float] = (1.0, 2.5)):
-        self.session = requests.Session()
-        self.session.headers.update(HEADERS)
+        self.session = _browser_session() if self.impersonate_browser else None
+        if self.session is None:
+            if self.impersonate_browser:
+                log.warning("%s: curl_cffi kurulu değil, normal istekle deneniyor "
+                            "(pip install curl_cffi)", self.market)
+            self.session = requests.Session()
+            self.session.headers.update(HEADERS)
         self.dump_dir = dump_dir   # verilirse ham yanıtlar buraya kaydedilir (debug için)
         self.delay = delay
 
