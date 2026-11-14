@@ -18,11 +18,9 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  tara-ve-yayinla:
+  # 1) Tarama, kaydetme ve site dosyalarını hazırlama
+  tara:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
 
@@ -62,5 +60,15 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
+
+  # 2) Yayınlama ayrı iş: hata verirse sadece bu kısım ("Re-run failed jobs") birkaç saniyede
+  #    tekrar çalıştırılabilir, 40 dakikalık tarama baştan yapılmaz.
+  yayinla:
+    needs: tara
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - id: deployment
         uses: actions/deploy-pages@v4
