@@ -106,7 +106,8 @@ def find_period_links(html: str) -> list[tuple[str, Optional[str]]]:
 class BimScraper(BaseScraper):
     market = "bim"
 
-    def scrape(self) -> list[Offer]:
+    def scrape(self, katalog: bool = False, kategori_limit=None) -> list[Offer]:
+        # BİM'in sitesinde fiyatlı tam bir ürün kataloğu yok, sadece aktüel ürünler var.
         html = self.get(AKTUEL_URL).text
         self.dump("aktuel.html", html)
         pages = find_period_links(html) or [(AKTUEL_URL, None)]

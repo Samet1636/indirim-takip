@@ -1,0 +1,730 @@
+[
+ {
+  "id": "yumurta",
+  "ad": "Yumurta",
+  "kategori": "hayvansal",
+  "kcal": 143,
+  "protein": 12.6,
+  "karb": 0.7,
+  "yag": 9.5,
+  "lif": 0,
+  "arama": [
+   "yumurta"
+  ],
+  "paket_g": 600,
+  "dolapta": false
+ },
+ {
+  "id": "beyaz_peynir",
+  "ad": "Beyaz peynir",
+  "kategori": "sut_urunu",
+  "kcal": 264,
+  "protein": 14.2,
+  "karb": 4.1,
+  "yag": 21.3,
+  "lif": 0,
+  "arama": [
+   "beyaz peynir"
+  ],
+  "paket_g": 500,
+  "dolapta": false
+ },
+ {
+  "id": "lor",
+  "ad": "Lor peyniri",
+  "kategori": "sut_urunu",
+  "kcal": 98,
+  "protein": 12.5,
+  "karb": 3.5,
+  "yag": 4.0,
+  "lif": 0,
+  "arama": [
+   "lor peyniri",
+   "lor"
+  ],
+  "paket_g": 500,
+  "dolapta": false
+ },
+ {
+  "id": "kasar",
+  "ad": "Kaşar peyniri",
+  "kategori": "sut_urunu",
+  "kcal": 360,
+  "protein": 25,
+  "karb": 2,
+  "yag": 28,
+  "lif": 0,
+  "arama": [
+   "kaşar"
+  ],
+  "paket_g": 400,
+  "dolapta": false
+ },
+ {
+  "id": "yogurt",
+  "ad": "Yoğurt",
+  "kategori": "sut_urunu",
+  "kcal": 61,
+  "protein": 3.5,
+  "karb": 4.7,
+  "yag": 3.3,
+  "lif": 0,
+  "arama": [
+   "yoğurt"
+  ],
+  "paket_g": 1000,
+  "dolapta": false
+ },
+ {
+  "id": "sut",
+  "ad": "Süt",
+  "kategori": "sut_urunu",
+  "kcal": 61,
+  "protein": 3.2,
+  "karb": 4.8,
+  "yag": 3.3,
+  "lif": 0,
+  "arama": [
+   "süt"
+  ],
+  "paket_g": 1000,
+  "dolapta": false
+ },
+ {
+  "id": "zeytin",
+  "ad": "Siyah zeytin",
+  "kategori": "bitkisel",
+  "kcal": 160,
+  "protein": 1.5,
+  "karb": 5,
+  "yag": 15,
+  "lif": 3,
+  "arama": [
+   "siyah zeytin",
+   "zeytin"
+  ],
+  "paket_g": 400,
+  "dolapta": false
+ },
+ {
+  "id": "domates",
+  "ad": "Domates",
+  "kategori": "sebze",
+  "kcal": 18,
+  "protein": 0.9,
+  "karb": 3.9,
+  "yag": 0.2,
+  "lif": 1.2,
+  "arama": [
+   "domates"
+  ],
+  "paket_g": null,
+  "dolapta": false
+ },
+ {
+  "id": "salatalik",
+  "ad": "Salatalık",
+  "kategori": "sebze",
+  "kcal": 15,
+  "protein": 0.7,
+  "karb": 3.6,
+  "yag": 0.1,
+  "lif": 0.5,
+  "arama": [
+   "salatalık"
+  ],
+  "paket_g": null,
+  "dolapta": false
+ },
+ {
+  "id": "sivri_biber",
+  "ad": "Sivri biber",
+  "kategori": "sebze",
+  "kcal": 20,
+  "protein": 0.9,
+  "karb": 4.6,
+  "yag": 0.2,
+  "lif": 1.7,
+  "arama": [
+   "sivri biber",
+   "biber"
+  ],
+  "paket_g": null,
+  "dolapta": false
+ },
+ {
+  "id": "sogan",
+  "ad": "Kuru soğan",
+  "kategori": "sebze",
+  "kcal": 40,
+  "protein": 1.1,
+  "karb": 9.3,
+  "yag": 0.1,
+  "lif": 1.7,
+  "arama": [
+   "kuru soğan",
+   "soğan"
+  ],
+  "paket_g": null,
+  "dolapta": false
+ },
+ {
+  "id": "sarimsak",
+  "ad": "Sarımsak",
+  "kategori": "sebze",
+  "kcal": 149,
+  "protein": 6.4,
+  "karb": 33,
+  "yag": 0.5,
+  "lif": 2.1,
+  "arama": [
+   "sarımsak"
+  ],
+  "paket_g": null,
+  "dolapta": false
+ },
+ {
+  "id": "patates",
+  "ad": "Patates",
+  "kategori": "sebze",
+  "kcal": 77,
+  "protein": 2.0,
+  "karb": 17,
+  "yag": 0.1,
+  "lif": 2.2,
+  "arama": [
+   "patates"
+  ],
+  "paket_g": null,
+  "dolapta": false
+ },
+ {
+  "id": "havuc",
+  "ad": "Havuç",
+  "kategori": "sebze",
+  "kcal": 41,
+  "protein": 0.9,
+  "karb": 9.6,
+  "yag": 0.2,
+  "lif": 2.8,
+  "arama": [
+   "havuç"
+  ],
+  "paket_g": null,
+  "dolapta": false
+ },
+ {
+  "id": "kabak",
+  "ad": "Kabak",
+  "kategori": "sebze",
+  "kcal": 17,
+  "protein": 1.2,
+  "karb": 3.1,
+  "yag": 0.3,
+  "lif": 1.0,
+  "arama": [
+   "kabak"
+  ],
+  "paket_g": null,
+  "dolapta": false
+ },
+ {
+  "id": "ispanak",
+  "ad": "Ispanak",
+  "kategori": "sebze",
+  "kcal": 23,
+  "protein": 2.9,
+  "karb": 3.6,
+  "yag": 0.4,
+  "lif": 2.2,
+  "arama": [
+   "ıspanak"
+  ],
+  "paket_g": null,
+  "dolapta": false
+ },
+ {
+  "id": "patlican",
+  "ad": "Patlıcan",
+  "kategori": "sebze",
+  "kcal": 25,
+  "protein": 1.0,
+  "karb": 5.9,
+  "yag": 0.2,
+  "lif": 3.0,
+  "arama": [
+   "patlıcan"
+  ],
+  "paket_g": null,
+  "dolapta": false
+ },
+ {
+  "id": "taze_fasulye",
+  "ad": "Taze fasulye",
+  "kategori": "sebze",
+  "kcal": 31,
+  "protein": 1.8,
+  "karb": 7.0,
+  "yag": 0.1,
+  "lif": 3.4,
+  "arama": [
+   "taze fasulye"
+  ],
+  "paket_g": null,
+  "dolapta": false
+ },
+ {
+  "id": "marul",
+  "ad": "Marul",
+  "kategori": "sebze",
+  "kcal": 15,
+  "protein": 1.4,
+  "karb": 2.9,
+  "yag": 0.2,
+  "lif": 1.3,
+  "arama": [
+   "marul"
+  ],
+  "paket_g": null,
+  "dolapta": false
+ },
+ {
+  "id": "maydanoz",
+  "ad": "Maydanoz",
+  "kategori": "sebze",
+  "kcal": 36,
+  "protein": 3.0,
+  "karb": 6.3,
+  "yag": 0.8,
+  "lif": 3.3,
+  "arama": [
+   "maydanoz"
+  ],
+  "paket_g": null,
+  "dolapta": false
+ },
+ {
+  "id": "limon",
+  "ad": "Limon",
+  "kategori": "meyve",
+  "kcal": 29,
+  "protein": 1.1,
+  "karb": 9.3,
+  "yag": 0.3,
+  "lif": 2.8,
+  "arama": [
+   "limon"
+  ],
+  "paket_g": null,
+  "dolapta": false
+ },
+ {
+  "id": "muz",
+  "ad": "Muz",
+  "kategori": "meyve",
+  "kcal": 89,
+  "protein": 1.1,
+  "karb": 22.8,
+  "yag": 0.3,
+  "lif": 2.6,
+  "arama": [
+   "muz"
+  ],
+  "paket_g": null,
+  "dolapta": false
+ },
+ {
+  "id": "elma",
+  "ad": "Elma",
+  "kategori": "meyve",
+  "kcal": 52,
+  "protein": 0.3,
+  "karb": 13.8,
+  "yag": 0.2,
+  "lif": 2.4,
+  "arama": [
+   "elma"
+  ],
+  "paket_g": null,
+  "dolapta": false
+ },
+ {
+  "id": "portakal",
+  "ad": "Portakal",
+  "kategori": "meyve",
+  "kcal": 47,
+  "protein": 0.9,
+  "karb": 11.8,
+  "yag": 0.1,
+  "lif": 2.4,
+  "arama": [
+   "portakal"
+  ],
+  "paket_g": null,
+  "dolapta": false
+ },
+ {
+  "id": "kirmizi_mercimek",
+  "ad": "Kırmızı mercimek (kuru)",
+  "kategori": "bakliyat",
+  "kcal": 350,
+  "protein": 24,
+  "karb": 60,
+  "yag": 1.5,
+  "lif": 11,
+  "arama": [
+   "kırmızı mercimek"
+  ],
+  "paket_g": 1000,
+  "dolapta": false
+ },
+ {
+  "id": "yesil_mercimek",
+  "ad": "Yeşil mercimek (kuru)",
+  "kategori": "bakliyat",
+  "kcal": 352,
+  "protein": 24.6,
+  "karb": 63,
+  "yag": 1.1,
+  "lif": 10.7,
+  "arama": [
+   "yeşil mercimek"
+  ],
+  "paket_g": 1000,
+  "dolapta": false
+ },
+ {
+  "id": "nohut",
+  "ad": "Nohut (kuru)",
+  "kategori": "bakliyat",
+  "kcal": 364,
+  "protein": 19,
+  "karb": 61,
+  "yag": 6,
+  "lif": 17,
+  "arama": [
+   "nohut"
+  ],
+  "paket_g": 1000,
+  "dolapta": false
+ },
+ {
+  "id": "kuru_fasulye",
+  "ad": "Kuru fasulye (kuru)",
+  "kategori": "bakliyat",
+  "kcal": 333,
+  "protein": 23.6,
+  "karb": 60,
+  "yag": 0.8,
+  "lif": 15,
+  "arama": [
+   "kuru fasulye"
+  ],
+  "paket_g": 1000,
+  "dolapta": false
+ },
+ {
+  "id": "bulgur",
+  "ad": "Bulgur",
+  "kategori": "tahil",
+  "kcal": 342,
+  "protein": 12.3,
+  "karb": 75.9,
+  "yag": 1.3,
+  "lif": 18.3,
+  "arama": [
+   "bulgur"
+  ],
+  "paket_g": 1000,
+  "dolapta": false
+ },
+ {
+  "id": "pirinc",
+  "ad": "Pirinç",
+  "kategori": "tahil",
+  "kcal": 365,
+  "protein": 7.1,
+  "karb": 80,
+  "yag": 0.7,
+  "lif": 1.3,
+  "arama": [
+   "pirinç"
+  ],
+  "paket_g": 1000,
+  "dolapta": false
+ },
+ {
+  "id": "makarna",
+  "ad": "Makarna",
+  "kategori": "tahil",
+  "kcal": 371,
+  "protein": 13,
+  "karb": 75,
+  "yag": 1.5,
+  "lif": 3.2,
+  "arama": [
+   "makarna"
+  ],
+  "paket_g": 500,
+  "dolapta": false
+ },
+ {
+  "id": "yulaf",
+  "ad": "Yulaf ezmesi",
+  "kategori": "tahil",
+  "kcal": 389,
+  "protein": 16.9,
+  "karb": 66,
+  "yag": 6.9,
+  "lif": 10.6,
+  "arama": [
+   "yulaf"
+  ],
+  "paket_g": 500,
+  "dolapta": false
+ },
+ {
+  "id": "tam_bugday_ekmegi",
+  "ad": "Tam buğday ekmeği",
+  "kategori": "tahil",
+  "kcal": 247,
+  "protein": 13,
+  "karb": 41,
+  "yag": 3.4,
+  "lif": 7,
+  "arama": [
+   "tam buğday ekmeği",
+   "tam buğday"
+  ],
+  "paket_g": 400,
+  "dolapta": false
+ },
+ {
+  "id": "un",
+  "ad": "Buğday unu",
+  "kategori": "tahil",
+  "kcal": 364,
+  "protein": 10,
+  "karb": 76,
+  "yag": 1,
+  "lif": 2.7,
+  "arama": [
+   "un"
+  ],
+  "paket_g": 1000,
+  "dolapta": false
+ },
+ {
+  "id": "tavuk_gogus",
+  "ad": "Tavuk göğüs",
+  "kategori": "et",
+  "kcal": 120,
+  "protein": 22.5,
+  "karb": 0,
+  "yag": 2.6,
+  "lif": 0,
+  "arama": [
+   "tavuk göğüs",
+   "piliç göğüs"
+  ],
+  "paket_g": 500,
+  "dolapta": false
+ },
+ {
+  "id": "tavuk_but",
+  "ad": "Tavuk but (derisiz)",
+  "kategori": "et",
+  "kcal": 121,
+  "protein": 19.7,
+  "karb": 0,
+  "yag": 4.1,
+  "lif": 0,
+  "arama": [
+   "tavuk but",
+   "piliç but",
+   "pirzola"
+  ],
+  "paket_g": 500,
+  "dolapta": false
+ },
+ {
+  "id": "dana_kiyma",
+  "ad": "Dana kıyma",
+  "kategori": "et",
+  "kcal": 254,
+  "protein": 17.2,
+  "karb": 0,
+  "yag": 20,
+  "lif": 0,
+  "arama": [
+   "dana kıyma",
+   "kıyma"
+  ],
+  "paket_g": 500,
+  "dolapta": false
+ },
+ {
+  "id": "ton_baligi",
+  "ad": "Ton balığı (suda, süzülmüş)",
+  "kategori": "balik",
+  "kcal": 116,
+  "protein": 25.5,
+  "karb": 0,
+  "yag": 0.8,
+  "lif": 0,
+  "arama": [
+   "ton balığı"
+  ],
+  "paket_g": 160,
+  "dolapta": false
+ },
+ {
+  "id": "tahin",
+  "ad": "Tahin",
+  "kategori": "bitkisel",
+  "kcal": 595,
+  "protein": 17,
+  "karb": 21,
+  "yag": 54,
+  "lif": 9,
+  "arama": [
+   "tahin"
+  ],
+  "paket_g": 300,
+  "dolapta": false
+ },
+ {
+  "id": "fistik_ezmesi",
+  "ad": "Fıstık ezmesi",
+  "kategori": "bitkisel",
+  "kcal": 588,
+  "protein": 25,
+  "karb": 20,
+  "yag": 50,
+  "lif": 6,
+  "arama": [
+   "fıstık ezmesi"
+  ],
+  "paket_g": 340,
+  "dolapta": false
+ },
+ {
+  "id": "ceviz",
+  "ad": "Ceviz içi",
+  "kategori": "kuruyemis",
+  "kcal": 654,
+  "protein": 15.2,
+  "karb": 13.7,
+  "yag": 65.2,
+  "lif": 6.7,
+  "arama": [
+   "ceviz"
+  ],
+  "paket_g": 150,
+  "dolapta": false
+ },
+ {
+  "id": "findik",
+  "ad": "Fındık içi",
+  "kategori": "kuruyemis",
+  "kcal": 628,
+  "protein": 15,
+  "karb": 16.7,
+  "yag": 60.8,
+  "lif": 9.7,
+  "arama": [
+   "fındık"
+  ],
+  "paket_g": 150,
+  "dolapta": false
+ },
+ {
+  "id": "bal",
+  "ad": "Bal",
+  "kategori": "diger",
+  "kcal": 304,
+  "protein": 0.3,
+  "karb": 82.4,
+  "yag": 0,
+  "lif": 0.2,
+  "arama": [
+   "bal"
+  ],
+  "paket_g": 450,
+  "dolapta": false
+ },
+ {
+  "id": "salca",
+  "ad": "Domates salçası",
+  "kategori": "diger",
+  "kcal": 82,
+  "protein": 4.3,
+  "karb": 18.9,
+  "yag": 0.5,
+  "lif": 4.1,
+  "arama": [
+   "domates salçası",
+   "salça"
+  ],
+  "paket_g": 700,
+  "dolapta": false
+ },
+ {
+  "id": "zeytinyagi",
+  "ad": "Zeytinyağı",
+  "kategori": "yag",
+  "kcal": 884,
+  "protein": 0,
+  "karb": 0,
+  "yag": 100,
+  "lif": 0,
+  "arama": [
+   "zeytinyağı"
+  ],
+  "paket_g": 1000,
+  "dolapta": false
+ },
+ {
+  "id": "aycicek_yagi",
+  "ad": "Ayçiçek yağı",
+  "kategori": "yag",
+  "kcal": 884,
+  "protein": 0,
+  "karb": 0,
+  "yag": 100,
+  "lif": 0,
+  "arama": [
+   "ayçiçek yağı"
+  ],
+  "paket_g": 1000,
+  "dolapta": false
+ },
+ {
+  "id": "tereyagi",
+  "ad": "Tereyağı",
+  "kategori": "yag",
+  "kcal": 717,
+  "protein": 0.9,
+  "karb": 0.1,
+  "yag": 81,
+  "lif": 0,
+  "arama": [
+   "tereyağı"
+  ],
+  "paket_g": 250,
+  "dolapta": false
+ },
+ {
+  "id": "tuz_baharat",
+  "ad": "Tuz ve baharatlar",
+  "kategori": "dolap",
+  "kcal": 0,
+  "protein": 0,
+  "karb": 0,
+  "yag": 0,
+  "lif": 0,
+  "arama": [],
+  "paket_g": null,
+  "dolapta": true
+ }
+]

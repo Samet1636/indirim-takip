@@ -1,0 +1,1813 @@
+[
+ {
+  "id": "menemen",
+  "ad": "Menemen",
+  "ogunler": [
+   "kahvalti"
+  ],
+  "sure_dk": 15,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "yumurta",
+    "gram": 110
+   },
+   {
+    "malzeme": "domates",
+    "gram": 150
+   },
+   {
+    "malzeme": "sivri_biber",
+    "gram": 40
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 8
+   },
+   {
+    "malzeme": "tam_bugday_ekmegi",
+    "gram": 50
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Biberleri zeytinyağında birkaç dakika sotele.",
+   "Doğranmış domatesi ekle, suyunu çekene kadar pişir.",
+   "Yumurtaları kırıp karıştır, kıvamını bulunca ocaktan al. Ekmekle servis et."
+  ]
+ },
+ {
+  "id": "kahvalti_tabagi",
+  "ad": "Klasik kahvaltı tabağı",
+  "ogunler": [
+   "kahvalti"
+  ],
+  "sure_dk": 10,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "yumurta",
+    "gram": 110
+   },
+   {
+    "malzeme": "beyaz_peynir",
+    "gram": 40
+   },
+   {
+    "malzeme": "zeytin",
+    "gram": 25
+   },
+   {
+    "malzeme": "domates",
+    "gram": 100
+   },
+   {
+    "malzeme": "salatalik",
+    "gram": 100
+   },
+   {
+    "malzeme": "tam_bugday_ekmegi",
+    "gram": 60
+   }
+  ],
+  "adimlar": [
+   "Yumurtaları 8-9 dakika haşla.",
+   "Peynir, zeytin, domates ve salatalıkla tabağa diz, ekmekle servis et."
+  ]
+ },
+ {
+  "id": "yulaf_lapasi",
+  "ad": "Muzlu cevizli yulaf lapası",
+  "ogunler": [
+   "kahvalti"
+  ],
+  "sure_dk": 10,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "yulaf",
+    "gram": 50
+   },
+   {
+    "malzeme": "sut",
+    "gram": 200
+   },
+   {
+    "malzeme": "muz",
+    "gram": 100
+   },
+   {
+    "malzeme": "ceviz",
+    "gram": 10
+   }
+  ],
+  "adimlar": [
+   "Yulafı sütle kısık ateşte 5 dakika, koyulaşana kadar pişir.",
+   "Dilimlenmiş muz ve ceviz ekleyerek servis et."
+  ]
+ },
+ {
+  "id": "gece_yulafi",
+  "ad": "Yoğurtlu gece yulafı",
+  "ogunler": [
+   "kahvalti",
+   "ara"
+  ],
+  "sure_dk": 5,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "yulaf",
+    "gram": 45
+   },
+   {
+    "malzeme": "yogurt",
+    "gram": 150
+   },
+   {
+    "malzeme": "sut",
+    "gram": 50
+   },
+   {
+    "malzeme": "elma",
+    "gram": 100
+   },
+   {
+    "malzeme": "bal",
+    "gram": 8
+   }
+  ],
+  "adimlar": [
+   "Yulaf, yoğurt ve sütü kavanozda karıştır, buzdolabında bir gece beklet.",
+   "Sabah rendelenmiş elma ve bal ekle."
+  ]
+ },
+ {
+  "id": "ispanakli_omlet",
+  "ad": "Ispanaklı lorlu omlet",
+  "ogunler": [
+   "kahvalti"
+  ],
+  "sure_dk": 12,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "yumurta",
+    "gram": 110
+   },
+   {
+    "malzeme": "ispanak",
+    "gram": 80
+   },
+   {
+    "malzeme": "lor",
+    "gram": 50
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 5
+   },
+   {
+    "malzeme": "tam_bugday_ekmegi",
+    "gram": 50
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Ispanağı zeytinyağında söndür.",
+   "Lor ile çırpılmış yumurtayı üzerine dök, kısık ateşte pişir. Ekmekle servis et."
+  ]
+ },
+ {
+  "id": "peynirli_tost",
+  "ad": "Domatesli kaşarlı tost",
+  "ogunler": [
+   "kahvalti"
+  ],
+  "sure_dk": 8,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "tam_bugday_ekmegi",
+    "gram": 80
+   },
+   {
+    "malzeme": "kasar",
+    "gram": 35
+   },
+   {
+    "malzeme": "domates",
+    "gram": 60
+   },
+   {
+    "malzeme": "salatalik",
+    "gram": 80
+   }
+  ],
+  "adimlar": [
+   "Ekmeklerin arasına kaşar ve domates dilimleri koy.",
+   "Tost makinesinde veya tavada kızart, salatalıkla servis et."
+  ]
+ },
+ {
+  "id": "fistik_ezmeli_ekmek",
+  "ad": "Fıstık ezmeli muzlu ekmek",
+  "ogunler": [
+   "kahvalti",
+   "ara"
+  ],
+  "sure_dk": 3,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "tam_bugday_ekmegi",
+    "gram": 60
+   },
+   {
+    "malzeme": "fistik_ezmesi",
+    "gram": 20
+   },
+   {
+    "malzeme": "muz",
+    "gram": 100
+   }
+  ],
+  "adimlar": [
+   "Ekmeğe fıstık ezmesi sür.",
+   "Üzerine muz dilimleri diz."
+  ]
+ },
+ {
+  "id": "sebzeli_omlet",
+  "ad": "Sebzeli omlet",
+  "ogunler": [
+   "kahvalti"
+  ],
+  "sure_dk": 12,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "yumurta",
+    "gram": 110
+   },
+   {
+    "malzeme": "kabak",
+    "gram": 60
+   },
+   {
+    "malzeme": "sivri_biber",
+    "gram": 30
+   },
+   {
+    "malzeme": "domates",
+    "gram": 60
+   },
+   {
+    "malzeme": "kasar",
+    "gram": 15
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 5
+   },
+   {
+    "malzeme": "tam_bugday_ekmegi",
+    "gram": 50
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Kabak ve biberi zeytinyağında yumuşat, domatesi ekle.",
+   "Çırpılmış yumurtayı dök, üzerine kaşar serp, kapağı kapalı pişir."
+  ]
+ },
+ {
+  "id": "cilbir",
+  "ad": "Çılbır",
+  "ogunler": [
+   "kahvalti"
+  ],
+  "sure_dk": 15,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "yumurta",
+    "gram": 110
+   },
+   {
+    "malzeme": "yogurt",
+    "gram": 120
+   },
+   {
+    "malzeme": "sarimsak",
+    "gram": 3
+   },
+   {
+    "malzeme": "tereyagi",
+    "gram": 7
+   },
+   {
+    "malzeme": "tam_bugday_ekmegi",
+    "gram": 50
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Yoğurdu ezilmiş sarımsakla karıştır.",
+   "Yumurtaları sirkeli kaynar suda 3 dakika poşe et, yoğurdun üzerine al.",
+   "Tereyağını pul biberle eritip üzerine gezdir."
+  ]
+ },
+ {
+  "id": "lorlu_kahvalti",
+  "ad": "Ballı cevizli lor tabağı",
+  "ogunler": [
+   "kahvalti"
+  ],
+  "sure_dk": 5,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "lor",
+    "gram": 120
+   },
+   {
+    "malzeme": "bal",
+    "gram": 10
+   },
+   {
+    "malzeme": "ceviz",
+    "gram": 10
+   },
+   {
+    "malzeme": "domates",
+    "gram": 100
+   },
+   {
+    "malzeme": "salatalik",
+    "gram": 100
+   },
+   {
+    "malzeme": "tam_bugday_ekmegi",
+    "gram": 50
+   }
+  ],
+  "adimlar": [
+   "Lorun üzerine bal ve ceviz ekle.",
+   "Domates, salatalık ve ekmekle servis et."
+  ]
+ },
+ {
+  "id": "mercimek_corbasi",
+  "ad": "Mercimek çorbası",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 35,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "kirmizi_mercimek",
+    "gram": 60
+   },
+   {
+    "malzeme": "sogan",
+    "gram": 30
+   },
+   {
+    "malzeme": "havuc",
+    "gram": 30
+   },
+   {
+    "malzeme": "patates",
+    "gram": 40
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 7
+   },
+   {
+    "malzeme": "limon",
+    "gram": 10
+   },
+   {
+    "malzeme": "tam_bugday_ekmegi",
+    "gram": 50
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Soğanı zeytinyağında kavur, doğranmış havuç ve patatesi ekle.",
+   "Yıkanmış mercimeği ve sıcak suyu ekleyip 25 dakika pişir.",
+   "Blenderdan geçir, limonla servis et."
+  ]
+ },
+ {
+  "id": "ezogelin",
+  "ad": "Ezogelin çorbası",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 35,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "kirmizi_mercimek",
+    "gram": 50
+   },
+   {
+    "malzeme": "bulgur",
+    "gram": 20
+   },
+   {
+    "malzeme": "pirinc",
+    "gram": 10
+   },
+   {
+    "malzeme": "sogan",
+    "gram": 30
+   },
+   {
+    "malzeme": "salca",
+    "gram": 10
+   },
+   {
+    "malzeme": "tereyagi",
+    "gram": 7
+   },
+   {
+    "malzeme": "tam_bugday_ekmegi",
+    "gram": 50
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Soğanı tereyağında kavur, salçayı ekle.",
+   "Mercimek, bulgur ve pirinci ekleyip suyla 30 dakika pişir.",
+   "Nane ve pul biberle tatlandır."
+  ]
+ },
+ {
+  "id": "yesil_mercimek_yemegi",
+  "ad": "Yeşil mercimek yemeği",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 40,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "yesil_mercimek",
+    "gram": 70
+   },
+   {
+    "malzeme": "bulgur",
+    "gram": 15
+   },
+   {
+    "malzeme": "sogan",
+    "gram": 40
+   },
+   {
+    "malzeme": "salca",
+    "gram": 10
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 8
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Soğanı zeytinyağında kavur, salçayı ekle.",
+   "Haşlanmış mercimek ve bulguru ekleyip suyla 20 dakika pişir."
+  ]
+ },
+ {
+  "id": "kuru_fasulye",
+  "ad": "Kuru fasulye",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 60,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "kuru_fasulye",
+    "gram": 80
+   },
+   {
+    "malzeme": "sogan",
+    "gram": 40
+   },
+   {
+    "malzeme": "salca",
+    "gram": 15
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 8
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Fasulyeyi bir gece önceden ıslat, haşla.",
+   "Soğanı kavur, salçayı ekle.",
+   "Fasulye ve suyunu ekleyip 30 dakika pişir."
+  ]
+ },
+ {
+  "id": "nohut_yemegi",
+  "ad": "Nohut yemeği",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 60,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "nohut",
+    "gram": 75
+   },
+   {
+    "malzeme": "sogan",
+    "gram": 40
+   },
+   {
+    "malzeme": "salca",
+    "gram": 15
+   },
+   {
+    "malzeme": "domates",
+    "gram": 60
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 8
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Nohudu bir gece önceden ıslat, haşla.",
+   "Soğan, salça ve domatesi kavur.",
+   "Nohudu ekleyip 25 dakika pişir."
+  ]
+ },
+ {
+  "id": "tavuk_sote",
+  "ad": "Sebzeli tavuk sote",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 25,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "tavuk_gogus",
+    "gram": 150
+   },
+   {
+    "malzeme": "sivri_biber",
+    "gram": 50
+   },
+   {
+    "malzeme": "domates",
+    "gram": 100
+   },
+   {
+    "malzeme": "sogan",
+    "gram": 40
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 8
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Kuşbaşı tavuğu suyunu çekene kadar sotele.",
+   "Soğan ve biberi ekle, ardından domatesi ekleyip 10 dakika pişir."
+  ]
+ },
+ {
+  "id": "firin_tavuk_patates",
+  "ad": "Fırında tavuk but ve patates",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 50,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "tavuk_but",
+    "gram": 180
+   },
+   {
+    "malzeme": "patates",
+    "gram": 200
+   },
+   {
+    "malzeme": "sogan",
+    "gram": 30
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 10
+   },
+   {
+    "malzeme": "salca",
+    "gram": 5
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Tavuk ve elma dilim patatesleri salça, zeytinyağı ve baharatla harmanla.",
+   "200 derece fırında 40 dakika pişir."
+  ]
+ },
+ {
+  "id": "tavuklu_bulgur",
+  "ad": "Tavuklu bulgur pilavı",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 35,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "tavuk_gogus",
+    "gram": 120
+   },
+   {
+    "malzeme": "bulgur",
+    "gram": 70
+   },
+   {
+    "malzeme": "sogan",
+    "gram": 30
+   },
+   {
+    "malzeme": "sivri_biber",
+    "gram": 30
+   },
+   {
+    "malzeme": "salca",
+    "gram": 10
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 7
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Tavuğu küçük doğrayıp sotele.",
+   "Soğan, biber ve salçayı ekle.",
+   "Bulgur ve iki katı sıcak suyu ekleyip demlenene kadar pişir."
+  ]
+ },
+ {
+  "id": "tavuklu_makarna",
+  "ad": "Tavuklu domates soslu makarna",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 25,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "tavuk_gogus",
+    "gram": 120
+   },
+   {
+    "malzeme": "makarna",
+    "gram": 80
+   },
+   {
+    "malzeme": "domates",
+    "gram": 100
+   },
+   {
+    "malzeme": "sarimsak",
+    "gram": 5
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 7
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Makarnayı haşla.",
+   "Tavuğu sotele, sarımsak ve rendelenmiş domatesi ekleyip sos yap.",
+   "Makarnayı sosla karıştır."
+  ]
+ },
+ {
+  "id": "ton_makarna_salatasi",
+  "ad": "Ton balıklı makarna salatası",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 20,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "makarna",
+    "gram": 70
+   },
+   {
+    "malzeme": "ton_baligi",
+    "gram": 80
+   },
+   {
+    "malzeme": "salatalik",
+    "gram": 60
+   },
+   {
+    "malzeme": "domates",
+    "gram": 60
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 8
+   },
+   {
+    "malzeme": "limon",
+    "gram": 15
+   },
+   {
+    "malzeme": "maydanoz",
+    "gram": 10
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Makarnayı haşlayıp soğut.",
+   "Ton balığı ve doğranmış sebzelerle karıştır, zeytinyağı ve limonla tatlandır."
+  ]
+ },
+ {
+  "id": "ton_salata",
+  "ad": "Ton balıklı yeşil salata",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 10,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "ton_baligi",
+    "gram": 100
+   },
+   {
+    "malzeme": "marul",
+    "gram": 100
+   },
+   {
+    "malzeme": "domates",
+    "gram": 80
+   },
+   {
+    "malzeme": "salatalik",
+    "gram": 80
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 8
+   },
+   {
+    "malzeme": "limon",
+    "gram": 15
+   },
+   {
+    "malzeme": "tam_bugday_ekmegi",
+    "gram": 50
+   }
+  ],
+  "adimlar": [
+   "Sebzeleri doğra.",
+   "Ton balığını ekle, zeytinyağı ve limonla karıştır. Ekmekle servis et."
+  ]
+ },
+ {
+  "id": "izmir_kofte",
+  "ad": "Fırında İzmir köfte",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 50,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "dana_kiyma",
+    "gram": 120
+   },
+   {
+    "malzeme": "patates",
+    "gram": 150
+   },
+   {
+    "malzeme": "domates",
+    "gram": 80
+   },
+   {
+    "malzeme": "sivri_biber",
+    "gram": 30
+   },
+   {
+    "malzeme": "sogan",
+    "gram": 20
+   },
+   {
+    "malzeme": "salca",
+    "gram": 10
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Kıymayı rendelenmiş soğan ve baharatla yoğur, köfte şekli ver.",
+   "Patates, biber ve domatesle tepsiye diz.",
+   "Salçalı su gezdirip 200 derecede 35 dakika pişir."
+  ]
+ },
+ {
+  "id": "kiymali_makarna",
+  "ad": "Kıymalı makarna",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 25,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "dana_kiyma",
+    "gram": 80
+   },
+   {
+    "malzeme": "makarna",
+    "gram": 80
+   },
+   {
+    "malzeme": "sogan",
+    "gram": 30
+   },
+   {
+    "malzeme": "salca",
+    "gram": 10
+   },
+   {
+    "malzeme": "domates",
+    "gram": 60
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Makarnayı haşla.",
+   "Kıymayı soğanla kavur, salça ve domatesi ekleyip sos yap.",
+   "Makarnayı sosla karıştır."
+  ]
+ },
+ {
+  "id": "kiymali_ispanak",
+  "ad": "Kıymalı ıspanak",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 30,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "ispanak",
+    "gram": 250
+   },
+   {
+    "malzeme": "dana_kiyma",
+    "gram": 60
+   },
+   {
+    "malzeme": "sogan",
+    "gram": 30
+   },
+   {
+    "malzeme": "pirinc",
+    "gram": 15
+   },
+   {
+    "malzeme": "salca",
+    "gram": 5
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 5
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Kıymayı soğanla kavur, salçayı ekle.",
+   "Doğranmış ıspanak ve pirinci ekleyip 15 dakika pişir."
+  ]
+ },
+ {
+  "id": "kiymali_patlican",
+  "ad": "Kıymalı patlıcan musakka",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 50,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "patlican",
+    "gram": 200
+   },
+   {
+    "malzeme": "dana_kiyma",
+    "gram": 80
+   },
+   {
+    "malzeme": "sogan",
+    "gram": 30
+   },
+   {
+    "malzeme": "domates",
+    "gram": 80
+   },
+   {
+    "malzeme": "sivri_biber",
+    "gram": 20
+   },
+   {
+    "malzeme": "aycicek_yagi",
+    "gram": 10
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Patlıcanları dilimleyip fırında az yağla pişir.",
+   "Kıymayı soğan, biber ve domatesle kavur.",
+   "Patlıcan ve kıymayı kat kat dizip 20 dakika fırında pişir."
+  ]
+ },
+ {
+  "id": "zeytinyagli_fasulye",
+  "ad": "Zeytinyağlı taze fasulye",
+  "ogunler": [
+   "ana",
+   "yan"
+  ],
+  "sure_dk": 45,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "taze_fasulye",
+    "gram": 200
+   },
+   {
+    "malzeme": "domates",
+    "gram": 80
+   },
+   {
+    "malzeme": "sogan",
+    "gram": 30
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 12
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Soğanı zeytinyağında öldür.",
+   "Fasulye ve rendelenmiş domatesi ekleyip kısık ateşte 35 dakika pişir."
+  ]
+ },
+ {
+  "id": "mucver",
+  "ad": "Kabak mücver",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 30,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "kabak",
+    "gram": 200
+   },
+   {
+    "malzeme": "yumurta",
+    "gram": 55
+   },
+   {
+    "malzeme": "un",
+    "gram": 25
+   },
+   {
+    "malzeme": "beyaz_peynir",
+    "gram": 30
+   },
+   {
+    "malzeme": "maydanoz",
+    "gram": 10
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 10
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Kabağı rendeleyip suyunu sık.",
+   "Yumurta, un, peynir ve maydanozla karıştır.",
+   "Az yağlı tavada iki yüzünü kızart."
+  ]
+ },
+ {
+  "id": "mercimek_koftesi",
+  "ad": "Mercimek köftesi",
+  "ogunler": [
+   "ana",
+   "ara"
+  ],
+  "sure_dk": 40,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "kirmizi_mercimek",
+    "gram": 50
+   },
+   {
+    "malzeme": "bulgur",
+    "gram": 40
+   },
+   {
+    "malzeme": "sogan",
+    "gram": 30
+   },
+   {
+    "malzeme": "salca",
+    "gram": 10
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 8
+   },
+   {
+    "malzeme": "maydanoz",
+    "gram": 10
+   },
+   {
+    "malzeme": "marul",
+    "gram": 50
+   },
+   {
+    "malzeme": "limon",
+    "gram": 10
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Mercimeği haşla, sıcakken bulguru ekleyip demlendir.",
+   "Kavrulmuş soğan, salça ve maydanozla yoğur.",
+   "Köfte şekli verip marulla servis et."
+  ]
+ },
+ {
+  "id": "firin_sebze",
+  "ad": "Fırında sebze ve nohut",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 45,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "patates",
+    "gram": 120
+   },
+   {
+    "malzeme": "kabak",
+    "gram": 100
+   },
+   {
+    "malzeme": "havuc",
+    "gram": 60
+   },
+   {
+    "malzeme": "patlican",
+    "gram": 80
+   },
+   {
+    "malzeme": "nohut",
+    "gram": 40
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 10
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Nohudu haşla.",
+   "Sebzeleri iri doğrayıp nohut, zeytinyağı ve baharatla harmanla.",
+   "200 derecede 35 dakika pişir."
+  ]
+ },
+ {
+  "id": "yogurtlu_makarna",
+  "ad": "Yoğurtlu sarımsaklı makarna",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 15,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "makarna",
+    "gram": 90
+   },
+   {
+    "malzeme": "yogurt",
+    "gram": 120
+   },
+   {
+    "malzeme": "sarimsak",
+    "gram": 3
+   },
+   {
+    "malzeme": "tereyagi",
+    "gram": 7
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Makarnayı haşla.",
+   "Sarımsaklı yoğurdu üzerine dök, pul biberli tereyağı gezdir."
+  ]
+ },
+ {
+  "id": "tavuk_corbasi",
+  "ad": "Sebzeli tavuk çorbası",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 40,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "tavuk_gogus",
+    "gram": 80
+   },
+   {
+    "malzeme": "havuc",
+    "gram": 40
+   },
+   {
+    "malzeme": "patates",
+    "gram": 50
+   },
+   {
+    "malzeme": "sogan",
+    "gram": 20
+   },
+   {
+    "malzeme": "pirinc",
+    "gram": 15
+   },
+   {
+    "malzeme": "limon",
+    "gram": 10
+   },
+   {
+    "malzeme": "tam_bugday_ekmegi",
+    "gram": 50
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Tavuğu haşla, didikle.",
+   "Suyuna doğranmış sebzeleri ve pirinci ekleyip 20 dakika pişir.",
+   "Tavuğu geri ekle, limonla servis et."
+  ]
+ },
+ {
+  "id": "nohutlu_pilav",
+  "ad": "Nohutlu pirinç pilavı",
+  "ogunler": [
+   "ana",
+   "yan"
+  ],
+  "sure_dk": 30,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "pirinc",
+    "gram": 75
+   },
+   {
+    "malzeme": "nohut",
+    "gram": 30
+   },
+   {
+    "malzeme": "tereyagi",
+    "gram": 8
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Haşlanmış nohut ve pirinci tereyağında kavur.",
+   "Sıcak suyu ekleyip kısık ateşte demlendir."
+  ]
+ },
+ {
+  "id": "pirinc_pilavi",
+  "ad": "Pirinç pilavı",
+  "ogunler": [
+   "yan"
+  ],
+  "sure_dk": 25,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "pirinc",
+    "gram": 60
+   },
+   {
+    "malzeme": "tereyagi",
+    "gram": 6
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Pirinci tereyağında kavur.",
+   "Sıcak suyu ekleyip kısık ateşte demlendir."
+  ]
+ },
+ {
+  "id": "bulgur_pilavi",
+  "ad": "Domatesli bulgur pilavı",
+  "ogunler": [
+   "yan"
+  ],
+  "sure_dk": 25,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "bulgur",
+    "gram": 60
+   },
+   {
+    "malzeme": "sogan",
+    "gram": 20
+   },
+   {
+    "malzeme": "domates",
+    "gram": 50
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 6
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Soğanı kavur, domatesi ekle.",
+   "Bulgur ve sıcak suyu ekleyip demlendir."
+  ]
+ },
+ {
+  "id": "coban_salatasi",
+  "ad": "Çoban salatası",
+  "ogunler": [
+   "yan"
+  ],
+  "sure_dk": 10,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "domates",
+    "gram": 120
+   },
+   {
+    "malzeme": "salatalik",
+    "gram": 100
+   },
+   {
+    "malzeme": "sogan",
+    "gram": 20
+   },
+   {
+    "malzeme": "sivri_biber",
+    "gram": 20
+   },
+   {
+    "malzeme": "maydanoz",
+    "gram": 10
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 6
+   },
+   {
+    "malzeme": "limon",
+    "gram": 10
+   }
+  ],
+  "adimlar": [
+   "Sebzeleri küçük doğra.",
+   "Zeytinyağı ve limonla karıştır."
+  ]
+ },
+ {
+  "id": "cacik",
+  "ad": "Cacık",
+  "ogunler": [
+   "yan",
+   "ara"
+  ],
+  "sure_dk": 5,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "yogurt",
+    "gram": 150
+   },
+   {
+    "malzeme": "salatalik",
+    "gram": 100
+   },
+   {
+    "malzeme": "sarimsak",
+    "gram": 2
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Salatalığı rendele.",
+   "Sarımsaklı yoğurtla karıştır, isteğe göre su ekle."
+  ]
+ },
+ {
+  "id": "yogurt_bal_ceviz",
+  "ad": "Ballı cevizli yoğurt",
+  "ogunler": [
+   "ara"
+  ],
+  "sure_dk": 2,
+  "porsiyon_araligi": [
+   0.5,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "yogurt",
+    "gram": 200
+   },
+   {
+    "malzeme": "bal",
+    "gram": 10
+   },
+   {
+    "malzeme": "ceviz",
+    "gram": 10
+   }
+  ],
+  "adimlar": [
+   "Yoğurdun üzerine bal ve ceviz ekle."
+  ]
+ },
+ {
+  "id": "elma_findik",
+  "ad": "Elma ve fındık",
+  "ogunler": [
+   "ara"
+  ],
+  "sure_dk": 1,
+  "porsiyon_araligi": [
+   0.5,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "elma",
+    "gram": 150
+   },
+   {
+    "malzeme": "findik",
+    "gram": 20
+   }
+  ],
+  "adimlar": [
+   "Elmayı dilimle, fındıkla birlikte ye."
+  ]
+ },
+ {
+  "id": "muz_fistik",
+  "ad": "Fıstık ezmeli muz",
+  "ogunler": [
+   "ara"
+  ],
+  "sure_dk": 2,
+  "porsiyon_araligi": [
+   0.5,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "muz",
+    "gram": 120
+   },
+   {
+    "malzeme": "fistik_ezmesi",
+    "gram": 15
+   }
+  ],
+  "adimlar": [
+   "Muzu dilimleyip fıstık ezmesiyle ye."
+  ]
+ },
+ {
+  "id": "ayran",
+  "ad": "Ayran",
+  "ogunler": [
+   "ara",
+   "yan"
+  ],
+  "sure_dk": 2,
+  "porsiyon_araligi": [
+   1,
+   2
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "yogurt",
+    "gram": 150
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Yoğurdu su ve tuzla çırp."
+  ]
+ },
+ {
+  "id": "haslanmis_yumurta",
+  "ad": "Haşlanmış yumurta",
+  "ogunler": [
+   "ara"
+  ],
+  "sure_dk": 10,
+  "porsiyon_araligi": [
+   0.5,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "yumurta",
+    "gram": 110
+   },
+   {
+    "malzeme": "salatalik",
+    "gram": 80
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Yumurtaları 9 dakika haşla, salatalıkla ye."
+  ]
+ },
+ {
+  "id": "humus_havuc",
+  "ad": "Humus ve havuç çubukları",
+  "ogunler": [
+   "ara"
+  ],
+  "sure_dk": 15,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "nohut",
+    "gram": 40
+   },
+   {
+    "malzeme": "tahin",
+    "gram": 15
+   },
+   {
+    "malzeme": "limon",
+    "gram": 10
+   },
+   {
+    "malzeme": "sarimsak",
+    "gram": 2
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 5
+   },
+   {
+    "malzeme": "havuc",
+    "gram": 100
+   }
+  ],
+  "adimlar": [
+   "Haşlanmış nohudu tahin, limon, sarımsak ve zeytinyağıyla püre yap.",
+   "Havuç çubuklarıyla servis et."
+  ]
+ },
+ {
+  "id": "portakal_ceviz",
+  "ad": "Portakal ve ceviz",
+  "ogunler": [
+   "ara"
+  ],
+  "sure_dk": 1,
+  "porsiyon_araligi": [
+   0.5,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "portakal",
+    "gram": 200
+   },
+   {
+    "malzeme": "ceviz",
+    "gram": 15
+   }
+  ],
+  "adimlar": [
+   "Portakalı soy, cevizle birlikte ye."
+  ]
+ },
+ {
+  "id": "lor_bal",
+  "ad": "Ballı lor",
+  "ogunler": [
+   "ara"
+  ],
+  "sure_dk": 2,
+  "porsiyon_araligi": [
+   0.5,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "lor",
+    "gram": 120
+   },
+   {
+    "malzeme": "bal",
+    "gram": 10
+   }
+  ],
+  "adimlar": [
+   "Lorun üzerine bal gezdir."
+  ]
+ }
+]

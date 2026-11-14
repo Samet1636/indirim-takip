@@ -17,7 +17,8 @@ CREATE TABLE IF NOT EXISTS products (
     UNIQUE (market, market_product_id)
 );
 
--- Her gün her ürün için bir fiyat kaydı: fiyat geçmişi buradan çıkar.
+-- Fiyat geçmişi: sadece fiyat DEĞİŞTİĞİNDE yeni satır eklenir (tüm katalog her gün
+-- tarandığı için her gün her ürüne satır yazmak veritabanını gereksiz büyütürdü).
 CREATE TABLE IF NOT EXISTS price_snapshots (
     product_id    INTEGER NOT NULL REFERENCES products(id),
     scraped_on    TEXT NOT NULL,
@@ -28,17 +29,24 @@ CREATE TABLE IF NOT EXISTS price_snapshots (
     valid_from    TEXT,
     PRIMARY KEY (product_id, scraped_on)
 );
+"""
 
--- Uygulamanın ana ekranı bu view'dan beslenir.
-CREATE VIEW IF NOT EXISTS todays_discounts AS
+# Ürünün "şu anki" durumu products tablosunda tutulur (en son görüldüğü gün ve fiyatı).
+CURRENT_COLUMNS = {
+    "last_seen": "TEXT", "price": "REAL", "regular_price": "REAL",
+    "discount_pct": "REAL", "is_campaign": "INTEGER DEFAULT 0", "valid_from": "TEXT",
+}
+
+VIEW = """
+DROP VIEW IF EXISTS todays_discounts;
+-- Uygulamanın indirim ekranı: her marketin son taramasında görülen indirimli/kampanyalı ürünler
+CREATE VIEW todays_discounts AS
 SELECT p.market, p.name, p.url, p.image_url, p.category,
-       s.price, s.regular_price, s.discount_pct, s.is_campaign, s.valid_from, s.scraped_on
-FROM price_snapshots s
-JOIN products p ON p.id = s.product_id
-WHERE s.scraped_on = (SELECT MAX(scraped_on) FROM price_snapshots s2
-                      JOIN products p2 ON p2.id = s2.product_id
-                      WHERE p2.market = p.market)
-  AND (s.is_campaign = 1 OR s.discount_pct IS NOT NULL);
+       p.price, p.regular_price, p.discount_pct, p.is_campaign, p.valid_from,
+       p.last_seen AS scraped_on
+FROM products p
+WHERE p.last_seen = (SELECT MAX(last_seen) FROM products p2 WHERE p2.market = p.market)
+  AND (p.is_campaign = 1 OR p.discount_pct IS NOT NULL);
 """
 
 
@@ -47,34 +55,77 @@ def connect(path: str | Path = "data/prices.db") -> sqlite3.Connection:
     conn = sqlite3.connect(path)
     conn.row_factory = sqlite3.Row
     conn.executescript(SCHEMA)
+    _migrate(conn)
+    conn.executescript(VIEW)
     return conn
 
 
+def _migrate(conn: sqlite3.Connection) -> None:
+    """Eski veritabanlarına yeni sütunları ekler ve son fiyatı geçmişten doldurur."""
+    have = {r["name"] for r in conn.execute("PRAGMA table_info(products)")}
+    missing = [c for c in CURRENT_COLUMNS if c not in have]
+    if not missing:
+        return
+    with conn:
+        for c in missing:
+            conn.execute(f"ALTER TABLE products ADD COLUMN {c} {CURRENT_COLUMNS[c]}")
+        conn.execute("""
+            UPDATE products SET (last_seen, price, regular_price, discount_pct, is_campaign, valid_from) =
+              (SELECT s.scraped_on, s.price, s.regular_price, s.discount_pct, s.is_campaign, s.valid_from
+               FROM price_snapshots s WHERE s.product_id = products.id
+               ORDER BY s.scraped_on DESC LIMIT 1)
+            WHERE last_seen IS NULL""")
+
+
 def save_offers(conn: sqlite3.Connection, offers: list[Offer]) -> int:
-    """Ürünleri ekler/günceller ve günün fiyatını yazar. Aynı gün tekrar çalışırsa üzerine yazar."""
+    """Ürünleri ekler/günceller. Fiyat değiştiyse (veya ürün yeniyse) geçmişe satır ekler."""
+    changed = 0
     with conn:
         for o in offers:
+            row = conn.execute(
+                "SELECT id, price, regular_price, is_campaign, last_seen FROM products "
+                "WHERE market=? AND market_product_id=?", (o.market, o.market_product_id)).fetchone()
+            if row and row["last_seen"] and row["last_seen"] > o.scraped_on:
+                continue    # elimizde daha yeni bilgi var (eski bir içe aktarma dosyası)
             conn.execute(
-                """INSERT INTO products (market, market_product_id, name, url, image_url, category)
-                   VALUES (?, ?, ?, ?, ?, ?)
+                """INSERT INTO products (market, market_product_id, name, url, image_url, category,
+                                         last_seen, price, regular_price, discount_pct, is_campaign, valid_from)
+                   VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                    ON CONFLICT (market, market_product_id) DO UPDATE SET
-                     name=excluded.name, url=excluded.url,
+                     name=excluded.name, url=COALESCE(excluded.url, products.url),
                      image_url=COALESCE(excluded.image_url, products.image_url),
-                     category=COALESCE(excluded.category, products.category)""",
-                (o.market, o.market_product_id, o.name, o.url, o.image_url, o.category),
+                     category=COALESCE(excluded.category, products.category),
+                     last_seen=excluded.last_seen, price=excluded.price,
+                     regular_price=excluded.regular_price, discount_pct=excluded.discount_pct,
+                     is_campaign=excluded.is_campaign, valid_from=excluded.valid_from""",
+                (o.market, o.market_product_id, o.name, o.url, o.image_url, o.category,
+                 o.scraped_on, o.price, o.regular_price, o.discount_pct, int(o.is_campaign), o.valid_from),
             )
-            pid = conn.execute(
+            pid = row["id"] if row else conn.execute(
                 "SELECT id FROM products WHERE market=? AND market_product_id=?",
-                (o.market, o.market_product_id),
-            ).fetchone()["id"]
-            conn.execute(
-                """INSERT OR REPLACE INTO price_snapshots
-                   (product_id, scraped_on, price, regular_price, discount_pct, is_campaign, valid_from)
-                   VALUES (?, ?, ?, ?, ?, ?, ?)""",
-                (pid, o.scraped_on, o.price, o.regular_price, o.discount_pct,
-                 int(o.is_campaign), o.valid_from),
-            )
-    return len(offers)
+                (o.market, o.market_product_id)).fetchone()["id"]
+            same = row is not None and row["price"] == o.price and row["regular_price"] == o.regular_price \
+                and bool(row["is_campaign"]) == o.is_campaign
+            if not same:
+                conn.execute(
+                    """INSERT OR REPLACE INTO price_snapshots
+                       (product_id, scraped_on, price, regular_price, discount_pct, is_campaign, valid_from)
+                       VALUES (?, ?, ?, ?, ?, ?, ?)""",
+                    (pid, o.scraped_on, o.price, o.regular_price, o.discount_pct,
+                     int(o.is_campaign), o.valid_from),
+                )
+                changed += 1
+    return changed
+
+
+def catalog(conn: sqlite3.Connection, today: str | None = None, stale_days: int = 3) -> list[dict]:
+    """Tüm ürünler sekmesi: son stale_days gün içinde görülmüş bütün ürünler."""
+    today_d = date.fromisoformat(today) if today else date.today()
+    stale = (today_d - timedelta(days=stale_days)).isoformat()
+    rows = conn.execute(
+        """SELECT market, name, category, price, regular_price, discount_pct, url, image_url
+           FROM products WHERE last_seen >= ? ORDER BY market, category, name""", (stale,)).fetchall()
+    return [dict(r) for r in rows]
 
 
 def todays_discounts(conn: sqlite3.Connection, today: str | None = None,

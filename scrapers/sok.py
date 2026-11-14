@@ -11,6 +11,8 @@ Koleksiyon adresleri her hafta değişebildiği için ana sayfadan da link toplu
 """
 from __future__ import annotations
 
+import re
+
 from scrapers.campaign import CampaignScraper
 from scrapers.nextjs import extract_payloads, find_products
 
@@ -82,6 +84,10 @@ class SokScraper(CampaignScraper):
     first_page_param = 1         # sayfa numarası 0'dan mı 1'den mi başlıyor bilinmiyor:
     empty_pages_to_stop = 2      # ?page=1 ilk sayfanın tekrarı olsa bile bir sonrakini dene
     price_divisor = 1.0          # fiyatlar TL cinsinden geliyor
+    # Tüm ürünler: kategori adresleri "...-c-20" ile bitiyor
+    category_pattern = re.compile(r"sokmarket\.com\.tr/[a-z0-9-]+-c-\d+/?$")
+    catalog_max_pages = 150
+    catalog_first_page = 2       # ?page=1 ilk sayfanın tekrarı olduğu loglardan biliniyor
 
     def parse_items(self, html: str) -> list[dict]:
         return parse_sok_html(html)

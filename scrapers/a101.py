@@ -20,22 +20,79 @@ Tarayıcıyı görerek denemek için:  python run.py --only a101 --dump --goster
 """
 from __future__ import annotations
 
+import base64
 import json
+import re
+from urllib.parse import parse_qs, urlencode, urlparse, urlunparse
 
 from models import Offer
 from scrapers.base import log
 from scrapers.campaign import CampaignScraper
+from scrapers.discovery import page_links
 from scrapers.nextjs import discover_links
 
 CHROME_UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
              "(KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36")
-SEARCH_API_MARK = "/CALL/Store/search/"
+# Ürün listesi getiren API'ler: kampanya sayfaları "search", kategori sayfaları "listCategoryProducts"
+SEARCH_API_MARKS = ("/CALL/Store/search/", "/CALL/Store/listCategoryProducts/")
+# Kapıda kategori sayfaları: /kapida/meyve-sebze veya /kapida/meyve-sebze/meyve
+CATEGORY_RE = re.compile(r"a101\.com\.tr/kapida/[a-z0-9-]+(/[a-z0-9-]+)?/?$")
+CATEGORY_EXCLUDE = ["aldin-aldin", "haftanin-yildizlari", "_p-", "brosur", "afis",
+                    "sepet", "hesabim", "giris", "uye", "yardim", "siparis"]
+# /kapida/ altında kategori olmayan bölümler
+NON_CATEGORY = {"markalar", "hakkimizda", "sikca-sorulan-sorular", "sozlesmeler", "kampanyalar", "product"}
 
 
-def parse_a101_search(data: dict) -> list[Offer]:
-    """A101 Store/search API yanıtını Offer listesine çevirir."""
+def a101_category_urls(htmls: list[str], base: str = "https://www.a101.com.tr") -> list[str]:
+    """Kapıda sayfalarındaki linklerden ANA kategorileri çıkarır.
+    Alt kategori linki (/kapida/su-icecek/gazli-icecekler) görülürse ana kategorisi alınır;
+    ana kategori sayfası alt kategorilerin ürünlerini de içeriyor."""
+    out = []
+    for html in htmls:   # her sayfa ayrı ayrı (birleştirilmiş HTML doğru ayrıştırılmıyor)
+        if not html:
+            continue
+        for u in page_links(html, base, CATEGORY_RE, CATEGORY_EXCLUDE):
+            parts = urlparse(u).path.strip("/").split("/")   # ["kapida", "su-icecek", ...]
+            if len(parts) < 2 or parts[1] in NON_CATEGORY:
+                continue
+            out.append(f"{base}/kapida/{parts[1]}")
+    return list(dict.fromkeys(out))
+FORBIDDEN_HEADERS = {"host", "content-length", "cookie", "connection", "accept-encoding", "user-agent",
+                     "referer", "origin"}
+
+
+def with_search_window(url: str, start: int, limit: int) -> str:
+    """Arama API adresindeki base64 'data' parametresinin from/limit değerlerini değiştirir."""
+    parts = urlparse(url)
+    q = {k: v[0] for k, v in parse_qs(parts.query).items()}
+    data = json.loads(base64.b64decode(q["data"] + "=" * (-len(q["data"]) % 4)).decode())
+    data["from"], data["limit"] = start, limit
+    q["data"] = base64.b64encode(json.dumps(data, separators=(",", ":")).encode()).decode()
+    return urlunparse(parts._replace(query=urlencode(q)))
+
+
+def iter_a101_products(obj, _depth: int = 0):
+    """Yanıtın neresinde olursa olsun A101 ürün kayıtlarını bulur
+    (arama API'sinde 'results' altında, kategori API'sinde alt kategorilere bölünmüş olabilir)."""
+    if _depth > 30:
+        return
+    if isinstance(obj, dict):
+        attrs, price = obj.get("attributes"), obj.get("price")
+        if isinstance(attrs, dict) and attrs.get("name") and isinstance(price, dict):
+            yield obj
+            return
+        for v in obj.values():
+            yield from iter_a101_products(v, _depth + 1)
+    elif isinstance(obj, list):
+        for v in obj:
+            yield from iter_a101_products(v, _depth + 1)
+
+
+def parse_a101_search(data: dict, campaign: bool | None = True) -> list[Offer]:
+    """A101 Store/search API yanıtını Offer listesine çevirir.
+    campaign=None: ürünün kampanya rozeti (promotion) varsa kampanya sayılır (kategori sayfaları)."""
     offers = []
-    for r in (data or {}).get("results") or []:
+    for r in iter_a101_products(data):
         attrs = r.get("attributes") or {}
         price = r.get("price") or {}
         name = (attrs.get("name") or "").strip()
@@ -58,7 +115,8 @@ def parse_a101_search(data: dict) -> list[Offer]:
             url=attrs.get("seoUrl"),
             image_url=image,
             category=cats[-1].get("name") if cats and isinstance(cats[-1], dict) else None,
-            is_campaign=True,   # Aldın Aldın ürünü (indirim oranı olmasa da kampanya fiyatı)
+            # Aldın Aldın sayfası: indirim oranı olmasa da kampanya fiyatı
+            is_campaign=bool(r.get("promotion")) if campaign is None else campaign,
         ))
     return offers
 
@@ -76,7 +134,7 @@ class A101Scraper(CampaignScraper):
     impersonate_browser = False   # HTTP oturumu kullanılmıyor, tarayıcı kullanılıyor
     headful = False               # True: tarayıcı penceresi görünür açılır (deneme için)
 
-    def scrape(self):
+    def scrape(self, katalog: bool = False, kategori_limit: int | None = None):
         try:
             from playwright.sync_api import sync_playwright
         except ImportError:
@@ -107,10 +165,17 @@ class A101Scraper(CampaignScraper):
             ctx.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
             page = ctx.new_page()
             search_responses = []
-            page.on("response", lambda r: search_responses.append(r) if SEARCH_API_MARK in r.url else None)
+            all_json = []   # --dump ile teşhis için: sayfanın çektiği tüm JSON yanıtları
+            def on_response(r):
+                if any(m in r.url for m in SEARCH_API_MARKS):
+                    search_responses.append(r)
+                elif self.dump_dir and "json" in (r.headers.get("content-type") or ""):
+                    all_json.append(r)
+            page.on("response", on_response)
 
             def visit(url, label):
                 search_responses.clear()
+                all_json.clear()
                 resp = page.goto(url, wait_until="domcontentloaded", timeout=60_000)
                 status = resp.status if resp else "?"
                 try:   # çerez penceresi
@@ -131,17 +196,34 @@ class A101Scraper(CampaignScraper):
                 if status == 403 or "Just a moment" in page.title():
                     log.warning("a101: bot korumasına takıldı. --goster ile pencereyi açıp bak.")
                 offers = []
+                if self.dump_dir and label.startswith("kategori"):
+                    for k, r in enumerate(list(all_json), 1):
+                        try:
+                            body = r.json()
+                        except Exception:
+                            continue
+                        (self.dump_dir / f"a101_{label}_json{k}.json").write_text(
+                            json.dumps({"url": r.url, "data": body}, ensure_ascii=False, indent=1),
+                            encoding="utf-8")
+                        log.info("a101:   json%d %s", k, r.url[:140])
+                self._last_search = list(search_responses)
                 for k, r in enumerate(list(search_responses), 1):
                     try:
                         data = r.json()
                     except Exception:
                         continue
                     if self.dump_dir:
-                        (self.dump_dir / f"a101_{label}_search{k}.json").write_text(
+                        kind = "kategori_api" if "listCategoryProducts" in r.url else "search"
+                        (self.dump_dir / f"a101_{label}_{kind}{k}.json").write_text(
                             json.dumps({"url": r.url, "data": data}, ensure_ascii=False, indent=1),
                             encoding="utf-8")
-                    got = parse_a101_search(data)
-                    log.info("a101:   arama API'si -> %d ürün", len(got))
+                    got = parse_a101_search(data, campaign=None if label.startswith("kategori") else True)
+                    total = (data.get("total") or 0) if isinstance(data, dict) else 0
+                    if total > len(data.get("results") or []):   # sayfa ürünlerin hepsini istememiş
+                        got = self._fetch_all(page, r, total, label) or got
+                    log.info("a101:   %s -> %d ürün (toplam %s)",
+                             "kategori API'si" if "listCategoryProducts" in r.url else "arama API'si",
+                             len(got), total or "?")
                     offers += got
                 return html, offers
 
@@ -151,19 +233,31 @@ class A101Scraper(CampaignScraper):
                     discovered = discover_links(home, self.base, self.keywords, self.exclude)
                 except Exception as e:
                     log.warning("a101: ana sayfa açılamadı: %s", e)
-                    discovered = []
+                    home, discovered = "", []
                 links = list(self.seed_urls) + discovered
                 links = list(dict.fromkeys(links))[: len(self.seed_urls) + self.max_collections]
                 log.info("a101: taranacak sayfalar: %s", links)
-                for i, url in enumerate(links):
+                pages = [(u, f"sayfa{i}") for i, u in enumerate(links)]
+                if katalog:
+                    try:   # kategori menüsü Kapıda ana sayfasında
+                        kapida_home, _ = visit(self.base + "/kapida", "kapida_home")
+                    except Exception as e:
+                        log.warning("a101: Kapıda ana sayfası açılamadı: %s", e)
+                        kapida_home = ""
+                    cats = a101_category_urls([kapida_home, home], self.base)
+                    cats = [u for u in cats if u.rstrip("/") not in {l.rstrip("/") for l in links}
+                            ][: kategori_limit or None]
+                    log.info("a101: %d kategori taranacak", len(cats))
+                    pages += [(u, f"kategori{i}") for i, u in enumerate(cats)]
+                for url, label in pages:
                     try:
-                        _, offers = visit(url, f"sayfa{i}")
+                        _, offers = visit(url, label)
                     except Exception as e:
                         log.warning("a101: %s açılamadı: %s", url, e)
                         continue
                     new = sum(1 for o in offers if o.market_product_id not in found)
                     for o in offers:
-                        found.setdefault(o.market_product_id, o)
+                        found.setdefault(o.market_product_id, o)   # önce gelen kampanya bilgisi korunur
                     log.info("a101: %s -> %d ürün (%d yeni)", url, len(offers), new)
             finally:
                 browser.close()
@@ -171,3 +265,26 @@ class A101Scraper(CampaignScraper):
         if not found:
             log.warning("a101: hiç ürün bulunamadı. 'python run.py --only a101 --dump --goster' ile kontrol et")
         return list(found.values())
+
+    def _fetch_all(self, page, response, total: int, label: str) -> list[Offer]:
+        """Sayfanın yaptığı arama isteğini, tarayıcının içinden daha büyük parçalarla tekrarlar."""
+        try:
+            headers = {k: v for k, v in response.request.all_headers().items()
+                       if not k.startswith(":") and not k.startswith("sec-") and k.lower() not in FORBIDDEN_HEADERS}
+        except Exception:
+            headers = {}
+        offers, step = [], 500
+        for start in range(0, min(total, 5000), step):
+            url = with_search_window(response.url, start, step)
+            try:
+                data = page.evaluate(
+                    "async ([u, h]) => { const r = await fetch(u, {headers: h}); return await r.json(); }",
+                    [url, headers])
+            except Exception as e:
+                log.warning("a101: %s için ek istek başarısız: %s", label, e)
+                break
+            got = parse_a101_search(data, campaign=None if label.startswith("kategori") else True)
+            offers += got
+            if len(data.get("results") or []) < step:
+                break
+        return offers

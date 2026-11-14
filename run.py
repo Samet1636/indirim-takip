@@ -5,6 +5,8 @@ Günlük çalıştırılan ana script.
     python run.py --only bim          # tek market
     python run.py --skip a101         # bir marketi atla
     python run.py --dump              # ham yanıtları data/raw/ altına kaydet (debug)
+    python run.py --katalog           # indirimlerin yanında TÜM ürünleri de tara
+    python run.py --only sok --katalog --kategori-limit 2 --dump   # hızlı deneme
 
 A101 GitHub sunucularından taranamıyor (Cloudflare), bu yüzden:
     Bilgisayarda (a101_gunluk.bat):
@@ -46,6 +48,8 @@ def main() -> int:
     ap.add_argument("--export", help="taranan ürünleri bu JSON dosyasına yaz")
     ap.add_argument("--upload", action="store_true", help="--export dosyasını GitHub'a yükle")
     ap.add_argument("--import-dir", help="bu klasördeki *.json ürün dosyalarını veritabanına ekle")
+    ap.add_argument("--katalog", action="store_true", help="tüm ürünleri (kategorileri) de tara")
+    ap.add_argument("--kategori-limit", type=int, help="deneme için en fazla bu kadar kategori tara")
     ap.add_argument("--dump", action="store_true")
     ap.add_argument("--goster", action="store_true", help="A101 için tarayıcı penceresini göster")
     ap.add_argument("--db", default="data/prices.db")
@@ -64,12 +68,12 @@ def main() -> int:
             scraper = cls(dump_dir=dump_dir)
             if args.goster:
                 scraper.headful = True
-            offers = scraper.scrape()
+            offers = scraper.scrape(katalog=args.katalog, kategori_limit=args.kategori_limit)
             all_offers += offers
-            if conn:
-                db.save_offers(conn, offers)
+            changed = db.save_offers(conn, offers) if conn else 0
             disc = sum(o.is_discounted for o in offers)
-            logging.info("%s: %d ürün bulundu, %d tanesi indirimde", name, len(offers), disc)
+            logging.info("%s: %d ürün bulundu, %d tanesi indirimde, %d fiyat değişikliği",
+                         name, len(offers), disc, changed)
             if not offers:
                 failures += 1
         except Exception:
@@ -112,6 +116,11 @@ def main() -> int:
         out = Path("data/discounts_today.json")
         out.write_text(json.dumps(db.todays_discounts(conn), ensure_ascii=False, indent=1), encoding="utf-8")
         logging.info("%s yazıldı", out)
+        # Tüm ürünler sekmesi için (boyutu küçük tutmak için girintisiz)
+        kat = db.catalog(conn)
+        Path("data/katalog.json").write_text(json.dumps(kat, ensure_ascii=False, separators=(",", ":")),
+                                             encoding="utf-8")
+        logging.info("data/katalog.json yazıldı (%d ürün)", len(kat))
     return 1 if failures else 0
 
 

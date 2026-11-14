@@ -1,0 +1,45 @@
+﻿id;ad;ogunler;sure_dk;kcal;protein;karb;yag;lif;etiketler
+menemen;Menemen;kahvalti;15;386.5;22.1;29.0;20.5;6.0;vejetaryen, pratik
+kahvalti_tabagi;Klasik kahvaltı tabağı;kahvalti;10;484.1;29.3;35.8;25.1;6.7;vejetaryen, pratik
+yulaf_lapasi;Muzlu cevizli yulaf lapası;kahvalti;10;470.9;17.5;66.8;16.9;8.6;vejetaryen, pratik
+gece_yulafi;Yoğurtlu gece yulafı;kahvalti/ara;5;373.4;14.8;59.5;9.9;7.2;vejetaryen, pratik
+ispanakli_omlet;Ispanaklı lorlu omlet;kahvalti;12;392.4;28.9;25.9;19.5;5.3;vejetaryen, yuksek_protein, pratik
+peynirli_tost;Domatesli kaşarlı tost;kahvalti;8;346.4;20.2;38.7;12.7;6.7;vejetaryen, pratik
+fistik_ezmeli_ekmek;Fıstık ezmeli muzlu ekmek;kahvalti/ara;3;354.8;13.9;51.4;12.3;8.0;vejetaryen, vegan, pratik
+sebzeli_omlet;Sebzeli omlet;kahvalti;12;406.0;25.6;27.1;21.7;5.3;vejetaryen, yuksek_protein, pratik
+cilbir;Çılbır;kahvalti;15;408.7;24.8;27.9;21.8;3.6;vejetaryen, pratik
+lorlu_kahvalti;Ballı cevizli lor tabağı;kahvalti;5;369.9;24.6;41.8;13.3;5.9;vejetaryen, yuksek_protein, pratik
+mercimek_corbasi;Mercimek çorbası;ana;35;453.4;22.4;69.9;9.8;12.6;vejetaryen, vegan
+ezogelin;Ezogelin çorbası;ana;35;473.8;22.5;78.4;8.5;13.7;vejetaryen
+yesil_mercimek_yemegi;Yeşil mercimek yemeği;ana;40;392.6;19.9;61.1;9.1;11.3;vejetaryen, vegan
+kuru_fasulye;Kuru fasulye;ana;60;365.4;20.0;54.6;8.8;13.3;vejetaryen, vegan
+nohut_yemegi;Nohut yemeği;ana;60;382.8;15.9;54.6;12.7;14.8;vejetaryen, vegan
+tavuk_sote;Sebzeli tavuk sote;ana;25;294.7;35.5;9.9;12.2;2.7;yuksek_protein
+firin_tavuk_patates;Fırında tavuk but ve patates;ana;50;476.3;40.0;37.7;17.6;5.1;yuksek_protein
+tavuklu_bulgur;Tavuklu bulgur pilavı;ana;35;471.5;36.6;59.2;11.2;14.2;yuksek_protein
+tavuklu_makarna;Tavuklu domates soslu makarna;ana;25;528.1;38.6;65.5;11.5;3.9;yuksek_protein
+ton_makarna_salatasi;Ton balıklı makarna salatası;ana;20;451.0;30.9;59.0;10.0;4.0;yuksek_protein, pratik
+ton_salata;Ton balıklı yeşil salata;ana;10;356.0;34.8;30.8;11.0;6.6;yuksek_protein, pratik
+izmir_kofte;Fırında İzmir köfte;ana;50;456.9;25.3;33.8;24.4;5.5;
+kiymali_makarna;Kıymalı makarna;ana;25;531.0;25.5;67.0;17.4;4.2;
+kiymali_ispanak;Kıymalı ıspanak;ana;30;324.9;19.2;24.7;18.2;6.4;
+kiymali_patlican;Kıymalı patlıcan musakka;ana;50;372.0;17.0;18.6;26.6;7.8;
+zeytinyagli_fasulye;Zeytinyağlı taze fasulye;ana/yan;45;194.5;4.7;19.9;12.4;8.3;vejetaryen, vegan
+mucver;Kabak mücver;ana;30;374.9;16.4;27.4;22.5;3.0;vejetaryen
+mercimek_koftesi;Mercimek köftesi;ana/ara;40;416.7;18.8;68.0;9.6;15.0;vejetaryen, vegan
+firin_sebze;Fırında sebze ve nohut;ana;45;388.0;12.5;58.4;13.1;14.5;vejetaryen, vegan
+yogurtlu_makarna;Yoğurtlu sarımsaklı makarna;ana;15;461.8;16.2;74.1;11.0;2.9;vejetaryen, pratik
+tavuk_corbasi;Sebzeli tavuk çorbası;ana;40;340.1;27.3;47.6;4.1;6.5;yuksek_protein
+nohutlu_pilav;Nohutlu pirinç pilavı;ana/yan;30;440.3;11.1;78.3;8.8;6.1;vejetaryen
+pirinc_pilavi;Pirinç pilavı;yan;25;262.0;4.3;48.0;5.3;0.8;vejetaryen
+bulgur_pilavi;Domatesli bulgur pilavı;yan;25;275.2;8.0;49.4;6.9;11.9;vejetaryen, vegan
+coban_salatasi;Çoban salatası;yan;10;108.1;2.6;12.6;6.5;3.2;vejetaryen, vegan, pratik
+cacik;Cacık;yan/ara;5;109.5;6.1;11.3;5.1;0.5;vejetaryen, pratik
+yogurt_bal_ceviz;Ballı cevizli yoğurt;ara;2;217.8;8.6;19.0;13.1;0.7;vejetaryen, pratik
+elma_findik;Elma ve fındık;ara;1;203.6;3.5;24.0;12.5;5.5;vejetaryen, vegan, pratik
+muz_fistik;Fıstık ezmeli muz;ara;2;195.0;5.1;30.4;7.9;4.0;vejetaryen, vegan, pratik
+ayran;Ayran;ara/yan;2;91.5;5.2;7.0;5.0;0.0;vejetaryen, pratik
+haslanmis_yumurta;Haşlanmış yumurta;ara;10;169.3;14.4;3.6;10.5;0.4;vejetaryen, yuksek_protein, pratik
+humus_havuc;Humus ve havuç çubukları;ara;15;325.9;11.3;38.7;15.7;11.3;vejetaryen, vegan, pratik
+portakal_ceviz;Portakal ve ceviz;ara;1;192.1;4.1;25.7;10.0;5.8;vejetaryen, vegan, pratik
+lor_bal;Ballı lor;ara;2;148.0;15.0;12.4;4.8;0.0;vejetaryen, yuksek_protein, pratik

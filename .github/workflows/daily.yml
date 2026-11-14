@@ -39,7 +39,7 @@ jobs:
           if [ "${{ github.event_name }}" = "push" ]; then
             python run.py --no-scrape --import-dir data/imports
           else
-            python run.py --skip a101 --import-dir data/imports
+            python run.py --skip a101 --katalog --import-dir data/imports
           fi
         continue-on-error: true   # bir market hata verse de eldeki veriyle devam et
 
@@ -47,7 +47,7 @@ jobs:
         run: |
           git config user.name "indirim-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add data/prices.db data/discounts_today.json
+          git add data/prices.db data/discounts_today.json data/katalog.json
           git commit -m "Günlük tarama $(date -u +%F)" || echo "Değişiklik yok"
           git pull --rebase
           git push
@@ -56,7 +56,7 @@ jobs:
         run: |
           mkdir -p _site/data
           cp index.html _site/
-          cp data/discounts_today.json _site/data/
+          cp data/discounts_today.json data/katalog.json _site/data/
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
