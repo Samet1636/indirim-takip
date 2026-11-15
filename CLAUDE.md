@@ -1,0 +1,112 @@
+# İndirim Takip + Beslenme Planlayıcı
+
+Türkiye'deki marketlerin (Migros, ŞOK, A101, BİM) ürün ve indirim verilerini her gün otomatik
+toplayan, bu fiyatlarla kişiye özel haftalık beslenme planı ve en ucuz alışveriş listesi üreten
+bir uygulama. Sahibi: Abdulsamet (GTÜ Endüstri Mühendisliği öğrencisi). Hedef: App Store /
+Google Play'de yayınlanacak bir mobil uygulama. İletişim dili Türkçe; kod yorumları ve
+kullanıcıya dönük metinler Türkçe.
+
+## Mimari
+
+```
+scrapers/            Market scraper'ları (hepsi models.Offer listesi döndürür)
+  base.py            Ortak HTTP oturumu, istekler arası gecikme, --dump, parse_tr_price
+  migros.py          Migros REST API (rest/search/screens/...), fiyatlar KURUŞ
+  bim.py             BİM aktüel sayfası (HTML). BİM'in fiyatlı tam kataloğu YOK
+  sok.py             ŞOK (Next.js RSC). Ürünler: initialSearchResult.results[].product / .prices
+  a101.py            A101 Kapıda — Cloudflare korumalı. Playwright + bilgisayardaki Chrome ile
+                     Store/search (kampanya) ve Store/listCategoryProducts (kategori) API'lerini dinler
+  campaign.py        ŞOK/A101 için ortak kampanya + kategori gezgini
+  discovery.py       Kategori keşfi (önce menü linkleri, sonra sitemap)
+  nextjs.py          Next.js gömülü JSON ayrıştırıcı (genel)
+models.py            Offer veri sınıfı
+db.py                SQLite (data/prices.db). products = ürünün son durumu,
+                     price_snapshots = sadece fiyat DEĞİŞİNCE satır (fiyat geçmişi)
+run.py               Ana giriş noktası (bkz. Komutlar)
+github_upload.py     A101 sonucunu GitHub API ile repoya yükler (GH_TOKEN ortam değişkeni)
+a101_gunluk.bat      A101'i yerelde tarayıp yükler (Windows Görev Zamanlayıcı, her sabah)
+index.html           GitHub Pages'te yayınlanan web arayüzü (data/discounts_today.json okur)
+beslenme/
+  malzemeler_kaynak.py -> malzemeler.json   48 malzeme, 100 g besin değerleri (YAKLAŞIK)
+  tarifler_kaynak.py   -> tarifler.json     44 tarif, gram cinsinden, 1 porsiyon
+  tarif_ozet.py        besin hesabı + otomatik etiketler (vejetaryen, vegan, yuksek_protein, pratik)
+  miktar.py            ürün adından paket miktarı ("6x200 ml", "2,5 Kg", "15'li", "Domates Kg")
+  eslestirme_kurallari.py  malzeme -> ürün eşleştirme kuralları (ad / haric / migros kategorisi), KILER listesi
+  eslestirme.py        malzeme başına en ucuz ürün, TL/kg, tarif porsiyon maliyeti
+  hedef.py             Mifflin-St Jeor kalori/makro hedefi (güvenlik alt sınırları)
+  plan.py              Haftalık plan MILP modeli (PuLP; HiGHS varsa onu, yoksa CBC)
+tests/               pytest testleri (ağa çıkmaz; tests/fixtures altında gerçek site örnekleri)
+.github/workflows/daily.yml   Her gün 04:00 UTC: "tara" işi (Migros/ŞOK/BİM + data/imports içe aktar,
+                              commit) ve "yayinla" işi (GitHub Pages)
+```
+
+Mobil uygulama ayrı klasörde: `C:\Users\90534\indirim-app` (Expo / React Native, tek dosya App.js).
+Veriyi `https://samet1636.github.io/indirim-takip/data/discounts_today.json` adresinden çeker.
+Telefonda Expo Go ile açılır: `npx expo start --tunnel` (EXPO_TOKEN ortam değişkeni tanımlı).
+
+## Veri akışı
+
+1. GitHub Actions (her sabah): `python run.py --skip a101 --katalog --import-dir data/imports`
+   -> data/prices.db, data/discounts_today.json, data/katalog.json güncellenir, commit'lenir, Pages'e yayınlanır.
+2. Yerel bilgisayar (Görev Zamanlayıcı, a101_gunluk.bat): A101'i tarar, `data/imports/a101.json`
+   dosyasını GitHub API ile yükler; bu push workflow'u `--no-scrape` modunda tetikler.
+3. A101 GitHub sunucularından taranamaz (Cloudflare "Bir dakika lütfen..." -> 403). Bunu tekrar deneme.
+
+## Komutlar
+
+```
+pytest -q                                                      # tüm testler — her değişiklikten sonra çalıştır
+python run.py --only sok --katalog --kategori-limit 2 --dump   # bir marketi hızlı dene, ham veriyi data/raw'a kaydet
+python run.py --only a101 --katalog --dump --goster            # A101'i tarayıcı penceresi görünür dene
+python beslenme/tarif_ozet.py                                  # tarif besin tablosu
+python beslenme/eslestirme.py data/katalog.json                # fiyat eşleştirme + tarif maliyetleri
+python beslenme/plan.py --kilo 75 --boy 178 --yas 23 --cinsiyet erkek --aktivite orta --hedef koru --market 2
+```
+
+## Önemli kurallar ve tuzaklar
+
+- **Python sürümü:** Bilgisayarda Anaconda'nın eski Python'u var (3.9 civarı). Her .py dosyasının
+  başında `from __future__ import annotations` olmalı; 3.10+ sözdizimi (match, çalışma zamanında
+  `X | Y` tipleri) kullanma.
+- **Kodlama:** Windows varsayılanı cp1254. Dosya okurken/yazarken HER ZAMAN `encoding="utf-8"` ver
+  (testlerde de). CSV'ler Excel için `utf-8-sig` ve `;` ayraçlı. `.bat` dosyaları CRLF satır sonlu.
+- **pulp sürümü:** `pulp==2.9.0` sabit (4.x API'si farklı, `LpVariable(cat=...)` çalışmıyor).
+- **data/ klasörü:** prices.db, discounts_today.json, katalog.json bot tarafından her gün güncellenir.
+  Yerel denemelerden sonra bu dosyalardaki değişiklikleri commit'leme (`git restore data/`);
+  aksi halde binary çakışma çıkar. Değişikliğe başlamadan önce `git pull` yap.
+- **Gizli bilgiler:** GH_TOKEN ve EXPO_TOKEN ortam değişkenlerinde. Hiçbir dosyaya yazma, commit'leme, ekrana basma.
+- **Siteleri yorma:** scraper'lardaki istekler arası gecikmeyi kaldırma, istekleri paralelleştirme.
+- **Yeni site yapısı öğrenirken:** önce `--dump` ile ham veriyi kaydet, gerçek dosyaya bakarak
+  ayrıştırıcı yaz, örneği tests/fixtures'a ekleyip test yaz. Tahmine dayalı ayrıştırıcı yazma.
+- **Fiyat birimleri:** Migros ve A101 kuruş (100'e böl), ŞOK ve BİM TL.
+- **Besin değerleri yaklaşık:** yayından önce TÜRKOMP (turkomp.tarimorman.gov.tr) ile doğrulanacak.
+- **Sağlık güvenliği:** hedef.py'deki alt sınırları (bazal metabolizma, kadın 1200 / erkek 1500 kcal,
+  18 yaş altına plan yok) gevşetme. Plan çıktılarında "tıbbi tavsiye değildir" notu kalmalı.
+- **Hukuk:** Mağazaya çıkmadan önce marketlerin kullanım koşulları, ürün görselleri ve marka
+  kullanımı için hukuki görüş alınacak.
+
+## Plan modeli (beslenme/plan.py) özeti
+
+Kararlar: y[gün,öğün,tarif] ikili, p[...] porsiyon (tarifin aralığında), n[ürün] paket, z[market] ikili.
+Amaç: alışveriş maliyeti + market başına ceza (25 TL) + eksik protein cezası (15 TL/g).
+Kısıtlar: günde 1 kahvaltı/öğle/akşam zorunlu, yan ve 2 ara öğün isteğe bağlı; kalori hedef ±%7;
+protein yumuşak alt sınır; yağ üst sınır; tarif haftada ≤2; aynı gün aynı tarif 1 kez; ≤N market.
+Taze ürünler tam paket (israf maliyete girer). KILER ürünleri (bakliyat, yağ, salça...) kullanılan
+pay kadar maliyete girer + peşin paket tutarının %15'i stok cezası (dev paket seçimini önler).
+Çözüm ~60 sn (zaman sınırı), %1 optimallik boşluğu.
+
+## Yol haritası (sıradaki işler)
+
+1. Plan modelini uygulamaya bağlamak için küçük bir sunucu (FastAPI) + Supabase (kullanıcı profili,
+   kayıtlı planlar; ayrıca her gün commit'lenen prices.db / katalog.json repoyu şişirdiği için
+   veri Supabase'e taşınacak).
+2. Expo uygulamasına sekmeler: İndirimler / Tüm Ürünler / Beslenme Planı / Alışveriş Listesi.
+3. Tarif veritabanını büyütmek (özellikle vejetaryen yüksek proteinli tarifler).
+4. Besin değerlerini TÜRKOMP ile doğrulamak.
+5. Mağaza yayını (EAS Build, Apple Developer / Google Play hesapları).
+
+## Çalışma şekli
+
+- Büyük bir işe başlamadan önce kısa bir plan çıkar ve onay al.
+- Her değişiklikten sonra `pytest -q` çalıştır; testleri kırmadan commit'leme.
+- Commit mesajları Türkçe ve kısa olsun. `git push` öncesi kullanıcıya sor.

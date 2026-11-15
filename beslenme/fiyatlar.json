@@ -1,0 +1,3553 @@
+{
+ "yumurta": {
+  "aday_sayisi": 31,
+  "en_ucuz": {
+   "market": "sok",
+   "name": "Anadolu Çiftliği Gezen Tavuk Yumurta M 10'lu 53-62",
+   "category": "Et Ve Tavuk Ve Sarkuteri",
+   "price": 105.0,
+   "regular_price": null,
+   "discount_pct": null,
+   "url": "https://www.sokmarket.com.tr/anadolu-ciftligi-gezen-tavuk-yumurta-m-10-lu-53-62-p-6449",
+   "image_url": "https://images.ceptesok.com/product-assets/sub-folder/096dbdae-11fd-4300-b2f9-4dda7df28cfc.png",
+   "miktar_g": 600.0,
+   "tl_kg": 175.0
+  },
+  "marketler": {
+   "sok": {
+    "market": "sok",
+    "name": "Anadolu Çiftliği Gezen Tavuk Yumurta M 10'lu 53-62",
+    "category": "Et Ve Tavuk Ve Sarkuteri",
+    "price": 105.0,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.sokmarket.com.tr/anadolu-ciftligi-gezen-tavuk-yumurta-m-10-lu-53-62-p-6449",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/096dbdae-11fd-4300-b2f9-4dda7df28cfc.png",
+    "miktar_g": 600.0,
+    "tl_kg": 175.0
+   },
+   "migros": {
+    "market": "migros",
+    "name": "Keskinoğlu Omega-3 M 10'lu Yumurta",
+    "category": "Yumurta",
+    "price": 109.95,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.migros.com.tr/keskinoglu-omega-3-m-10lu-yumurta-p-2beb0be",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/46051518/46051518_1-9c6076-105x105.jpg",
+    "miktar_g": 600.0,
+    "tl_kg": 183.25
+   }
+  },
+  "ilk5": [
+   {
+    "market": "sok",
+    "name": "Anadolu Çiftliği Gezen Tavuk Yumurta M 10'lu 53-62",
+    "price": 105.0,
+    "miktar_g": 600.0,
+    "tl_kg": 175.0
+   },
+   {
+    "market": "migros",
+    "name": "Keskinoğlu Omega-3 M 10'lu Yumurta",
+    "price": 109.95,
+    "miktar_g": 600.0,
+    "tl_kg": 183.25
+   },
+   {
+    "market": "migros",
+    "name": "Naturaköy Gezen 15'li Yumurta M Orta Boy (53-62) G",
+    "price": 189.95,
+    "miktar_g": 900.0,
+    "tl_kg": 211.06
+   },
+   {
+    "market": "migros",
+    "name": "Keskinoğlu Free Range M 10'lu Yumurta",
+    "price": 129.95,
+    "miktar_g": 600.0,
+    "tl_kg": 216.58
+   },
+   {
+    "market": "migros",
+    "name": "Kor Organik 10'lu M Orta Boy Yumurta ( 53-62 ) G",
+    "price": 154.95,
+    "miktar_g": 600.0,
+    "tl_kg": 258.25
+   }
+  ]
+ },
+ "beyaz_peynir": {
+  "aday_sayisi": 69,
+  "en_ucuz": {
+   "market": "sok",
+   "name": "Mis Yarım Yağlı Süzme Beyaz Peynir 500 g",
+   "category": "Sut Ve Sut Urunleri",
+   "price": 110.0,
+   "regular_price": null,
+   "discount_pct": null,
+   "url": "https://www.sokmarket.com.tr/mis-yarim-yagli-suzme-beyaz-peynir-500-g-p-935",
+   "image_url": "https://images.ceptesok.com/product-assets/sub-folder/baddc584-1b0f-4288-847d-9bd7dab91e28.jpg",
+   "miktar_g": 500.0,
+   "tl_kg": 220.0
+  },
+  "marketler": {
+   "sok": {
+    "market": "sok",
+    "name": "Mis Yarım Yağlı Süzme Beyaz Peynir 500 g",
+    "category": "Sut Ve Sut Urunleri",
+    "price": 110.0,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.sokmarket.com.tr/mis-yarim-yagli-suzme-beyaz-peynir-500-g-p-935",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/baddc584-1b0f-4288-847d-9bd7dab91e28.jpg",
+    "miktar_g": 500.0,
+    "tl_kg": 220.0
+   },
+   "migros": {
+    "market": "migros",
+    "name": "Migros Süzme Peynir 500 G",
+    "category": "Süzme Peynir",
+    "price": 129.95,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.migros.com.tr/migros-suzme-peynir-500-g-p-98e0f0",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/10019056/10019056-4c01ef-105x105.jpg",
+    "miktar_g": 500.0,
+    "tl_kg": 259.9
+   }
+  },
+  "ilk5": [
+   {
+    "market": "sok",
+    "name": "Mis Yarım Yağlı Süzme Beyaz Peynir 500 g",
+    "price": 110.0,
+    "miktar_g": 500.0,
+    "tl_kg": 220.0
+   },
+   {
+    "market": "sok",
+    "name": "Mis Tam Yağlı Süzme Beyaz Peynir 1 kg",
+    "price": 235.0,
+    "miktar_g": 1000.0,
+    "tl_kg": 235.0
+   },
+   {
+    "market": "sok",
+    "name": "Mis Tam Yağlı Süzme Beyaz Peynir 500 g",
+    "price": 125.0,
+    "miktar_g": 500.0,
+    "tl_kg": 250.0
+   },
+   {
+    "market": "migros",
+    "name": "Migros Süzme Peynir 500 G",
+    "price": 129.95,
+    "miktar_g": 500.0,
+    "tl_kg": 259.9
+   },
+   {
+    "market": "migros",
+    "name": "Migros Az Yağlı Beyaz Peynir 500 G",
+    "price": 136.95,
+    "miktar_g": 500.0,
+    "tl_kg": 273.9
+   }
+  ]
+ },
+ "lor": {
+  "aday_sayisi": 9,
+  "en_ucuz": {
+   "market": "sok",
+   "name": "Mis Lor Peyniri 500 g",
+   "category": "Sut Ve Sut Urunleri",
+   "price": 69.5,
+   "regular_price": null,
+   "discount_pct": null,
+   "url": "https://www.sokmarket.com.tr/mis-lor-peyniri-500-g-p-36762",
+   "image_url": "https://images.ceptesok.com/product-assets/sub-folder/8cafa2b3-081f-46c4-9d20-4308381cf83e.jpg",
+   "miktar_g": 500.0,
+   "tl_kg": 139.0
+  },
+  "marketler": {
+   "sok": {
+    "market": "sok",
+    "name": "Mis Lor Peyniri 500 g",
+    "category": "Sut Ve Sut Urunleri",
+    "price": 69.5,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.sokmarket.com.tr/mis-lor-peyniri-500-g-p-36762",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/8cafa2b3-081f-46c4-9d20-4308381cf83e.jpg",
+    "miktar_g": 500.0,
+    "tl_kg": 139.0
+   },
+   "migros": {
+    "market": "migros",
+    "name": "Onur Yağsız Lor Peyniri 500 G",
+    "category": "Yerli Yöresel Peynir",
+    "price": 74.9,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.migros.com.tr/onur-yagsiz-lor-peyniri-500-g-p-9ed547",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/10409287/10409287-633bfb-105x105.jpg",
+    "miktar_g": 500.0,
+    "tl_kg": 149.8
+   },
+   "a101": {
+    "market": "a101",
+    "name": "Muratbey Lor Peyniri 500 G",
+    "category": "Yöresel Peynir",
+    "price": 99.5,
+    "regular_price": 137.5,
+    "discount_pct": 27.6,
+    "url": "https://www.a101.com.tr/kapida/sut-urunleri-kahvaltilik/muratbey-lor-peyniri-500-g_p-12001402",
+    "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/UMOwLolhap_256x256.png",
+    "miktar_g": 500.0,
+    "tl_kg": 199.0
+   }
+  },
+  "ilk5": [
+   {
+    "market": "sok",
+    "name": "Mis Lor Peyniri 500 g",
+    "price": 69.5,
+    "miktar_g": 500.0,
+    "tl_kg": 139.0
+   },
+   {
+    "market": "migros",
+    "name": "Onur Yağsız Lor Peyniri 500 G",
+    "price": 74.9,
+    "miktar_g": 500.0,
+    "tl_kg": 149.8
+   },
+   {
+    "market": "a101",
+    "name": "Muratbey Lor Peyniri 500 G",
+    "price": 99.5,
+    "miktar_g": 500.0,
+    "tl_kg": 199.0
+   },
+   {
+    "market": "migros",
+    "name": "Torku Yarım Yağlı Taze Lor Peyniri 500 G",
+    "price": 124.95,
+    "miktar_g": 500.0,
+    "tl_kg": 249.9
+   },
+   {
+    "market": "migros",
+    "name": "Tahsildaroğlu Torba Lor Peyniri 350 G",
+    "price": 91.95,
+    "miktar_g": 350.0,
+    "tl_kg": 262.71
+   }
+  ]
+ },
+ "kasar": {
+  "aday_sayisi": 60,
+  "en_ucuz": {
+   "market": "sok",
+   "name": "Mis Tam Yağlı Kaşar Peyniri 700 g",
+   "category": "Sut Ve Sut Urunleri",
+   "price": 325.0,
+   "regular_price": null,
+   "discount_pct": null,
+   "url": "https://www.sokmarket.com.tr/mis-tam-yagli-kasar-peyniri-700-g-p-9057",
+   "image_url": "https://images.ceptesok.com/product-assets/sub-folder/56a2b082-f84f-439f-8ef5-1d6346c9c351.png",
+   "miktar_g": 700.0,
+   "tl_kg": 464.29
+  },
+  "marketler": {
+   "sok": {
+    "market": "sok",
+    "name": "Mis Tam Yağlı Kaşar Peyniri 700 g",
+    "category": "Sut Ve Sut Urunleri",
+    "price": 325.0,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.sokmarket.com.tr/mis-tam-yagli-kasar-peyniri-700-g-p-9057",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/56a2b082-f84f-439f-8ef5-1d6346c9c351.png",
+    "miktar_g": 700.0,
+    "tl_kg": 464.29
+   },
+   "migros": {
+    "market": "migros",
+    "name": "Onsüt Tam Yağlı Taze Kaşar Peyniri 700 G",
+    "category": "Taze Kaşar",
+    "price": 335.0,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.migros.com.tr/onsut-tam-yagli-taze-kasar-peyniri-700-g-p-9a1d9b",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/10100123/10100123-dd2ade-105x105.jpg",
+    "miktar_g": 700.0,
+    "tl_kg": 478.57
+   }
+  },
+  "ilk5": [
+   {
+    "market": "sok",
+    "name": "Mis Tam Yağlı Kaşar Peyniri 700 g",
+    "price": 325.0,
+    "miktar_g": 700.0,
+    "tl_kg": 464.29
+   },
+   {
+    "market": "sok",
+    "name": "Mis Tam Yağlı Kaşar Peyniri 500 g",
+    "price": 239.0,
+    "miktar_g": 500.0,
+    "tl_kg": 478.0
+   },
+   {
+    "market": "migros",
+    "name": "Onsüt Tam Yağlı Taze Kaşar Peyniri 700 G",
+    "price": 335.0,
+    "miktar_g": 700.0,
+    "tl_kg": 478.57
+   },
+   {
+    "market": "sok",
+    "name": "Mis Tam Yağlı Kaşar Peyniri 225 g",
+    "price": 115.0,
+    "miktar_g": 225.0,
+    "tl_kg": 511.11
+   },
+   {
+    "market": "migros",
+    "name": "Onsüt Tam Yağlı Taze Kaşar Peyniri 225 G",
+    "price": 117.5,
+    "miktar_g": 225.0,
+    "tl_kg": 522.22
+   }
+  ]
+ },
+ "yogurt": {
+  "aday_sayisi": 48,
+  "en_ucuz": {
+   "market": "sok",
+   "name": "Mis Yoğurt Yarım Yağlı Homojenize 2500 g",
+   "category": "Sut Ve Sut Urunleri",
+   "price": 139.0,
+   "regular_price": null,
+   "discount_pct": null,
+   "url": "https://www.sokmarket.com.tr/mis-yogurt-yarim-yagli-homojenize-2500-g-p-731",
+   "image_url": "https://images.ceptesok.com/product-assets/sub-folder/76e10b6d-07fc-4d1e-a25f-6e9d98f886af.jpg",
+   "miktar_g": 2500.0,
+   "tl_kg": 55.6
+  },
+  "marketler": {
+   "sok": {
+    "market": "sok",
+    "name": "Mis Yoğurt Yarım Yağlı Homojenize 2500 g",
+    "category": "Sut Ve Sut Urunleri",
+    "price": 139.0,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.sokmarket.com.tr/mis-yogurt-yarim-yagli-homojenize-2500-g-p-731",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/76e10b6d-07fc-4d1e-a25f-6e9d98f886af.jpg",
+    "miktar_g": 2500.0,
+    "tl_kg": 55.6
+   },
+   "migros": {
+    "market": "migros",
+    "name": "Migros Yarım Yağlı Homojenize Yoğurt 2 Kg",
+    "category": "Sade Yoğurt",
+    "price": 116.0,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.migros.com.tr/migros-yarim-yagli-homojenize-yogurt-2-kg-p-bebce4",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/12500196/12500196_1-c803e1-105x105.jpg",
+    "miktar_g": 2000.0,
+    "tl_kg": 58.0
+   }
+  },
+  "ilk5": [
+   {
+    "market": "sok",
+    "name": "Mis Yoğurt Yarım Yağlı Homojenize 2500 g",
+    "price": 139.0,
+    "miktar_g": 2500.0,
+    "tl_kg": 55.6
+   },
+   {
+    "market": "migros",
+    "name": "Migros Yarım Yağlı Homojenize Yoğurt 2 Kg",
+    "price": 116.0,
+    "miktar_g": 2000.0,
+    "tl_kg": 58.0
+   },
+   {
+    "market": "sok",
+    "name": "Mis Yoğurt Yarım Yağlı Homojenize 1500 g",
+    "price": 87.5,
+    "miktar_g": 1500.0,
+    "tl_kg": 58.33
+   },
+   {
+    "market": "sok",
+    "name": "Mis %1,8 Yağlı Yoğurt 2 kg",
+    "price": 125.0,
+    "miktar_g": 2000.0,
+    "tl_kg": 62.5
+   },
+   {
+    "market": "migros",
+    "name": "Migros Tam Yağlı Homojenize Yoğurt 3000 G",
+    "price": 198.95,
+    "miktar_g": 3000.0,
+    "tl_kg": 66.32
+   }
+  ]
+ },
+ "sut": {
+  "aday_sayisi": 50,
+  "en_ucuz": {
+   "market": "sok",
+   "name": "Mis Uht Süt Yağsız 1 L",
+   "category": "Sut Ve Sut Urunleri",
+   "price": 36.0,
+   "regular_price": null,
+   "discount_pct": null,
+   "url": "https://www.sokmarket.com.tr/mis-uht-sut-yagsiz-1-l-p-5179",
+   "image_url": "https://images.ceptesok.com/product-assets/sub-folder/c87d0ff9-d53f-4956-8def-4099f523abea.jpg",
+   "miktar_g": 1030.0,
+   "tl_kg": 34.95
+  },
+  "marketler": {
+   "sok": {
+    "market": "sok",
+    "name": "Mis Uht Süt Yağsız 1 L",
+    "category": "Sut Ve Sut Urunleri",
+    "price": 36.0,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.sokmarket.com.tr/mis-uht-sut-yagsiz-1-l-p-5179",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/c87d0ff9-d53f-4956-8def-4099f523abea.jpg",
+    "miktar_g": 1030.0,
+    "tl_kg": 34.95
+   },
+   "migros": {
+    "market": "migros",
+    "name": "Migros Yarım Yağlı Uht Süt 1 L",
+    "category": "Uzun Ömürlü Süt",
+    "price": 43.25,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.migros.com.tr/migros-yarim-yagli-uht-sut-1-l-p-a805ad",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/11011501/11011501-6e817e-105x105.jpg",
+    "miktar_g": 1030.0,
+    "tl_kg": 41.99
+   }
+  },
+  "ilk5": [
+   {
+    "market": "sok",
+    "name": "Mis Uht Süt Yağsız 1 L",
+    "price": 36.0,
+    "miktar_g": 1030.0,
+    "tl_kg": 34.95
+   },
+   {
+    "market": "migros",
+    "name": "Migros Yarım Yağlı Uht Süt 1 L",
+    "price": 43.25,
+    "miktar_g": 1030.0,
+    "tl_kg": 41.99
+   },
+   {
+    "market": "sok",
+    "name": "Mis Uht Süt Yarım Yağlı 1 L",
+    "price": 43.5,
+    "miktar_g": 1030.0,
+    "tl_kg": 42.23
+   },
+   {
+    "market": "sok",
+    "name": "Mis Uht Süt %3.1 Yağlı 1 L",
+    "price": 52.5,
+    "miktar_g": 1030.0,
+    "tl_kg": 50.97
+   },
+   {
+    "market": "migros",
+    "name": "Migros %3 Yağlı Uht Süt 1 L",
+    "price": 52.75,
+    "miktar_g": 1030.0,
+    "tl_kg": 51.21
+   }
+  ]
+ },
+ "zeytin": {
+  "aday_sayisi": 37,
+  "en_ucuz": {
+   "market": "sok",
+   "name": "Lio Salamura Siyah Zeytin (381-460) 2 kg",
+   "category": "Kahvaltilik",
+   "price": 299.0,
+   "regular_price": null,
+   "discount_pct": null,
+   "url": "https://www.sokmarket.com.tr/lio-salamura-siyah-zeytin-381-460-2-kg-p-8278",
+   "image_url": "https://images.ceptesok.com/product-assets/sub-folder/9c8c10bb-68b6-4626-ab34-02efd75807e5.jpg",
+   "miktar_g": 2000.0,
+   "tl_kg": 149.5
+  },
+  "marketler": {
+   "sok": {
+    "market": "sok",
+    "name": "Lio Salamura Siyah Zeytin (381-460) 2 kg",
+    "category": "Kahvaltilik",
+    "price": 299.0,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.sokmarket.com.tr/lio-salamura-siyah-zeytin-381-460-2-kg-p-8278",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/9c8c10bb-68b6-4626-ab34-02efd75807e5.jpg",
+    "miktar_g": 2000.0,
+    "tl_kg": 149.5
+   },
+   "migros": {
+    "market": "migros",
+    "name": "Gürağaç Doğal Siyah Zeytin 321 380 500 G",
+    "category": "Siyah Zeytin",
+    "price": 110.0,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.migros.com.tr/guragac-dogal-siyah-zeytin-321-380-500-g-p-f44b40",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/16010048/16010048-5d6369-105x105.jpg",
+    "miktar_g": 500.0,
+    "tl_kg": 220.0
+   }
+  },
+  "ilk5": [
+   {
+    "market": "sok",
+    "name": "Lio Salamura Siyah Zeytin (381-460) 2 kg",
+    "price": 299.0,
+    "miktar_g": 2000.0,
+    "tl_kg": 149.5
+   },
+   {
+    "market": "sok",
+    "name": "Lio Salamura Siyah Zeytin (351-410) 1 kg",
+    "price": 159.0,
+    "miktar_g": 1000.0,
+    "tl_kg": 159.0
+   },
+   {
+    "market": "sok",
+    "name": "Lio Az Tuzlu Salamura Zeytin (291-320) 800 g",
+    "price": 144.5,
+    "miktar_g": 800.0,
+    "tl_kg": 180.62
+   },
+   {
+    "market": "migros",
+    "name": "Gürağaç Doğal Siyah Zeytin 321 380 500 G",
+    "price": 110.0,
+    "miktar_g": 500.0,
+    "tl_kg": 220.0
+   },
+   {
+    "market": "sok",
+    "name": "Lio Salamura Siyah Zeytin (321-380) 500 g",
+    "price": 115.0,
+    "miktar_g": 500.0,
+    "tl_kg": 230.0
+   }
+  ]
+ },
+ "domates": {
+  "aday_sayisi": 4,
+  "en_ucuz": {
+   "market": "migros",
+   "name": "Domates Kg",
+   "category": "Mevsim Sebzeleri",
+   "price": 64.9,
+   "regular_price": null,
+   "discount_pct": null,
+   "url": "https://www.migros.com.tr/domates-kg-p-1ac7780",
+   "image_url": "https://images.migrosone.com/sanalmarket/product/28080000/28080000_1-c12d3b-105x105.jpg",
+   "miktar_g": 1000.0,
+   "tl_kg": 64.9
+  },
+  "marketler": {
+   "migros": {
+    "market": "migros",
+    "name": "Domates Kg",
+    "category": "Mevsim Sebzeleri",
+    "price": 64.9,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.migros.com.tr/domates-kg-p-1ac7780",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/28080000/28080000_1-c12d3b-105x105.jpg",
+    "miktar_g": 1000.0,
+    "tl_kg": 64.9
+   },
+   "sok": {
+    "market": "sok",
+    "name": "Domates Kg",
+    "category": "Meyve Ve Sebze",
+    "price": 79.9,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.sokmarket.com.tr/domates-kg-p-32886",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/0e01df87-c557-43a8-a962-d97dc3607d3b.jpg",
+    "miktar_g": 1000.0,
+    "tl_kg": 79.9
+   }
+  },
+  "ilk5": [
+   {
+    "market": "migros",
+    "name": "Domates Kg",
+    "price": 64.9,
+    "miktar_g": 1000.0,
+    "tl_kg": 64.9
+   },
+   {
+    "market": "sok",
+    "name": "Domates Kg",
+    "price": 79.9,
+    "miktar_g": 1000.0,
+    "tl_kg": 79.9
+   },
+   {
+    "market": "migros",
+    "name": "Domates Salkım Kg",
+    "price": 104.95,
+    "miktar_g": 1000.0,
+    "tl_kg": 104.95
+   },
+   {
+    "market": "sok",
+    "name": "Salkım Domates Kg",
+    "price": 109.0,
+    "miktar_g": 1000.0,
+    "tl_kg": 109.0
+   }
+  ]
+ },
+ "salatalik": {
+  "aday_sayisi": 2,
+  "en_ucuz": {
+   "market": "sok",
+   "name": "Salatalık Kg",
+   "category": "Meyve Ve Sebze",
+   "price": 69.9,
+   "regular_price": null,
+   "discount_pct": null,
+   "url": "https://www.sokmarket.com.tr/salatalik-kg-p-34550",
+   "image_url": "https://images.ceptesok.com/product-assets/sub-folder/6665b4e7-4808-418b-8c84-1ff2a430d45b.png",
+   "miktar_g": 1000.0,
+   "tl_kg": 69.9
+  },
+  "marketler": {
+   "sok": {
+    "market": "sok",
+    "name": "Salatalık Kg",
+    "category": "Meyve Ve Sebze",
+    "price": 69.9,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.sokmarket.com.tr/salatalik-kg-p-34550",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/6665b4e7-4808-418b-8c84-1ff2a430d45b.png",
+    "miktar_g": 1000.0,
+    "tl_kg": 69.9
+   }
+  },
+  "ilk5": [
+   {
+    "market": "sok",
+    "name": "Salatalık Kg",
+    "price": 69.9,
+    "miktar_g": 1000.0,
+    "tl_kg": 69.9
+   },
+   {
+    "market": "sok",
+    "name": "Salatalık Çengelköy 500 g Paket",
+    "price": 49.9,
+    "miktar_g": 500.0,
+    "tl_kg": 99.8
+   }
+  ]
+ },
+ "sivri_biber": {
+  "aday_sayisi": 8,
+  "en_ucuz": {
+   "market": "migros",
+   "name": "Biber Çarliston Kg",
+   "category": "Mevsim Sebzeleri",
+   "price": 94.5,
+   "regular_price": null,
+   "discount_pct": null,
+   "url": "https://www.migros.com.tr/biber-carliston-kg-p-1ac0638",
+   "image_url": "https://images.migrosone.com/sanalmarket/product/28051000/28051000_1-0cb43c-105x105.jpg",
+   "miktar_g": 1000.0,
+   "tl_kg": 94.5
+  },
+  "marketler": {
+   "migros": {
+    "market": "migros",
+    "name": "Biber Çarliston Kg",
+    "category": "Mevsim Sebzeleri",
+    "price": 94.5,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.migros.com.tr/biber-carliston-kg-p-1ac0638",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/28051000/28051000_1-0cb43c-105x105.jpg",
+    "miktar_g": 1000.0,
+    "tl_kg": 94.5
+   },
+   "sok": {
+    "market": "sok",
+    "name": "Dolmalık Biber Kg",
+    "category": "Meyve Ve Sebze",
+    "price": 99.0,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.sokmarket.com.tr/dolmalik-biber-kg-p-36634",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/89c64dcd-0b86-4543-abca-82c30a3f769d.jpg",
+    "miktar_g": 1000.0,
+    "tl_kg": 99.0
+   }
+  },
+  "ilk5": [
+   {
+    "market": "migros",
+    "name": "Biber Çarliston Kg",
+    "price": 94.5,
+    "miktar_g": 1000.0,
+    "tl_kg": 94.5
+   },
+   {
+    "market": "sok",
+    "name": "Dolmalık Biber Kg",
+    "price": 99.0,
+    "miktar_g": 1000.0,
+    "tl_kg": 99.0
+   },
+   {
+    "market": "sok",
+    "name": "Sivri Biber Kg",
+    "price": 99.0,
+    "miktar_g": 1000.0,
+    "tl_kg": 99.0
+   },
+   {
+    "market": "sok",
+    "name": "Çarliston Biber Kg",
+    "price": 99.0,
+    "miktar_g": 1000.0,
+    "tl_kg": 99.0
+   },
+   {
+    "market": "migros",
+    "name": "Süs Biber Kg",
+    "price": 104.95,
+    "miktar_g": 1000.0,
+    "tl_kg": 104.95
+   }
+  ]
+ },
+ "sogan": {
+  "aday_sayisi": 5,
+  "en_ucuz": {
+   "market": "sok",
+   "name": "Kuru Soğan Kg",
+   "category": "Meyve Ve Sebze",
+   "price": 29.5,
+   "regular_price": null,
+   "discount_pct": null,
+   "url": "https://www.sokmarket.com.tr/kuru-sogan-kg-p-32883",
+   "image_url": "https://images.ceptesok.com/product-assets/sub-folder/c48f6f40-eace-4529-bfc5-99b14a95ed2d.png",
+   "miktar_g": 1000.0,
+   "tl_kg": 29.5
+  },
+  "marketler": {
+   "sok": {
+    "market": "sok",
+    "name": "Kuru Soğan Kg",
+    "category": "Meyve Ve Sebze",
+    "price": 29.5,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.sokmarket.com.tr/kuru-sogan-kg-p-32883",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/c48f6f40-eace-4529-bfc5-99b14a95ed2d.png",
+    "miktar_g": 1000.0,
+    "tl_kg": 29.5
+   },
+   "migros": {
+    "market": "migros",
+    "name": "Soğan Kuru Dökme Kg",
+    "category": "Patates, Soğan, Sarımsak",
+    "price": 41.95,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.migros.com.tr/sogan-kuru-dokme-kg-p-1b1a7a0",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/28420000/28420000_1-9888e0-105x105.jpg",
+    "miktar_g": 1000.0,
+    "tl_kg": 41.95
+   }
+  },
+  "ilk5": [
+   {
+    "market": "sok",
+    "name": "Kuru Soğan Kg",
+    "price": 29.5,
+    "miktar_g": 1000.0,
+    "tl_kg": 29.5
+   },
+   {
+    "market": "migros",
+    "name": "Soğan Kuru Dökme Kg",
+    "price": 41.95,
+    "miktar_g": 1000.0,
+    "tl_kg": 41.95
+   },
+   {
+    "market": "migros",
+    "name": "Soğan Gümüş Kg",
+    "price": 73.5,
+    "miktar_g": 1000.0,
+    "tl_kg": 73.5
+   },
+   {
+    "market": "migros",
+    "name": "M Life Organik Kuru Soğan Kg",
+    "price": 104.95,
+    "miktar_g": 1000.0,
+    "tl_kg": 104.95
+   },
+   {
+    "market": "migros",
+    "name": "Soğan Arpacık Kg",
+    "price": 199.5,
+    "miktar_g": 1000.0,
+    "tl_kg": 199.5
+   }
+  ]
+ },
+ "sarimsak": {
+  "aday_sayisi": 2,
+  "en_ucuz": {
+   "market": "sok",
+   "name": "Sarımsak Kuru Kg",
+   "category": "Meyve Ve Sebze",
+   "price": 175.0,
+   "regular_price": null,
+   "discount_pct": null,
+   "url": "https://www.sokmarket.com.tr/sarimsak-kuru-kg-p-33024",
+   "image_url": "https://images.ceptesok.com/product-assets/sub-folder/5df09403-1e53-49f0-8fa4-24323c1f345e.png",
+   "miktar_g": 1000.0,
+   "tl_kg": 175.0
+  },
+  "marketler": {
+   "sok": {
+    "market": "sok",
+    "name": "Sarımsak Kuru Kg",
+    "category": "Meyve Ve Sebze",
+    "price": 175.0,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.sokmarket.com.tr/sarimsak-kuru-kg-p-33024",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/5df09403-1e53-49f0-8fa4-24323c1f345e.png",
+    "miktar_g": 1000.0,
+    "tl_kg": 175.0
+   },
+   "migros": {
+    "market": "migros",
+    "name": "Sarımsak File Kg",
+    "category": "Patates, Soğan, Sarımsak",
+    "price": 241.5,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.migros.com.tr/sarimsak-file-kg-p-1b096fb",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/28350203/28350203_1-0cb963-105x105.jpg",
+    "miktar_g": 1000.0,
+    "tl_kg": 241.5
+   }
+  },
+  "ilk5": [
+   {
+    "market": "sok",
+    "name": "Sarımsak Kuru Kg",
+    "price": 175.0,
+    "miktar_g": 1000.0,
+    "tl_kg": 175.0
+   },
+   {
+    "market": "migros",
+    "name": "Sarımsak File Kg",
+    "price": 241.5,
+    "miktar_g": 1000.0,
+    "tl_kg": 241.5
+   }
+  ]
+ },
+ "patates": {
+  "aday_sayisi": 10,
+  "en_ucuz": {
+   "market": "sok",
+   "name": "Patates Kg",
+   "category": null,
+   "price": 29.5,
+   "regular_price": 35.0,
+   "discount_pct": 15.7,
+   "url": "https://www.sokmarket.com.tr/patates-kg-p-35919",
+   "image_url": "https://images.ceptesok.com/product-assets/sub-folder/8e1897ed-e702-48e6-b672-b8e85855bb89.png",
+   "miktar_g": 1000.0,
+   "tl_kg": 29.5
+  },
+  "marketler": {
+   "sok": {
+    "market": "sok",
+    "name": "Patates Kg",
+    "category": null,
+    "price": 29.5,
+    "regular_price": 35.0,
+    "discount_pct": 15.7,
+    "url": "https://www.sokmarket.com.tr/patates-kg-p-35919",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/8e1897ed-e702-48e6-b672-b8e85855bb89.png",
+    "miktar_g": 1000.0,
+    "tl_kg": 29.5
+   },
+   "migros": {
+    "market": "migros",
+    "name": "Patates Kg",
+    "category": "Patates, Soğan, Sarımsak",
+    "price": 41.95,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.migros.com.tr/patates-kg-p-1afabf4",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/28290036/28290036_1-cdd023-105x105.jpg",
+    "miktar_g": 1000.0,
+    "tl_kg": 41.95
+   }
+  },
+  "ilk5": [
+   {
+    "market": "sok",
+    "name": "Patates Kg",
+    "price": 29.5,
+    "miktar_g": 1000.0,
+    "tl_kg": 29.5
+   },
+   {
+    "market": "migros",
+    "name": "Patates Kg",
+    "price": 41.95,
+    "miktar_g": 1000.0,
+    "tl_kg": 41.95
+   },
+   {
+    "market": "migros",
+    "name": "Patates Dökme Kg",
+    "price": 44.95,
+    "miktar_g": 1000.0,
+    "tl_kg": 44.95
+   },
+   {
+    "market": "sok",
+    "name": "İnci Elma Dilim Patates 1 kg",
+    "price": 95.0,
+    "miktar_g": 1000.0,
+    "tl_kg": 95.0
+   },
+   {
+    "market": "sok",
+    "name": "İnci Patates 1 kg",
+    "price": 95.0,
+    "miktar_g": 1000.0,
+    "tl_kg": 95.0
+   }
+  ]
+ },
+ "havuc": {
+  "aday_sayisi": 4,
+  "en_ucuz": {
+   "market": "sok",
+   "name": "Havuç Kg",
+   "category": "Meyve Ve Sebze",
+   "price": 39.9,
+   "regular_price": null,
+   "discount_pct": null,
+   "url": "https://www.sokmarket.com.tr/havuc-kg-p-36260",
+   "image_url": "https://images.ceptesok.com/product-assets/sub-folder/35f9f00c-c763-41bd-b314-f6f6d4554b91.png",
+   "miktar_g": 1000.0,
+   "tl_kg": 39.9
+  },
+  "marketler": {
+   "sok": {
+    "market": "sok",
+    "name": "Havuç Kg",
+    "category": "Meyve Ve Sebze",
+    "price": 39.9,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.sokmarket.com.tr/havuc-kg-p-36260",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/35f9f00c-c763-41bd-b314-f6f6d4554b91.png",
+    "miktar_g": 1000.0,
+    "tl_kg": 39.9
+   },
+   "migros": {
+    "market": "migros",
+    "name": "Havuç Beypazarı Paket Kg",
+    "category": "Mevsim Sebzeleri",
+    "price": 78.95,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.migros.com.tr/havuc-beypazari-paket-kg-p-1ad36f9",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/28129017/28129017_1-c3a2f6-105x105.jpg",
+    "miktar_g": 1000.0,
+    "tl_kg": 78.95
+   }
+  },
+  "ilk5": [
+   {
+    "market": "sok",
+    "name": "Havuç Kg",
+    "price": 39.9,
+    "miktar_g": 1000.0,
+    "tl_kg": 39.9
+   },
+   {
+    "market": "migros",
+    "name": "Havuç Beypazarı Paket Kg",
+    "price": 78.95,
+    "miktar_g": 1000.0,
+    "tl_kg": 78.95
+   },
+   {
+    "market": "migros",
+    "name": "Havuç Çıtır 250 G",
+    "price": 36.95,
+    "miktar_g": 250.0,
+    "tl_kg": 147.8
+   },
+   {
+    "market": "migros",
+    "name": "Migros Yemeye Hazır Lahana Havuç Kap Salata 200 G",
+    "price": 83.95,
+    "miktar_g": 200.0,
+    "tl_kg": 419.75
+   }
+  ]
+ },
+ "kabak": {
+  "aday_sayisi": 10,
+  "en_ucuz": {
+   "market": "migros",
+   "name": "Kabak Helvacı Muscat Kg",
+   "category": "Mevsim Sebzeleri",
+   "price": 62.95,
+   "regular_price": null,
+   "discount_pct": null,
+   "url": "https://www.migros.com.tr/kabak-helvaci-muscat-kg-p-1ad88f3",
+   "image_url": "https://images.migrosone.com/sanalmarket/product/28150003/28150003-0a80d9-105x105.JPG",
+   "miktar_g": 1000.0,
+   "tl_kg": 62.95
+  },
+  "marketler": {
+   "migros": {
+    "market": "migros",
+    "name": "Kabak Helvacı Muscat Kg",
+    "category": "Mevsim Sebzeleri",
+    "price": 62.95,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.migros.com.tr/kabak-helvaci-muscat-kg-p-1ad88f3",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/28150003/28150003-0a80d9-105x105.JPG",
+    "miktar_g": 1000.0,
+    "tl_kg": 62.95
+   },
+   "sok": {
+    "market": "sok",
+    "name": "Kabak Sakız Kg",
+    "category": "Meyve Ve Sebze",
+    "price": 74.9,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.sokmarket.com.tr/kabak-sakiz-kg-p-36315",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/f50b4a6a-ca40-4155-9cbc-a6a12f3060ae.png",
+    "miktar_g": 1000.0,
+    "tl_kg": 74.9
+   }
+  },
+  "ilk5": [
+   {
+    "market": "migros",
+    "name": "Kabak Helvacı Muscat Kg",
+    "price": 62.95,
+    "miktar_g": 1000.0,
+    "tl_kg": 62.95
+   },
+   {
+    "market": "sok",
+    "name": "Kabak Sakız Kg",
+    "price": 74.9,
+    "miktar_g": 1000.0,
+    "tl_kg": 74.9
+   },
+   {
+    "market": "migros",
+    "name": "Kabak Helvacı Paket Kg",
+    "price": 89.5,
+    "miktar_g": 1000.0,
+    "tl_kg": 89.5
+   },
+   {
+    "market": "migros",
+    "name": "Maskeli Kabak Helvacı Kg",
+    "price": 94.5,
+    "miktar_g": 1000.0,
+    "tl_kg": 94.5
+   },
+   {
+    "market": "migros",
+    "name": "Kabak Sakız Kg",
+    "price": 104.95,
+    "miktar_g": 1000.0,
+    "tl_kg": 104.95
+   }
+  ]
+ },
+ "ispanak": {
+  "aday_sayisi": 3,
+  "en_ucuz": {
+   "market": "migros",
+   "name": "Ispanak Kg",
+   "category": "Otlar, Yeşillikler",
+   "price": 104.95,
+   "regular_price": null,
+   "discount_pct": null,
+   "url": "https://www.migros.com.tr/ispanak-kg-p-1ad6243",
+   "image_url": "https://images.migrosone.com/sanalmarket/product/28140099/ispanak-kg-f2b464-105x105.jpg",
+   "miktar_g": 1000.0,
+   "tl_kg": 104.95
+  },
+  "marketler": {
+   "migros": {
+    "market": "migros",
+    "name": "Ispanak Kg",
+    "category": "Otlar, Yeşillikler",
+    "price": 104.95,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.migros.com.tr/ispanak-kg-p-1ad6243",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/28140099/ispanak-kg-f2b464-105x105.jpg",
+    "miktar_g": 1000.0,
+    "tl_kg": 104.95
+   }
+  },
+  "ilk5": [
+   {
+    "market": "migros",
+    "name": "Ispanak Kg",
+    "price": 104.95,
+    "miktar_g": 1000.0,
+    "tl_kg": 104.95
+   },
+   {
+    "market": "migros",
+    "name": "Ispanak 700 G",
+    "price": 146.95,
+    "miktar_g": 700.0,
+    "tl_kg": 209.93
+   },
+   {
+    "market": "migros",
+    "name": "Eurofresh Yıkanmış Hazır Ispanak 700 G",
+    "price": 173.5,
+    "miktar_g": 700.0,
+    "tl_kg": 247.86
+   }
+  ]
+ },
+ "patlican": {
+  "aday_sayisi": 3,
+  "en_ucuz": {
+   "market": "sok",
+   "name": "Patlıcan Kemer Kg",
+   "category": "Meyve Ve Sebze",
+   "price": 89.9,
+   "regular_price": null,
+   "discount_pct": null,
+   "url": "https://www.sokmarket.com.tr/patlican-kemer-kg-p-36285",
+   "image_url": "https://images.ceptesok.com/product-assets/sub-folder/6cb89dfe-4397-4e7c-a5ef-fc3a9a3e8a8a.png",
+   "miktar_g": 1000.0,
+   "tl_kg": 89.9
+  },
+  "marketler": {
+   "sok": {
+    "market": "sok",
+    "name": "Patlıcan Kemer Kg",
+    "category": "Meyve Ve Sebze",
+    "price": 89.9,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.sokmarket.com.tr/patlican-kemer-kg-p-36285",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/6cb89dfe-4397-4e7c-a5ef-fc3a9a3e8a8a.png",
+    "miktar_g": 1000.0,
+    "tl_kg": 89.9
+   },
+   "migros": {
+    "market": "migros",
+    "name": "Patlıcan Kemer Kg",
+    "category": "Mevsim Sebzeleri",
+    "price": 146.95,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.migros.com.tr/patlican-kemer-kg-p-1afde98",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/28303000/patlican-kemer-kg-2ac52c-105x105.jpg",
+    "miktar_g": 1000.0,
+    "tl_kg": 146.95
+   }
+  },
+  "ilk5": [
+   {
+    "market": "sok",
+    "name": "Patlıcan Kemer Kg",
+    "price": 89.9,
+    "miktar_g": 1000.0,
+    "tl_kg": 89.9
+   },
+   {
+    "market": "migros",
+    "name": "Patlıcan Kemer Kg",
+    "price": 146.95,
+    "miktar_g": 1000.0,
+    "tl_kg": 146.95
+   },
+   {
+    "market": "migros",
+    "name": "Patlıcan Bostan Kg",
+    "price": 157.5,
+    "miktar_g": 1000.0,
+    "tl_kg": 157.5
+   }
+  ]
+ },
+ "taze_fasulye": {
+  "aday_sayisi": 1,
+  "en_ucuz": {
+   "market": "migros",
+   "name": "Fasulye Ayşe Kadın Kg",
+   "category": "Mevsim Sebzeleri",
+   "price": 178.5,
+   "regular_price": null,
+   "discount_pct": null,
+   "url": "https://www.migros.com.tr/fasulye-ayse-kadin-kg-p-1acf098",
+   "image_url": "https://images.migrosone.com/sanalmarket/product/28111000/28111000-60c696-105x105.jpg",
+   "miktar_g": 1000.0,
+   "tl_kg": 178.5
+  },
+  "marketler": {
+   "migros": {
+    "market": "migros",
+    "name": "Fasulye Ayşe Kadın Kg",
+    "category": "Mevsim Sebzeleri",
+    "price": 178.5,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.migros.com.tr/fasulye-ayse-kadin-kg-p-1acf098",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/28111000/28111000-60c696-105x105.jpg",
+    "miktar_g": 1000.0,
+    "tl_kg": 178.5
+   }
+  },
+  "ilk5": [
+   {
+    "market": "migros",
+    "name": "Fasulye Ayşe Kadın Kg",
+    "price": 178.5,
+    "miktar_g": 1000.0,
+    "tl_kg": 178.5
+   }
+  ]
+ },
+ "marul": {
+  "aday_sayisi": 3,
+  "en_ucuz": {
+   "market": "migros",
+   "name": "Gevrek Marul Adet",
+   "category": "Otlar, Yeşillikler",
+   "price": 62.95,
+   "regular_price": null,
+   "discount_pct": null,
+   "url": "https://www.migros.com.tr/gevrek-marul-adet-p-1af11a4",
+   "image_url": "https://images.migrosone.com/sanalmarket/product/28250532/28250532_1-0a06ab-105x105.jpeg",
+   "miktar_g": 400,
+   "tl_kg": 157.38
+  },
+  "marketler": {
+   "migros": {
+    "market": "migros",
+    "name": "Gevrek Marul Adet",
+    "category": "Otlar, Yeşillikler",
+    "price": 62.95,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.migros.com.tr/gevrek-marul-adet-p-1af11a4",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/28250532/28250532_1-0a06ab-105x105.jpeg",
+    "miktar_g": 400,
+    "tl_kg": 157.38
+   },
+   "sok": {
+    "market": "sok",
+    "name": "Dudomi Körili Kıvırcık Erişte Bardak 60 g",
+    "category": null,
+    "price": 27.95,
+    "regular_price": 29.95,
+    "discount_pct": 6.7,
+    "url": "https://www.sokmarket.com.tr/dudomi-korili-kivircik-eriste-bardak-60-g-p-44153",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/116070c0-6ba8-42de-97ba-1c453f336111.png",
+    "miktar_g": 60.0,
+    "tl_kg": 465.83
+   }
+  },
+  "ilk5": [
+   {
+    "market": "migros",
+    "name": "Gevrek Marul Adet",
+    "price": 62.95,
+    "miktar_g": 400,
+    "tl_kg": 157.38
+   },
+   {
+    "market": "migros",
+    "name": "Salata Kıvırcık Adet",
+    "price": 78.95,
+    "miktar_g": 400,
+    "tl_kg": 197.38
+   },
+   {
+    "market": "sok",
+    "name": "Dudomi Körili Kıvırcık Erişte Bardak 60 g",
+    "price": 27.95,
+    "miktar_g": 60.0,
+    "tl_kg": 465.83
+   }
+  ]
+ },
+ "maydanoz": {
+  "aday_sayisi": 3,
+  "en_ucuz": {
+   "market": "sok",
+   "name": "Maydanoz Demet",
+   "category": "Meyve Ve Sebze",
+   "price": 24.9,
+   "regular_price": null,
+   "discount_pct": null,
+   "url": "https://www.sokmarket.com.tr/maydanoz-demet-p-35790",
+   "image_url": "https://images.ceptesok.com/product-assets/sub-folder/31ab17e2-9a78-4f0e-bbf6-c000f08eed7d.png",
+   "miktar_g": 100,
+   "tl_kg": 249.0
+  },
+  "marketler": {
+   "sok": {
+    "market": "sok",
+    "name": "Maydanoz Demet",
+    "category": "Meyve Ve Sebze",
+    "price": 24.9,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.sokmarket.com.tr/maydanoz-demet-p-35790",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/31ab17e2-9a78-4f0e-bbf6-c000f08eed7d.png",
+    "miktar_g": 100,
+    "tl_kg": 249.0
+   },
+   "migros": {
+    "market": "migros",
+    "name": "Maydanoz Demet",
+    "category": "Otlar, Yeşillikler",
+    "price": 36.95,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.migros.com.tr/maydanoz-demet-p-1af36a9",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/28260009/maydanoz-adet-659b84-105x105.jpg",
+    "miktar_g": 100,
+    "tl_kg": 369.5
+   }
+  },
+  "ilk5": [
+   {
+    "market": "sok",
+    "name": "Maydanoz Demet",
+    "price": 24.9,
+    "miktar_g": 100,
+    "tl_kg": 249.0
+   },
+   {
+    "market": "migros",
+    "name": "Maydanoz Demet",
+    "price": 36.95,
+    "miktar_g": 100,
+    "tl_kg": 369.5
+   },
+   {
+    "market": "sok",
+    "name": "Aytaç Dondurulmuş Dana Maydanozlu Köfte 500 g",
+    "price": 399.0,
+    "miktar_g": 500.0,
+    "tl_kg": 798.0
+   }
+  ]
+ },
+ "limon": {
+  "aday_sayisi": 3,
+  "en_ucuz": {
+   "market": "sok",
+   "name": "Limon Kg",
+   "category": "Meyve Ve Sebze",
+   "price": 34.9,
+   "regular_price": null,
+   "discount_pct": null,
+   "url": "https://www.sokmarket.com.tr/limon-kg-p-32770",
+   "image_url": "https://images.ceptesok.com/product-assets/sub-folder/1ce0d429-6dc4-49f3-80ab-2bd4ec4bbd94.jpg",
+   "miktar_g": 1000.0,
+   "tl_kg": 34.9
+  },
+  "marketler": {
+   "sok": {
+    "market": "sok",
+    "name": "Limon Kg",
+    "category": "Meyve Ve Sebze",
+    "price": 34.9,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.sokmarket.com.tr/limon-kg-p-32770",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/1ce0d429-6dc4-49f3-80ab-2bd4ec4bbd94.jpg",
+    "miktar_g": 1000.0,
+    "tl_kg": 34.9
+   },
+   "migros": {
+    "market": "migros",
+    "name": "Limon File Ekonomik  Kg",
+    "category": "Narenciye",
+    "price": 49.95,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.migros.com.tr/limon-file-ekonomik-kg-p-19ff464",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/27260004/27260004-5d0422-105x105.jpg",
+    "miktar_g": 1000.0,
+    "tl_kg": 49.95
+   }
+  },
+  "ilk5": [
+   {
+    "market": "sok",
+    "name": "Limon Kg",
+    "price": 34.9,
+    "miktar_g": 1000.0,
+    "tl_kg": 34.9
+   },
+   {
+    "market": "migros",
+    "name": "Limon File Ekonomik  Kg",
+    "price": 49.95,
+    "miktar_g": 1000.0,
+    "tl_kg": 49.95
+   },
+   {
+    "market": "migros",
+    "name": "Limon Kg",
+    "price": 62.95,
+    "miktar_g": 1000.0,
+    "tl_kg": 62.95
+   }
+  ]
+ },
+ "muz": {
+  "aday_sayisi": 6,
+  "en_ucuz": {
+   "market": "migros",
+   "name": "Muz Yerli Kg",
+   "category": "Egzotik Meyveler",
+   "price": 79.95,
+   "regular_price": null,
+   "discount_pct": null,
+   "url": "https://www.migros.com.tr/muz-yerli-kg-p-1a01b70",
+   "image_url": "https://images.migrosone.com/sanalmarket/product/27270000/muz-yerli-kg-9d3d01-105x105.jpg",
+   "miktar_g": 1000.0,
+   "tl_kg": 79.95
+  },
+  "marketler": {
+   "migros": {
+    "market": "migros",
+    "name": "Muz Yerli Kg",
+    "category": "Egzotik Meyveler",
+    "price": 79.95,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.migros.com.tr/muz-yerli-kg-p-1a01b70",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/27270000/muz-yerli-kg-9d3d01-105x105.jpg",
+    "miktar_g": 1000.0,
+    "tl_kg": 79.95
+   },
+   "sok": {
+    "market": "sok",
+    "name": "Yerli Muz Kg",
+    "category": "Meyve Ve Sebze",
+    "price": 109.0,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.sokmarket.com.tr/yerli-muz-kg-p-33027",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/5eb81802-de5d-44b3-9c3d-a4c1afe376fb.jpeg",
+    "miktar_g": 1000.0,
+    "tl_kg": 109.0
+   }
+  },
+  "ilk5": [
+   {
+    "market": "migros",
+    "name": "Muz Yerli Kg",
+    "price": 79.95,
+    "miktar_g": 1000.0,
+    "tl_kg": 79.95
+   },
+   {
+    "market": "sok",
+    "name": "Yerli Muz Kg",
+    "price": 109.0,
+    "miktar_g": 1000.0,
+    "tl_kg": 109.0
+   },
+   {
+    "market": "migros",
+    "name": "Muz İthal Kg",
+    "price": 146.95,
+    "miktar_g": 1000.0,
+    "tl_kg": 146.95
+   },
+   {
+    "market": "migros",
+    "name": "Organik Muz Kg",
+    "price": 178.5,
+    "miktar_g": 1000.0,
+    "tl_kg": 178.5
+   },
+   {
+    "market": "sok",
+    "name": "Hipp Organik Muz Elma Armut Püre 100 G",
+    "price": 149.0,
+    "miktar_g": 100.0,
+    "tl_kg": 1490.0
+   }
+  ]
+ },
+ "elma": {
+  "aday_sayisi": 16,
+  "en_ucuz": {
+   "market": "sok",
+   "name": "Elma Starking Kg",
+   "category": "Meyve Ve Sebze",
+   "price": 69.9,
+   "regular_price": null,
+   "discount_pct": null,
+   "url": "https://www.sokmarket.com.tr/elma-starking-kg-p-37013",
+   "image_url": "https://images.ceptesok.com/product-assets/sub-folder/5f96829b-7c91-470f-a4ea-dc25b0eb847b.png",
+   "miktar_g": 1000.0,
+   "tl_kg": 69.9
+  },
+  "marketler": {
+   "sok": {
+    "market": "sok",
+    "name": "Elma Starking Kg",
+    "category": "Meyve Ve Sebze",
+    "price": 69.9,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.sokmarket.com.tr/elma-starking-kg-p-37013",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/5f96829b-7c91-470f-a4ea-dc25b0eb847b.png",
+    "miktar_g": 1000.0,
+    "tl_kg": 69.9
+   },
+   "migros": {
+    "market": "migros",
+    "name": "Elma Gala Kg",
+    "category": "Sert Meyveler",
+    "price": 73.5,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.migros.com.tr/elma-gala-kg-p-19e1000",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/27136000/27136000_1-2d0030-105x105.jpg",
+    "miktar_g": 1000.0,
+    "tl_kg": 73.5
+   }
+  },
+  "ilk5": [
+   {
+    "market": "sok",
+    "name": "Elma Starking Kg",
+    "price": 69.9,
+    "miktar_g": 1000.0,
+    "tl_kg": 69.9
+   },
+   {
+    "market": "sok",
+    "name": "Golden Elma Kg",
+    "price": 69.9,
+    "miktar_g": 1000.0,
+    "tl_kg": 69.9
+   },
+   {
+    "market": "migros",
+    "name": "Elma Gala Kg",
+    "price": 73.5,
+    "miktar_g": 1000.0,
+    "tl_kg": 73.5
+   },
+   {
+    "market": "sok",
+    "name": "Elma Granny Kg",
+    "price": 79.9,
+    "miktar_g": 1000.0,
+    "tl_kg": 79.9
+   },
+   {
+    "market": "migros",
+    "name": "Elma Starking (Pazar) Kg",
+    "price": 83.95,
+    "miktar_g": 1000.0,
+    "tl_kg": 83.95
+   }
+  ]
+ },
+ "portakal": {
+  "aday_sayisi": 3,
+  "en_ucuz": {
+   "market": "sok",
+   "name": "Portakal Kg",
+   "category": "Meyve Ve Sebze",
+   "price": 49.9,
+   "regular_price": null,
+   "discount_pct": null,
+   "url": "https://www.sokmarket.com.tr/portakal-kg-p-33534",
+   "image_url": "https://images.ceptesok.com/product-assets/sub-folder/9dfb5c70-8f01-45b2-86c1-c7c02948b15a.png",
+   "miktar_g": 1000.0,
+   "tl_kg": 49.9
+  },
+  "marketler": {
+   "sok": {
+    "market": "sok",
+    "name": "Portakal Kg",
+    "category": "Meyve Ve Sebze",
+    "price": 49.9,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.sokmarket.com.tr/portakal-kg-p-33534",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/9dfb5c70-8f01-45b2-86c1-c7c02948b15a.png",
+    "miktar_g": 1000.0,
+    "tl_kg": 49.9
+   },
+   "migros": {
+    "market": "migros",
+    "name": "Portakal Kg",
+    "category": "Narenciye",
+    "price": 54.95,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.migros.com.tr/portakal-kg-p-1a0a047",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/27304007/27304007_1-a72689-105x105.jpg",
+    "miktar_g": 1000.0,
+    "tl_kg": 54.95
+   }
+  },
+  "ilk5": [
+   {
+    "market": "sok",
+    "name": "Portakal Kg",
+    "price": 49.9,
+    "miktar_g": 1000.0,
+    "tl_kg": 49.9
+   },
+   {
+    "market": "migros",
+    "name": "Portakal Kg",
+    "price": 54.95,
+    "miktar_g": 1000.0,
+    "tl_kg": 54.95
+   },
+   {
+    "market": "migros",
+    "name": "Portakal Sıkma File Kg",
+    "price": 62.95,
+    "miktar_g": 1000.0,
+    "tl_kg": 62.95
+   }
+  ]
+ },
+ "kirmizi_mercimek": {
+  "aday_sayisi": 10,
+  "en_ucuz": {
+   "market": "sok",
+   "name": "Anadolu Mutfağı Kırmızı Mercimek 1000 g",
+   "category": "Yemeklik Malzemeler",
+   "price": 49.5,
+   "regular_price": null,
+   "discount_pct": null,
+   "url": "https://www.sokmarket.com.tr/anadolu-mutfagi-kirmizi-mercimek-1000-g-p-9055",
+   "image_url": "https://images.ceptesok.com/product-assets/sub-folder/128fd723-d525-4888-b20d-0bf85ffbb803.png",
+   "miktar_g": 1000.0,
+   "tl_kg": 49.5
+  },
+  "marketler": {
+   "sok": {
+    "market": "sok",
+    "name": "Anadolu Mutfağı Kırmızı Mercimek 1000 g",
+    "category": "Yemeklik Malzemeler",
+    "price": 49.5,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.sokmarket.com.tr/anadolu-mutfagi-kirmizi-mercimek-1000-g-p-9055",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/128fd723-d525-4888-b20d-0bf85ffbb803.png",
+    "miktar_g": 1000.0,
+    "tl_kg": 49.5
+   },
+   "migros": {
+    "market": "migros",
+    "name": "Noba Kırmızı Mercimek 1 Kg",
+    "category": "Kırmızı Mercimek",
+    "price": 49.95,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.migros.com.tr/noba-kirmizi-mercimek-1-kg-p-104001",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/01064961/01064961_1-63a5b0-105x105.jpg",
+    "miktar_g": 1000.0,
+    "tl_kg": 49.95
+   }
+  },
+  "ilk5": [
+   {
+    "market": "sok",
+    "name": "Anadolu Mutfağı Kırmızı Mercimek 1000 g",
+    "price": 49.5,
+    "miktar_g": 1000.0,
+    "tl_kg": 49.5
+   },
+   {
+    "market": "migros",
+    "name": "Noba Kırmızı Mercimek 1 Kg",
+    "price": 49.95,
+    "miktar_g": 1000.0,
+    "tl_kg": 49.95
+   },
+   {
+    "market": "migros",
+    "name": "Migros Yerli Kırmızı Mercimek 1 Kg",
+    "price": 74.0,
+    "miktar_g": 1000.0,
+    "tl_kg": 74.0
+   },
+   {
+    "market": "migros",
+    "name": "Anadolu Lezzetleri Diyarbakır Kırmızı Mercimek 1 Kg",
+    "price": 109.95,
+    "miktar_g": 1000.0,
+    "tl_kg": 109.95
+   },
+   {
+    "market": "migros",
+    "name": "Yayla Kırmızı Mercimek 1 Kg",
+    "price": 119.95,
+    "miktar_g": 1000.0,
+    "tl_kg": 119.95
+   }
+  ]
+ },
+ "yesil_mercimek": {
+  "aday_sayisi": 11,
+  "en_ucuz": {
+   "market": "migros",
+   "name": "Migros Yerli Yeşil Mercimek 1 Kg",
+   "category": "Yeşil Mercimek",
+   "price": 54.0,
+   "regular_price": null,
+   "discount_pct": null,
+   "url": "https://www.migros.com.tr/migros-yerli-yesil-mercimek-1-kg-p-10059d",
+   "image_url": "https://images.migrosone.com/sanalmarket/product/01050013/01050013-e04f3a-105x105.jpg",
+   "miktar_g": 1000.0,
+   "tl_kg": 54.0
+  },
+  "marketler": {
+   "migros": {
+    "market": "migros",
+    "name": "Migros Yerli Yeşil Mercimek 1 Kg",
+    "category": "Yeşil Mercimek",
+    "price": 54.0,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.migros.com.tr/migros-yerli-yesil-mercimek-1-kg-p-10059d",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/01050013/01050013-e04f3a-105x105.jpg",
+    "miktar_g": 1000.0,
+    "tl_kg": 54.0
+   },
+   "sok": {
+    "market": "sok",
+    "name": "Anadolu Mutfağı Yeşil Mercimek 1 kg",
+    "category": "Yemeklik Malzemeler",
+    "price": 67.5,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.sokmarket.com.tr/anadolu-mutfagi-yesil-mercimek-1-kg-p-7172",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/83305b65-35a5-484a-8318-37d4d4bbbd8b.png",
+    "miktar_g": 1000.0,
+    "tl_kg": 67.5
+   }
+  },
+  "ilk5": [
+   {
+    "market": "migros",
+    "name": "Migros Yerli Yeşil Mercimek 1 Kg",
+    "price": 54.0,
+    "miktar_g": 1000.0,
+    "tl_kg": 54.0
+   },
+   {
+    "market": "sok",
+    "name": "Anadolu Mutfağı Yeşil Mercimek 1 kg",
+    "price": 67.5,
+    "miktar_g": 1000.0,
+    "tl_kg": 67.5
+   },
+   {
+    "market": "migros",
+    "name": "Anadolu Lezzetleri Kayseri Yeşil Mercimek 1 Kg",
+    "price": 99.95,
+    "miktar_g": 1000.0,
+    "tl_kg": 99.95
+   },
+   {
+    "market": "migros",
+    "name": "Duru Yerli Yeşil Mercimek 1 Kg",
+    "price": 99.95,
+    "miktar_g": 1000.0,
+    "tl_kg": 99.95
+   },
+   {
+    "market": "migros",
+    "name": "Tat Yeşil Mercimek  1 Kg",
+    "price": 124.95,
+    "miktar_g": 1000.0,
+    "tl_kg": 124.95
+   }
+  ]
+ },
+ "nohut": {
+  "aday_sayisi": 11,
+  "en_ucuz": {
+   "market": "sok",
+   "name": "Anadolu Mutfağı Nohut 1 kg",
+   "category": "Yemeklik Malzemeler",
+   "price": 62.5,
+   "regular_price": null,
+   "discount_pct": null,
+   "url": "https://www.sokmarket.com.tr/anadolu-mutfagi-nohut-1-kg-p-9054",
+   "image_url": "https://images.ceptesok.com/product-assets/sub-folder/374f482b-abdf-4f10-9ba4-e791ebc29f7b.png",
+   "miktar_g": 1000.0,
+   "tl_kg": 62.5
+  },
+  "marketler": {
+   "sok": {
+    "market": "sok",
+    "name": "Anadolu Mutfağı Nohut 1 kg",
+    "category": "Yemeklik Malzemeler",
+    "price": 62.5,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.sokmarket.com.tr/anadolu-mutfagi-nohut-1-kg-p-9054",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/374f482b-abdf-4f10-9ba4-e791ebc29f7b.png",
+    "miktar_g": 1000.0,
+    "tl_kg": 62.5
+   },
+   "migros": {
+    "market": "migros",
+    "name": "Migros Nohut 1000 G",
+    "category": "Nohut",
+    "price": 62.95,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.migros.com.tr/migros-nohut-1000-g-p-100579",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/01049977/01049977_1-892e42-105x105.jpg",
+    "miktar_g": 1000.0,
+    "tl_kg": 62.95
+   }
+  },
+  "ilk5": [
+   {
+    "market": "sok",
+    "name": "Anadolu Mutfağı Nohut 1 kg",
+    "price": 62.5,
+    "miktar_g": 1000.0,
+    "tl_kg": 62.5
+   },
+   {
+    "market": "migros",
+    "name": "Migros Nohut 1000 G",
+    "price": 62.95,
+    "miktar_g": 1000.0,
+    "tl_kg": 62.95
+   },
+   {
+    "market": "migros",
+    "name": "Yayla Koçbaşı  Nohut (İri Boy) 1 Kg",
+    "price": 89.95,
+    "miktar_g": 1000.0,
+    "tl_kg": 89.95
+   },
+   {
+    "market": "migros",
+    "name": "Duru Yerli Koçbaşı Nohut 1 Kg",
+    "price": 124.95,
+    "miktar_g": 1000.0,
+    "tl_kg": 124.95
+   },
+   {
+    "market": "migros",
+    "name": "Tat Koçbaşı Nohut 8.5 Mm 1 Kg",
+    "price": 125.95,
+    "miktar_g": 1000.0,
+    "tl_kg": 125.95
+   }
+  ]
+ },
+ "kuru_fasulye": {
+  "aday_sayisi": 21,
+  "en_ucuz": {
+   "market": "sok",
+   "name": "Anadolu Mutfağı Kuru Fasulye 1 kg",
+   "category": "Yemeklik Malzemeler",
+   "price": 89.0,
+   "regular_price": null,
+   "discount_pct": null,
+   "url": "https://www.sokmarket.com.tr/anadolu-mutfagi-kuru-fasulye-1-kg-p-6035",
+   "image_url": "https://images.ceptesok.com/product-assets/sub-folder/986dfd54-ee7a-427f-af88-41c0a07cd433.png",
+   "miktar_g": 1000.0,
+   "tl_kg": 89.0
+  },
+  "marketler": {
+   "sok": {
+    "market": "sok",
+    "name": "Anadolu Mutfağı Kuru Fasulye 1 kg",
+    "category": "Yemeklik Malzemeler",
+    "price": 89.0,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.sokmarket.com.tr/anadolu-mutfagi-kuru-fasulye-1-kg-p-6035",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/986dfd54-ee7a-427f-af88-41c0a07cd433.png",
+    "miktar_g": 1000.0,
+    "tl_kg": 89.0
+   },
+   "migros": {
+    "market": "migros",
+    "name": "Migros Dermason Kuru Fasulye 1 Kg",
+    "category": "Fasulye",
+    "price": 89.95,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.migros.com.tr/migros-dermason-kuru-fasulye-1-kg-p-f9061",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/01020001/01020001_1-0dd7f5-105x105.jpg",
+    "miktar_g": 1000.0,
+    "tl_kg": 89.95
+   }
+  },
+  "ilk5": [
+   {
+    "market": "sok",
+    "name": "Anadolu Mutfağı Kuru Fasulye 1 kg",
+    "price": 89.0,
+    "miktar_g": 1000.0,
+    "tl_kg": 89.0
+   },
+   {
+    "market": "migros",
+    "name": "Migros Dermason Kuru Fasulye 1 Kg",
+    "price": 89.95,
+    "miktar_g": 1000.0,
+    "tl_kg": 89.95
+   },
+   {
+    "market": "migros",
+    "name": "Migros İri Dermason Fasulye 1 Kg",
+    "price": 99.95,
+    "miktar_g": 1000.0,
+    "tl_kg": 99.95
+   },
+   {
+    "market": "migros",
+    "name": "Yayla Dermason Fasulye 1 Kg",
+    "price": 119.95,
+    "miktar_g": 1000.0,
+    "tl_kg": 119.95
+   },
+   {
+    "market": "migros",
+    "name": "Yayla Gurme Maş Fasulye 500 G",
+    "price": 84.95,
+    "miktar_g": 500.0,
+    "tl_kg": 169.9
+   }
+  ]
+ },
+ "bulgur": {
+  "aday_sayisi": 27,
+  "en_ucuz": {
+   "market": "migros",
+   "name": "Migros Pilavlık Bulgur 2500 G",
+   "category": "Pilavlık Bulgur",
+   "price": 94.95,
+   "regular_price": null,
+   "discount_pct": null,
+   "url": "https://www.migros.com.tr/migros-pilavlik-bulgur-2500-g-p-1067a6",
+   "image_url": "https://images.migrosone.com/sanalmarket/product/01075110/01075110_1-a3e6c0-105x105.jpg",
+   "miktar_g": 2500.0,
+   "tl_kg": 37.98
+  },
+  "marketler": {
+   "migros": {
+    "market": "migros",
+    "name": "Migros Pilavlık Bulgur 2500 G",
+    "category": "Pilavlık Bulgur",
+    "price": 94.95,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.migros.com.tr/migros-pilavlik-bulgur-2500-g-p-1067a6",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/01075110/01075110_1-a3e6c0-105x105.jpg",
+    "miktar_g": 2500.0,
+    "tl_kg": 37.98
+   },
+   "sok": {
+    "market": "sok",
+    "name": "Anadolu Mutfağı Pilavlık Bulgur 1 kg",
+    "category": "Yemeklik Malzemeler",
+    "price": 38.0,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.sokmarket.com.tr/anadolu-mutfagi-pilavlik-bulgur-1-kg-p-5325",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/551e27c1-72fc-49ab-a4b0-9b8ead4567fa.png",
+    "miktar_g": 1000.0,
+    "tl_kg": 38.0
+   }
+  },
+  "ilk5": [
+   {
+    "market": "migros",
+    "name": "Migros Pilavlık Bulgur 2500 G",
+    "price": 94.95,
+    "miktar_g": 2500.0,
+    "tl_kg": 37.98
+   },
+   {
+    "market": "sok",
+    "name": "Anadolu Mutfağı Pilavlık Bulgur 1 kg",
+    "price": 38.0,
+    "miktar_g": 1000.0,
+    "tl_kg": 38.0
+   },
+   {
+    "market": "migros",
+    "name": "Migros Pilavlık Bulgur 1000 G",
+    "price": 38.95,
+    "miktar_g": 1000.0,
+    "tl_kg": 38.95
+   },
+   {
+    "market": "sok",
+    "name": "Anadolu Mutfağı Esmer Pilavlık Bulgur 1 kg",
+    "price": 40.9,
+    "miktar_g": 1000.0,
+    "tl_kg": 40.9
+   },
+   {
+    "market": "sok",
+    "name": "Anadolu Mutfağı Mardin Bulguru 1 kg",
+    "price": 54.9,
+    "miktar_g": 1000.0,
+    "tl_kg": 54.9
+   }
+  ]
+ },
+ "pirinc": {
+  "aday_sayisi": 78,
+  "en_ucuz": {
+   "market": "sok",
+   "name": "Anadolu Mutfağı İthal Pilavlık Pirinç 2.5 kg",
+   "category": "Yemeklik Malzemeler",
+   "price": 135.0,
+   "regular_price": null,
+   "discount_pct": null,
+   "url": "https://www.sokmarket.com.tr/anadolu-mutfagi-ithal-pilavlik-pirinc-2-5-kg-p-8098",
+   "image_url": "https://images.ceptesok.com/product-assets/sub-folder/e8449d76-9de2-488b-919d-c4c0c1a5362f.png",
+   "miktar_g": 2500.0,
+   "tl_kg": 54.0
+  },
+  "marketler": {
+   "sok": {
+    "market": "sok",
+    "name": "Anadolu Mutfağı İthal Pilavlık Pirinç 2.5 kg",
+    "category": "Yemeklik Malzemeler",
+    "price": 135.0,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.sokmarket.com.tr/anadolu-mutfagi-ithal-pilavlik-pirinc-2-5-kg-p-8098",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/e8449d76-9de2-488b-919d-c4c0c1a5362f.png",
+    "miktar_g": 2500.0,
+    "tl_kg": 54.0
+   },
+   "migros": {
+    "market": "migros",
+    "name": "Noba Pilavlık İthal Pirinç 1 Kg",
+    "category": "Pilavlık Pirinç",
+    "price": 57.95,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.migros.com.tr/noba-pilavlik-ithal-pirinc-1-kg-p-f8048",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/01015880/01015880_1-5299dc-105x105.jpg",
+    "miktar_g": 1000.0,
+    "tl_kg": 57.95
+   },
+   "a101": {
+    "market": "a101",
+    "name": "Yayla Uzun Tane Pilavlık Pirinç 2 Kg",
+    "category": "Pirinç",
+    "price": 129.5,
+    "regular_price": 175.0,
+    "discount_pct": 26.0,
+    "url": "https://www.a101.com.tr/kapida/temel-gida/yayla-uzun-tane-pilavlik-pirinc-2-kg_p-14002578",
+    "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/hGxTFmINa5_256x256.png",
+    "miktar_g": 2000.0,
+    "tl_kg": 64.75
+   }
+  },
+  "ilk5": [
+   {
+    "market": "sok",
+    "name": "Anadolu Mutfağı İthal Pilavlık Pirinç 2.5 kg",
+    "price": 135.0,
+    "miktar_g": 2500.0,
+    "tl_kg": 54.0
+   },
+   {
+    "market": "sok",
+    "name": "Anadolu Mutfağı İthal Pilavlık Pirinç 1 kg",
+    "price": 57.5,
+    "miktar_g": 1000.0,
+    "tl_kg": 57.5
+   },
+   {
+    "market": "migros",
+    "name": "Noba Pilavlık İthal Pirinç 1 Kg",
+    "price": 57.95,
+    "miktar_g": 1000.0,
+    "tl_kg": 57.95
+   },
+   {
+    "market": "sok",
+    "name": "Anadolu Mutfağı Yerli Pilavlık Pirinç 2.5 kg",
+    "price": 147.5,
+    "miktar_g": 2500.0,
+    "tl_kg": 59.0
+   },
+   {
+    "market": "migros",
+    "name": "Migros Pilavlık Yerli Pirinç 2500 G",
+    "price": 147.95,
+    "miktar_g": 2500.0,
+    "tl_kg": 59.18
+   }
+  ]
+ },
+ "makarna": {
+  "aday_sayisi": 124,
+  "en_ucuz": {
+   "market": "sok",
+   "name": "Piyale Boncuk Makarna 500 g",
+   "category": "Yemeklik Malzemeler",
+   "price": 19.75,
+   "regular_price": null,
+   "discount_pct": null,
+   "url": "https://www.sokmarket.com.tr/piyale-boncuk-makarna-500-g-p-1237",
+   "image_url": "https://images.ceptesok.com/product-assets/sub-folder/480b4ff0-a703-4dbd-b022-80db272d8a15.png",
+   "miktar_g": 500.0,
+   "tl_kg": 39.5
+  },
+  "marketler": {
+   "sok": {
+    "market": "sok",
+    "name": "Piyale Boncuk Makarna 500 g",
+    "category": "Yemeklik Malzemeler",
+    "price": 19.75,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.sokmarket.com.tr/piyale-boncuk-makarna-500-g-p-1237",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/480b4ff0-a703-4dbd-b022-80db272d8a15.png",
+    "miktar_g": 500.0,
+    "tl_kg": 39.5
+   },
+   "migros": {
+    "market": "migros",
+    "name": "Migros Burgu  Makarna 500 G",
+    "category": "Makarna",
+    "price": 20.75,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.migros.com.tr/migros-burgu-makarna-500-g-p-4cc129",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/05030185/05030185-188ee1-105x105.jpg",
+    "miktar_g": 500.0,
+    "tl_kg": 41.5
+   },
+   "a101": {
+    "market": "a101",
+    "name": "Filiz İnce Uzun Makarna 500 G",
+    "category": "Makarna",
+    "price": 29.5,
+    "regular_price": 36.5,
+    "discount_pct": 19.2,
+    "url": "https://www.a101.com.tr/kapida/temel-gida/filiz-ince-uzun-makarna-500-g_p-14002536",
+    "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/h9wBiEVfdt_256x256.png",
+    "miktar_g": 500.0,
+    "tl_kg": 59.0
+   }
+  },
+  "ilk5": [
+   {
+    "market": "sok",
+    "name": "Piyale Boncuk Makarna 500 g",
+    "price": 19.75,
+    "miktar_g": 500.0,
+    "tl_kg": 39.5
+   },
+   {
+    "market": "sok",
+    "name": "Piyale Burgu Makarna 500 g",
+    "price": 19.75,
+    "miktar_g": 500.0,
+    "tl_kg": 39.5
+   },
+   {
+    "market": "sok",
+    "name": "Piyale Fiyonk Makarna 500 g",
+    "price": 19.75,
+    "miktar_g": 500.0,
+    "tl_kg": 39.5
+   },
+   {
+    "market": "sok",
+    "name": "Piyale Kelebek Makarna 500 g",
+    "price": 19.75,
+    "miktar_g": 500.0,
+    "tl_kg": 39.5
+   },
+   {
+    "market": "sok",
+    "name": "Piyale Spagetti 500 g",
+    "price": 19.75,
+    "miktar_g": 500.0,
+    "tl_kg": 39.5
+   }
+  ]
+ },
+ "yulaf": {
+  "aday_sayisi": 17,
+  "en_ucuz": {
+   "market": "migros",
+   "name": "M Life Yulaf Ezmesi 500 G",
+   "category": "Yulaf ve Türevleri",
+   "price": 47.5,
+   "regular_price": null,
+   "discount_pct": null,
+   "url": "https://www.migros.com.tr/m-life-yulaf-ezmesi-500-g-p-4dc044",
+   "image_url": "https://images.migrosone.com/sanalmarket/product/05095492/05095492_1-2eb64c-105x105.jpg",
+   "miktar_g": 500.0,
+   "tl_kg": 95.0
+  },
+  "marketler": {
+   "migros": {
+    "market": "migros",
+    "name": "M Life Yulaf Ezmesi 500 G",
+    "category": "Yulaf ve Türevleri",
+    "price": 47.5,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.migros.com.tr/m-life-yulaf-ezmesi-500-g-p-4dc044",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/05095492/05095492_1-2eb64c-105x105.jpg",
+    "miktar_g": 500.0,
+    "tl_kg": 95.0
+   },
+   "sok": {
+    "market": "sok",
+    "name": "Folife Yulaf Ezmesi 500 g",
+    "category": "Kahvaltilik",
+    "price": 48.0,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.sokmarket.com.tr/folife-yulaf-ezmesi-500-g-p-701383",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/704f93f7-2746-43a1-a0c3-efa311280cc7.jpg",
+    "miktar_g": 500.0,
+    "tl_kg": 96.0
+   }
+  },
+  "ilk5": [
+   {
+    "market": "migros",
+    "name": "M Life Yulaf Ezmesi 500 G",
+    "price": 47.5,
+    "miktar_g": 500.0,
+    "tl_kg": 95.0
+   },
+   {
+    "market": "sok",
+    "name": "Folife Yulaf Ezmesi 500 g",
+    "price": 48.0,
+    "miktar_g": 500.0,
+    "tl_kg": 96.0
+   },
+   {
+    "market": "sok",
+    "name": "Folife İnce Öğütülmüş Yulaf Ezmesi 350 g",
+    "price": 48.0,
+    "miktar_g": 350.0,
+    "tl_kg": 137.14
+   },
+   {
+    "market": "sok",
+    "name": "Eti Lifalif Yulaf Ezmesi 500 g",
+    "price": 99.5,
+    "miktar_g": 500.0,
+    "tl_kg": 199.0
+   },
+   {
+    "market": "migros",
+    "name": "Eti Lifalif Yulaf Ezmesi 500 G",
+    "price": 105.95,
+    "miktar_g": 500.0,
+    "tl_kg": 211.9
+   }
+  ]
+ },
+ "tam_bugday_ekmegi": {
+  "aday_sayisi": 23,
+  "en_ucuz": {
+   "market": "sok",
+   "name": "Uno Anadolu Kepekli Ekmek 400 g",
+   "category": "Ekmek Ve Pastane",
+   "price": 44.5,
+   "regular_price": null,
+   "discount_pct": null,
+   "url": "https://www.sokmarket.com.tr/uno-anadolu-kepekli-ekmek-400-g-p-5328",
+   "image_url": "https://images.ceptesok.com/product-assets/sub-folder/b0be8e4f-65f2-4cc9-bf9a-56ad2121d171.jpg",
+   "miktar_g": 400.0,
+   "tl_kg": 111.25
+  },
+  "marketler": {
+   "sok": {
+    "market": "sok",
+    "name": "Uno Anadolu Kepekli Ekmek 400 g",
+    "category": "Ekmek Ve Pastane",
+    "price": 44.5,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.sokmarket.com.tr/uno-anadolu-kepekli-ekmek-400-g-p-5328",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/b0be8e4f-65f2-4cc9-bf9a-56ad2121d171.jpg",
+    "miktar_g": 400.0,
+    "tl_kg": 111.25
+   },
+   "migros": {
+    "market": "migros",
+    "name": "İhe Tuz İlave Edilmemiş Tam Buğday Unlu Ekmek 400 G",
+    "category": "Çeşit Ekmekler",
+    "price": 50.0,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.migros.com.tr/ihe-tuz-ilave-edilmemis-tam-bugday-unlu-ekmek-400-g-p-4d18e7",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/05052647/5052647_1-546227-105x105.jpeg",
+    "miktar_g": 400.0,
+    "tl_kg": 125.0
+   },
+   "a101": {
+    "market": "a101",
+    "name": "Uno Tam Buğday Unlu Tava Ekmeği 450 G",
+    "category": "Ekmek",
+    "price": 70.5,
+    "regular_price": 92.5,
+    "discount_pct": 23.8,
+    "url": "https://www.a101.com.tr/kapida/firindan/uno-tam-bugday-unlu-tava-ekmegi-450-g_p-28000673",
+    "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/jHBgeYaMbm_256x256.png",
+    "miktar_g": 450.0,
+    "tl_kg": 156.67
+   }
+  },
+  "ilk5": [
+   {
+    "market": "sok",
+    "name": "Uno Anadolu Kepekli Ekmek 400 g",
+    "price": 44.5,
+    "miktar_g": 400.0,
+    "tl_kg": 111.25
+   },
+   {
+    "market": "migros",
+    "name": "İhe Tuz İlave Edilmemiş Tam Buğday Unlu Ekmek 400 G",
+    "price": 50.0,
+    "miktar_g": 400.0,
+    "tl_kg": 125.0
+   },
+   {
+    "market": "sok",
+    "name": "Uno Anadolu Tam Buğday Ekmeği 350 g",
+    "price": 45.0,
+    "miktar_g": 350.0,
+    "tl_kg": 128.57
+   },
+   {
+    "market": "migros",
+    "name": "İyilik Tam Buğday Ekmeği 350 G",
+    "price": 46.0,
+    "miktar_g": 350.0,
+    "tl_kg": 131.43
+   },
+   {
+    "market": "migros",
+    "name": "İstanbul Organik Tam Buğday Ekmeği 500 G",
+    "price": 70.0,
+    "miktar_g": 500.0,
+    "tl_kg": 140.0
+   }
+  ]
+ },
+ "un": {
+  "aday_sayisi": 14,
+  "en_ucuz": {
+   "market": "a101",
+   "name": "Nimet Buğday Unu 5 Kg",
+   "category": "Un",
+   "price": 125.0,
+   "regular_price": 135.0,
+   "discount_pct": 7.4,
+   "url": "https://www.a101.com.tr/kapida/temel-gida/nimet-bugday-unu-5-kg_p-28000827",
+   "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/fhf1rcOhDI_256x256.png",
+   "miktar_g": 5000.0,
+   "tl_kg": 25.0
+  },
+  "marketler": {
+   "a101": {
+    "market": "a101",
+    "name": "Nimet Buğday Unu 5 Kg",
+    "category": "Un",
+    "price": 125.0,
+    "regular_price": 135.0,
+    "discount_pct": 7.4,
+    "url": "https://www.a101.com.tr/kapida/temel-gida/nimet-bugday-unu-5-kg_p-28000827",
+    "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/fhf1rcOhDI_256x256.png",
+    "miktar_g": 5000.0,
+    "tl_kg": 25.0
+   },
+   "sok": {
+    "market": "sok",
+    "name": "Piyale Un 5 kg",
+    "category": "Yemeklik Malzemeler",
+    "price": 149.0,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.sokmarket.com.tr/piyale-un-5-kg-p-8539",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/e4c23c36-dcdd-4ca4-b6ae-7bd662fa166d.jpg",
+    "miktar_g": 5000.0,
+    "tl_kg": 29.8
+   },
+   "migros": {
+    "market": "migros",
+    "name": "Migros Un 5 Kg",
+    "category": "Sade Un",
+    "price": 149.95,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.migros.com.tr/migros-un-5-kg-p-4c7707",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/05011207/05011207-cb1b8c-105x105.jpg",
+    "miktar_g": 5000.0,
+    "tl_kg": 29.99
+   }
+  },
+  "ilk5": [
+   {
+    "market": "a101",
+    "name": "Nimet Buğday Unu 5 Kg",
+    "price": 125.0,
+    "miktar_g": 5000.0,
+    "tl_kg": 25.0
+   },
+   {
+    "market": "sok",
+    "name": "Piyale Un 5 kg",
+    "price": 149.0,
+    "miktar_g": 5000.0,
+    "tl_kg": 29.8
+   },
+   {
+    "market": "migros",
+    "name": "Migros Un 5 Kg",
+    "price": 149.95,
+    "miktar_g": 5000.0,
+    "tl_kg": 29.99
+   },
+   {
+    "market": "migros",
+    "name": "Migros Un 5 Kg",
+    "price": 149.95,
+    "miktar_g": 5000.0,
+    "tl_kg": 29.99
+   },
+   {
+    "market": "sok",
+    "name": "Piyale Un 2 kg",
+    "price": 67.5,
+    "miktar_g": 2000.0,
+    "tl_kg": 33.75
+   }
+  ]
+ },
+ "tavuk_gogus": {
+  "aday_sayisi": 14,
+  "en_ucuz": {
+   "market": "sok",
+   "name": "Erpiliç Piliç Schnitzel 700 G",
+   "category": "Et Ve Tavuk Ve Sarkuteri",
+   "price": 149.0,
+   "regular_price": null,
+   "discount_pct": null,
+   "url": "https://www.sokmarket.com.tr/erpilic-pilic-schnitzel-700-g-p-408795",
+   "image_url": "https://images.ceptesok.com/product-assets/sub-folder/c7d3f082-0185-4d5d-b2a2-8d54b42d221e.jpeg",
+   "miktar_g": 700.0,
+   "tl_kg": 212.86
+  },
+  "marketler": {
+   "sok": {
+    "market": "sok",
+    "name": "Erpiliç Piliç Schnitzel 700 G",
+    "category": "Et Ve Tavuk Ve Sarkuteri",
+    "price": 149.0,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.sokmarket.com.tr/erpilic-pilic-schnitzel-700-g-p-408795",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/c7d3f082-0185-4d5d-b2a2-8d54b42d221e.jpeg",
+    "miktar_g": 700.0,
+    "tl_kg": 212.86
+   },
+   "migros": {
+    "market": "migros",
+    "name": "Gedik Piliç Schnitzel 700 G",
+    "category": "Piliç",
+    "price": 164.95,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.migros.com.tr/gedik-pilic-schnitzel-700-g-p-ce00cf",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/13500623/13500623_1-137886-105x105.jpg",
+    "miktar_g": 700.0,
+    "tl_kg": 235.64
+   }
+  },
+  "ilk5": [
+   {
+    "market": "sok",
+    "name": "Erpiliç Piliç Schnitzel 700 G",
+    "price": 149.0,
+    "miktar_g": 700.0,
+    "tl_kg": 212.86
+   },
+   {
+    "market": "migros",
+    "name": "Gedik Piliç Schnitzel 700 G",
+    "price": 164.95,
+    "miktar_g": 700.0,
+    "tl_kg": 235.64
+   },
+   {
+    "market": "migros",
+    "name": "Keskinoğlu Piliç Schnitzel 700 G",
+    "price": 164.95,
+    "miktar_g": 700.0,
+    "tl_kg": 235.64
+   },
+   {
+    "market": "migros",
+    "name": "Banvit Piliç Schnitzel 700 G",
+    "price": 180.5,
+    "miktar_g": 700.0,
+    "tl_kg": 257.86
+   },
+   {
+    "market": "migros",
+    "name": "Keskinoğlu Piliç Schnitzel 300 G",
+    "price": 82.5,
+    "miktar_g": 300.0,
+    "tl_kg": 275.0
+   }
+  ]
+ },
+ "tavuk_but": {
+  "aday_sayisi": 12,
+  "en_ucuz": {
+   "market": "migros",
+   "name": "Uzman Kasap Piliç Kalçalı But Kg",
+   "category": "Piliç",
+   "price": 134.95,
+   "regular_price": null,
+   "discount_pct": null,
+   "url": "https://www.migros.com.tr/uzman-kasap-pilic-kalcali-but-kg-p-c65e73",
+   "image_url": "https://images.migrosone.com/sanalmarket/product/13000307/13000307_1-2a3de0-105x105.jpg",
+   "miktar_g": 1000.0,
+   "tl_kg": 134.95
+  },
+  "marketler": {
+   "migros": {
+    "market": "migros",
+    "name": "Uzman Kasap Piliç Kalçalı But Kg",
+    "category": "Piliç",
+    "price": 134.95,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.migros.com.tr/uzman-kasap-pilic-kalcali-but-kg-p-c65e73",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/13000307/13000307_1-2a3de0-105x105.jpg",
+    "miktar_g": 1000.0,
+    "tl_kg": 134.95
+   },
+   "sok": {
+    "market": "sok",
+    "name": "Gedik Piliç Kalçalı But Kg",
+    "category": "Et Ve Tavuk Ve Sarkuteri",
+    "price": 149.0,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.sokmarket.com.tr/gedik-pilic-kalcali-but-kg-p-460899",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/6d7587de-5f19-411d-9159-14e474365ef3.jpg",
+    "miktar_g": 1000.0,
+    "tl_kg": 149.0
+   }
+  },
+  "ilk5": [
+   {
+    "market": "migros",
+    "name": "Uzman Kasap Piliç Kalçalı But Kg",
+    "price": 134.95,
+    "miktar_g": 1000.0,
+    "tl_kg": 134.95
+   },
+   {
+    "market": "sok",
+    "name": "Gedik Piliç Kalçalı But Kg",
+    "price": 149.0,
+    "miktar_g": 1000.0,
+    "tl_kg": 149.0
+   },
+   {
+    "market": "migros",
+    "name": "Gedik Piliç Tabaklı Kalçalı But Kg",
+    "price": 159.95,
+    "miktar_g": 1000.0,
+    "tl_kg": 159.95
+   },
+   {
+    "market": "migros",
+    "name": "Banvit Piliç Pirzola Kg",
+    "price": 169.95,
+    "miktar_g": 1000.0,
+    "tl_kg": 169.95
+   },
+   {
+    "market": "migros",
+    "name": "Uzman Kasap Piliç Pirzola Kg",
+    "price": 199.95,
+    "miktar_g": 1000.0,
+    "tl_kg": 199.95
+   }
+  ]
+ },
+ "dana_kiyma": {
+  "aday_sayisi": 4,
+  "en_ucuz": {
+   "market": "migros",
+   "name": "Uzman Kasap Dana Kıyma 400 G",
+   "category": "Dana Eti",
+   "price": 279.0,
+   "regular_price": null,
+   "discount_pct": null,
+   "url": "https://www.migros.com.tr/uzman-kasap-dana-kiyma-400-g-p-17deed0",
+   "image_url": "https://images.migrosone.com/sanalmarket/product/25030352/25030352-9e6e4c-105x105.jpg",
+   "miktar_g": 400.0,
+   "tl_kg": 697.5
+  },
+  "marketler": {
+   "migros": {
+    "market": "migros",
+    "name": "Uzman Kasap Dana Kıyma 400 G",
+    "category": "Dana Eti",
+    "price": 279.0,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.migros.com.tr/uzman-kasap-dana-kiyma-400-g-p-17deed0",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/25030352/25030352-9e6e4c-105x105.jpg",
+    "miktar_g": 400.0,
+    "tl_kg": 697.5
+   },
+   "sok": {
+    "market": "sok",
+    "name": "Lezzetlim Dana Kıyma 400 g",
+    "category": "Et Ve Tavuk Ve Sarkuteri",
+    "price": 330.0,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.sokmarket.com.tr/lezzetlim-dana-kiyma-400-g-p-5443",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/33659f0e-1bb1-4b1d-aa5a-4d2f82efdf2a.png",
+    "miktar_g": 400.0,
+    "tl_kg": 825.0
+   }
+  },
+  "ilk5": [
+   {
+    "market": "migros",
+    "name": "Uzman Kasap Dana Kıyma 400 G",
+    "price": 279.0,
+    "miktar_g": 400.0,
+    "tl_kg": 697.5
+   },
+   {
+    "market": "sok",
+    "name": "Lezzetlim Dana Kıyma 400 g",
+    "price": 330.0,
+    "miktar_g": 400.0,
+    "tl_kg": 825.0
+   },
+   {
+    "market": "migros",
+    "name": "Dana Döş Rulo Kg (Kıyma)",
+    "price": 879.95,
+    "miktar_g": 1000.0,
+    "tl_kg": 879.95
+   },
+   {
+    "market": "migros",
+    "name": "Uzman Kasap Dana Yağsız Kıyma 400 G",
+    "price": 422.5,
+    "miktar_g": 400.0,
+    "tl_kg": 1056.25
+   }
+  ]
+ },
+ "ton_baligi": {
+  "aday_sayisi": 33,
+  "en_ucuz": {
+   "market": "sok",
+   "name": "Ton Balığı Bizim Vatan 2*160 g",
+   "category": "Yemeklik Malzemeler",
+   "price": 145.0,
+   "regular_price": null,
+   "discount_pct": null,
+   "url": "https://www.sokmarket.com.tr/ton-baligi-bizim-vatan-2-160-g-p-7471",
+   "image_url": "https://images.ceptesok.com/product-assets/sub-folder/7342ebef-6059-4d46-a0da-6f2c1161961a.jpg",
+   "miktar_g": 320.0,
+   "tl_kg": 453.12
+  },
+  "marketler": {
+   "sok": {
+    "market": "sok",
+    "name": "Ton Balığı Bizim Vatan 2*160 g",
+    "category": "Yemeklik Malzemeler",
+    "price": 145.0,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.sokmarket.com.tr/ton-baligi-bizim-vatan-2-160-g-p-7471",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/7342ebef-6059-4d46-a0da-6f2c1161961a.jpg",
+    "miktar_g": 320.0,
+    "tl_kg": 453.12
+   },
+   "migros": {
+    "market": "migros",
+    "name": "Migros İri Parçalı Ton Balığı 2 x 160 G",
+    "category": "Ton Balığı",
+    "price": 147.95,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.migros.com.tr/migros-iri-parcali-ton-baligi-2-x-160-g-p-8a1bec",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/09051116/09051116-bb9beb-105x105.jpg",
+    "miktar_g": 320.0,
+    "tl_kg": 462.34
+   }
+  },
+  "ilk5": [
+   {
+    "market": "sok",
+    "name": "Ton Balığı Bizim Vatan 2*160 g",
+    "price": 145.0,
+    "miktar_g": 320.0,
+    "tl_kg": 453.12
+   },
+   {
+    "market": "migros",
+    "name": "Migros İri Parçalı Ton Balığı 2 x 160 G",
+    "price": 147.95,
+    "miktar_g": 320.0,
+    "tl_kg": 462.34
+   },
+   {
+    "market": "migros",
+    "name": "Fide Klasik Ton Balığı 2 x 160 G",
+    "price": 158.0,
+    "miktar_g": 320.0,
+    "tl_kg": 493.75
+   },
+   {
+    "market": "migros",
+    "name": "Fide Ekonomik Ton Balığı 2 x 160 G",
+    "price": 164.95,
+    "miktar_g": 320.0,
+    "tl_kg": 515.47
+   },
+   {
+    "market": "migros",
+    "name": "Kalite Tonla Bitkisel Yağlı Ton Balığı 2x150 G",
+    "price": 189.95,
+    "miktar_g": 300.0,
+    "tl_kg": 633.17
+   }
+  ]
+ },
+ "tahin": {
+  "aday_sayisi": 20,
+  "en_ucuz": {
+   "market": "migros",
+   "name": "Migros Tahin 600 G",
+   "category": "Tahin",
+   "price": 112.5,
+   "regular_price": null,
+   "discount_pct": null,
+   "url": "https://www.migros.com.tr/migros-tahin-600-g-p-6c08e7",
+   "image_url": "https://images.migrosone.com/sanalmarket/product/07080167/07080167-3f4876-105x105.jpg",
+   "miktar_g": 600.0,
+   "tl_kg": 187.5
+  },
+  "marketler": {
+   "migros": {
+    "market": "migros",
+    "name": "Migros Tahin 600 G",
+    "category": "Tahin",
+    "price": 112.5,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.migros.com.tr/migros-tahin-600-g-p-6c08e7",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/07080167/07080167-3f4876-105x105.jpg",
+    "miktar_g": 600.0,
+    "tl_kg": 187.5
+   },
+   "sok": {
+    "market": "sok",
+    "name": "Taşkale Tahin 600 g",
+    "category": "Kahvaltilik",
+    "price": 125.0,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.sokmarket.com.tr/taskale-tahin-600-g-p-8302",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/31b665fd-39b5-42ae-bd68-4cd07757a2dd.png",
+    "miktar_g": 600.0,
+    "tl_kg": 208.33
+   }
+  },
+  "ilk5": [
+   {
+    "market": "migros",
+    "name": "Migros Tahin 600 G",
+    "price": 112.5,
+    "miktar_g": 600.0,
+    "tl_kg": 187.5
+   },
+   {
+    "market": "sok",
+    "name": "Taşkale Tahin 600 g",
+    "price": 125.0,
+    "miktar_g": 600.0,
+    "tl_kg": 208.33
+   },
+   {
+    "market": "sok",
+    "name": "Taşkale Çifte Kavrulmuş Tahin 600 g",
+    "price": 129.0,
+    "miktar_g": 600.0,
+    "tl_kg": 215.0
+   },
+   {
+    "market": "migros",
+    "name": "Torku Tahin 600 G",
+    "price": 226.5,
+    "miktar_g": 600.0,
+    "tl_kg": 377.5
+   },
+   {
+    "market": "migros",
+    "name": "Tatlan Tahin Pet 500 G",
+    "price": 189.9,
+    "miktar_g": 500.0,
+    "tl_kg": 379.8
+   }
+  ]
+ },
+ "fistik_ezmesi": {
+  "aday_sayisi": 17,
+  "en_ucuz": {
+   "market": "sok",
+   "name": "Amigo Yer Fıstığı Ezmesi 340 g",
+   "category": "Kahvaltilik",
+   "price": 115.0,
+   "regular_price": null,
+   "discount_pct": null,
+   "url": "https://www.sokmarket.com.tr/amigo-yer-fistigi-ezmesi-340-g-p-5872",
+   "image_url": "https://images.ceptesok.com/product-assets/sub-folder/839a1f27-cafe-4506-8777-877f21fb53ec.png",
+   "miktar_g": 340.0,
+   "tl_kg": 338.24
+  },
+  "marketler": {
+   "sok": {
+    "market": "sok",
+    "name": "Amigo Yer Fıstığı Ezmesi 340 g",
+    "category": "Kahvaltilik",
+    "price": 115.0,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.sokmarket.com.tr/amigo-yer-fistigi-ezmesi-340-g-p-5872",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/839a1f27-cafe-4506-8777-877f21fb53ec.png",
+    "miktar_g": 340.0,
+    "tl_kg": 338.24
+   },
+   "migros": {
+    "market": "migros",
+    "name": "Nut Master Şeker İlavesiz Yer Fıstığı Ezmesi 340 G",
+    "category": "Fıstık Ezmesi",
+    "price": 131.5,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.migros.com.tr/nut-master-seker-ilavesiz-yer-fistigi-ezmesi-340-g-p-89b2cc",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/09024204/09024204-f5207d-105x105.jpg",
+    "miktar_g": 340.0,
+    "tl_kg": 386.76
+   }
+  },
+  "ilk5": [
+   {
+    "market": "sok",
+    "name": "Amigo Yer Fıstığı Ezmesi 340 g",
+    "price": 115.0,
+    "miktar_g": 340.0,
+    "tl_kg": 338.24
+   },
+   {
+    "market": "migros",
+    "name": "Nut Master Şeker İlavesiz Yer Fıstığı Ezmesi 340 G",
+    "price": 131.5,
+    "miktar_g": 340.0,
+    "tl_kg": 386.76
+   },
+   {
+    "market": "migros",
+    "name": "Migros % 100 Yer Fıstığı Ezmesi 300 G",
+    "price": 139.95,
+    "miktar_g": 300.0,
+    "tl_kg": 466.5
+   },
+   {
+    "market": "migros",
+    "name": "Migros Ballı Yer Fıstığı Ezmesi 300 G",
+    "price": 139.95,
+    "miktar_g": 300.0,
+    "tl_kg": 466.5
+   },
+   {
+    "market": "migros",
+    "name": "Fitnut %100 Fıstık Ezmesi 360 G",
+    "price": 199.0,
+    "miktar_g": 360.0,
+    "tl_kg": 552.78
+   }
+  ]
+ },
+ "ceviz": {
+  "aday_sayisi": 13,
+  "en_ucuz": {
+   "market": "migros",
+   "name": "Ceviz İçi Kg",
+   "category": "Ceviz İçi",
+   "price": 711.75,
+   "regular_price": 949.0,
+   "discount_pct": 25.0,
+   "url": "https://www.migros.com.tr/ceviz-ici-kg-p-7b706e",
+   "image_url": "https://images.migrosone.com/sanalmarket/product/08089710/08089710-b63271-105x105.jpg",
+   "miktar_g": 1000.0,
+   "tl_kg": 711.75
+  },
+  "marketler": {
+   "migros": {
+    "market": "migros",
+    "name": "Ceviz İçi Kg",
+    "category": "Ceviz İçi",
+    "price": 711.75,
+    "regular_price": 949.0,
+    "discount_pct": 25.0,
+    "url": "https://www.migros.com.tr/ceviz-ici-kg-p-7b706e",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/08089710/08089710-b63271-105x105.jpg",
+    "miktar_g": 1000.0,
+    "tl_kg": 711.75
+   },
+   "sok": {
+    "market": "sok",
+    "name": "Amigo Ceviz İçi 150 g",
+    "category": "Atistirmaliklar",
+    "price": 109.0,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.sokmarket.com.tr/amigo-ceviz-ici-150-g-p-7513",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/90b21781-2f2a-4003-86af-e5fa02b8b2a2.png",
+    "miktar_g": 150.0,
+    "tl_kg": 726.67
+   }
+  },
+  "ilk5": [
+   {
+    "market": "migros",
+    "name": "Ceviz İçi Kg",
+    "price": 711.75,
+    "miktar_g": 1000.0,
+    "tl_kg": 711.75
+   },
+   {
+    "market": "sok",
+    "name": "Amigo Ceviz İçi 150 g",
+    "price": 109.0,
+    "miktar_g": 150.0,
+    "tl_kg": 726.67
+   },
+   {
+    "market": "migros",
+    "name": "Migros İç Ceviz 150 G",
+    "price": 109.9,
+    "miktar_g": 150.0,
+    "tl_kg": 732.67
+   },
+   {
+    "market": "migros",
+    "name": "Yerli Ceviz (Çorum - Oğuzlar) Kg",
+    "price": 772.43,
+    "miktar_g": 1000.0,
+    "tl_kg": 772.43
+   },
+   {
+    "market": "migros",
+    "name": "Emsal Ceviz İçi 150 G",
+    "price": 134.9,
+    "miktar_g": 150.0,
+    "tl_kg": 899.33
+   }
+  ]
+ },
+ "findik": {
+  "aday_sayisi": 14,
+  "en_ucuz": {
+   "market": "migros",
+   "name": "M Life Çiğ İç Fındık 200 G",
+   "category": "Fındık Çiğ",
+   "price": 155.9,
+   "regular_price": null,
+   "discount_pct": null,
+   "url": "https://www.migros.com.tr/m-life-cig-ic-findik-200-g-p-7b49e9",
+   "image_url": "https://images.migrosone.com/sanalmarket/product/08079849/08079849-5ccb22-105x105.jpg",
+   "miktar_g": 200.0,
+   "tl_kg": 779.5
+  },
+  "marketler": {
+   "migros": {
+    "market": "migros",
+    "name": "M Life Çiğ İç Fındık 200 G",
+    "category": "Fındık Çiğ",
+    "price": 155.9,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.migros.com.tr/m-life-cig-ic-findik-200-g-p-7b49e9",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/08079849/08079849-5ccb22-105x105.jpg",
+    "miktar_g": 200.0,
+    "tl_kg": 779.5
+   },
+   "sok": {
+    "market": "sok",
+    "name": "Amigo Dalından Çiğ Fındık 150 g",
+    "category": "Atistirmaliklar",
+    "price": 125.0,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.sokmarket.com.tr/amigo-dalindan-cig-findik-150-g-p-8085",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/9ab41bf7-797e-4975-a87c-a86e6d66aeab.png",
+    "miktar_g": 150.0,
+    "tl_kg": 833.33
+   }
+  },
+  "ilk5": [
+   {
+    "market": "migros",
+    "name": "M Life Çiğ İç Fındık 200 G",
+    "price": 155.9,
+    "miktar_g": 200.0,
+    "tl_kg": 779.5
+   },
+   {
+    "market": "migros",
+    "name": "Erçal Çiğ İç Fındık 50 G",
+    "price": 39.9,
+    "miktar_g": 50.0,
+    "tl_kg": 798.0
+   },
+   {
+    "market": "migros",
+    "name": "Çiğ İç Fındık Kg",
+    "price": 824.25,
+    "miktar_g": 1000.0,
+    "tl_kg": 824.25
+   },
+   {
+    "market": "sok",
+    "name": "Amigo Dalından Çiğ Fındık 150 g",
+    "price": 125.0,
+    "miktar_g": 150.0,
+    "tl_kg": 833.33
+   },
+   {
+    "market": "sok",
+    "name": "Wefood Glutensiz Granola Kakao&Fındık 250 g",
+    "price": 225.0,
+    "miktar_g": 250.0,
+    "tl_kg": 900.0
+   }
+  ]
+ },
+ "bal": {
+  "aday_sayisi": 49,
+  "en_ucuz": {
+   "market": "sok",
+   "name": "Kovandan Çiçek Balı 850 g",
+   "category": "Kahvaltilik",
+   "price": 359.0,
+   "regular_price": null,
+   "discount_pct": null,
+   "url": "https://www.sokmarket.com.tr/kovandan-cicek-bali-850-g-p-15824",
+   "image_url": "https://images.ceptesok.com/product-assets/sub-folder/10399e02-5048-4d52-a5bc-41ce2cee319f.jpg",
+   "miktar_g": 850.0,
+   "tl_kg": 422.35
+  },
+  "marketler": {
+   "sok": {
+    "market": "sok",
+    "name": "Kovandan Çiçek Balı 850 g",
+    "category": "Kahvaltilik",
+    "price": 359.0,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.sokmarket.com.tr/kovandan-cicek-bali-850-g-p-15824",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/10399e02-5048-4d52-a5bc-41ce2cee319f.jpg",
+    "miktar_g": 850.0,
+    "tl_kg": 422.35
+   },
+   "migros": {
+    "market": "migros",
+    "name": "Datçam Çiçek Balı 850 G",
+    "category": "Çiçek Balı",
+    "price": 359.93,
+    "regular_price": 479.9,
+    "discount_pct": 25.0,
+    "url": "https://www.migros.com.tr/datcam-cicek-bali-850-g-p-6c0072",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/07078002/07078002_1-18fc41-105x105.jpg",
+    "miktar_g": 850.0,
+    "tl_kg": 423.45
+   },
+   "a101": {
+    "market": "a101",
+    "name": "Bee'o Propolis On The Go Ham Bal 7x7 G",
+    "category": "Bal, Reçel",
+    "price": 125.0,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.a101.com.tr/kapida/sut-urunleri-kahvaltilik/beeo-propolis-on-the-go-ham-bal-7x7-g-_p-16002359",
+    "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/qFXVqrDfC2_256x256.png",
+    "miktar_g": 49.0,
+    "tl_kg": 2551.02
+   }
+  },
+  "ilk5": [
+   {
+    "market": "sok",
+    "name": "Kovandan Çiçek Balı 850 g",
+    "price": 359.0,
+    "miktar_g": 850.0,
+    "tl_kg": 422.35
+   },
+   {
+    "market": "migros",
+    "name": "Datçam Çiçek Balı 850 G",
+    "price": 359.93,
+    "miktar_g": 850.0,
+    "tl_kg": 423.45
+   },
+   {
+    "market": "migros",
+    "name": "Migros Çiçek Balı 850 G",
+    "price": 359.95,
+    "miktar_g": 850.0,
+    "tl_kg": 423.47
+   },
+   {
+    "market": "sok",
+    "name": "Kovandan Çiçek Balı 460 g",
+    "price": 199.0,
+    "miktar_g": 460.0,
+    "tl_kg": 432.61
+   },
+   {
+    "market": "sok",
+    "name": "Kovandan Çiçek Balı Çıt Kapak 270 g",
+    "price": 119.0,
+    "miktar_g": 270.0,
+    "tl_kg": 440.74
+   }
+  ]
+ },
+ "salca": {
+  "aday_sayisi": 24,
+  "en_ucuz": {
+   "market": "sok",
+   "name": "Domates Salçası Bizim Vatan 4300 g",
+   "category": "Yemeklik Malzemeler",
+   "price": 329.0,
+   "regular_price": null,
+   "discount_pct": null,
+   "url": "https://www.sokmarket.com.tr/domates-salcasi-bizim-vatan-4300-g-p-8090",
+   "image_url": "https://images.ceptesok.com/product-assets/sub-folder/89711498-95ce-4151-8016-6db5c91e02d1.jpg",
+   "miktar_g": 4300.0,
+   "tl_kg": 76.51
+  },
+  "marketler": {
+   "sok": {
+    "market": "sok",
+    "name": "Domates Salçası Bizim Vatan 4300 g",
+    "category": "Yemeklik Malzemeler",
+    "price": 329.0,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.sokmarket.com.tr/domates-salcasi-bizim-vatan-4300-g-p-8090",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/89711498-95ce-4151-8016-6db5c91e02d1.jpg",
+    "miktar_g": 4300.0,
+    "tl_kg": 76.51
+   },
+   "migros": {
+    "market": "migros",
+    "name": "Migros Domates Salçası 830 G",
+    "category": "Domates Salçası",
+    "price": 68.95,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.migros.com.tr/migros-domates-salcasi-830-g-p-898084",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/09011332/09011332_1-c630d9-105x105.jpg",
+    "miktar_g": 830.0,
+    "tl_kg": 83.07
+   },
+   "a101": {
+    "market": "a101",
+    "name": "Tat Domates Salçası 830 G",
+    "category": "Salça",
+    "price": 69.5,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.a101.com.tr/kapida/temel-gida/tat-domates-salcasi-830-g_p-18002124",
+    "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/nzVT1J97GW_256x256.png",
+    "miktar_g": 830.0,
+    "tl_kg": 83.73
+   }
+  },
+  "ilk5": [
+   {
+    "market": "sok",
+    "name": "Domates Salçası Bizim Vatan 4300 g",
+    "price": 329.0,
+    "miktar_g": 4300.0,
+    "tl_kg": 76.51
+   },
+   {
+    "market": "sok",
+    "name": "Domates Salçası Bizim Vatan 830 g",
+    "price": 67.5,
+    "miktar_g": 830.0,
+    "tl_kg": 81.33
+   },
+   {
+    "market": "migros",
+    "name": "Migros Domates Salçası 830 G",
+    "price": 68.95,
+    "miktar_g": 830.0,
+    "tl_kg": 83.07
+   },
+   {
+    "market": "migros",
+    "name": "Tat Domates Salçası 830 G",
+    "price": 68.95,
+    "miktar_g": 830.0,
+    "tl_kg": 83.07
+   },
+   {
+    "market": "a101",
+    "name": "Tat Domates Salçası 830 G",
+    "price": 69.5,
+    "miktar_g": 830.0,
+    "tl_kg": 83.73
+   }
+  ]
+ },
+ "zeytinyagi": {
+  "aday_sayisi": 60,
+  "en_ucuz": {
+   "market": "migros",
+   "name": "Yudum Egemden Rıvıera Zeytinyağı 2L",
+   "category": "Riviera Zeytinyağı",
+   "price": 469.95,
+   "regular_price": 789.95,
+   "discount_pct": 40.5,
+   "url": "https://www.migros.com.tr/yudum-egemden-riviera-zeytinyagi-2l-p-3f0918",
+   "image_url": "https://images.migrosone.com/sanalmarket/product/04131096/04131096_1-6e4ab7-105x105.jpg",
+   "miktar_g": 1840.0,
+   "tl_kg": 255.41
+  },
+  "marketler": {
+   "migros": {
+    "market": "migros",
+    "name": "Yudum Egemden Rıvıera Zeytinyağı 2L",
+    "category": "Riviera Zeytinyağı",
+    "price": 469.95,
+    "regular_price": 789.95,
+    "discount_pct": 40.5,
+    "url": "https://www.migros.com.tr/yudum-egemden-riviera-zeytinyagi-2l-p-3f0918",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/04131096/04131096_1-6e4ab7-105x105.jpg",
+    "miktar_g": 1840.0,
+    "tl_kg": 255.41
+   },
+   "sok": {
+    "market": "sok",
+    "name": "Lio Riviera Zeytinyağı 2 L",
+    "category": "Yemeklik Malzemeler",
+    "price": 510.0,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.sokmarket.com.tr/lio-riviera-zeytinyagi-2-l-p-7412",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/28950fa6-2e86-4435-a799-3acc0ffa3be3.jpg",
+    "miktar_g": 1840.0,
+    "tl_kg": 277.17
+   }
+  },
+  "ilk5": [
+   {
+    "market": "migros",
+    "name": "Yudum Egemden Rıvıera Zeytinyağı 2L",
+    "price": 469.95,
+    "miktar_g": 1840.0,
+    "tl_kg": 255.41
+   },
+   {
+    "market": "migros",
+    "name": "Migros Riviera Zeytinyağı 2 L",
+    "price": 509.5,
+    "miktar_g": 1840.0,
+    "tl_kg": 276.9
+   },
+   {
+    "market": "sok",
+    "name": "Lio Riviera Zeytinyağı 2 L",
+    "price": 510.0,
+    "miktar_g": 1840.0,
+    "tl_kg": 277.17
+   },
+   {
+    "market": "sok",
+    "name": "Lio Riviera Zeytinyağı 1 L",
+    "price": 269.0,
+    "miktar_g": 920.0,
+    "tl_kg": 292.39
+   },
+   {
+    "market": "migros",
+    "name": "Migros Natürel Sızma Zeytinyağı 1 L",
+    "price": 269.5,
+    "miktar_g": 920.0,
+    "tl_kg": 292.93
+   }
+  ]
+ },
+ "aycicek_yagi": {
+  "aday_sayisi": 18,
+  "en_ucuz": {
+   "market": "migros",
+   "name": "Migros Ayçiçek Yağı 5 L Köşeli Pet",
+   "category": "Ayçiçek Yağı",
+   "price": 429.0,
+   "regular_price": null,
+   "discount_pct": null,
+   "url": "https://www.migros.com.tr/migros-aycicek-yagi-5-l-koseli-pet-p-3eb70e",
+   "image_url": "https://images.migrosone.com/sanalmarket/product/04110094/04110094-4bf77c-105x105.jpg",
+   "miktar_g": 4600.0,
+   "tl_kg": 93.26
+  },
+  "marketler": {
+   "migros": {
+    "market": "migros",
+    "name": "Migros Ayçiçek Yağı 5 L Köşeli Pet",
+    "category": "Ayçiçek Yağı",
+    "price": 429.0,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.migros.com.tr/migros-aycicek-yagi-5-l-koseli-pet-p-3eb70e",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/04110094/04110094-4bf77c-105x105.jpg",
+    "miktar_g": 4600.0,
+    "tl_kg": 93.26
+   },
+   "sok": {
+    "market": "sok",
+    "name": "Evin Ayçiçek Yağı Pet 5 L",
+    "category": "Yemeklik Malzemeler",
+    "price": 479.0,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.sokmarket.com.tr/evin-aycicek-yagi-pet-5-l-p-6486",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/5b2da8cb-a772-4eba-a87d-591e83d2e784.png",
+    "miktar_g": 4600.0,
+    "tl_kg": 104.13
+   },
+   "a101": {
+    "market": "a101",
+    "name": "Safya Ayçiçek Yağı 5 L",
+    "category": "Sıvı Yağlar",
+    "price": 489.0,
+    "regular_price": 529.0,
+    "discount_pct": 7.6,
+    "url": "https://www.a101.com.tr/kapida/temel-gida/safya-aycicek-yagi-5-l_p-19001047",
+    "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/wNRRxMNsJT_256x256.png",
+    "miktar_g": 4600.0,
+    "tl_kg": 106.3
+   }
+  },
+  "ilk5": [
+   {
+    "market": "migros",
+    "name": "Migros Ayçiçek Yağı 5 L Köşeli Pet",
+    "price": 429.0,
+    "miktar_g": 4600.0,
+    "tl_kg": 93.26
+   },
+   {
+    "market": "migros",
+    "name": "Migros Ayçiçek Yağı 5 L Köşeli Pet",
+    "price": 429.0,
+    "miktar_g": 4600.0,
+    "tl_kg": 93.26
+   },
+   {
+    "market": "sok",
+    "name": "Evin Ayçiçek Yağı Pet 5 L",
+    "price": 479.0,
+    "miktar_g": 4600.0,
+    "tl_kg": 104.13
+   },
+   {
+    "market": "a101",
+    "name": "Safya Ayçiçek Yağı 5 L",
+    "price": 489.0,
+    "miktar_g": 4600.0,
+    "tl_kg": 106.3
+   },
+   {
+    "market": "migros",
+    "name": "Abalı Ayçiçek Yağı 5 L",
+    "price": 509.95,
+    "miktar_g": 4600.0,
+    "tl_kg": 110.86
+   }
+  ]
+ },
+ "tereyagi": {
+  "aday_sayisi": 51,
+  "en_ucuz": {
+   "market": "sok",
+   "name": "Mis Tereyağ 1000 g",
+   "category": "Sut Ve Sut Urunleri",
+   "price": 469.0,
+   "regular_price": null,
+   "discount_pct": null,
+   "url": "https://www.sokmarket.com.tr/mis-tereyag-1000-g-p-7051",
+   "image_url": "https://images.ceptesok.com/product-assets/sub-folder/3e45f527-0ec5-4043-9bbb-c92e95383366.jpg",
+   "miktar_g": 1000.0,
+   "tl_kg": 469.0
+  },
+  "marketler": {
+   "sok": {
+    "market": "sok",
+    "name": "Mis Tereyağ 1000 g",
+    "category": "Sut Ve Sut Urunleri",
+    "price": 469.0,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.sokmarket.com.tr/mis-tereyag-1000-g-p-7051",
+    "image_url": "https://images.ceptesok.com/product-assets/sub-folder/3e45f527-0ec5-4043-9bbb-c92e95383366.jpg",
+    "miktar_g": 1000.0,
+    "tl_kg": 469.0
+   },
+   "migros": {
+    "market": "migros",
+    "name": "Migros Tereyağı 1 Kg",
+    "category": "Tereyağı",
+    "price": 499.95,
+    "regular_price": null,
+    "discount_pct": null,
+    "url": "https://www.migros.com.tr/migros-tereyagi-1-kg-p-b75d84",
+    "image_url": "https://images.migrosone.com/sanalmarket/product/12017028/12017028_1-824cb2-105x105.jpg",
+    "miktar_g": 1000.0,
+    "tl_kg": 499.95
+   }
+  },
+  "ilk5": [
+   {
+    "market": "sok",
+    "name": "Mis Tereyağ 1000 g",
+    "price": 469.0,
+    "miktar_g": 1000.0,
+    "tl_kg": 469.0
+   },
+   {
+    "market": "sok",
+    "name": "Mis Tereyağı 500 g",
+    "price": 239.0,
+    "miktar_g": 500.0,
+    "tl_kg": 478.0
+   },
+   {
+    "market": "migros",
+    "name": "Migros Tereyağı 1 Kg",
+    "price": 499.95,
+    "miktar_g": 1000.0,
+    "tl_kg": 499.95
+   },
+   {
+    "market": "sok",
+    "name": "Mis Tuzlu Tereyağı 500 g",
+    "price": 295.0,
+    "miktar_g": 500.0,
+    "tl_kg": 590.0
+   },
+   {
+    "market": "migros",
+    "name": "Migros Tereyağ 500 G",
+    "price": 309.9,
+    "miktar_g": 500.0,
+    "tl_kg": 619.8
+   }
+  ]
+ }
+}
