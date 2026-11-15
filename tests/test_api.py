@@ -37,6 +37,23 @@ def test_saglik(istemci):
     assert istemci.get("/saglik").json() == {"durum": "ok", "katalog_urun_sayisi": 1}
 
 
+def test_urun_arama(tmp_path, monkeypatch):
+    katalog = tmp_path / "katalog.json"
+    katalog.write_text(json.dumps([
+        {"market": "sok", "name": "Mis Süt 1 L", "price": 36.0, "discount_pct": None},
+        {"market": "migros", "name": "SÜTAŞ Süt 1 L", "price": 40.0, "discount_pct": 10},
+        {"market": "migros", "name": "Pınar Ayran", "price": 20.0, "discount_pct": None},
+    ], ensure_ascii=False), encoding="utf-8")
+    monkeypatch.setenv("KATALOG_YOLU", str(katalog))
+    with TestClient(main.uygulama_olustur()) as c:
+        r = c.get("/urunler", params={"q": "sut"}).json()                 # ü/Ü farkı önemsiz
+        assert r["toplam"] == 2 and [p["price"] for p in r["urunler"]] == [36.0, 40.0]
+        assert c.get("/urunler", params={"q": "süt", "market": "migros"}).json()["toplam"] == 1
+        assert c.get("/urunler", params={"siralama": "indirim"}).json()["urunler"][0]["discount_pct"] == 10
+        r = c.get("/urunler", params={"adet": 2, "sayfa": 2}).json()
+        assert r["toplam"] == 3 and len(r["urunler"]) == 1
+
+
 def test_hedef_ve_guvenlik(istemci):
     r = istemci.post("/hedef", json=KISI)
     assert r.status_code == 200

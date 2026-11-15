@@ -2,6 +2,7 @@
 Beslenme planı sunucusu (FastAPI). Mobil uygulama bu adreslerle konuşur:
 
   GET  /saglik            sunucu ve katalog durumu
+  GET  /urunler           tüm ürünlerde arama (?q=süt&market=sok&siralama=ucuz&sayfa=1)
   POST /hedef             kalori/makro hedefi (anında)
   POST /plan              haftalık plan işini başlatır -> {"is_id": ...}
   GET  /plan/{is_id}      işin durumu; bittiyse plan + alışveriş listesi
@@ -19,7 +20,7 @@ import threading
 from pathlib import Path
 from typing import List, Literal, Optional
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel, Field
@@ -28,6 +29,7 @@ KOK = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(KOK / "beslenme"))
 import plan  # noqa: E402
 from hedef import hesapla  # noqa: E402
+from miktar import norm  # noqa: E402
 
 from .isler import IsKuyrugu  # noqa: E402
 
@@ -97,6 +99,23 @@ def uygulama_olustur() -> FastAPI:
         except FileNotFoundError:
             n = 0
         return {"durum": "ok", "katalog_urun_sayisi": n}
+
+    @app.get("/urunler")
+    def urunler(q: str = "", market: Optional[str] = None, siralama: Literal["ucuz", "indirim", "ad"] = "ucuz",
+                sayfa: int = Query(1, ge=1), adet: int = Query(40, ge=1, le=100)):
+        """Tüm ürünler kataloğunda arama (Türkçe karakter ve büyük/küçük harf duyarsız)."""
+        kelimeler = norm(q).split()
+        sonuc = [p for p in app.state.katalog.getir()
+                 if (not market or p["market"] == market)
+                 and all(k in norm(p["name"]) for k in kelimeler)]
+        anahtar = {
+            "ucuz": lambda p: p["price"],
+            "indirim": lambda p: -(p.get("discount_pct") or 0),
+            "ad": lambda p: norm(p["name"]),
+        }[siralama]
+        sonuc.sort(key=anahtar)
+        bas = (sayfa - 1) * adet
+        return {"toplam": len(sonuc), "sayfa": sayfa, "urunler": sonuc[bas:bas + adet]}
 
     @app.post("/hedef")
     def hedef(k: Kisi):
