@@ -35,6 +35,10 @@ beslenme/
   eslestirme.py        malzeme başına en ucuz ürün, TL/kg, tarif porsiyon maliyeti
   hedef.py             Mifflin-St Jeor kalori/makro hedefi (güvenlik alt sınırları)
   plan.py              Haftalık plan MILP modeli (PuLP; HiGHS varsa onu, yoksa CBC)
+api/                 Beslenme planı sunucusu (FastAPI). Paketleri api/requirements.txt'te
+  main.py            GET /saglik, POST /hedef, POST /plan (iş no döner), GET /plan/{is_id};
+                     katalog.json'u dosya değişince yeniden okur; "tıbbi tavsiye değildir" notu ekler
+  isler.py           Bellekte iş kuyruğu (tek işçi; çözüm ~70 sn). Supabase aşamasında tabloya taşınacak
 tests/               pytest testleri (ağa çıkmaz; tests/fixtures altında gerçek site örnekleri)
 .github/workflows/daily.yml   Her gün 04:00 UTC: "tara" işi (Migros/ŞOK/BİM + data/imports içe aktar,
                               commit) ve "yayinla" işi (GitHub Pages)
@@ -61,6 +65,7 @@ python run.py --only a101 --katalog --dump --goster            # A101'i tarayıc
 python beslenme/tarif_ozet.py                                  # tarif besin tablosu
 python beslenme/eslestirme.py data/katalog.json                # fiyat eşleştirme + tarif maliyetleri
 python beslenme/plan.py --kilo 75 --boy 178 --yas 23 --cinsiyet erkek --aktivite orta --hedef koru --market 2
+uvicorn api.main:app --reload                                  # sunucu; deneme sayfası http://127.0.0.1:8000/docs
 ```
 
 ## Önemli kurallar ve tuzaklar
@@ -70,7 +75,14 @@ python beslenme/plan.py --kilo 75 --boy 178 --yas 23 --cinsiyet erkek --aktivite
   `X | Y` tipleri) kullanma.
 - **Kodlama:** Windows varsayılanı cp1254. Dosya okurken/yazarken HER ZAMAN `encoding="utf-8"` ver
   (testlerde de). CSV'ler Excel için `utf-8-sig` ve `;` ayraçlı. `.bat` dosyaları CRLF satır sonlu.
-- **pulp sürümü:** `pulp==2.9.0` sabit (4.x API'si farklı, `LpVariable(cat=...)` çalışmıyor).
+- **pulp sürümü:** `requirements.txt`'te `pulp==2.9.0`; bilgisayarda 3.3.0 kurulu ve testler onunla geçiyor.
+  4.x kullanma (API'si farklı, `LpVariable(cat=...)` çalışmıyor).
+- **git:** PATH'te yok; GitHub Desktop'un içindeki git kullanılıyor
+  (`%LOCALAPPDATA%\GitHubDesktop\app-*\resources\app\git\cmd\git.exe`).
+- **anyio:** Anaconda'daki jupyter-server `anyio<4` istiyor; FastAPI kurulumu bunu yükseltirse 3.7.1'e geri çek.
+- **Eşleştirme kuralları:** `haric` listesi normalize edilmiş ad içinde alt-dize olarak aranır. Türkçe ek
+  alan kelimelerde kökü yaz ("gevrek" değil "gevre": gevreği'yi de yakalar). Kelime sınırı için konan
+  baş/son boşluk korunur ("un " -> "Uno" markasını elemez).
 - **data/ klasörü:** prices.db, discounts_today.json, katalog.json bot tarafından her gün güncellenir.
   Yerel denemelerden sonra bu dosyalardaki değişiklikleri commit'leme (`git restore data/`);
   aksi halde binary çakışma çıkar. Değişikliğe başlamadan önce `git pull` yap.
@@ -97,9 +109,10 @@ pay kadar maliyete girer + peşin paket tutarının %15'i stok cezası (dev pake
 
 ## Yol haritası (sıradaki işler)
 
-1. Plan modelini uygulamaya bağlamak için küçük bir sunucu (FastAPI) + Supabase (kullanıcı profili,
-   kayıtlı planlar; ayrıca her gün commit'lenen prices.db / katalog.json repoyu şişirdiği için
-   veri Supabase'e taşınacak).
+1. Plan modelini uygulamaya bağlamak: FastAPI sunucusu (api/) YAPILDI, yerelde çalışıyor.
+   Sıradaki: Supabase (kullanıcı profili, kayıtlı planlar; ayrıca her gün commit'lenen
+   prices.db / katalog.json repoyu şişirdiği için veri Supabase'e taşınacak), sonra sunucuyu
+   internete taşımak (Render / Fly.io vb.).
 2. Expo uygulamasına sekmeler: İndirimler / Tüm Ürünler / Beslenme Planı / Alışveriş Listesi.
 3. Tarif veritabanını büyütmek (özellikle vejetaryen yüksek proteinli tarifler).
 4. Besin değerlerini TÜRKOMP ile doğrulamak.
