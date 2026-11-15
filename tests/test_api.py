@@ -67,18 +67,30 @@ def test_hedef_ve_guvenlik(istemci):
 def test_plan_isi_akisi(istemci, monkeypatch):
     gelen = {}
 
-    def sahte_coz(katalog, kisi, paket, max_market, sure_siniri):
-        gelen.update(katalog=katalog, kisi=kisi, paket=paket, max_market=max_market)
+    def sahte_coz(katalog, kisi, paket, max_market, sure_siniri, **tercih):
+        gelen.update(katalog=katalog, kisi=kisi, paket=paket, max_market=max_market, **tercih)
         return {"durum": "Optimal", "plan": [], "alisveris": [], "toplam_tl": 0}
 
     monkeypatch.setattr(main.plan, "coz", sahte_coz)
-    r = istemci.post("/plan", json={**KISI, "paket": "vejetaryen", "market": 1})
+    r = istemci.post("/plan", json={**KISI, "paket": "vejetaryen", "market": 1, "ekipman": ["ocak", "airfryer"],
+                                    "alerjen": ["gluten"], "max_sure": 30, "ara_ogun": 1})
     assert r.status_code == 202
     s = bekle(istemci, r.json()["is_id"])
     assert s["durum"] == "bitti" and s["sonuc"]["durum"] == "Optimal"
     assert "tıbbi tavsiye değildir" in s["sonuc"]["not"]
     assert gelen["paket"] == "vejetaryen" and gelen["max_market"] == 1 and gelen["kisi"]["kilo"] == 75
     assert gelen["katalog"][0]["name"] == "Domates Kg"
+    assert gelen["ekipman"] == ["ocak", "airfryer"] and gelen["alerjen"] == ["gluten"]
+    assert gelen["max_sure"] == 30 and gelen["ara_ogun"] == 1 and gelen["haric_malzeme"] == []
+    # tanımsız ekipman reddedilir
+    assert istemci.post("/plan", json={**KISI, "ekipman": ["kazan"]}).status_code == 422
+
+
+def test_secenekler(istemci):
+    r = istemci.get("/secenekler").json()
+    assert {"ocak", "airfryer"} <= {e["id"] for e in r["ekipman"]}
+    assert {"sut", "gluten"} <= {a["id"] for a in r["alerjen"]}
+    assert any(m["id"] == "tavuk_gogus" for m in r["malzemeler"]) and r["tarif_sayisi"] >= 40
 
 
 def test_plan_hatalari(istemci, monkeypatch):

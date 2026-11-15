@@ -41,6 +41,11 @@
    "Biberleri zeytinyağında birkaç dakika sotele.",
    "Doğranmış domatesi ekle, suyunu çekene kadar pişir.",
    "Yumurtaları kırıp karıştır, kıvamını bulunca ocaktan al. Ekmekle servis et."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
   ]
  },
  {
@@ -84,6 +89,11 @@
   "adimlar": [
    "Yumurtaları 8-9 dakika haşla.",
    "Peynir, zeytin, domates ve salatalıkla tabağa diz, ekmekle servis et."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
   ]
  },
  {
@@ -119,6 +129,14 @@
   "adimlar": [
    "Yulafı sütle kısık ateşte 5 dakika, koyulaşana kadar pişir.",
    "Dilimlenmiş muz ve ceviz ekleyerek servis et."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ],
+   [
+    "mikrodalga"
+   ]
   ]
  },
  {
@@ -159,6 +177,9 @@
   "adimlar": [
    "Yulaf, yoğurt ve sütü kavanozda karıştır, buzdolabında bir gece beklet.",
    "Sabah rendelenmiş elma ve bal ekle."
+  ],
+  "ekipman": [
+   []
   ]
  },
  {
@@ -202,6 +223,11 @@
   "adimlar": [
    "Ispanağı zeytinyağında söndür.",
    "Lor ile çırpılmış yumurtayı üzerine dök, kısık ateşte pişir. Ekmekle servis et."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
   ]
  },
  {
@@ -237,6 +263,17 @@
   "adimlar": [
    "Ekmeklerin arasına kaşar ve domates dilimleri koy.",
    "Tost makinesinde veya tavada kızart, salatalıkla servis et."
+  ],
+  "ekipman": [
+   [
+    "tost_makinesi"
+   ],
+   [
+    "ocak"
+   ],
+   [
+    "airfryer"
+   ]
   ]
  },
  {
@@ -269,6 +306,9 @@
   "adimlar": [
    "Ekmeğe fıstık ezmesi sür.",
    "Üzerine muz dilimleri diz."
+  ],
+  "ekipman": [
+   []
   ]
  },
  {
@@ -320,6 +360,11 @@
   "adimlar": [
    "Kabak ve biberi zeytinyağında yumuşat, domatesi ekle.",
    "Çırpılmış yumurtayı dök, üzerine kaşar serp, kapağı kapalı pişir."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
   ]
  },
  {
@@ -364,6 +409,11 @@
    "Yoğurdu ezilmiş sarımsakla karıştır.",
    "Yumurtaları sirkeli kaynar suda 3 dakika poşe et, yoğurdun üzerine al.",
    "Tereyağını pul biberle eritip üzerine gezdir."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
   ]
  },
  {
@@ -407,6 +457,9 @@
   "adimlar": [
    "Lorun üzerine bal ve ceviz ekle.",
    "Domates, salatalık ve ekmekle servis et."
+  ],
+  "ekipman": [
+   []
   ]
  },
  {
@@ -459,6 +512,11 @@
    "Soğanı zeytinyağında kavur, doğranmış havuç ve patatesi ekle.",
    "Yıkanmış mercimeği ve sıcak suyu ekleyip 25 dakika pişir.",
    "Blenderdan geçir, limonla servis et."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
   ]
  },
  {
@@ -511,6 +569,11 @@
    "Soğanı tereyağında kavur, salçayı ekle.",
    "Mercimek, bulgur ve pirinci ekleyip suyla 30 dakika pişir.",
    "Nane ve pul biberle tatlandır."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
   ]
  },
  {
@@ -554,6 +617,11 @@
   "adimlar": [
    "Soğanı zeytinyağında kavur, salçayı ekle.",
    "Haşlanmış mercimek ve bulguru ekleyip suyla 20 dakika pişir."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
   ]
  },
  {
@@ -594,6 +662,11 @@
    "Fasulyeyi bir gece önceden ıslat, haşla.",
    "Soğanı kavur, salçayı ekle.",
    "Fasulye ve suyunu ekleyip 30 dakika pişir."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
   ]
  },
  {
@@ -638,6 +711,11 @@
    "Nohudu bir gece önceden ıslat, haşla.",
    "Soğan, salça ve domatesi kavur.",
    "Nohudu ekleyip 25 dakika pişir."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
   ]
  },
  {
@@ -681,6 +759,11 @@
   "adimlar": [
    "Kuşbaşı tavuğu suyunu çekene kadar sotele.",
    "Soğan ve biberi ekle, ardından domatesi ekleyip 10 dakika pişir."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
   ]
  },
  {
@@ -724,6 +807,14 @@
   "adimlar": [
    "Tavuk ve elma dilim patatesleri salça, zeytinyağı ve baharatla harmanla.",
    "200 derece fırında 40 dakika pişir."
+  ],
+  "ekipman": [
+   [
+    "firin"
+   ],
+   [
+    "airfryer"
+   ]
   ]
  },
  {
@@ -772,6 +863,11 @@
    "Tavuğu küçük doğrayıp sotele.",
    "Soğan, biber ve salçayı ekle.",
    "Bulgur ve iki katı sıcak suyu ekleyip demlenene kadar pişir."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
   ]
  },
  {
@@ -816,6 +912,11 @@
    "Makarnayı haşla.",
    "Tavuğu sotele, sarımsak ve rendelenmiş domatesi ekleyip sos yap.",
    "Makarnayı sosla karıştır."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
   ]
  },
  {
@@ -867,6 +968,11 @@
   "adimlar": [
    "Makarnayı haşlayıp soğut.",
    "Ton balığı ve doğranmış sebzelerle karıştır, zeytinyağı ve limonla tatlandır."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
   ]
  },
  {
@@ -914,6 +1020,9 @@
   "adimlar": [
    "Sebzeleri doğra.",
    "Ton balığını ekle, zeytinyağı ve limonla karıştır. Ekmekle servis et."
+  ],
+  "ekipman": [
+   []
   ]
  },
  {
@@ -962,6 +1071,14 @@
    "Kıymayı rendelenmiş soğan ve baharatla yoğur, köfte şekli ver.",
    "Patates, biber ve domatesle tepsiye diz.",
    "Salçalı su gezdirip 200 derecede 35 dakika pişir."
+  ],
+  "ekipman": [
+   [
+    "firin"
+   ],
+   [
+    "airfryer"
+   ]
   ]
  },
  {
@@ -1006,6 +1123,11 @@
    "Makarnayı haşla.",
    "Kıymayı soğanla kavur, salça ve domatesi ekleyip sos yap.",
    "Makarnayı sosla karıştır."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
   ]
  },
  {
@@ -1053,6 +1175,11 @@
   "adimlar": [
    "Kıymayı soğanla kavur, salçayı ekle.",
    "Doğranmış ıspanak ve pirinci ekleyip 15 dakika pişir."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
   ]
  },
  {
@@ -1101,6 +1228,16 @@
    "Patlıcanları dilimleyip fırında az yağla pişir.",
    "Kıymayı soğan, biber ve domatesle kavur.",
    "Patlıcan ve kıymayı kat kat dizip 20 dakika fırında pişir."
+  ],
+  "ekipman": [
+   [
+    "ocak",
+    "firin"
+   ],
+   [
+    "ocak",
+    "airfryer"
+   ]
   ]
  },
  {
@@ -1141,6 +1278,11 @@
   "adimlar": [
    "Soğanı zeytinyağında öldür.",
    "Fasulye ve rendelenmiş domatesi ekleyip kısık ateşte 35 dakika pişir."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
   ]
  },
  {
@@ -1189,6 +1331,17 @@
    "Kabağı rendeleyip suyunu sık.",
    "Yumurta, un, peynir ve maydanozla karıştır.",
    "Az yağlı tavada iki yüzünü kızart."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ],
+   [
+    "airfryer"
+   ],
+   [
+    "firin"
+   ]
   ]
  },
  {
@@ -1246,6 +1399,11 @@
    "Mercimeği haşla, sıcakken bulguru ekleyip demlendir.",
    "Kavrulmuş soğan, salça ve maydanozla yoğur.",
    "Köfte şekli verip marulla servis et."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
   ]
  },
  {
@@ -1294,6 +1452,16 @@
    "Nohudu haşla.",
    "Sebzeleri iri doğrayıp nohut, zeytinyağı ve baharatla harmanla.",
    "200 derecede 35 dakika pişir."
+  ],
+  "ekipman": [
+   [
+    "ocak",
+    "firin"
+   ],
+   [
+    "ocak",
+    "airfryer"
+   ]
   ]
  },
  {
@@ -1333,6 +1501,11 @@
   "adimlar": [
    "Makarnayı haşla.",
    "Sarımsaklı yoğurdu üzerine dök, pul biberli tereyağı gezdir."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
   ]
  },
  {
@@ -1385,6 +1558,11 @@
    "Tavuğu haşla, didikle.",
    "Suyuna doğranmış sebzeleri ve pirinci ekleyip 20 dakika pişir.",
    "Tavuğu geri ekle, limonla servis et."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
   ]
  },
  {
@@ -1421,6 +1599,11 @@
   "adimlar": [
    "Haşlanmış nohut ve pirinci tereyağında kavur.",
    "Sıcak suyu ekleyip kısık ateşte demlendir."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
   ]
  },
  {
@@ -1452,6 +1635,11 @@
   "adimlar": [
    "Pirinci tereyağında kavur.",
    "Sıcak suyu ekleyip kısık ateşte demlendir."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
   ]
  },
  {
@@ -1491,6 +1679,11 @@
   "adimlar": [
    "Soğanı kavur, domatesi ekle.",
    "Bulgur ve sıcak suyu ekleyip demlendir."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
   ]
  },
  {
@@ -1538,6 +1731,9 @@
   "adimlar": [
    "Sebzeleri küçük doğra.",
    "Zeytinyağı ve limonla karıştır."
+  ],
+  "ekipman": [
+   []
   ]
  },
  {
@@ -1574,6 +1770,9 @@
   "adimlar": [
    "Salatalığı rendele.",
    "Sarımsaklı yoğurtla karıştır, isteğe göre su ekle."
+  ],
+  "ekipman": [
+   []
   ]
  },
  {
@@ -1604,6 +1803,9 @@
   ],
   "adimlar": [
    "Yoğurdun üzerine bal ve ceviz ekle."
+  ],
+  "ekipman": [
+   []
   ]
  },
  {
@@ -1630,6 +1832,9 @@
   ],
   "adimlar": [
    "Elmayı dilimle, fındıkla birlikte ye."
+  ],
+  "ekipman": [
+   []
   ]
  },
  {
@@ -1656,6 +1861,9 @@
   ],
   "adimlar": [
    "Muzu dilimleyip fıstık ezmesiyle ye."
+  ],
+  "ekipman": [
+   []
   ]
  },
  {
@@ -1683,6 +1891,9 @@
   ],
   "adimlar": [
    "Yoğurdu su ve tuzla çırp."
+  ],
+  "ekipman": [
+   []
   ]
  },
  {
@@ -1713,6 +1924,11 @@
   ],
   "adimlar": [
    "Yumurtaları 9 dakika haşla, salatalıkla ye."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
   ]
  },
  {
@@ -1756,6 +1972,12 @@
   "adimlar": [
    "Haşlanmış nohudu tahin, limon, sarımsak ve zeytinyağıyla püre yap.",
    "Havuç çubuklarıyla servis et."
+  ],
+  "ekipman": [
+   [
+    "ocak",
+    "blender"
+   ]
   ]
  },
  {
@@ -1782,6 +2004,9 @@
   ],
   "adimlar": [
    "Portakalı soy, cevizle birlikte ye."
+  ],
+  "ekipman": [
+   []
   ]
  },
  {
@@ -1808,6 +2033,9 @@
   ],
   "adimlar": [
    "Lorun üzerine bal gezdir."
+  ],
+  "ekipman": [
+   []
   ]
  }
 ]

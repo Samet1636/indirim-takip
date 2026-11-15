@@ -41,3 +41,38 @@ def test_plan_kisitlari(monkeypatch):
             sayac[o["tarif"]] = sayac.get(o["tarif"], 0) + 1
     assert max(sayac.values()) <= 2                     # çeşitlilik
     assert s["marketler"] == ["sok"]                    # tek market ve ucuz olanı
+    # tarif detayları uygulama için döner
+    for tid in sayac:
+        d = s["tarifler"][tid]
+        assert d["adimlar"] and d["malzemeler"] and d["ekipman"]
+
+
+def test_tarif_tercih_suzgeci():
+    malz, tarifler = plan.tarif_ozet.yukle()
+    hepsi = plan.tarif_sec(tarifler, malz)
+    # sadece mikrodalga: ocak isteyen tarifler elenir, pişirmesizler kalır
+    mikro = plan.tarif_sec(tarifler, malz, ekipman=["mikrodalga"])
+    assert "menemen" not in mikro and "gece_yulafi" in mikro and "yulaf_lapasi" in mikro
+    # airfryer, fırın alternatifi olan tarifi açar
+    assert "izmir_kofte" in plan.tarif_sec(tarifler, malz, ekipman=["ocak", "airfryer"])
+    assert "izmir_kofte" not in plan.tarif_sec(tarifler, malz, ekipman=["ocak"])
+    # alerjen ve istenmeyen malzeme
+    assert all("yumurta" not in plan.tarif_ozet.alerjenler(t) for t in
+               plan.tarif_sec(tarifler, malz, alerjen=["yumurta"]).values())
+    assert "kuru_fasulye" not in plan.tarif_sec(tarifler, malz, haric_malzeme=["kuru_fasulye"])
+    assert all(t["sure_dk"] <= 15 for t in plan.tarif_sec(tarifler, malz, max_sure=15).values())
+    assert len(hepsi) == len(tarifler)
+
+
+def test_adaylarda_ucuz_kucuk_paket_var():
+    katalog = [{"market": "migros", "name": f"Bal {g} G", "price": fiyat, "category": "Çiçek Balı"}
+               for g, fiyat in ((850, 360.0), (1000, 400.0), (2000, 780.0), (460, 230.0), (225, 150.0), (300, 140.0))]
+    adlar = {p["name"] for p in plan.urun_adaylari(katalog, {"bal"}, None, her_market=2)["bal"]}
+    assert "Bal 300 G" in adlar          # paket fiyatı en düşük
+    assert "Bal 225 G" in adlar          # en küçük paket
+
+
+def test_yetersiz_tarif_hemen_doner():
+    kisi = dict(kilo=75, boy=178, yas=23, cinsiyet="erkek", aktivite="orta", hedef="koru")
+    s = plan.coz([], kisi, ekipman=["mikrodalga"])           # ana yemek yapılamaz
+    assert s["durum"] == "Yetersiz tarif" and "ana" in s["yetersiz"] and "plan" not in s

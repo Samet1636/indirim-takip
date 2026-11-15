@@ -1,6 +1,7 @@
 # Beslenme planı sunucusu (scraper'lardan ayrı; GitHub Actions bunları kurmaz)
 # Python 3.9 uyumlu sürümler. anyio<4: Anaconda'daki jupyter-server ile çakışmasın.
 pulp>=2.9,<4        # 3.3.0 ile test edildi (4.x API'si farklı)
+highspy==1.16.0     # HiGHS çözücü: CBC'den belirgin şekilde iyi çözüm (plan.py otomatik kullanır)
 fastapi==0.128.8
 uvicorn==0.34.3
 httpx>=0.27,<0.29

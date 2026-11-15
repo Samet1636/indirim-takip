@@ -28,6 +28,7 @@ from pydantic import BaseModel, Field
 KOK = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(KOK / "beslenme"))
 import plan  # noqa: E402
+import tarif_ozet  # noqa: E402
 from hedef import hesapla  # noqa: E402
 from miktar import norm  # noqa: E402
 
@@ -70,9 +71,23 @@ class Kisi(BaseModel):
     hedef: Literal["kilo_ver", "koru", "kilo_al"] = "koru"
 
 
+Ekipman = Literal["ocak", "firin", "airfryer", "mikrodalga", "blender", "tost_makinesi"]
+Alerjen = Literal["sut", "yumurta", "gluten", "kuruyemis", "balik", "susam"]
+
+EKIPMAN_ADI = {"ocak": "Ocak", "firin": "Fırın", "airfryer": "Airfryer", "mikrodalga": "Mikrodalga",
+               "blender": "Blender", "tost_makinesi": "Tost makinesi"}
+ALERJEN_ADI = {"sut": "Süt ürünleri", "yumurta": "Yumurta", "gluten": "Gluten", "kuruyemis": "Kuruyemiş",
+               "balik": "Balık", "susam": "Susam / tahin"}
+
+
 class PlanIstegi(Kisi):
     paket: Literal["ekonomik", "vejetaryen", "yuksek_protein", "pratik"] = "ekonomik"
     market: int = Field(2, ge=1, le=4, description="en fazla kaç markete gidilsin")
+    ekipman: Optional[List[Ekipman]] = Field(None, description="mutfaktaki ekipmanlar; boş bırakılırsa kısıt yok")
+    alerjen: List[Alerjen] = Field(default_factory=list, description="kaçınılan besin grupları")
+    haric_malzeme: List[str] = Field(default_factory=list, description="istenmeyen malzeme id'leri")
+    max_sure: Optional[int] = Field(None, ge=5, le=240, description="tarif başına en fazla dakika")
+    ara_ogun: int = Field(2, ge=0, le=2, description="günde en fazla kaç ara öğün")
 
 
 def kisi_sozlugu(k: Kisi) -> dict:
@@ -117,6 +132,20 @@ def uygulama_olustur() -> FastAPI:
         bas = (sayfa - 1) * adet
         return {"toplam": len(sonuc), "sayfa": sayfa, "urunler": sonuc[bas:bas + adet]}
 
+    @app.get("/secenekler")
+    def secenekler():
+        """Soru sihirbazının seçenekleri (uygulama listeleri buradan alır, tek kaynak burası)."""
+        malz, tarifler = tarif_ozet.yukle()
+        kullanilan = {x["malzeme"] for t in tarifler for x in t["malzemeler"]}
+        return {
+            "ekipman": [{"id": k, "ad": v} for k, v in EKIPMAN_ADI.items()],
+            "alerjen": [{"id": k, "ad": v} for k, v in ALERJEN_ADI.items()],
+            "malzemeler": sorted(({"id": m["id"], "ad": m["ad"], "kategori": m["kategori"]}
+                                  for m in malz.values() if m["id"] in kullanilan and not m["dolapta"]),
+                                 key=lambda m: m["ad"]),
+            "tarif_sayisi": len(tarifler),
+        }
+
     @app.post("/hedef")
     def hedef(k: Kisi):
         h = hesapla(**kisi_sozlugu(k))
@@ -130,7 +159,8 @@ def uygulama_olustur() -> FastAPI:
 
         def is_():
             return plan.coz(katalog, kisi, paket=istek.paket, max_market=istek.market,
-                            sure_siniri=SURE_SINIRI)
+                            sure_siniri=SURE_SINIRI, ekipman=istek.ekipman, alerjen=istek.alerjen,
+                            haric_malzeme=istek.haric_malzeme, max_sure=istek.max_sure, ara_ogun=istek.ara_ogun)
 
         is_id = app.state.kuyruk.gonder(is_)
         return {"is_id": is_id, "durum": "bekliyor", "tahmini_sure_sn": SURE_SINIRI + 10}

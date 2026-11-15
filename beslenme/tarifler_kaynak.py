@@ -157,5 +157,25 @@ t("portakal_ceviz", "Portakal ve ceviz", ["ara"], 1,
 t("lor_bal", "Ballı lor", ["ara"], 2,
   {"lor": 120, "bal": 10}, ["Lorun üzerine bal gezdir."], aralik=(0.5, 1.5))
 
+# ---------------- PİŞİRME EKİPMANI ----------------
+# Her tarif için ALTERNATİF ekipman setleri: kullanıcının elinde setlerden biri tam olarak varsa
+# tarif yapılabilir. [] = pişirme gerekmez. Listede olmayan tarif varsayılan olarak ocak ister.
+# Ekipmanlar: ocak, firin, airfryer, mikrodalga, blender, tost_makinesi
+OCAK = [["ocak"]]
+PISIRMESIZ = [[]]
+EKIPMAN = {
+    "kahvalti_tabagi": OCAK, "yulaf_lapasi": [["ocak"], ["mikrodalga"]], "gece_yulafi": PISIRMESIZ,
+    "peynirli_tost": [["tost_makinesi"], ["ocak"], ["airfryer"]], "fistik_ezmeli_ekmek": PISIRMESIZ,
+    "lorlu_kahvalti": PISIRMESIZ,
+    "firin_tavuk_patates": [["firin"], ["airfryer"]], "izmir_kofte": [["firin"], ["airfryer"]],
+    "kiymali_patlican": [["ocak", "firin"], ["ocak", "airfryer"]],
+    "mucver": [["ocak"], ["airfryer"], ["firin"]], "firin_sebze": [["ocak", "firin"], ["ocak", "airfryer"]],
+    "ton_salata": PISIRMESIZ, "coban_salatasi": PISIRMESIZ, "cacik": PISIRMESIZ,
+    "yogurt_bal_ceviz": PISIRMESIZ, "elma_findik": PISIRMESIZ, "muz_fistik": PISIRMESIZ, "ayran": PISIRMESIZ,
+    "humus_havuc": [["ocak", "blender"]], "portakal_ceviz": PISIRMESIZ, "lor_bal": PISIRMESIZ,
+}
+for _t in T:
+    _t["ekipman"] = EKIPMAN.get(_t["id"], OCAK)
+
 json.dump(T, open("tarifler.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 print(len(T), "tarif")

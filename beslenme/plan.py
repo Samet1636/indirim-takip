@@ -56,7 +56,9 @@ PAKETLER = {
 
 
 def urun_adaylari(katalog: list[dict], malzemeler: set[str], marketler: set[str] | None, her_market: int = 3):
-    """Her malzeme için, her marketten en ucuz birkaç ürün (+ en küçük paket)."""
+    """Her malzeme için, her marketten kg'ı en ucuz birkaç ürün + en küçük paket + paket fiyatı en
+    düşük ürün. Sonuncusu önemli: haftada 30 g kullanılan bal/tahin için 850 g'lık dev kavanoz
+    yerine küçük ve ucuz paket seçilebilsin."""
     out = {}
     for mid in malzemeler:
         if mid not in K:
@@ -66,9 +68,9 @@ def urun_adaylari(katalog: list[dict], malzemeler: set[str], marketler: set[str]
         for m in {p["market"] for p in c}:
             mc = [p for p in c if p["market"] == m]
             secilen += mc[:her_market]
-            kucuk = min(mc, key=lambda p: p["miktar_g"])
-            if kucuk not in secilen:
-                secilen.append(kucuk)
+            for ek in (min(mc, key=lambda p: p["miktar_g"]), min(mc, key=lambda p: p["price"])):
+                if ek not in secilen:
+                    secilen.append(ek)
         for p in secilen:
             # adı rakam içermeyen "Kg" ürünleri tartıyla satılır -> istenen miktar kadar alınabilir
             p["acik_satis"] = p["miktar_g"] == 1000 and not re.search(r"\d", norm(p["name"]))
@@ -76,35 +78,69 @@ def urun_adaylari(katalog: list[dict], malzemeler: set[str], marketler: set[str]
     return out
 
 
+# Haftalık plan için öğün türü başına gereken en az farklı tarif (tarif haftada ≤2 kez)
+EN_AZ_TARIF = {"kahvalti": 4, "ana": 7}
+TUR_ADI = {"kahvalti": "kahvaltı", "ana": "ana yemek", "ara": "ara öğün", "yan": "yan yemek"}
+
+
+def tarif_sec(tarifler: list, malz: dict, paket: str = "ekonomik", ekipman=None, alerjen=(),
+              haric_malzeme=(), max_sure: int | None = None) -> dict:
+    """Kullanıcının tercihlerine uyan tarifleri döndürür (id -> tarif + besin)."""
+    ayar = PAKETLER[paket]
+    sure = min(x for x in (ayar.get("max_sure"), max_sure) if x) if (ayar.get("max_sure") or max_sure) else None
+    T = {}
+    for t in tarifler:
+        if ayar.get("etiket") and ayar["etiket"] not in tarif_ozet.etiketler(t, malz):
+            continue
+        if sure and t["sure_dk"] > sure:
+            continue
+        if not tarif_ozet.yapilabilir(t, ekipman):
+            continue
+        if set(alerjen) & set(tarif_ozet.alerjenler(t)):
+            continue
+        if set(haric_malzeme) & {x["malzeme"] for x in t["malzemeler"]}:
+            continue
+        T[t["id"]] = {**t, "besin": tarif_ozet.besin(t, malz)}
+    return T
+
+
+def yetersiz_turler(T: dict) -> list[str]:
+    return [tur for tur, n in EN_AZ_TARIF.items() if sum(1 for t in T.values() if tur in t["ogunler"]) < n]
+
+
 def coz(katalog, kisi: dict, paket: str = "ekonomik", max_market: int = 2, market_ceza: float = 25.0,
-        sure_siniri: int = 60, marketler: set[str] | None = None, stok_orani: float = 0.15) -> dict:
+        sure_siniri: int = 60, marketler: set[str] | None = None, stok_orani: float = 0.15,
+        ekipman=None, alerjen=(), haric_malzeme=(), max_sure: int | None = None, ara_ogun: int = 2) -> dict:
     """stok_orani: kiler ürününde peşin ödenen paket tutarının ne kadarının ayrıca 'ceza' sayılacağı.
     0 olursa model kiler için hep en büyük (kg'ı en ucuz) paketi seçer; bu ilk hafta için çok
-    yüksek bir alışveriş tutarı demek. %15, makul boyutlu paketleri tercih ettirir."""
+    yüksek bir alışveriş tutarı demek. %15, makul boyutlu paketleri tercih ettirir.
+    ekipman: kullanıcının mutfağındaki ekipmanlar (None = kısıt yok); alerjen: kaçınılan gruplar
+    (tarif_ozet.ALERJEN); haric_malzeme: istenmeyen malzeme id'leri; max_sure: tarif başına en fazla
+    dakika; ara_ogun: günde en fazla kaç ara öğün (0-2)."""
     malz, tarifler = tarif_ozet.yukle()
     ayar = PAKETLER[paket]
     h = hesapla(**kisi, yuksek_protein=ayar.get("yuksek_protein", False))
+    ogunler = {o: v for o, v in OGUNLER.items()
+               if not (o == "ara1" and ara_ogun < 1) and not (o == "ara2" and ara_ogun < 2)}
 
-    # Uygun tarifler
-    T = {}
-    for t in tarifler:
-        et = tarif_ozet.etiketler(t, malz)
-        if ayar.get("etiket") and ayar["etiket"] not in et:
-            continue
-        if ayar.get("max_sure") and t["sure_dk"] > ayar["max_sure"]:
-            continue
-        T[t["id"]] = {**t, "besin": tarif_ozet.besin(t, malz)}
-
-    gerekli = {x["malzeme"] for t in T.values() for x in t["malzemeler"] if not malz[x["malzeme"]]["dolapta"]}
-    U = urun_adaylari(katalog, gerekli, marketler)
-    eksik = [m for m in gerekli if not U.get(m)]
-    if eksik:   # fiyatı bulunamayan malzemeyi kullanan tarifleri çıkar
-        T = {k: t for k, t in T.items() if not any(x["malzeme"] in eksik for x in t["malzemeler"])}
+    T = tarif_sec(tarifler, malz, paket, ekipman, alerjen, haric_malzeme, max_sure)
+    if T:
+        gerekli = {x["malzeme"] for t in T.values() for x in t["malzemeler"] if not malz[x["malzeme"]]["dolapta"]}
+        U = urun_adaylari(katalog, gerekli, marketler)
+        eksik = [m for m in gerekli if not U.get(m)]
+        if eksik:   # fiyatı bulunamayan malzemeyi kullanan tarifleri çıkar
+            T = {k: t for k, t in T.items() if not any(x["malzeme"] in eksik for x in t["malzemeler"])}
+    yetersiz = yetersiz_turler(T)
+    if yetersiz:   # çözücüyü boşuna çalıştırma: haftayı dolduracak kadar tarif yok
+        adlar = " ve ".join(TUR_ADI[x] for x in yetersiz)
+        return {"durum": "Yetersiz tarif", "hedef": h.__dict__, "yetersiz": yetersiz,
+                "mesaj": f"Seçimlerine uyan yeterli {adlar} tarifi yok. Ekipman, süre veya kaçındığın "
+                         f"besinlerden birini gevşetmeyi dene; tarif listemiz büyüdükçe bu durum azalacak."}
 
     prob = pulp.LpProblem("haftalik_plan", pulp.LpMinimize)
     y, p = {}, {}
     for g in range(7):
-        for o, (tur, _) in OGUNLER.items():
+        for o, (tur, _) in ogunler.items():
             for tid, t in T.items():
                 if tur in t["ogunler"]:
                     y[g, o, tid] = pulp.LpVariable(f"y_{g}_{o}_{tid}", cat="Binary")
@@ -115,7 +151,7 @@ def coz(katalog, kisi: dict, paket: str = "ekonomik", max_market: int = 2, marke
 
     # Öğün yapısı
     for g in range(7):
-        for o, (tur, zorunlu) in OGUNLER.items():
+        for o, (tur, zorunlu) in ogunler.items():
             secim = pulp.lpSum(v for (gg, oo, _), v in y.items() if gg == g and oo == o)
             prob += (secim == 1) if zorunlu else (secim <= 1)
         for tid in T:   # aynı gün aynı tarif iki kez olmasın
@@ -180,17 +216,27 @@ def coz(katalog, kisi: dict, paket: str = "ekonomik", max_market: int = 2, marke
     # Sonuç
     plan = []
     for g in range(7):
-        ogunler, top = [], {"kcal": 0, "protein": 0, "karb": 0, "yag": 0}
-        for o in OGUNLER:
+        secilenler, top = [], {"kcal": 0, "protein": 0, "karb": 0, "yag": 0}
+        for o in ogunler:
             for (gg, oo, tt), v in y.items():
                 if gg == g and oo == o and v.value() > 0.5:
                     por = p[g, o, tt].value()
                     b = {k: T[tt]["besin"][k] * por for k in top}
                     for k in top:
                         top[k] += b[k]
-                    ogunler.append({"ogun": o, "tarif": tt, "ad": T[tt]["ad"], "porsiyon": round(por, 2),
-                                    **{k: round(v, 1) for k, v in b.items()}})
-        plan.append({"gun": GUNLER[g], "ogunler": ogunler, "toplam": {k: round(v) for k, v in top.items()}})
+                    secilenler.append({"ogun": o, "tarif": tt, "ad": T[tt]["ad"], "porsiyon": round(por, 2),
+                                       **{k: round(v, 1) for k, v in b.items()}})
+        plan.append({"gun": GUNLER[g], "ogunler": secilenler, "toplam": {k: round(v) for k, v in top.items()}})
+
+    # Uygulamadaki tarif detay ekranı için: plandaki tariflerin malzemeleri, adımları, ekipmanı
+    kullanilan = {o["tarif"] for d in plan for o in d["ogunler"]}
+    tarif_detay = {tid: {"ad": T[tid]["ad"], "sure_dk": T[tid]["sure_dk"], "adimlar": T[tid]["adimlar"],
+                         "ekipman": T[tid].get("ekipman", [["ocak"]]), "besin": T[tid]["besin"],
+                         "alerjenler": tarif_ozet.alerjenler(T[tid]),
+                         "etiketler": tarif_ozet.etiketler(T[tid], malz),
+                         "malzemeler": [{"id": x["malzeme"], "ad": malz[x["malzeme"]]["ad"], "gram": x["gram"]}
+                                        for x in T[tid]["malzemeler"]]}
+                   for tid in kullanilan}
 
     liste, indirim_kazanci, plan_maliyeti = [], 0.0, 0.0
     for key, var in n.items():
@@ -223,7 +269,7 @@ def coz(katalog, kisi: dict, paket: str = "ekonomik", max_market: int = 2, marke
         uyarilar.append(f"Protein hedefi bu paketteki tariflerle tutturulamadı ({', '.join(eksik_gunler)}; "
                         f"günde ortalama {ort:.0f} g eksik). Yüksek proteinli tarif eklemek gerekebilir.")
     return {"durum": durum, "hedef": h.__dict__, "paket": paket, "plan": plan, "alisveris": liste,
-            "uyarilar": uyarilar,
+            "uyarilar": uyarilar, "tarifler": tarif_detay,
             "toplam_tl": toplam, "plan_maliyeti_tl": round(plan_maliyeti, 2),
             "gunluk_tl": round(plan_maliyeti / 7, 2),
             "indirim_kazanci_tl": round(indirim_kazanci, 2),

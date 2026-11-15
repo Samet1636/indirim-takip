@@ -47,6 +47,31 @@ def etiketler(tarif: dict, malz: dict) -> list[str]:
     return e
 
 
+# Alerjen / kaçınılan besin grupları: malzemeden otomatik çıkar (kullanıcı uygulamada seçer)
+ALERJEN = {
+    "sut": {"sut", "yogurt", "beyaz_peynir", "lor", "kasar", "tereyagi"},
+    "yumurta": {"yumurta"},
+    "gluten": {"tam_bugday_ekmegi", "makarna", "bulgur", "un", "yulaf"},
+    "kuruyemis": {"ceviz", "findik", "fistik_ezmesi"},
+    "balik": {"ton_baligi"},
+    "susam": {"tahin"},
+}
+EKIPMANLAR = ["ocak", "firin", "airfryer", "mikrodalga", "blender", "tost_makinesi"]
+
+
+def alerjenler(tarif: dict) -> list[str]:
+    idler = {x["malzeme"] for x in tarif["malzemeler"]}
+    return [a for a, ms in ALERJEN.items() if idler & ms]
+
+
+def yapilabilir(tarif: dict, ekipman) -> bool:
+    """Kullanıcının ekipmanıyla tarifin alternatiflerinden en az biri yapılabiliyor mu?
+    ekipman None ise kısıt yok."""
+    if ekipman is None:
+        return True
+    return any(set(alt) <= set(ekipman) for alt in tarif.get("ekipman", [["ocak"]]))
+
+
 def kontrol(malz: dict, tarifler: list) -> list[str]:
     hatalar, idler = [], set()
     for t in tarifler:
@@ -60,6 +85,9 @@ def kontrol(malz: dict, tarifler: list) -> list[str]:
                 hatalar.append(f"{t['id']}: {x['malzeme']} gramı pozitif olmalı")
         if not set(t["ogunler"]) <= {"kahvalti", "ana", "ara", "yan"}:
             hatalar.append(f"{t['id']}: geçersiz öğün {t['ogunler']}")
+        for alt in t.get("ekipman", []):
+            if not set(alt) <= set(EKIPMANLAR):
+                hatalar.append(f"{t['id']}: bilinmeyen ekipman {alt}")
     return hatalar
 
 
