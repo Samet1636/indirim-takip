@@ -65,7 +65,8 @@ python run.py --only a101 --katalog --dump --goster            # A101'i tarayıc
 python beslenme/tarif_ozet.py                                  # tarif besin tablosu
 python beslenme/eslestirme.py data/katalog.json                # fiyat eşleştirme + tarif maliyetleri
 python beslenme/plan.py --kilo 75 --boy 178 --yas 23 --cinsiyet erkek --aktivite orta --hedef koru --market 2
-uvicorn api.main:app --reload                                  # sunucu; deneme sayfası http://127.0.0.1:8000/docs
+sunucu.bat                                                     # sunucu (her klasörden çalışır, port 8000, telefon için 0.0.0.0)
+                                                               # uvicorn'u elle çalıştırırken proje klasöründe ol, yoksa "No module named 'api'"
 ```
 
 ## Önemli kurallar ve tuzaklar
