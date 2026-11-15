@@ -57,6 +57,35 @@ def test_gevrek_ekmek_veya_yulaf_sayilmaz():
     assert [p["name"] for p in adaylar("yulaf", katalog)] == ["Folife Yulaf Ezmesi 500 g"]
 
 
+def test_nuhun_makarnasi_un_sayilmaz():
+    katalog = [
+        {"market": "a101", "name": "Nuh'un Ankara Spagetti Makarnası 500 G", "price": 29.5, "category": None},
+        {"market": "a101", "name": "Nuh'un Ankara Buğday Unu 1 Kg", "price": 40.0, "category": None},
+        {"market": "sok", "name": "Söke Un 5 Kg", "price": 150.0, "category": None},
+    ]
+    adlar = [p["name"] for p in adaylar("un", katalog)]
+    assert "Nuh'un Ankara Spagetti Makarnası 500 G" not in adlar
+    assert set(adlar) == {"Nuh'un Ankara Buğday Unu 1 Kg", "Söke Un 5 Kg"}
+
+
+def test_a101_hazir_urunler_malzeme_sayilmaz():
+    # A101'de kategori süzgeci yok; ad kuralları hazır ürünleri elemeli (gerçek A101 ürün adları)
+    yanlislar = {
+        "kasar": ["Kaşarlı Poğaça 70 G", "Aktaşlar Pidemiss Kaşarlı Pide Dondurulmuş 400 G"],
+        "kabak": ["Atiye Laçin Çıtır Kabak Reçeli 350 G", "Tadım Kabak Çekirdeği 180 G"],
+        "patlican": ["Çokça Köz Patlıcan 510 G", "Patlıcanlı Rulo Börek 75 G", "Burcu Sumaklı Kuru Patlıcan Dolmalık 50 G"],
+        "maydanoz": ["Onet Maydanozlu Dana Köfte 500 G"],
+        "patates": ["Ziyafe Patatesli Hingel Mantı 400 G"],
+        "findik": ["Algida Boom Boom Kakao Fındık 80 ml", "Çerezya Tuzlu Fındık Kuruyemiş 150 G"],
+        "tavuk_gogus": ["Çokça Hindi Fileto 120 G"],
+        "sarimsak": ["Muti Sarımsak Dondurulmuş 225 G"],
+        "ton_baligi": ["Dardanel Mısırlı Ton Balığı 160 G"],
+    }
+    for malzeme, adlar in yanlislar.items():
+        katalog = [{"market": "a101", "name": a, "price": 50.0, "category": None} for a in adlar]
+        assert adaylar(malzeme, katalog) == [], malzeme
+
+
 def test_tarif_maliyeti_hesaplanir():
     tablo = fiyat_tablosu(KATALOG)
     satirlar = {s["id"]: s for s in tarif_maliyetleri(tablo)}
