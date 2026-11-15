@@ -7,6 +7,7 @@ sonuçlar `planlar` tablosuna yazılacak.
 """
 from __future__ import annotations
 
+import itertools
 import threading
 import time
 import traceback
@@ -24,12 +25,15 @@ class IsKuyrugu:
         self._havuz = ThreadPoolExecutor(max_workers=isci_sayisi, thread_name_prefix="plan")
         self._isler: Dict[str, Dict[str, Any]] = {}
         self._kilit = threading.Lock()
+        # Sıra için zaman damgası yetmez: Windows'ta time.time() ~15 ms çözünürlüklü, art arda
+        # gelen iki iş aynı zamanı alabilir. Artan sayaç sırayı kesin belirler.
+        self._sayac = itertools.count()
 
     def gonder(self, fonk: Callable[[], dict]) -> str:
         self._temizle()
         is_id = uuid.uuid4().hex
         with self._kilit:
-            self._isler[is_id] = {"durum": "bekliyor", "olusturma": time.time(), "bitis": None,
+            self._isler[is_id] = {"durum": "bekliyor", "sira_no": next(self._sayac), "bitis": None,
                                   "sonuc": None, "hata": None}
         self._havuz.submit(self._calistir, is_id, fonk)
         return is_id
@@ -60,7 +64,7 @@ class IsKuyrugu:
             if not kayit or kayit["durum"] not in ("bekliyor", "calisiyor"):
                 return 0
             return sum(1 for k in self._isler.values()
-                       if k["durum"] in ("bekliyor", "calisiyor") and k["olusturma"] < kayit["olusturma"])
+                       if k["durum"] in ("bekliyor", "calisiyor") and k["sira_no"] < kayit["sira_no"])
 
     def _temizle(self) -> None:
         simdi = time.time()
