@@ -44,9 +44,15 @@ tests/               pytest testleri (ağa çıkmaz; tests/fixtures altında ger
                               commit) ve "yayinla" işi (GitHub Pages)
 ```
 
-Mobil uygulama ayrı klasörde: `C:\Users\90534\indirim-app` (Expo / React Native, tek dosya App.js).
-Veriyi `https://samet1636.github.io/indirim-takip/data/discounts_today.json` adresinden çeker.
-Telefonda Expo Go ile açılır: `npx expo start --tunnel` (EXPO_TOKEN ortam değişkeni tanımlı).
+Mobil uygulama ayrı klasörde (ayrı git deposu, uzak deposu yok): `C:\Users\90534\indirim-app`
+(Expo SDK 58 + Expo Router, kod `src/` altında). Sekmeler: İndirimler (GitHub Pages JSON) / Ürünler
+(`/urunler`) / Plan (karşılama -> `src/app/sihirbaz.js` 10 adımlı soru sihirbazı -> hesaplama -> sonuç)
+/ Liste. `src/app/tarif/[id].js` tarif detayı. Tasarım sistemi `src/lib/tema.js`; yazı tipi Plus Jakarta
+Sans, Text/TextInput'u react-native'den değil `src/components/Yazi.js`'den al (fontWeight'i doğru
+dosyaya çevirir). Profil + son plan AsyncStorage'da. Sunucu adresi `src/lib/api.js` (geliştirmede
+bilgisayarın yerel IP'si:8000; `--tunnel` ile Plan/Ürünler çalışmaz).
+Telefonda Expo Go ile açılır: `npx expo start` (aynı Wi-Fi). Web önizleme: `npx expo start --web`.
+Paket ekledikten sonra Metro'yu `--clear` ile yeniden başlat (yoksa "Unable to resolve module").
 
 ## Veri akışı
 
@@ -55,6 +61,12 @@ Telefonda Expo Go ile açılır: `npx expo start --tunnel` (EXPO_TOKEN ortam de�
 2. Yerel bilgisayar (Görev Zamanlayıcı, a101_gunluk.bat): A101'i tarar, `data/imports/a101.json`
    dosyasını GitHub API ile yükler; bu push workflow'u `--no-scrape` modunda tetikler.
 3. A101 GitHub sunucularından taranamaz (Cloudflare "Bir dakika lütfen..." -> 403). Bunu tekrar deneme.
+4. Katalog kapsamı (16.11.2026): Migros ~18.700 (tam), ŞOK ~2.900 (tam; en büyük kategori 28 sayfa),
+   A101 ~2.250 (Kapıda tam; 17 kategori, ~2,5 dk), BİM ~700 (sadece aktüel).
+   - 16.11.2026 itibarıyla Görev Zamanlayıcı'da A101 görevi YOKTU; A101 verisi 14.11'den kalmaydı.
+   - BİM'in fiyatlı tam kataloğu kamuya açık hiçbir yerde yok (bim.com.tr: aktüel + afiş + fiyatsız marka listesi).
+   - marketfiyati.org.tr (TÜBİTAK BİLGEM) tüm zincirleri içeriyor AMA kullanım koşulları yazılı izin
+     olmadan ticari/başka amaçla kullanımı yasaklıyor. İzin alınmadan scraper yazma.
 
 ## Komutlar
 
@@ -106,7 +118,11 @@ Kısıtlar: günde 1 kahvaltı/öğle/akşam zorunlu, yan ve 2 ara öğün iste�
 protein yumuşak alt sınır; yağ üst sınır; tarif haftada ≤2; aynı gün aynı tarif 1 kez; ≤N market.
 Taze ürünler tam paket (israf maliyete girer). KILER ürünleri (bakliyat, yağ, salça...) kullanılan
 pay kadar maliyete girer + peşin paket tutarının %15'i stok cezası (dev paket seçimini önler).
-Çözüm ~60 sn (zaman sınırı), %1 optimallik boşluğu.
+Çözüm ~60 sn (zaman sınırı), %1 optimallik boşluğu. highspy kuruluysa HiGHS (CBC'den ~%4 daha iyi amaç;
+60 sn'de de optimalliği kanıtlayamıyor, PuLP yine "Optimal" der). Tercihler: ekipman (tarif başına
+alternatif ekipman setleri, tarifler_kaynak.py EKIPMAN), alerjen (tarif_ozet.ALERJEN, malzemeden otomatik),
+haric_malzeme, max_sure, ara_ogun. Kahvaltı <4 veya ana yemek <7 tarif kalırsa çözücü çalışmadan
+"Yetersiz tarif" döner. Aday ürünler: market başına kg'ı en ucuz N + en küçük + paket fiyatı en düşük.
 
 ## Yol haritası (sıradaki işler)
 
