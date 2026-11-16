@@ -21,7 +21,7 @@ import time
 from pathlib import Path
 from typing import List, Literal, Optional
 
-from fastapi import FastAPI, HTTPException, Query
+from fastapi import FastAPI, HTTPException, Query, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel, Field
@@ -38,6 +38,17 @@ from .isler import IsKuyrugu  # noqa: E402
 TIBBI_NOT = "Bu plan genel bilgilendirme amaçlıdır, tıbbi tavsiye değildir."
 SURE_SINIRI = int(os.environ.get("PLAN_SURE_SINIRI", "60"))
 EN_FAZLA_BEKLEYEN = int(os.environ.get("EN_FAZLA_BEKLEYEN", "8"))   # sırada + çalışan plan işi
+IP_SAATLIK_PLAN = int(os.environ.get("IP_SAATLIK_PLAN", "6"))       # kişi (IP) başına saatlik plan
+
+
+def istemci_ip(request) -> str:
+    """İsteği yapanın IP adresi. Render gibi bir vekil sunucunun arkasında gerçek adres
+    X-Forwarded-For başlığında gelir. Not: bu başlık sahte gönderilebilir; kişi başı sınır kötü
+    niyetli birini tamamen durdurmaz, asıl koruma EN_FAZLA_BEKLEYEN genel sınırıdır."""
+    xff = request.headers.get("x-forwarded-for")
+    if xff:
+        return xff.split(",")[0].strip()
+    return request.client.host if request.client else "bilinmiyor"
 
 
 # ---------------------------------------------------------------- katalog
@@ -130,6 +141,9 @@ def uygulama_olustur() -> FastAPI:
     app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["GET", "POST"], allow_headers=["*"])
     app.state.katalog = Katalog(katalog_yolu(), url=os.environ.get("KATALOG_URL") or None)
     app.state.kuyruk = IsKuyrugu()
+    app.state.ip_gecmis = {}      # ip -> son bir saatteki plan isteklerinin zamanları
+    app.state.ip_son_is = {}      # ip -> son plan işinin numarası
+    app.state.ip_kilit = threading.Lock()
 
     def isit():   # ürün eşleştirmesini ilk plan isteğini bekletmeden, arka planda hazırla
         try:
@@ -189,11 +203,29 @@ def uygulama_olustur() -> FastAPI:
         return {"hedef": h.__dict__, "not": TIBBI_NOT}
 
     @app.post("/plan", status_code=202)
-    def plan_baslat(istek: PlanIstegi):
+    def plan_baslat(istek: PlanIstegi, request: Request):
         kisi = kisi_sozlugu(istek)
         hesapla(**kisi)   # 18 yaş altı vb. geçersiz girdiler iş kuyruğuna girmeden reddedilsin
         if app.state.kuyruk.bekleyen() >= EN_FAZLA_BEKLEYEN:   # herkese açık sunucuda yığılmayı önle
             raise HTTPException(429, "Şu an çok fazla plan hesaplanıyor. Lütfen birkaç dakika sonra tekrar dene.")
+
+        # Kişi başı sınır (IP adresine göre): aynı anda tek plan, saatte en fazla IP_SAATLIK_PLAN plan.
+        # Biri sürekli plan isteyerek sunucuyu meşgul edip diğer kullanıcıları bekletemesin.
+        ip = istemci_ip(request)
+        simdi = time.time()
+        with app.state.ip_kilit:
+            onceki = app.state.ip_son_is.get(ip)
+            if onceki and (app.state.kuyruk.getir(onceki) or {}).get("durum") in ("bekliyor", "calisiyor"):
+                raise HTTPException(429, "Zaten hesaplanan bir planın var. O bitince yenisini isteyebilirsin.")
+            gecmis = [t for t in app.state.ip_gecmis.get(ip, []) if simdi - t < 3600]
+            if len(gecmis) >= IP_SAATLIK_PLAN:
+                kalan = int((3600 - (simdi - gecmis[0])) // 60) + 1
+                raise HTTPException(429, f"Bir saatte en fazla {IP_SAATLIK_PLAN} plan oluşturabilirsin. "
+                                         f"Yaklaşık {kalan} dakika sonra tekrar dene.")
+            gecmis.append(simdi)
+            app.state.ip_gecmis[ip] = gecmis
+            if len(app.state.ip_gecmis) > 10_000:   # bellek şişmesin: bir saati geçen kayıtları at
+                app.state.ip_gecmis = {k: v for k, v in app.state.ip_gecmis.items() if simdi - v[-1] < 3600}
         katalog = app.state.katalog.getir()
 
         def is_():
@@ -202,6 +234,8 @@ def uygulama_olustur() -> FastAPI:
                             haric_malzeme=istek.haric_malzeme, max_sure=istek.max_sure, ara_ogun=istek.ara_ogun)
 
         is_id = app.state.kuyruk.gonder(is_)
+        with app.state.ip_kilit:
+            app.state.ip_son_is[ip] = is_id
         return {"is_id": is_id, "durum": "bekliyor", "tahmini_sure_sn": SURE_SINIRI + 10}
 
     @app.get("/plan/{is_id}")

@@ -137,6 +137,32 @@ def test_katalog_urlden_gelir_ve_hata_toleransi(tmp_path):
     assert k.getir()[0]["name"] == "Uzak"
 
 
+def test_kisi_basi_plan_siniri(istemci, monkeypatch):
+    import threading
+    kapi = threading.Event()
+
+    def yavas_coz(*a, **k):
+        kapi.wait(5)
+        return {"durum": "Optimal", "plan": [], "alisveris": [], "toplam_tl": 0}
+    monkeypatch.setattr(main.plan, "coz", yavas_coz)
+    monkeypatch.setattr(main, "IP_SAATLIK_PLAN", 2)
+    ip_a = {"X-Forwarded-For": "1.1.1.1"}
+    ilk = istemci.post("/plan", json=KISI, headers=ip_a)
+    assert ilk.status_code == 202
+    # aynı kişi, ilki bitmeden ikinci plan isteyemez
+    r = istemci.post("/plan", json=KISI, headers=ip_a)
+    assert r.status_code == 429 and "Zaten" in r.json()["detail"]
+    # başka biri isteyebilir
+    assert istemci.post("/plan", json=KISI, headers={"X-Forwarded-For": "2.2.2.2"}).status_code == 202
+    kapi.set()
+    bekle(istemci, ilk.json()["is_id"])
+    ikinci = istemci.post("/plan", json=KISI, headers=ip_a)                   # 2. plan (saatlik sınır 2)
+    assert ikinci.status_code == 202
+    bekle(istemci, ikinci.json()["is_id"])
+    r = istemci.post("/plan", json=KISI, headers=ip_a)                        # 3. plan: saatlik sınır
+    assert r.status_code == 429 and "Bir saatte en fazla 2 plan" in r.json()["detail"], r.json()
+
+
 def test_kuyruk_doluysa_429(istemci, monkeypatch):
     monkeypatch.setattr(main, "EN_FAZLA_BEKLEYEN", 0)
     r = istemci.post("/plan", json=KISI)
