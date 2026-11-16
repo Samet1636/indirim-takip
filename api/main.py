@@ -31,7 +31,7 @@ sys.path.insert(0, str(KOK / "beslenme"))
 import plan  # noqa: E402
 import tarif_ozet  # noqa: E402
 from hedef import hesapla  # noqa: E402
-from miktar import norm  # noqa: E402
+from miktar import norm, norm_ad  # noqa: E402
 
 from .isler import IsKuyrugu  # noqa: E402
 
@@ -131,6 +131,14 @@ def uygulama_olustur() -> FastAPI:
     app.state.katalog = Katalog(katalog_yolu(), url=os.environ.get("KATALOG_URL") or None)
     app.state.kuyruk = IsKuyrugu()
 
+    def isit():   # ürün eşleştirmesini ilk plan isteğini bekletmeden, arka planda hazırla
+        try:
+            plan.onbellek_isit(app.state.katalog.getir())
+        except Exception as e:   # noqa: BLE001
+            print(f"önbellek ısıtılamadı: {type(e).__name__}: {e}", file=sys.stderr)
+    if os.environ.get("KATALOG_URL"):
+        threading.Thread(target=isit, daemon=True).start()
+
     @app.exception_handler(ValueError)
     async def deger_hatasi(_, e: ValueError):
         # hedef.py'nin güvenlik kontrolleri (18 yaş altı vb.) kullanıcıya Türkçe mesajla döner
@@ -151,11 +159,11 @@ def uygulama_olustur() -> FastAPI:
         kelimeler = norm(q).split()
         sonuc = [p for p in app.state.katalog.getir()
                  if (not market or p["market"] == market)
-                 and all(k in norm(p["name"]) for k in kelimeler)]
+                 and all(k in norm_ad(p["name"]) for k in kelimeler)]
         anahtar = {
             "ucuz": lambda p: p["price"],
             "indirim": lambda p: -(p.get("discount_pct") or 0),
-            "ad": lambda p: norm(p["name"]),
+            "ad": lambda p: norm_ad(p["name"]),
         }[siralama]
         sonuc.sort(key=anahtar)
         bas = (sayfa - 1) * adet

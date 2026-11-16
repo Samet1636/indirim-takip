@@ -15,7 +15,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 from eslestirme_kurallari import K, ORTAK_HARIC  # noqa: E402
-from miktar import norm, parse_quantity  # noqa: E402
+from miktar import norm, norm_ad, parse_quantity  # noqa: E402
 import tarif_ozet  # noqa: E402
 
 KLASOR = Path(__file__).parent
@@ -32,7 +32,7 @@ def adaylar(malzeme_id: str, katalog: list[dict]) -> list[dict]:
     migros_kat = {norm(c) for c in k.get("migros", [])}
     out = []
     for p in katalog:
-        n = norm(p["name"]) + " "
+        n = norm_ad(p["name"]) + " "
         if not any(r.search(n) for r in ad_re) or any(h in n for h in haric):
             continue
         if p["market"] == "migros" and migros_kat and norm(p.get("category") or "") not in migros_kat:

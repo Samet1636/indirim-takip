@@ -19,5 +19,8 @@ services:
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.9
+      # Ücretsiz planın işlemcisi zayıf: iyi bir plan için çözücüye daha uzun süre tanı
+      - key: PLAN_SURE_SINIRI
+        value: "110"
       - key: KATALOG_URL
         value: https://samet1636.github.io/indirim-takip/data/katalog.json

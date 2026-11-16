@@ -26,6 +26,7 @@ import argparse
 import json
 import math
 import re
+import time
 import sys
 from pathlib import Path
 
@@ -56,6 +57,28 @@ PAKETLER = {
 }
 
 
+_ADAY_ONBELLEK: dict = {}
+
+
+def _adaylar_onbellekli(mid: str, katalog: list) -> list:
+    """Malzeme -> ürün eşleştirmesi katalog değişmedikçe aynıdır; her plan isteğinde 25.000 ürünü
+    yeniden taramak yerine sonucu sakla (zayıf sunucuda plan süresinin yarısı buraya gidiyordu)."""
+    anahtar = (id(katalog), len(katalog), katalog[0].get("name") if katalog else None,
+               katalog[-1].get("name") if katalog else None)
+    if _ADAY_ONBELLEK.get("_katalog") != anahtar:
+        _ADAY_ONBELLEK.clear()
+        _ADAY_ONBELLEK["_katalog"] = anahtar
+    if mid not in _ADAY_ONBELLEK:
+        _ADAY_ONBELLEK[mid] = adaylar(mid, katalog)
+    return _ADAY_ONBELLEK[mid]
+
+
+def onbellek_isit(katalog: list) -> None:
+    """Sunucu açılırken tüm malzemelerin eşleştirmesini önceden hesaplar."""
+    for mid in K:
+        _adaylar_onbellekli(mid, katalog)
+
+
 def urun_adaylari(katalog: list[dict], malzemeler: set[str], marketler: set[str] | None, her_market: int = 3):
     """Her malzeme için, her marketten kg'ı en ucuz birkaç ürün + en küçük paket + paket fiyatı en
     düşük ürün. Sonuncusu önemli: haftada 30 g kullanılan bal/tahin için 850 g'lık dev kavanoz
@@ -64,7 +87,7 @@ def urun_adaylari(katalog: list[dict], malzemeler: set[str], marketler: set[str]
     for mid in malzemeler:
         if mid not in K:
             continue
-        c = [p for p in adaylar(mid, katalog) if not marketler or p["market"] in marketler]
+        c = [p for p in _adaylar_onbellekli(mid, katalog) if not marketler or p["market"] in marketler]
         secilen = []
         for m in {p["market"] for p in c}:
             mc = [p for p in c if p["market"] == m]
@@ -142,83 +165,114 @@ def coz(katalog, kisi: dict, paket: str = "ekonomik", max_market: int = 2, marke
                 "mesaj": f"Seçimlerine uyan yeterli {adlar} tarifi yok. Ekipman, süre veya kaçındığın "
                          f"besinlerden birini gevşetmeyi dene; tarif listemiz büyüdükçe bu durum azalacak."}
 
-    prob = pulp.LpProblem("haftalik_plan", pulp.LpMinimize)
-    y, p = {}, {}
-    for g in range(7):
-        for o, (tur, _) in ogunler.items():
-            for tid, t in T.items():
-                if tur in t["ogunler"]:
-                    y[g, o, tid] = pulp.LpVariable(f"y_{g}_{o}_{tid}", cat="Binary")
-                    p[g, o, tid] = pulp.LpVariable(f"p_{g}_{o}_{tid}", lowBound=0)
-                    lo, hi = t["porsiyon_araligi"]
-                    prob += p[g, o, tid] >= lo * y[g, o, tid]
-                    prob += p[g, o, tid] <= hi * y[g, o, tid]
+    def kur_coz(tam_paket: bool, sabit, sure: float):
+        """Modeli kurar ve çözer. tam_paket=False: paketler kesirli (hızlı, menüyü seçer).
+        sabit: önceki aşamada seçilen menü (y değerleri); verilirse sadece porsiyon ve paketler çözülür."""
+        prob = pulp.LpProblem("haftalik_plan", pulp.LpMinimize)
+        y, p = {}, {}
+        for g in range(7):
+            for o, (tur, _) in ogunler.items():
+                for tid, t in T.items():
+                    if tur in t["ogunler"]:
+                        y[g, o, tid] = pulp.LpVariable(f"y_{g}_{o}_{tid}", cat="Binary")
+                        p[g, o, tid] = pulp.LpVariable(f"p_{g}_{o}_{tid}", lowBound=0)
+                        lo, hi = t["porsiyon_araligi"]
+                        prob += p[g, o, tid] >= lo * y[g, o, tid]
+                        prob += p[g, o, tid] <= hi * y[g, o, tid]
+        if sabit is not None:       # 2. aşama: menü belli, sadece porsiyon ve paketler çözülür
+            for k, v in y.items():
+                v.bounds(sabit[k], sabit[k])
 
-    # Öğün yapısı
-    for g in range(7):
-        for o, (tur, zorunlu) in ogunler.items():
-            secim = pulp.lpSum(v for (gg, oo, _), v in y.items() if gg == g and oo == o)
-            prob += (secim == 1) if zorunlu else (secim <= 1)
-        for tid in T:   # aynı gün aynı tarif iki kez olmasın
-            ayni = [v for (gg, _, tt), v in y.items() if gg == g and tt == tid]
-            if len(ayni) > 1:
-                prob += pulp.lpSum(ayni) <= 1
-    for tid in T:       # çeşitlilik: haftada en fazla 2 kez
-        prob += pulp.lpSum(v for (_, _, tt), v in y.items() if tt == tid) <= 2
-    # Çeşitlilik: aynı gün öğle ve akşamda aynı ana malzeme olmasın (ör. mercimek çorbası + mercimek yahnisi)
-    for g in range(7):
-        for b in BAZ_MALZEME:
-            ayni_baz = [v for (gg, oo, tt), v in y.items() if gg == g and oo in ("ogle", "aksam")
-                        and any(x["malzeme"] == b for x in T[tt]["malzemeler"])]
-            if len(ayni_baz) > 1:
-                prob += pulp.lpSum(ayni_baz) <= 1
+        # Öğün yapısı
+        for g in range(7):
+            for o, (tur, zorunlu) in ogunler.items():
+                secim = pulp.lpSum(v for (gg, oo, _), v in y.items() if gg == g and oo == o)
+                prob += (secim == 1) if zorunlu else (secim <= 1)
+            for tid in T:   # aynı gün aynı tarif iki kez olmasın
+                ayni = [v for (gg, _, tt), v in y.items() if gg == g and tt == tid]
+                if len(ayni) > 1:
+                    prob += pulp.lpSum(ayni) <= 1
+        for tid in T:       # çeşitlilik: haftada en fazla 2 kez
+            prob += pulp.lpSum(v for (_, _, tt), v in y.items() if tt == tid) <= 2
+        # Çeşitlilik: aynı gün öğle ve akşamda aynı ana malzeme olmasın (ör. mercimek çorbası + mercimek yahnisi)
+        for g in range(7):
+            for b in BAZ_MALZEME:
+                ayni_baz = [v for (gg, oo, tt), v in y.items() if gg == g and oo in ("ogle", "aksam")
+                            and any(x["malzeme"] == b for x in T[tt]["malzemeler"])]
+                if len(ayni_baz) > 1:
+                    prob += pulp.lpSum(ayni_baz) <= 1
 
-    # Günlük besin hedefleri. Protein "yumuşak" kısıt: tutturulamazsa (ör. vejetaryen + düşük kalori)
-    # plan yine üretilir, eksik gram başına ceza ödenir ve kullanıcıya bildirilir.
-    PROTEIN_CEZA = 15.0   # TL / eksik gram
-    eksik_protein = {g: pulp.LpVariable(f"eksik_protein_{g}", lowBound=0) for g in range(7)}
-    for g in range(7):
-        def gun(alan):
-            return pulp.lpSum(v * T[tt]["besin"][alan] for (gg, _, tt), v in p.items() if gg == g)
-        prob += gun("kcal") >= h.kcal * 0.93
-        prob += gun("kcal") <= h.kcal * 1.07
-        prob += gun("protein") + eksik_protein[g] >= h.protein_min
-        prob += gun("yag") <= h.yag_max
+        # Günlük besin hedefleri. Protein "yumuşak" kısıt: tutturulamazsa (ör. vejetaryen + düşük kalori)
+        # plan yine üretilir, eksik gram başına ceza ödenir ve kullanıcıya bildirilir.
+        PROTEIN_CEZA = 15.0   # TL / eksik gram
+        eksik_protein = {g: pulp.LpVariable(f"eksik_protein_{g}", lowBound=0) for g in range(7)}
+        for g in range(7):
+            def gun(alan):
+                return pulp.lpSum(v * T[tt]["besin"][alan] for (gg, _, tt), v in p.items() if gg == g)
+            prob += gun("kcal") >= h.kcal * 0.93
+            prob += gun("kcal") <= h.kcal * 1.07
+            prob += gun("protein") + eksik_protein[g] >= h.protein_min
+            prob += gun("yag") <= h.yag_max
 
-    # Alışveriş: paketler haftalık ihtiyacı karşılamalı
-    n, n_paket, z, maliyet, urunler = {}, {}, {}, [], {}
-    for m in {u["market"] for us in U.values() for u in us}:
-        z[m] = pulp.LpVariable(f"z_{m}", cat="Binary")
-    for mid, us in U.items():
-        ihtiyac = pulp.lpSum(v * x["gram"] for (_, _, tt), v in p.items()
-                             for x in T[tt]["malzemeler"] if x["malzeme"] == mid)
-        alinan = []
-        for i, u in enumerate(us):
-            key = f"{mid}_{i}"
-            urunler[key] = (mid, u)
-            if u["acik_satis"]:
-                n[key] = pulp.LpVariable(f"n_{key}", lowBound=0)              # kg cinsinden
-            elif K[mid].get("kiler"):
-                n[key] = pulp.LpVariable(f"n_{key}", lowBound=0)              # kullanılan pay (kesirli)
-                n_paket[key] = pulp.LpVariable(f"np_{key}", lowBound=0, upBound=20, cat="Integer")
-                prob += n_paket[key] >= n[key]                                 # alınan tam paket
-                maliyet.append(stok_orani * u["price"] * n_paket[key])
-            else:
-                n[key] = pulp.LpVariable(f"n_{key}", lowBound=0, upBound=20, cat="Integer")
-            prob += n[key] <= 20 * z[u["market"]]
-            alinan.append(n[key] * u["miktar_g"])
-            maliyet.append(n[key] * u["price"])
-        prob += pulp.lpSum(alinan) >= ihtiyac
-    prob += pulp.lpSum(z.values()) <= max_market
+        # Alışveriş: paketler haftalık ihtiyacı karşılamalı
+        n, n_paket, z, maliyet, urunler = {}, {}, {}, [], {}
+        for m in {u["market"] for us in U.values() for u in us}:
+            z[m] = pulp.LpVariable(f"z_{m}", cat="Binary")
+        for mid, us in U.items():
+            ihtiyac = pulp.lpSum(v * x["gram"] for (_, _, tt), v in p.items()
+                                 for x in T[tt]["malzemeler"] if x["malzeme"] == mid)
+            alinan = []
+            for i, u in enumerate(us):
+                key = f"{mid}_{i}"
+                urunler[key] = (mid, u)
+                if u["acik_satis"] or not tam_paket:
+                    # açık satış: kg cinsinden. 1. aşamada tüm ürünler kesirli (paket yuvarlaması 2. aşamada)
+                    n[key] = pulp.LpVariable(f"n_{key}", lowBound=0)
+                elif K[mid].get("kiler"):
+                    n[key] = pulp.LpVariable(f"n_{key}", lowBound=0)              # kullanılan pay (kesirli)
+                    n_paket[key] = pulp.LpVariable(f"np_{key}", lowBound=0, upBound=20, cat="Integer")
+                    prob += n_paket[key] >= n[key]                                 # alınan tam paket
+                    maliyet.append(stok_orani * u["price"] * n_paket[key])
+                else:
+                    n[key] = pulp.LpVariable(f"n_{key}", lowBound=0, upBound=20, cat="Integer")
+                prob += n[key] <= 20 * z[u["market"]]
+                alinan.append(n[key] * u["miktar_g"])
+                maliyet.append(n[key] * u["price"])
+            prob += pulp.lpSum(alinan) >= ihtiyac
+            if not tam_paket and not any(u["acik_satis"] for u in us):
+                # 1. aşamada paket israfı tahmini: paketli bir malzeme az da kullanılsa en az bir
+                # (en ucuz) paketin parası ödenir. Bunu saymazsak menü çok sayıda malzemeden azar azar
+                # kullanır ve 2. aşamada sepet pahalı çıkar.
+                w = pulp.LpVariable(f"w_{mid}", cat="Binary")
+                prob += ihtiyac <= 50000 * w
+                en_ucuz = min(u["price"] for u in us)
+                if K[mid].get("kiler"):         # kiler: kullanılan pay + alınan paketin stok cezası
+                    maliyet.append(stok_orani * en_ucuz * w)
+                else:                           # taze: harcama en az bir paket kadar olur
+                    e = pulp.LpVariable(f"e_{mid}", lowBound=0)
+                    prob += e >= en_ucuz * w - pulp.lpSum(n[f"{mid}_{i}"] * u["price"] for i, u in enumerate(us))
+                    maliyet.append(e)
+        prob += pulp.lpSum(z.values()) <= max_market
 
-    prob += (pulp.lpSum(maliyet) + market_ceza * pulp.lpSum(z.values())
-             + PROTEIN_CEZA * pulp.lpSum(eksik_protein.values()))
+        prob += (pulp.lpSum(maliyet) + market_ceza * pulp.lpSum(z.values())
+                 + PROTEIN_CEZA * pulp.lpSum(eksik_protein.values()))
 
-    if pulp.HiGHS().available():
-        solver = pulp.HiGHS(msg=False, timeLimit=sure_siniri, gapRel=0.01)
-    else:
-        solver = pulp.PULP_CBC_CMD(msg=False, timeLimit=sure_siniri, gapRel=0.01)
-    prob.solve(solver)
+        if pulp.HiGHS().available():
+            solver = pulp.HiGHS(msg=False, timeLimit=sure, gapRel=0.01 if tam_paket else 0.02)
+        else:
+            solver = pulp.PULP_CBC_CMD(msg=False, timeLimit=sure, gapRel=0.01 if tam_paket else 0.02)
+        prob.solve(solver)
+        return prob, y, p, n, n_paket, z, urunler, eksik_protein
+
+    # İki aşamalı çözüm: (1) paketleri kesirli sayarak menüyü seç, (2) menüyü sabitleyip paketleri tam
+    # sayıyla çöz. Tek seferde çözmeye göre çok daha hızlı uygun plan bulur (zayıf işlemcili sunucu).
+    basla = time.time()
+    prob, y, p, n, n_paket, z, urunler, eksik_protein = kur_coz(False, None, sure_siniri * 0.75)
+    if any((v.value() or 0) > 0.5 for v in y.values()):
+        sabit = {k: (1 if (v.value() or 0) > 0.5 else 0) for k, v in y.items()}
+        iki = kur_coz(True, sabit, max(5.0, sure_siniri - (time.time() - basla)))
+        if pulp.LpStatus[iki[0].status] in ("Optimal", "Not Solved") and any((v.value() or 0) > 0.5 for v in iki[1].values()):
+            prob, y, p, n, n_paket, z, urunler, eksik_protein = iki
     durum = pulp.LpStatus[prob.status]
     secilen = sum(1 for v in y.values() if (v.value() or 0) > 0.5)
     if durum not in ("Optimal", "Not Solved") or secilen == 0:
@@ -264,7 +318,7 @@ def coz(katalog, kisi: dict, paket: str = "ekonomik", max_market: int = 2, marke
             if fazla <= 1e-6:
                 break
             g = urunler[k][1]["miktar_g"]
-            if urunler[k][1]["acik_satis"] or k in n_paket:       # kesirli miktar
+            if urunler[k][1]["acik_satis"] or K[mid].get("kiler"):   # kesirli miktar
                 azalt = min(deger_of[k], fazla / g)
             else:                                                  # tam paket
                 azalt = min(int(deger_of[k] + 1e-6), int(fazla // g))
@@ -280,10 +334,8 @@ def coz(katalog, kisi: dict, paket: str = "ekonomik", max_market: int = 2, marke
         plan_maliyeti += deger * u["price"]                 # bu haftanın planına düşen pay
         if u["acik_satis"]:
             adet = round(deger, 2)
-        elif key in n_paket:
-            adet = max(1, math.ceil(deger - 1e-6))      # kullanılan payı karşılayan en az tam paket
         else:
-            adet = int(round(deger))
+            adet = max(1, math.ceil(deger - 1e-6))      # ihtiyacı karşılayan en az tam paket
         tutar = round(adet * u["price"], 2)
         if u.get("regular_price"):
             indirim_kazanci += adet * (u["regular_price"] - u["price"])

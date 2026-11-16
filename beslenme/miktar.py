@@ -13,6 +13,20 @@ def norm(s: str) -> str:
     return re.sub(r"\s+", " ", s).strip()
 
 
+_NORM_ONBELLEK: dict = {}
+
+
+def norm_ad(s: str) -> str:
+    """norm() ile aynı, ama sonucu saklar. 25.000 ürün adını her aramada/eşleştirmede yeniden
+    sadeleştirmek zayıf işlemcili sunucuda dakikalar sürüyordu."""
+    r = _NORM_ONBELLEK.get(s)
+    if r is None:
+        if len(_NORM_ONBELLEK) > 200_000:
+            _NORM_ONBELLEK.clear()
+        r = _NORM_ONBELLEK[s] = norm(s)
+    return r
+
+
 _UNIT = {"kg": ("g", 1000), "kilo": ("g", 1000), "gr": ("g", 1), "g": ("g", 1), "gram": ("g", 1),
          "lt": ("ml", 1000), "l": ("ml", 1000), "litre": ("ml", 1000), "ml": ("ml", 1), "cl": ("ml", 10)}
 _U = r"(kg|kilo|gram|gr|g|litre|lt|l|ml|cl)"
