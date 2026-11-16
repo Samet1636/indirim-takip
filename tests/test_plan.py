@@ -40,6 +40,11 @@ def test_plan_kisitlari(monkeypatch):
         for o in gun["ogunler"]:
             sayac[o["tarif"]] = sayac.get(o["tarif"], 0) + 1
     assert max(sayac.values()) <= 2                     # çeşitlilik
+    tarif = {t["id"]: t for t in plan.tarif_ozet.yukle()[1]}
+    for gun in s["plan"]:                               # öğle + akşamda aynı ana malzeme yok
+        ana = [o["tarif"] for o in gun["ogunler"] if o["ogun"] in ("ogle", "aksam")]
+        for b in plan.BAZ_MALZEME:
+            assert sum(any(x["malzeme"] == b for x in tarif[t]["malzemeler"]) for t in ana) <= 1, (gun["gun"], b)
     assert s["marketler"] == ["sok"]                    # tek market ve ucuz olanı
     # tarif detayları uygulama için döner
     for tid in sayac:

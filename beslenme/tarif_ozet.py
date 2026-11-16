@@ -49,9 +49,9 @@ def etiketler(tarif: dict, malz: dict) -> list[str]:
 
 # Alerjen / kaçınılan besin grupları: malzemeden otomatik çıkar (kullanıcı uygulamada seçer)
 ALERJEN = {
-    "sut": {"sut", "yogurt", "beyaz_peynir", "lor", "kasar", "tereyagi"},
+    "sut": {"sut", "yogurt", "beyaz_peynir", "lor", "kasar", "tereyagi", "suzme_yogurt", "kefir"},
     "yumurta": {"yumurta"},
-    "gluten": {"tam_bugday_ekmegi", "makarna", "bulgur", "un", "yulaf"},
+    "gluten": {"tam_bugday_ekmegi", "makarna", "bulgur", "un", "yulaf", "lavas"},
     "kuruyemis": {"ceviz", "findik", "fistik_ezmesi"},
     "balik": {"ton_baligi"},
     "susam": {"tahin"},

@@ -122,12 +122,31 @@ K = {
                     migros=["Sızma Zeytinyağı", "Riviera Zeytinyağı", "Özel Zeytinyağı"], yogunluk=0.92),
  "aycicek_yagi": dict(ad=[r"aycicek yag"], haric=["margarin"], migros=["Ayçiçek Yağı"], yogunluk=0.92),
  "tereyagi": dict(ad=[r"tereyag"], haric=["margarin", "tereyagli", "aromali"], migros=["Tereyağı"]),
+ # 16.11.2026 eklenenler (katalogdaki gerçek adlar ve Migros kategorileri incelenerek)
+ "suzme_yogurt": dict(ad=[r"suzme yogurt"], haric=["meyveli", "cilekli", "balli", "icecek", "granola", "kase", "aromali"],
+                      migros=["Süzme, Çeşnili Yoğurt"]),
+ "kefir": dict(ad=[r"\bkefir\b"], haric=["meyveli", "cilekli", "muzlu", "balli", "yaban", "seftali", "chia", "orman",
+                                         "aromali", "kefirix", "kefirim"], migros=["Kefir"], yogunluk=1.03),
+ "mantar": dict(kati=True, ad=[r"kultur mantar", r"^mantar (kg|\d)"],
+                haric=["konserve", "truf", "corba", "sos", "cips", "pizza", "salata", "dolgulu", "grill", "kremali",
+                       "aromali", "mantarli", "kavanoz", "tava"], migros=["Egzotik Sebzeler", "Mevsim Sebzeleri"]),
+ "brokoli": dict(kati=True, ad=[r"brokoli"], haric=["dondurulmus", "corba", "yemegi", "icilebilir", "mama", "puresi"],
+                 migros=["Mevsim Sebzeleri", "Doğranmış, Ayıklanmış Sebzeler"]),
+ "karnabahar": dict(kati=True, ad=[r"karnabahar"], haric=["dondurulmus", "corba", "tursu", "mama", "puresi"],
+                    migros=["Mevsim Sebzeleri", "Doğranmış, Ayıklanmış Sebzeler"]),
+ "kapya_biber": dict(kati=True, ad=[r"kapya"], haric=["sos", "corba", "konserve", "kozlenmis", "koz ", "tursu", "salca",
+                                                     "pul", "toz", "ezme", "dolma"], migros=["Mevsim Sebzeleri", "Biber"]),
+ "kinoa": dict(ad=[r"\bkinoa\b"], haric=["kinoali", "biskuvi", "kraker", "granola", "kurabiye", "bulgur", "bar", "cips",
+                                        "patlak", "unu"]),
+ "lavas": dict(ad=[r"lavas", r"tortilla"], haric=["cips", "pizza", "kizartma", "nacho", "kraker"], migros=["Lavaş"]),
+ "barbunya": dict(ad=[r"barbunya"], haric=["dondurulmus", "pilaki", "haslanmis", "konserve", "yemegi", "salata"],
+                  migros=["Barbunya"]),
 }
 
 # Uzun ömürlü kiler ürünleri: paketin artanı sonraki haftalara kalır. Plan maliyetinde
 # sadece kullanılan kısım sayılır (amortisman); taze ürünlerde ise paketin tamamı sayılır (israf).
 KILER = {"zeytinyagi", "aycicek_yagi", "tereyagi", "salca", "bal", "tahin", "fistik_ezmesi", "ceviz", "findik",
          "kirmizi_mercimek", "yesil_mercimek", "nohut", "kuru_fasulye", "bulgur", "pirinc", "makarna", "un",
-         "yulaf", "zeytin"}
+         "yulaf", "zeytin", "kinoa", "barbunya"}
 for _m in KILER:
     K[_m]["kiler"] = True

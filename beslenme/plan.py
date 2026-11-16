@@ -78,6 +78,10 @@ def urun_adaylari(katalog: list[dict], malzemeler: set[str], marketler: set[str]
     return out
 
 
+# Öğle ve akşam yemeğinde aynı gün tekrarlanmaması gereken "ana" malzemeler
+BAZ_MALZEME = ["kirmizi_mercimek", "yesil_mercimek", "nohut", "kuru_fasulye", "barbunya", "tavuk_gogus",
+               "tavuk_but", "dana_kiyma", "ton_baligi", "makarna", "kinoa"]
+
 # Haftalık plan için öğün türü başına gereken en az farklı tarif (tarif haftada ≤2 kez)
 EN_AZ_TARIF = {"kahvalti": 4, "ana": 7}
 TUR_ADI = {"kahvalti": "kahvaltı", "ana": "ana yemek", "ara": "ara öğün", "yan": "yan yemek"}
@@ -160,6 +164,13 @@ def coz(katalog, kisi: dict, paket: str = "ekonomik", max_market: int = 2, marke
                 prob += pulp.lpSum(ayni) <= 1
     for tid in T:       # çeşitlilik: haftada en fazla 2 kez
         prob += pulp.lpSum(v for (_, _, tt), v in y.items() if tt == tid) <= 2
+    # Çeşitlilik: aynı gün öğle ve akşamda aynı ana malzeme olmasın (ör. mercimek çorbası + mercimek yahnisi)
+    for g in range(7):
+        for b in BAZ_MALZEME:
+            ayni_baz = [v for (gg, oo, tt), v in y.items() if gg == g and oo in ("ogle", "aksam")
+                        and any(x["malzeme"] == b for x in T[tt]["malzemeler"])]
+            if len(ayni_baz) > 1:
+                prob += pulp.lpSum(ayni_baz) <= 1
 
     # Günlük besin hedefleri. Protein "yumuşak" kısıt: tutturulamazsa (ör. vejetaryen + düşük kalori)
     # plan yine üretilir, eksik gram başına ceza ödenir ve kullanıcıya bildirilir.

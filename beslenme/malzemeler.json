@@ -715,6 +715,143 @@
   "dolapta": false
  },
  {
+  "id": "suzme_yogurt",
+  "ad": "Süzme yoğurt",
+  "kategori": "sut_urunu",
+  "kcal": 110,
+  "protein": 8.0,
+  "karb": 4.0,
+  "yag": 7.0,
+  "lif": 0,
+  "arama": [
+   "süzme yoğurt"
+  ],
+  "paket_g": 500,
+  "dolapta": false
+ },
+ {
+  "id": "kefir",
+  "ad": "Kefir",
+  "kategori": "sut_urunu",
+  "kcal": 60,
+  "protein": 3.3,
+  "karb": 4.5,
+  "yag": 3.2,
+  "lif": 0,
+  "arama": [
+   "kefir"
+  ],
+  "paket_g": 1000,
+  "dolapta": false
+ },
+ {
+  "id": "mantar",
+  "ad": "Kültür mantarı",
+  "kategori": "sebze",
+  "kcal": 22,
+  "protein": 3.1,
+  "karb": 3.3,
+  "yag": 0.3,
+  "lif": 1.0,
+  "arama": [
+   "kültür mantarı",
+   "mantar"
+  ],
+  "paket_g": 400,
+  "dolapta": false
+ },
+ {
+  "id": "brokoli",
+  "ad": "Brokoli",
+  "kategori": "sebze",
+  "kcal": 34,
+  "protein": 2.8,
+  "karb": 6.6,
+  "yag": 0.4,
+  "lif": 2.6,
+  "arama": [
+   "brokoli"
+  ],
+  "paket_g": null,
+  "dolapta": false
+ },
+ {
+  "id": "karnabahar",
+  "ad": "Karnabahar",
+  "kategori": "sebze",
+  "kcal": 25,
+  "protein": 1.9,
+  "karb": 5.0,
+  "yag": 0.3,
+  "lif": 2.0,
+  "arama": [
+   "karnabahar"
+  ],
+  "paket_g": null,
+  "dolapta": false
+ },
+ {
+  "id": "kapya_biber",
+  "ad": "Kırmızı kapya biber",
+  "kategori": "sebze",
+  "kcal": 31,
+  "protein": 1.0,
+  "karb": 6.0,
+  "yag": 0.3,
+  "lif": 2.1,
+  "arama": [
+   "kapya biber"
+  ],
+  "paket_g": null,
+  "dolapta": false
+ },
+ {
+  "id": "kinoa",
+  "ad": "Kinoa (kuru)",
+  "kategori": "tahil",
+  "kcal": 368,
+  "protein": 14.1,
+  "karb": 64,
+  "yag": 6.1,
+  "lif": 7.0,
+  "arama": [
+   "kinoa"
+  ],
+  "paket_g": 250,
+  "dolapta": false
+ },
+ {
+  "id": "lavas",
+  "ad": "Lavaş",
+  "kategori": "tahil",
+  "kcal": 290,
+  "protein": 9.0,
+  "karb": 50,
+  "yag": 6.0,
+  "lif": 3.0,
+  "arama": [
+   "lavaş",
+   "tortilla"
+  ],
+  "paket_g": 390,
+  "dolapta": false
+ },
+ {
+  "id": "barbunya",
+  "ad": "Barbunya (kuru)",
+  "kategori": "bakliyat",
+  "kcal": 333,
+  "protein": 23,
+  "karb": 60,
+  "yag": 1.2,
+  "lif": 15,
+  "arama": [
+   "barbunya"
+  ],
+  "paket_g": 1000,
+  "dolapta": false
+ },
+ {
   "id": "tuz_baharat",
   "ad": "Tuz ve baharatlar",
   "kategori": "dolap",

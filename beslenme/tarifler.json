@@ -38,9 +38,11 @@
    }
   ],
   "adimlar": [
-   "Biberleri zeytinyağında birkaç dakika sotele.",
-   "Doğranmış domatesi ekle, suyunu çekene kadar pişir.",
-   "Yumurtaları kırıp karıştır, kıvamını bulunca ocaktan al. Ekmekle servis et."
+   "Biberleri ince halka, domatesleri küçük küp doğra (kabuğunu soyarsan daha yumuşak olur).",
+   "Tavada zeytinyağını ısıt, biberleri 2-3 dakika yumuşayana kadar sotele.",
+   "Domatesleri ekle, tuzla tatlandırıp suyunu biraz çekene kadar 5 dakika pişir.",
+   "Yumurtaları doğrudan tavaya kır, hafifçe karıştırarak kıvamı yumuşakken ocaktan al.",
+   "Pul biber serpip ekmekle sıcak servis et."
   ],
   "ekipman": [
    [
@@ -87,8 +89,10 @@
    }
   ],
   "adimlar": [
-   "Yumurtaları 8-9 dakika haşla.",
-   "Peynir, zeytin, domates ve salatalıkla tabağa diz, ekmekle servis et."
+   "Yumurtaları kaynar suya dikkatle bırak ve 8-9 dakika haşla.",
+   "Soğuk suya alıp kabuklarını soy, ikiye kes.",
+   "Domates ve salatalığı dilimle.",
+   "Yumurta, peynir, zeytin ve sebzeleri tabağa diz; ekmekle servis et."
   ],
   "ekipman": [
    [
@@ -127,8 +131,10 @@
    }
   ],
   "adimlar": [
-   "Yulafı sütle kısık ateşte 5 dakika, koyulaşana kadar pişir.",
-   "Dilimlenmiş muz ve ceviz ekleyerek servis et."
+   "Yulaf ve sütü küçük bir tencereye al.",
+   "Orta-kısık ateşte, ara ara karıştırarak 4-5 dakika koyulaşana kadar pişir (mikrodalgada 2 dk).",
+   "Muzu dilimle, cevizi kır.",
+   "Lapayı kaseye alıp muz ve cevizle süsle; isteğe göre tarçın serp."
   ],
   "ekipman": [
    [
@@ -175,8 +181,10 @@
    }
   ],
   "adimlar": [
-   "Yulaf, yoğurt ve sütü kavanozda karıştır, buzdolabında bir gece beklet.",
-   "Sabah rendelenmiş elma ve bal ekle."
+   "Kavanoz ya da kapaklı bir kaba yulaf, yoğurt ve sütü koyup iyice karıştır.",
+   "Kapağını kapatıp buzdolabında en az 6 saat (bir gece) beklet.",
+   "Sabah elmayı rendele ya da küp doğra.",
+   "Yulafın üzerine elmayı ekle, balı gezdirip soğuk servis et."
   ],
   "ekipman": [
    []
@@ -221,8 +229,10 @@
    }
   ],
   "adimlar": [
-   "Ispanağı zeytinyağında söndür.",
-   "Lor ile çırpılmış yumurtayı üzerine dök, kısık ateşte pişir. Ekmekle servis et."
+   "Ispanağı yıkayıp ince kıy.",
+   "Tavada zeytinyağını ısıt, ıspanağı ekleyip 1-2 dakika söndür.",
+   "Yumurtaları lor, tuz ve karabiberle çırp, ıspanağın üzerine dök.",
+   "Kısık ateşte, kapağı kapalı 4-5 dakika pişir; ekmekle servis et."
   ],
   "ekipman": [
    [
@@ -261,8 +271,10 @@
    }
   ],
   "adimlar": [
-   "Ekmeklerin arasına kaşar ve domates dilimleri koy.",
-   "Tost makinesinde veya tavada kızart, salatalıkla servis et."
+   "Ekmek dilimlerinin arasına kaşar ve ince domates dilimleri koy.",
+   "Tost makinesini ısıt (veya tavayı orta ateşe al).",
+   "Tostu makinede 3-4 dakika, tavada her yüzünü 2 dakika bastırarak kızart.",
+   "Salatalık dilimleriyle servis et."
   ],
   "ekipman": [
    [
@@ -304,8 +316,9 @@
    }
   ],
   "adimlar": [
-   "Ekmeğe fıstık ezmesi sür.",
-   "Üzerine muz dilimleri diz."
+   "Ekmeği isteğe göre kızart.",
+   "Fıstık ezmesini ince bir tabaka halinde sür.",
+   "Muzu halka dilimleyip üzerine diz, tarçın serp."
   ],
   "ekipman": [
    []
@@ -358,8 +371,10 @@
    }
   ],
   "adimlar": [
-   "Kabak ve biberi zeytinyağında yumuşat, domatesi ekle.",
-   "Çırpılmış yumurtayı dök, üzerine kaşar serp, kapağı kapalı pişir."
+   "Kabağı ince yarım ay, biberi halka, domatesi küp doğra.",
+   "Zeytinyağında kabak ve biberi 4 dakika yumuşat, domatesi ekleyip 2 dakika pişir.",
+   "Çırpılmış yumurtayı sebzelerin üzerine dök.",
+   "Kaşarı serp, kapağı kapalı kısık ateşte 3-4 dakika pişir; ekmekle servis et."
   ],
   "ekipman": [
    [
@@ -406,9 +421,11 @@
    }
   ],
   "adimlar": [
-   "Yoğurdu ezilmiş sarımsakla karıştır.",
-   "Yumurtaları sirkeli kaynar suda 3 dakika poşe et, yoğurdun üzerine al.",
-   "Tereyağını pul biberle eritip üzerine gezdir."
+   "Yoğurdu ezilmiş sarımsak ve tuzla karıştırıp oda sıcaklığına gelmesi için beklet.",
+   "Geniş bir tencerede suyu kaynat, 1 yemek kaşığı sirke ekleyip ısıyı kıs.",
+   "Yumurtayı bir kaseye kırıp suyu kaşıkla çevirerek oluşan girdabın ortasına bırak; 3 dakika poşe et.",
+   "Delikli kepçeyle alıp yoğurdun üzerine yerleştir.",
+   "Tereyağını eritip pul biber ekle, köpürünce yumurtaların üzerine gezdir; ekmekle servis et."
   ],
   "ekipman": [
    [
@@ -455,8 +472,9 @@
    }
   ],
   "adimlar": [
-   "Lorun üzerine bal ve ceviz ekle.",
-   "Domates, salatalık ve ekmekle servis et."
+   "Loru tabağa al, üzerine balı gezdir.",
+   "Cevizi kırıp serp.",
+   "Domates ve salatalığı dilimleyip ekmekle birlikte servis et."
   ],
   "ekipman": [
    []
@@ -509,9 +527,11 @@
    }
   ],
   "adimlar": [
-   "Soğanı zeytinyağında kavur, doğranmış havuç ve patatesi ekle.",
-   "Yıkanmış mercimeği ve sıcak suyu ekleyip 25 dakika pişir.",
-   "Blenderdan geçir, limonla servis et."
+   "Mercimeği suyu berraklaşana kadar yıka.",
+   "Soğanı yemeklik doğrayıp zeytinyağında kavur; küp havuç ve patatesi ekleyip 3 dakika çevir.",
+   "Mercimeği ve 3 su bardağı sıcak suyu ekle, kısık ateşte 25 dakika pişir.",
+   "Blenderdan geçir (yoksa iyice karıştırarak ez); kıvamı koyuysa su ekle.",
+   "Tuz, kimyon ve pul biberle tatlandır, limonla servis et."
   ],
   "ekipman": [
    [
@@ -566,9 +586,10 @@
    }
   ],
   "adimlar": [
-   "Soğanı tereyağında kavur, salçayı ekle.",
-   "Mercimek, bulgur ve pirinci ekleyip suyla 30 dakika pişir.",
-   "Nane ve pul biberle tatlandır."
+   "Mercimek, bulgur ve pirinci birlikte yıka.",
+   "Tereyağında ince doğranmış soğanı kavur, salçayı ekleyip kokusu çıkana kadar çevir.",
+   "Bakliyatı ve 3 su bardağı sıcak suyu ekle, kısık ateşte 30 dakika pişir.",
+   "Kuru nane ve pul biberi ekleyip 2 dakika daha kaynat; ekmekle servis et."
   ],
   "ekipman": [
    [
@@ -615,8 +636,10 @@
    }
   ],
   "adimlar": [
+   "Mercimeği yıkayıp 15 dakika ön haşla ve süz.",
    "Soğanı zeytinyağında kavur, salçayı ekle.",
-   "Haşlanmış mercimek ve bulguru ekleyip suyla 20 dakika pişir."
+   "Mercimek ve bulguru ekleyip 2 su bardağı sıcak su ilave et.",
+   "Kısık ateşte mercimekler yumuşayana kadar 20 dakika pişir; tuz ve pul biberle tatlandır."
   ],
   "ekipman": [
    [
@@ -659,9 +682,11 @@
    }
   ],
   "adimlar": [
-   "Fasulyeyi bir gece önceden ıslat, haşla.",
-   "Soğanı kavur, salçayı ekle.",
-   "Fasulye ve suyunu ekleyip 30 dakika pişir."
+   "Fasulyeyi bir gece önceden bol suda ıslat.",
+   "Suyunu değiştirip fasulyeyi 30 dakika (düdüklüde 10 dk) ön haşla, süz.",
+   "Soğanı zeytinyağında kavur, salçayı ekleyip 1 dakika çevir.",
+   "Fasulyeyi ve üzerini 2 parmak geçecek sıcak suyu ekle.",
+   "Kısık ateşte fasulyeler yumuşayana kadar 30-40 dakika pişir; pilavla servis et."
   ],
   "ekipman": [
    [
@@ -708,9 +733,10 @@
    }
   ],
   "adimlar": [
-   "Nohudu bir gece önceden ıslat, haşla.",
-   "Soğan, salça ve domatesi kavur.",
-   "Nohudu ekleyip 25 dakika pişir."
+   "Nohudu bir gece önceden ıslat, ertesi gün 45 dakika (düdüklüde 15 dk) haşla.",
+   "Soğanı zeytinyağında kavur, salçayı ve rendelenmiş domatesi ekle.",
+   "Nohudu ve haşlama suyundan 1 su bardağı ekle.",
+   "Kısık ateşte 25 dakika pişir; tuz ve karabiberle tatlandır."
   ],
   "ekipman": [
    [
@@ -757,8 +783,10 @@
    }
   ],
   "adimlar": [
-   "Kuşbaşı tavuğu suyunu çekene kadar sotele.",
-   "Soğan ve biberi ekle, ardından domatesi ekleyip 10 dakika pişir."
+   "Tavuğu kuşbaşı, biber ve soğanı şerit, domatesi küp doğra.",
+   "Kızgın tavada tavuğu suyunu salıp çekene kadar 6 dakika sotele.",
+   "Soğan ve biberi ekleyip 3 dakika çevir.",
+   "Domatesi ekle, kekik ve tuzla tatlandırıp 10 dakika pişir."
   ],
   "ekipman": [
    [
@@ -805,8 +833,10 @@
    }
   ],
   "adimlar": [
-   "Tavuk ve elma dilim patatesleri salça, zeytinyağı ve baharatla harmanla.",
-   "200 derece fırında 40 dakika pişir."
+   "Fırını 200 dereceye ısıt.",
+   "Salça, zeytinyağı, kekik, pul biber ve tuzu karıştırıp sos yap.",
+   "Tavuk butları, elma dilim patates ve iri doğranmış soğanı sosla harmanla.",
+   "Tepsiye tek kat yay; 40 dakika (airfryer'da 190 derecede 25 dk) pişir."
   ],
   "ekipman": [
    [
@@ -860,9 +890,10 @@
    }
   ],
   "adimlar": [
-   "Tavuğu küçük doğrayıp sotele.",
-   "Soğan, biber ve salçayı ekle.",
-   "Bulgur ve iki katı sıcak suyu ekleyip demlenene kadar pişir."
+   "Tavuğu küçük doğrayıp tencerede sotele.",
+   "Soğan ve biberi ekleyip kavur, salçayı ilave et.",
+   "Bulguru ekleyip 2 dakika çevir, iki katı sıcak su ve tuz ekle.",
+   "Kısık ateşte suyunu çekene kadar 15 dakika pişir, 10 dakika demlendir."
   ],
   "ekipman": [
    [
@@ -909,9 +940,10 @@
    }
   ],
   "adimlar": [
-   "Makarnayı haşla.",
-   "Tavuğu sotele, sarımsak ve rendelenmiş domatesi ekleyip sos yap.",
-   "Makarnayı sosla karıştır."
+   "Makarnayı tuzlu suda paket süresine göre haşla.",
+   "Tavuğu küçük doğrayıp tavada sotele.",
+   "Sarımsağı ve rendelenmiş domatesi ekleyip 8 dakika sos kıvamına gelene kadar pişir.",
+   "Makarnayı sosa ekleyip karıştır; fesleğen ya da kekikle servis et."
   ],
   "ekipman": [
    [
@@ -966,8 +998,10 @@
    }
   ],
   "adimlar": [
-   "Makarnayı haşlayıp soğut.",
-   "Ton balığı ve doğranmış sebzelerle karıştır, zeytinyağı ve limonla tatlandır."
+   "Makarnayı haşlayıp soğuk sudan geçir.",
+   "Ton balığını süz, domates, salatalık ve maydanozu doğra.",
+   "Zeytinyağı, limon ve tuzla sos hazırla.",
+   "Tüm malzemeleri karıştırıp buzdolabında 10 dakika dinlendir."
   ],
   "ekipman": [
    [
@@ -1018,8 +1052,10 @@
    }
   ],
   "adimlar": [
-   "Sebzeleri doğra.",
-   "Ton balığını ekle, zeytinyağı ve limonla karıştır. Ekmekle servis et."
+   "Marulu yıkayıp kurula ve doğra.",
+   "Domates ve salatalığı doğra.",
+   "Ton balığını süzüp ekle.",
+   "Zeytinyağı ve limonla karıştırıp ekmekle servis et."
   ],
   "ekipman": [
    []
@@ -1068,9 +1104,11 @@
    }
   ],
   "adimlar": [
-   "Kıymayı rendelenmiş soğan ve baharatla yoğur, köfte şekli ver.",
-   "Patates, biber ve domatesle tepsiye diz.",
-   "Salçalı su gezdirip 200 derecede 35 dakika pişir."
+   "Kıymayı rendelenmiş soğan, kimyon, karabiber ve tuzla yoğurup köfte şekli ver.",
+   "Patatesleri elma dilim doğrayıp az yağda kızart ya da fırında 10 dakika ön pişir.",
+   "Köfte, patates, biber ve domates dilimlerini tepsiye sırayla diz.",
+   "Salçayı 1 su bardağı sıcak suyla açıp üzerine gezdir.",
+   "200 derecede 35 dakika (airfryer'da 190 derecede 20 dk) pişir."
   ],
   "ekipman": [
    [
@@ -1120,9 +1158,10 @@
    }
   ],
   "adimlar": [
-   "Makarnayı haşla.",
-   "Kıymayı soğanla kavur, salça ve domatesi ekleyip sos yap.",
-   "Makarnayı sosla karıştır."
+   "Makarnayı tuzlu suda haşla.",
+   "Kıymayı suyunu çekene kadar kavur, soğanı ekleyip pembeleştir.",
+   "Salça ve rendelenmiş domatesi ekleyip 8 dakika pişir.",
+   "Makarnayı sosla karıştırıp servis et."
   ],
   "ekipman": [
    [
@@ -1173,8 +1212,10 @@
    }
   ],
   "adimlar": [
+   "Ispanağı yıkayıp iri kıy.",
    "Kıymayı soğanla kavur, salçayı ekle.",
-   "Doğranmış ıspanak ve pirinci ekleyip 15 dakika pişir."
+   "Ispanak ve yıkanmış pirinci ekle, yarım su bardağı sıcak su ilave et.",
+   "Kısık ateşte 15 dakika pişir; yoğurtla servis et."
   ],
   "ekipman": [
    [
@@ -1225,9 +1266,11 @@
    }
   ],
   "adimlar": [
-   "Patlıcanları dilimleyip fırında az yağla pişir.",
-   "Kıymayı soğan, biber ve domatesle kavur.",
-   "Patlıcan ve kıymayı kat kat dizip 20 dakika fırında pişir."
+   "Patlıcanları alacalı soyup halka dilimle, tuzlu suda 15 dakika beklet ve kurula.",
+   "Az yağla fırında (veya airfryer'da) 15 dakika yumuşayana kadar pişir.",
+   "Kıymayı soğan, biber ve domatesle kavurup harç yap.",
+   "Fırın kabına patlıcan ve kıymayı kat kat diz.",
+   "200 derecede 20 dakika pişir."
   ],
   "ekipman": [
    [
@@ -1276,8 +1319,10 @@
    }
   ],
   "adimlar": [
-   "Soğanı zeytinyağında öldür.",
-   "Fasulye ve rendelenmiş domatesi ekleyip kısık ateşte 35 dakika pişir."
+   "Fasulyelerin uçlarını kesip ikiye böl.",
+   "Soğanı zeytinyağında yumuşayana kadar öldür.",
+   "Fasulye ve rendelenmiş domatesi ekle, tuz ve bir tutam şeker serp.",
+   "Yarım su bardağı sıcak su ekleyip kısık ateşte 35 dakika pişir; soğuk servis et."
   ],
   "ekipman": [
    [
@@ -1328,9 +1373,9 @@
    }
   ],
   "adimlar": [
-   "Kabağı rendeleyip suyunu sık.",
-   "Yumurta, un, peynir ve maydanozla karıştır.",
-   "Az yağlı tavada iki yüzünü kızart."
+   "Kabağı rendeleyip tuzlayarak 10 dakika beklet, suyunu iyice sık.",
+   "Yumurta, un, ufalanmış peynir, maydanoz ve dereotuyla karıştır.",
+   "Az yağlı tavada kaşıkla bırakıp iki yüzünü 3'er dakika kızart (airfryer'da 190 derecede 12 dk, fırında 200 derecede 20 dk)."
   ],
   "ekipman": [
    [
@@ -1396,9 +1441,11 @@
    }
   ],
   "adimlar": [
-   "Mercimeği haşla, sıcakken bulguru ekleyip demlendir.",
-   "Kavrulmuş soğan, salça ve maydanozla yoğur.",
-   "Köfte şekli verip marulla servis et."
+   "Mercimeği 2 su bardağı suyla dağılana kadar haşla.",
+   "Ocaktan alıp bulguru ekle, kapağı kapalı 20 dakika şişir.",
+   "Soğanı zeytinyağında kavurup salçayı ekle, karışıma ilave et.",
+   "Kıyılmış maydanoz, kimyon ve pul biberle yoğur.",
+   "Köfte şekli verip marul yapraklarıyla, limonla servis et."
   ],
   "ekipman": [
    [
@@ -1449,9 +1496,10 @@
    }
   ],
   "adimlar": [
-   "Nohudu haşla.",
-   "Sebzeleri iri doğrayıp nohut, zeytinyağı ve baharatla harmanla.",
-   "200 derecede 35 dakika pişir."
+   "Nohudu önceden haşla.",
+   "Patates, kabak, havuç ve patlıcanı iri küp doğra.",
+   "Sebzeleri nohut, zeytinyağı, kekik ve tuzla harmanla.",
+   "200 derecede 35 dakika (airfryer'da 190 derecede 20 dk) karıştırarak pişir."
   ],
   "ekipman": [
    [
@@ -1499,8 +1547,10 @@
    }
   ],
   "adimlar": [
-   "Makarnayı haşla.",
-   "Sarımsaklı yoğurdu üzerine dök, pul biberli tereyağı gezdir."
+   "Makarnayı tuzlu suda haşla.",
+   "Yoğurdu ezilmiş sarımsakla karıştır.",
+   "Makarnayı tabağa alıp yoğurdu döktür.",
+   "Tereyağını pul biberle eritip üzerine gezdir."
   ],
   "ekipman": [
    [
@@ -1555,9 +1605,10 @@
    }
   ],
   "adimlar": [
-   "Tavuğu haşla, didikle.",
-   "Suyuna doğranmış sebzeleri ve pirinci ekleyip 20 dakika pişir.",
-   "Tavuğu geri ekle, limonla servis et."
+   "Tavuğu 25 dakika haşla, suyunu ayır ve didikle.",
+   "Tavuk suyuna küp doğranmış havuç, patates, soğan ve yıkanmış pirinci ekle.",
+   "Kısık ateşte 20 dakika pişir.",
+   "Tavuğu geri ekleyip 2 dakika kaynat; limonla servis et."
   ],
   "ekipman": [
    [
@@ -1597,8 +1648,10 @@
    }
   ],
   "adimlar": [
-   "Haşlanmış nohut ve pirinci tereyağında kavur.",
-   "Sıcak suyu ekleyip kısık ateşte demlendir."
+   "Pirinci ılık tuzlu suda 15 dakika beklet, süz.",
+   "Tereyağında pirinci 2 dakika kavur, haşlanmış nohudu ekle.",
+   "Pirincin 1,5 katı sıcak su ve tuz ekle.",
+   "Kısık ateşte suyunu çekene kadar pişir, 10 dakika demlendir."
   ],
   "ekipman": [
    [
@@ -1633,8 +1686,10 @@
    }
   ],
   "adimlar": [
-   "Pirinci tereyağında kavur.",
-   "Sıcak suyu ekleyip kısık ateşte demlendir."
+   "Pirinci ılık tuzlu suda 15 dakika beklet ve süz.",
+   "Tereyağında pirinci taneleri şeffaflaşana kadar kavur.",
+   "1,5 katı sıcak su ve tuzu ekle, kısık ateşte suyunu çekene kadar pişir.",
+   "Kapağın altına kağıt havlu koyup 10 dakika demlendir."
   ],
   "ekipman": [
    [
@@ -1677,8 +1732,10 @@
    }
   ],
   "adimlar": [
-   "Soğanı kavur, domatesi ekle.",
-   "Bulgur ve sıcak suyu ekleyip demlendir."
+   "Soğanı zeytinyağında kavur, rendelenmiş domatesi ekleyip 3 dakika pişir.",
+   "Bulguru ekleyip 1 dakika çevir.",
+   "İki katı sıcak su ve tuz ekle, kısık ateşte 15 dakika pişir.",
+   "10 dakika demlendirip servis et."
   ],
   "ekipman": [
    [
@@ -1729,8 +1786,9 @@
    }
   ],
   "adimlar": [
-   "Sebzeleri küçük doğra.",
-   "Zeytinyağı ve limonla karıştır."
+   "Domates, salatalık, soğan ve biberi küçük küp doğra.",
+   "Maydanozu ince kıy.",
+   "Zeytinyağı, limon ve tuzla karıştırıp hemen servis et."
   ],
   "ekipman": [
    []
@@ -1768,8 +1826,9 @@
    }
   ],
   "adimlar": [
-   "Salatalığı rendele.",
-   "Sarımsaklı yoğurtla karıştır, isteğe göre su ekle."
+   "Salatalığı rendele ya da küçük doğra.",
+   "Yoğurdu ezilmiş sarımsak ve tuzla çırp.",
+   "Salatalığı ekleyip isteğe göre su ile inceltir, kuru nane serpip servis et."
   ],
   "ekipman": [
    []
@@ -1970,8 +2029,10 @@
    }
   ],
   "adimlar": [
-   "Haşlanmış nohudu tahin, limon, sarımsak ve zeytinyağıyla püre yap.",
-   "Havuç çubuklarıyla servis et."
+   "Haşlanmış nohudu kabuklarını ayıklayarak blender haznesine al.",
+   "Tahin, limon suyu, sarımsak, zeytinyağı ve 2-3 yemek kaşığı haşlama suyunu ekle.",
+   "Pürüzsüz olana kadar 1-2 dakika çek.",
+   "Havuçları çubuk şeklinde doğrayıp humusla servis et."
   ],
   "ekipman": [
    [
@@ -2033,6 +2094,2936 @@
   ],
   "adimlar": [
    "Lorun üzerine bal gezdir."
+  ],
+  "ekipman": [
+   []
+  ]
+ },
+ {
+  "id": "lorlu_yumurta_durum",
+  "ad": "Lorlu yumurtalı dürüm",
+  "ogunler": [
+   "kahvalti"
+  ],
+  "sure_dk": 12,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "lavas",
+    "gram": 65
+   },
+   {
+    "malzeme": "yumurta",
+    "gram": 110
+   },
+   {
+    "malzeme": "lor",
+    "gram": 50
+   },
+   {
+    "malzeme": "domates",
+    "gram": 60
+   },
+   {
+    "malzeme": "maydanoz",
+    "gram": 8
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 4
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Yumurtaları bir kasede lor, ince kıyılmış maydanoz, tuz ve karabiberle çırp.",
+   "Tavayı zeytinyağıyla orta ateşte ısıt, karışımı dök ve sürekli karıştırarak yumuşak bir çırpılmış yumurta pişir (3-4 dk).",
+   "Lavaşı kuru bir tavada her yüzünü 20'şer saniye ısıt; yumuşar ve kolay sarılır.",
+   "Lavaşın ortasına yumurtayı ve ince dilimlenmiş domatesi yerleştir.",
+   "Alt kısmını katlayıp yanlardan sararak dürüm yap; ikiye kesip servis et."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
+  ]
+ },
+ {
+  "id": "yumurtali_muffin",
+  "ad": "Fırında sebzeli yumurta muffin",
+  "ogunler": [
+   "kahvalti",
+   "ara"
+  ],
+  "sure_dk": 25,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "yumurta",
+    "gram": 165
+   },
+   {
+    "malzeme": "ispanak",
+    "gram": 40
+   },
+   {
+    "malzeme": "kapya_biber",
+    "gram": 40
+   },
+   {
+    "malzeme": "beyaz_peynir",
+    "gram": 30
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 3
+   },
+   {
+    "malzeme": "tam_bugday_ekmegi",
+    "gram": 40
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Fırını (veya airfryer'ı) 180 dereceye ısıt; muffin kalıbının gözlerini zeytinyağıyla yağla.",
+   "Ispanağı ince kıy, kapya biberi küçük küpler halinde doğra, peyniri ufala.",
+   "Yumurtaları tuz ve karabiberle çırp, sebzeleri ve peyniri ekleyip karıştır.",
+   "Karışımı kalıpların 3/4'ünü dolduracak şekilde paylaştır.",
+   "Fırında 18-20 dakika (airfryer'da 12-14 dakika) üzeri kızarıp ortası pişene kadar pişir.",
+   "Ilıyınca kalıptan çıkar, ekmekle servis et. Buzdolabında 3 gün saklanır."
+  ],
+  "ekipman": [
+   [
+    "firin"
+   ],
+   [
+    "airfryer"
+   ]
+  ]
+ },
+ {
+  "id": "suzme_meyve_kase",
+  "ad": "Süzme yoğurtlu meyve kasesi",
+  "ogunler": [
+   "kahvalti",
+   "ara"
+  ],
+  "sure_dk": 5,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "suzme_yogurt",
+    "gram": 200
+   },
+   {
+    "malzeme": "muz",
+    "gram": 100
+   },
+   {
+    "malzeme": "yulaf",
+    "gram": 25
+   },
+   {
+    "malzeme": "ceviz",
+    "gram": 10
+   },
+   {
+    "malzeme": "bal",
+    "gram": 8
+   }
+  ],
+  "adimlar": [
+   "Süzme yoğurdu bir kaseye al, kaşıkla iyice çırparak pürüzsüzleştir.",
+   "Muzu ince halkalar halinde dilimle.",
+   "Yoğurdun üzerine yulafı serp, muz dilimlerini diz.",
+   "Cevizi elinle kırıp üzerine ekle, en son balı gezdir."
+  ],
+  "ekipman": [
+   []
+  ]
+ },
+ {
+  "id": "kefirli_smoothie",
+  "ad": "Kefirli yulaf smoothie",
+  "ogunler": [
+   "kahvalti",
+   "ara"
+  ],
+  "sure_dk": 5,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "kefir",
+    "gram": 250
+   },
+   {
+    "malzeme": "yulaf",
+    "gram": 35
+   },
+   {
+    "malzeme": "muz",
+    "gram": 100
+   },
+   {
+    "malzeme": "fistik_ezmesi",
+    "gram": 15
+   }
+  ],
+  "adimlar": [
+   "Yulafı blender haznesine koy ve 10 saniye çekerek una yakın hale getir.",
+   "Muzu dilimleyip ekle (dondurulmuş muz kullanırsan smoothie daha kıvamlı olur).",
+   "Kefiri ve fıstık ezmesini ilave et.",
+   "Pürüzsüz olana kadar 30-40 saniye çek; çok koyuysa biraz su ekle.",
+   "Bardağa al ve hemen iç."
+  ],
+  "ekipman": [
+   [
+    "blender"
+   ]
+  ]
+ },
+ {
+  "id": "mantarli_omlet",
+  "ad": "Mantarlı kaşarlı omlet",
+  "ogunler": [
+   "kahvalti"
+  ],
+  "sure_dk": 12,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "yumurta",
+    "gram": 110
+   },
+   {
+    "malzeme": "mantar",
+    "gram": 80
+   },
+   {
+    "malzeme": "kasar",
+    "gram": 20
+   },
+   {
+    "malzeme": "maydanoz",
+    "gram": 5
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 5
+   },
+   {
+    "malzeme": "tam_bugday_ekmegi",
+    "gram": 50
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Mantarları ıslak bir bezle silip ince dilimle.",
+   "Tavada zeytinyağını ısıt, mantarları suyunu salıp çekene kadar yüksek ateşte sotele (5 dk).",
+   "Yumurtaları tuz ve karabiberle çırp, mantarların üzerine dök.",
+   "Altı tutunca rendelenmiş kaşarı serp, kapağı kapatıp kısık ateşte 2 dakika pişir.",
+   "Kıyılmış maydanozla süsleyip ekmekle servis et."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
+  ]
+ },
+ {
+  "id": "yulafli_pankek",
+  "ad": "Muzlu yulaf pankek",
+  "ogunler": [
+   "kahvalti"
+  ],
+  "sure_dk": 15,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "yulaf",
+    "gram": 45
+   },
+   {
+    "malzeme": "yumurta",
+    "gram": 55
+   },
+   {
+    "malzeme": "muz",
+    "gram": 100
+   },
+   {
+    "malzeme": "sut",
+    "gram": 60
+   },
+   {
+    "malzeme": "bal",
+    "gram": 8
+   },
+   {
+    "malzeme": "aycicek_yagi",
+    "gram": 3
+   }
+  ],
+  "adimlar": [
+   "Muzu bir kasede çatalla iyice ez.",
+   "Yumurta ve sütü ekleyip çırp, ardından yulafı ilave edip 5 dakika dinlendir.",
+   "Yapışmaz tavayı kağıt havluyla çok az yağla ve orta ateşte ısıt.",
+   "Her pankek için 2 yemek kaşığı hamur dök; kenarları kabarınca çevir (her yüzü 1,5-2 dk).",
+   "Üst üste dizip balla servis et."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
+  ]
+ },
+ {
+  "id": "ispanakli_lavas_gozleme",
+  "ad": "Ispanaklı lorlu lavaş gözleme",
+  "ogunler": [
+   "kahvalti",
+   "ana"
+  ],
+  "sure_dk": 15,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "lavas",
+    "gram": 70
+   },
+   {
+    "malzeme": "ispanak",
+    "gram": 80
+   },
+   {
+    "malzeme": "lor",
+    "gram": 60
+   },
+   {
+    "malzeme": "beyaz_peynir",
+    "gram": 20
+   },
+   {
+    "malzeme": "sogan",
+    "gram": 15
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 5
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Ispanağı yıkayıp ince kıy, soğanı küçük doğra.",
+   "Soğanı yağda 2 dakika kavur, ıspanağı ekleyip sönene kadar karıştır ve ateşten al.",
+   "Ispanağı lor ve ufalanmış beyaz peynirle karıştır, tuz ve pul biberle tatlandır.",
+   "Harcı lavaşın yarısına yay, diğer yarısını üzerine kapat.",
+   "Kuru tavada veya tost makinesinde her yüzü kızarana kadar (2-3 dk) pişir, dilimleyip servis et."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ],
+   [
+    "ocak",
+    "tost_makinesi"
+   ]
+  ]
+ },
+ {
+  "id": "fistikli_yulaf_lapasi",
+  "ad": "Fıstık ezmeli yulaf lapası",
+  "ogunler": [
+   "kahvalti"
+  ],
+  "sure_dk": 8,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "yulaf",
+    "gram": 50
+   },
+   {
+    "malzeme": "sut",
+    "gram": 200
+   },
+   {
+    "malzeme": "fistik_ezmesi",
+    "gram": 15
+   },
+   {
+    "malzeme": "muz",
+    "gram": 80
+   }
+  ],
+  "adimlar": [
+   "Yulaf ve sütü küçük bir tencerede karıştır.",
+   "Orta-kısık ateşte, ara ara karıştırarak koyulaşana kadar 4-5 dakika pişir (mikrodalgada 2 dk, 30 sn arayla karıştırarak).",
+   "Ocaktan alıp fıstık ezmesini ekle ve eriyene kadar karıştır.",
+   "Kaseye al, üzerine dilimlenmiş muz koyarak servis et."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ],
+   [
+    "mikrodalga"
+   ]
+  ]
+ },
+ {
+  "id": "kapyali_yumurta",
+  "ad": "Kapya biberli yumurta kapama",
+  "ogunler": [
+   "kahvalti"
+  ],
+  "sure_dk": 18,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "yumurta",
+    "gram": 110
+   },
+   {
+    "malzeme": "kapya_biber",
+    "gram": 80
+   },
+   {
+    "malzeme": "domates",
+    "gram": 120
+   },
+   {
+    "malzeme": "sogan",
+    "gram": 30
+   },
+   {
+    "malzeme": "beyaz_peynir",
+    "gram": 25
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 6
+   },
+   {
+    "malzeme": "tam_bugday_ekmegi",
+    "gram": 50
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Soğanı ince, kapya biberi şerit doğra; domatesin kabuğunu soyup küp küp kes.",
+   "Soğanı zeytinyağında pembeleşene kadar kavur, biberi ekleyip 3 dakika daha pişir.",
+   "Domatesi ekle, kimyon ve pul biberle tatlandırıp suyunu biraz çekene kadar 5 dakika pişir.",
+   "Kaşıkla iki çukur aç, yumurtaları kır; kapağı kapatıp akı pişene kadar 4-5 dakika beklet.",
+   "Üzerine beyaz peynir ufalayıp ekmekle sıcak servis et."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
+  ]
+ },
+ {
+  "id": "tahinli_suzme_kase",
+  "ad": "Tahinli ballı süzme yoğurt",
+  "ogunler": [
+   "kahvalti",
+   "ara"
+  ],
+  "sure_dk": 3,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "suzme_yogurt",
+    "gram": 180
+   },
+   {
+    "malzeme": "tahin",
+    "gram": 12
+   },
+   {
+    "malzeme": "bal",
+    "gram": 10
+   },
+   {
+    "malzeme": "ceviz",
+    "gram": 10
+   },
+   {
+    "malzeme": "elma",
+    "gram": 80
+   }
+  ],
+  "adimlar": [
+   "Süzme yoğurdu kaseye al.",
+   "Tahin ve balı küçük bir kapta karıştırıp yoğurdun üzerine gezdir.",
+   "Elmayı küçük küpler halinde doğra, kırılmış cevizle birlikte üzerine ekle."
+  ],
+  "ekipman": [
+   []
+  ]
+ },
+ {
+  "id": "kinoa_kahvalti_kasesi",
+  "ad": "Kinoalı kahvaltı kasesi",
+  "ogunler": [
+   "kahvalti"
+  ],
+  "sure_dk": 20,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "kinoa",
+    "gram": 45
+   },
+   {
+    "malzeme": "yumurta",
+    "gram": 55
+   },
+   {
+    "malzeme": "domates",
+    "gram": 80
+   },
+   {
+    "malzeme": "salatalik",
+    "gram": 80
+   },
+   {
+    "malzeme": "beyaz_peynir",
+    "gram": 30
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 5
+   },
+   {
+    "malzeme": "limon",
+    "gram": 5
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Kinoayı süzgeçte bol suyla yıka (acılığı gider).",
+   "İki katı suyla tencereye al, kaynayınca kısık ateşte 12-15 dakika suyunu çekene kadar pişir.",
+   "Bu sırada yumurtayı 8 dakika haşla, soğuk suya alıp soy ve ikiye kes.",
+   "Domates ve salatalığı küp doğra.",
+   "Kinoayı kaseye al; sebzeleri, peyniri ve yumurtayı yerleştir, zeytinyağı ve limonla tatlandır."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
+  ]
+ },
+ {
+  "id": "lavas_pizza",
+  "ad": "Airfryer'da yumurtalı lavaş pizza",
+  "ogunler": [
+   "kahvalti",
+   "ana"
+  ],
+  "sure_dk": 12,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "lavas",
+    "gram": 65
+   },
+   {
+    "malzeme": "yumurta",
+    "gram": 55
+   },
+   {
+    "malzeme": "kasar",
+    "gram": 30
+   },
+   {
+    "malzeme": "domates",
+    "gram": 60
+   },
+   {
+    "malzeme": "kapya_biber",
+    "gram": 30
+   },
+   {
+    "malzeme": "salca",
+    "gram": 5
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Salçayı 1 yemek kaşığı su ve kekikle açıp lavaşın üzerine ince bir tabaka halinde sür.",
+   "Domates ve kapya biberi ince dilimleyip lavaşa yerleştir, rendelenmiş kaşarın yarısını serp.",
+   "Ortada küçük bir çukur bırakıp yumurtayı kır, kalan kaşarı kenarlara serp.",
+   "Airfryer'da 180 derecede 7-8 dakika (fırında 200 derecede 10 dk) yumurta akı pişene kadar pişir.",
+   "Dilimleyip sıcak servis et."
+  ],
+  "ekipman": [
+   [
+    "airfryer"
+   ],
+   [
+    "firin"
+   ]
+  ]
+ },
+ {
+  "id": "firin_karnabahar_nohut",
+  "ad": "Fırında karnabahar ve nohut, yoğurtlu",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 45,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "karnabahar",
+    "gram": 250
+   },
+   {
+    "malzeme": "nohut",
+    "gram": 50
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 12
+   },
+   {
+    "malzeme": "yogurt",
+    "gram": 100
+   },
+   {
+    "malzeme": "sarimsak",
+    "gram": 3
+   },
+   {
+    "malzeme": "limon",
+    "gram": 5
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Nohudu bir gece önceden ıslat, düdüklüde 15 veya tencerede 45 dakika haşla, süzüp kurula.",
+   "Karnabaharı küçük çiçeklere ayır; nohutla birlikte zeytinyağı, kimyon, toz kırmızı biber ve tuzla harmanla.",
+   "Fırın tepsisine (veya airfryer sepetine) tek kat yay.",
+   "200 derecede 25-30 dakika (airfryer'da 190 derecede 18-20 dk), yarısında karıştırarak kenarları kızarana kadar pişir.",
+   "Yoğurdu ezilmiş sarımsak, limon ve tuzla karıştır.",
+   "Sebzeleri tabağa al, sarımsaklı yoğurtla servis et."
+  ],
+  "ekipman": [
+   [
+    "ocak",
+    "firin"
+   ],
+   [
+    "ocak",
+    "airfryer"
+   ]
+  ]
+ },
+ {
+  "id": "barbunya_pilaki",
+  "ad": "Zeytinyağlı barbunya pilaki",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 75,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "barbunya",
+    "gram": 70
+   },
+   {
+    "malzeme": "havuc",
+    "gram": 40
+   },
+   {
+    "malzeme": "patates",
+    "gram": 60
+   },
+   {
+    "malzeme": "sogan",
+    "gram": 40
+   },
+   {
+    "malzeme": "sarimsak",
+    "gram": 4
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 12
+   },
+   {
+    "malzeme": "salca",
+    "gram": 8
+   },
+   {
+    "malzeme": "limon",
+    "gram": 8
+   },
+   {
+    "malzeme": "maydanoz",
+    "gram": 5
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Barbunyayı bir gece önceden ıslat; ertesi gün suyunu değiştirip 35-40 dakika (düdüklüde 12 dk) diri kalacak şekilde haşla.",
+   "Soğanı yarım ay, havucu halka, patatesi küp doğra; sarımsağı ince kıy.",
+   "Zeytinyağında soğanı ve sarımsağı 3 dakika kavur, salçayı ekleyip kokusu çıkana kadar karıştır.",
+   "Havuç ve patatesi ekle, 2 dakika çevir; barbunyayı ve sebzelerin üzerini geçecek kadar sıcak su ilave et.",
+   "Kapağı kapalı, kısık ateşte sebzeler yumuşayana kadar 20 dakika pişir.",
+   "Limon suyunu ekle; ılık ya da soğuk, kıyılmış maydanozla servis et."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
+  ]
+ },
+ {
+  "id": "mantarli_tavuk_sote",
+  "ad": "Mantarlı tavuk sote",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 25,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "tavuk_gogus",
+    "gram": 140
+   },
+   {
+    "malzeme": "mantar",
+    "gram": 120
+   },
+   {
+    "malzeme": "kapya_biber",
+    "gram": 60
+   },
+   {
+    "malzeme": "sogan",
+    "gram": 30
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 8
+   },
+   {
+    "malzeme": "tam_bugday_ekmegi",
+    "gram": 50
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Tavuğu kuşbaşı, mantarları dilim, biberi ve soğanı şerit doğra.",
+   "Geniş tavada zeytinyağını iyice ısıt, tavuğu tek kat yay ve rengi dönene kadar yüksek ateşte 5-6 dakika sotele.",
+   "Tavuğu kenara al; aynı tavada soğan ve mantarı mantarlar suyunu çekene kadar pişir.",
+   "Biberi ekleyip 2 dakika daha çevir, tavuğu geri al.",
+   "Tuz, karabiber ve kekikle tatlandırıp 2 dakika birlikte pişir; ekmekle servis et."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
+  ]
+ },
+ {
+  "id": "airfryer_tavuk_sebze",
+  "ad": "Airfryer'da yoğurtlu tavuk ve sebze",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 30,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "tavuk_gogus",
+    "gram": 160
+   },
+   {
+    "malzeme": "yogurt",
+    "gram": 40
+   },
+   {
+    "malzeme": "kabak",
+    "gram": 100
+   },
+   {
+    "malzeme": "kapya_biber",
+    "gram": 60
+   },
+   {
+    "malzeme": "patates",
+    "gram": 120
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 8
+   },
+   {
+    "malzeme": "sarimsak",
+    "gram": 3
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Tavuğu iri küp doğra; yoğurt, ezilmiş sarımsak, yarım tatlı kaşığı yağ, pul biber ve tuzla en az 15 dakika marine et.",
+   "Patatesi elma dilim, kabağı ve biberi iri parçalar halinde doğra; kalan yağ ve baharatla harmanla.",
+   "Patatesleri airfryer'da 190 derecede 8 dakika ön pişir.",
+   "Tavuğu ve diğer sebzeleri ekleyip 190 derecede 12-14 dakika, yarısında sepeti sallayarak pişir (fırında 200 derecede 30 dk).",
+   "Tavuğun içi beyazlaşıp sebzeler kızarınca servis et."
+  ],
+  "ekipman": [
+   [
+    "airfryer"
+   ],
+   [
+    "firin"
+   ]
+  ]
+ },
+ {
+  "id": "brokolili_tavuklu_makarna",
+  "ad": "Brokolili tavuklu makarna",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 25,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "makarna",
+    "gram": 75
+   },
+   {
+    "malzeme": "tavuk_gogus",
+    "gram": 110
+   },
+   {
+    "malzeme": "brokoli",
+    "gram": 120
+   },
+   {
+    "malzeme": "sarimsak",
+    "gram": 4
+   },
+   {
+    "malzeme": "kasar",
+    "gram": 15
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 7
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Brokoliyi küçük çiçeklere ayır. Makarnayı tuzlu suda haşla; süzmeden 3 dakika önce brokoliyi aynı tencereye ekle.",
+   "Bir kepçe makarna suyunu ayırıp makarna ve brokoliyi süz.",
+   "Tavada yağı ısıt, küçük doğranmış tavuğu 5-6 dakika sotele, ince kıyılmış sarımsağı ekleyip 30 saniye çevir.",
+   "Makarna ve brokoliyi tavaya al, ayırdığın suyu ekleyip 1 dakika karıştır.",
+   "Rendelenmiş kaşarı ve karabiberi ekleyip eriyene kadar karıştır, hemen servis et."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
+  ]
+ },
+ {
+  "id": "ton_durum",
+  "ad": "Ton balıklı yoğurtlu dürüm",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 10,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "lavas",
+    "gram": 70
+   },
+   {
+    "malzeme": "ton_baligi",
+    "gram": 80
+   },
+   {
+    "malzeme": "suzme_yogurt",
+    "gram": 40
+   },
+   {
+    "malzeme": "marul",
+    "gram": 40
+   },
+   {
+    "malzeme": "domates",
+    "gram": 60
+   },
+   {
+    "malzeme": "salatalik",
+    "gram": 50
+   },
+   {
+    "malzeme": "limon",
+    "gram": 5
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Ton balığının suyunu iyice süz ve çatalla dağıt.",
+   "Süzme yoğurt, limon suyu, karabiber ve az tuzla karıştır.",
+   "Marulu ince kıy; domates ve salatalığı ince dilimle.",
+   "Lavaşa önce marulu, sonra ton karışımını ve sebzeleri yerleştir.",
+   "Sıkıca sarıp ikiye kes; hemen servis et."
+  ],
+  "ekipman": [
+   []
+  ]
+ },
+ {
+  "id": "tavuk_durum",
+  "ad": "Tavuk dürüm",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 20,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "lavas",
+    "gram": 70
+   },
+   {
+    "malzeme": "tavuk_gogus",
+    "gram": 130
+   },
+   {
+    "malzeme": "yogurt",
+    "gram": 50
+   },
+   {
+    "malzeme": "marul",
+    "gram": 40
+   },
+   {
+    "malzeme": "domates",
+    "gram": 60
+   },
+   {
+    "malzeme": "sogan",
+    "gram": 20
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 6
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Tavuğu ince şeritler halinde doğra, kimyon, pul biber ve tuzla harmanla.",
+   "Tavada yağı ısıt, tavuğu yüksek ateşte 6-7 dakika kızarana kadar pişir (airfryer'da 190 derecede 10 dk).",
+   "Yoğurda tuz ve isteğe göre ezilmiş sarımsak ekle.",
+   "Lavaşı ısıt; yoğurt sür, marul, domates, ince soğan ve tavuğu diz.",
+   "Sıkıca sarıp kuru tavada iki yüzünü 30 saniye bastırarak mühürle."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ],
+   [
+    "airfryer"
+   ]
+  ]
+ },
+ {
+  "id": "nohutlu_kinoa_salatasi",
+  "ad": "Nohutlu kinoa salatası",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 25,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "kinoa",
+    "gram": 60
+   },
+   {
+    "malzeme": "nohut",
+    "gram": 45
+   },
+   {
+    "malzeme": "domates",
+    "gram": 80
+   },
+   {
+    "malzeme": "salatalik",
+    "gram": 80
+   },
+   {
+    "malzeme": "maydanoz",
+    "gram": 15
+   },
+   {
+    "malzeme": "limon",
+    "gram": 15
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 10
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Nohudu önceden ıslatıp haşla (veya önceki günden haşlanmışı kullan).",
+   "Kinoayı yıkayıp iki katı suyla 12-15 dakika suyunu çekene kadar pişir, tepside soğut.",
+   "Domates, salatalık ve maydanozu küçük doğra.",
+   "Limon suyu, zeytinyağı, tuz ve sumakla sos hazırla.",
+   "Tüm malzemeleri sosla karıştır; buzdolabında 10 dakika dinlendirip servis et."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
+  ]
+ },
+ {
+  "id": "sebzeli_mercimek_yahni",
+  "ad": "Sebzeli kırmızı mercimek yahnisi",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 35,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "kirmizi_mercimek",
+    "gram": 60
+   },
+   {
+    "malzeme": "kabak",
+    "gram": 80
+   },
+   {
+    "malzeme": "havuc",
+    "gram": 50
+   },
+   {
+    "malzeme": "sogan",
+    "gram": 30
+   },
+   {
+    "malzeme": "salca",
+    "gram": 10
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 8
+   },
+   {
+    "malzeme": "tam_bugday_ekmegi",
+    "gram": 40
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Mercimeği suyu berraklaşana kadar yıka.",
+   "Soğanı yemeklik, havucu ve kabağı küp doğra.",
+   "Zeytinyağında soğanı kavur, havucu ekleyip 3 dakika çevir, salçayı ekle.",
+   "Mercimek ve kabağı ekle, 2 su bardağı sıcak su ilave et.",
+   "Kısık ateşte mercimek dağılmadan yumuşayana kadar 20 dakika pişir; kimyon ve pul biberle tatlandır.",
+   "Ekmekle servis et."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
+  ]
+ },
+ {
+  "id": "ispanak_kavurma_yumurta",
+  "ad": "Yumurtalı ıspanak kavurması",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 20,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "ispanak",
+    "gram": 250
+   },
+   {
+    "malzeme": "yumurta",
+    "gram": 110
+   },
+   {
+    "malzeme": "sogan",
+    "gram": 40
+   },
+   {
+    "malzeme": "yogurt",
+    "gram": 80
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 8
+   },
+   {
+    "malzeme": "tam_bugday_ekmegi",
+    "gram": 50
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Ispanağı bol suda yıkayıp iri kıy, soğanı ince doğra.",
+   "Geniş tavada soğanı zeytinyağında pembeleşene kadar kavur.",
+   "Ispanağı ekleyip söndür ve suyunu çekene kadar 5-6 dakika pişir; tuz ve pul biber ekle.",
+   "Ispanağın içinde iki çukur aç, yumurtaları kır ve kapağı kapalı 4 dakika pişir.",
+   "Yanında yoğurt ve ekmekle servis et."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
+  ]
+ },
+ {
+  "id": "mantarli_bulgur",
+  "ad": "Mantarlı bulgur pilavı",
+  "ogunler": [
+   "ana",
+   "yan"
+  ],
+  "sure_dk": 30,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "bulgur",
+    "gram": 70
+   },
+   {
+    "malzeme": "mantar",
+    "gram": 100
+   },
+   {
+    "malzeme": "sogan",
+    "gram": 30
+   },
+   {
+    "malzeme": "kapya_biber",
+    "gram": 40
+   },
+   {
+    "malzeme": "tereyagi",
+    "gram": 6
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 4
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Soğanı ve kapya biberi küçük, mantarı dilim doğra.",
+   "Tencerede yağları ısıt; soğanı kavur, mantarı ekleyip suyunu çekene kadar pişir.",
+   "Biberi ve bulguru ekleyip 2 dakika kavur.",
+   "Bulgurun iki katı sıcak su ve tuz ekle; kaynayınca kısık ateşte suyunu çekene kadar 15 dakika pişir.",
+   "Ocaktan alıp kapağın altına kağıt havlu koyarak 10 dakika demlendir."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
+  ]
+ },
+ {
+  "id": "firin_kofte_brokoli",
+  "ad": "Fırında köfte ve brokoli",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 40,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "dana_kiyma",
+    "gram": 110
+   },
+   {
+    "malzeme": "brokoli",
+    "gram": 150
+   },
+   {
+    "malzeme": "patates",
+    "gram": 120
+   },
+   {
+    "malzeme": "sogan",
+    "gram": 20
+   },
+   {
+    "malzeme": "yumurta",
+    "gram": 15
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 6
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Kıymayı rendelenmiş soğan, az yumurta, kimyon, karabiber ve tuzla 3-4 dakika yoğur; köfte şekli ver.",
+   "Patatesi elma dilim doğra, brokoliyi çiçeklere ayır; ikisini zeytinyağı ve tuzla harmanla.",
+   "Patatesleri tepsiye yay ve 200 derecede 10 dakika ön pişir.",
+   "Köfteleri ve brokoliyi ekleyip 15-18 dakika daha pişir (airfryer'da 190 derecede 12-14 dk, yarısında çevir).",
+   "Köftelerin içi pişince sıcak servis et."
+  ],
+  "ekipman": [
+   [
+    "firin"
+   ],
+   [
+    "airfryer"
+   ]
+  ]
+ },
+ {
+  "id": "kiymali_karnabahar",
+  "ad": "Kıymalı karnabahar yemeği",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 35,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "karnabahar",
+    "gram": 250
+   },
+   {
+    "malzeme": "dana_kiyma",
+    "gram": 60
+   },
+   {
+    "malzeme": "sogan",
+    "gram": 30
+   },
+   {
+    "malzeme": "salca",
+    "gram": 10
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 5
+   },
+   {
+    "malzeme": "yogurt",
+    "gram": 80
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Karnabaharı küçük çiçeklere ayırıp yıka.",
+   "Tencerede kıymayı suyunu çekene kadar kavur, soğanı ekleyip pembeleştir.",
+   "Salçayı ekle, kokusu çıkınca karnabaharı ilave edip 2 dakika çevir.",
+   "Yarım su bardağı sıcak su ekle; kapağı kapalı, kısık ateşte karnabahar yumuşayana kadar 20 dakika pişir.",
+   "Yoğurtla servis et."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
+  ]
+ },
+ {
+  "id": "tavuklu_kinoa_kase",
+  "ad": "Tavuklu kinoa kasesi",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 30,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "kinoa",
+    "gram": 55
+   },
+   {
+    "malzeme": "tavuk_gogus",
+    "gram": 120
+   },
+   {
+    "malzeme": "brokoli",
+    "gram": 100
+   },
+   {
+    "malzeme": "kapya_biber",
+    "gram": 50
+   },
+   {
+    "malzeme": "suzme_yogurt",
+    "gram": 40
+   },
+   {
+    "malzeme": "limon",
+    "gram": 8
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 7
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Kinoayı yıkayıp iki katı suyla 12-15 dakika pişir.",
+   "Tavuğu baharatlayıp tavada (veya airfryer'da 190 derecede 12 dk) pişir ve dilimle.",
+   "Brokoliyi 4 dakika buharda veya kaynar suda haşla; kapya biberi şerit doğra.",
+   "Süzme yoğurdu limon suyu, tuz ve karabiberle karıştırıp sos yap.",
+   "Kaseye kinoayı al, tavuk ve sebzeleri yerleştir, sosu ve zeytinyağını gezdir."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
+  ]
+ },
+ {
+  "id": "firin_frittata",
+  "ad": "Fırında sebzeli omlet (frittata)",
+  "ogunler": [
+   "ana",
+   "kahvalti"
+  ],
+  "sure_dk": 30,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "yumurta",
+    "gram": 165
+   },
+   {
+    "malzeme": "kabak",
+    "gram": 100
+   },
+   {
+    "malzeme": "kapya_biber",
+    "gram": 50
+   },
+   {
+    "malzeme": "ispanak",
+    "gram": 50
+   },
+   {
+    "malzeme": "beyaz_peynir",
+    "gram": 30
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 6
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Fırını 180 dereceye ısıt. Kabağı rendeleyip suyunu sık, biberi küp, ıspanağı ince doğra.",
+   "Sebzeleri zeytinyağında 4-5 dakika sotele.",
+   "Yumurtaları peynir, tuz ve karabiberle çırp; sebzeleri ekleyip karıştır.",
+   "Yağlanmış küçük fırın kabına dök.",
+   "18-20 dakika (airfryer'da 170 derecede 14 dk) ortası pişene kadar pişir; dilimleyip servis et."
+  ],
+  "ekipman": [
+   [
+    "ocak",
+    "firin"
+   ],
+   [
+    "ocak",
+    "airfryer"
+   ]
+  ]
+ },
+ {
+  "id": "lavas_borek",
+  "ad": "Lorlu ıspanaklı lavaş böreği",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 35,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "lavas",
+    "gram": 75
+   },
+   {
+    "malzeme": "ispanak",
+    "gram": 100
+   },
+   {
+    "malzeme": "lor",
+    "gram": 70
+   },
+   {
+    "malzeme": "yumurta",
+    "gram": 55
+   },
+   {
+    "malzeme": "yogurt",
+    "gram": 40
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 6
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Ispanağı ince kıy; lor, tuz ve karabiberle karıştır.",
+   "Yumurta, yoğurt ve zeytinyağını çırparak sos hazırla.",
+   "Lavaşları ikiye kes; yağlanmış kaba bir kat lavaş koy, sostan sür, ıspanaklı harçtan serp.",
+   "Bu şekilde kat kat devam et; en üste lavaş ve kalan sosu sür.",
+   "180 derecede 25 dakika (airfryer'da 170 derecede 15 dk) üzeri kızarana kadar pişir.",
+   "10 dakika dinlendirip dilimle."
+  ],
+  "ekipman": [
+   [
+    "ocak",
+    "firin"
+   ],
+   [
+    "ocak",
+    "airfryer"
+   ]
+  ]
+ },
+ {
+  "id": "nohutlu_ispanak",
+  "ad": "Nohutlu ıspanak yemeği",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 30,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "ispanak",
+    "gram": 250
+   },
+   {
+    "malzeme": "nohut",
+    "gram": 45
+   },
+   {
+    "malzeme": "sogan",
+    "gram": 30
+   },
+   {
+    "malzeme": "salca",
+    "gram": 8
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 8
+   },
+   {
+    "malzeme": "yogurt",
+    "gram": 80
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Nohudu önceden ıslatıp haşla.",
+   "Soğanı zeytinyağında kavur, salçayı ekleyip 1 dakika çevir.",
+   "Kıyılmış ıspanağı ekleyip söndür.",
+   "Nohudu ve yarım su bardağı sıcak suyu ilave et; kısık ateşte 15 dakika pişir.",
+   "Yoğurtla servis et."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
+  ]
+ },
+ {
+  "id": "mercimekli_kinoa_salatasi",
+  "ad": "Yeşil mercimekli kinoa salatası",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 35,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "yesil_mercimek",
+    "gram": 45
+   },
+   {
+    "malzeme": "kinoa",
+    "gram": 45
+   },
+   {
+    "malzeme": "kapya_biber",
+    "gram": 60
+   },
+   {
+    "malzeme": "salatalik",
+    "gram": 80
+   },
+   {
+    "malzeme": "maydanoz",
+    "gram": 15
+   },
+   {
+    "malzeme": "limon",
+    "gram": 15
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 10
+   },
+   {
+    "malzeme": "beyaz_peynir",
+    "gram": 30
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Yeşil mercimeği dağılmadan, diri kalacak şekilde 20-25 dakika haşla ve süz.",
+   "Kinoayı yıkayıp iki katı suyla 12-15 dakika pişir; ikisini de soğumaya bırak.",
+   "Kapya biber, salatalık ve maydanozu küçük doğra.",
+   "Limon, zeytinyağı, tuz ve nar ekşisi (varsa) ile sos hazırla.",
+   "Hepsini karıştır, üzerine beyaz peynir ufala."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
+  ]
+ },
+ {
+  "id": "brokoli_corbasi",
+  "ad": "Yoğurtlu brokoli çorbası",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 25,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "brokoli",
+    "gram": 200
+   },
+   {
+    "malzeme": "patates",
+    "gram": 60
+   },
+   {
+    "malzeme": "sogan",
+    "gram": 30
+   },
+   {
+    "malzeme": "yogurt",
+    "gram": 80
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 7
+   },
+   {
+    "malzeme": "tam_bugday_ekmegi",
+    "gram": 50
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Soğanı zeytinyağında yumuşayana kadar kavur.",
+   "Brokoliyi ve küp doğranmış patatesi ekle, üzerini 2 parmak geçecek kadar sıcak su ilave et.",
+   "Sebzeler yumuşayana kadar 15 dakika pişir.",
+   "Blenderdan geçirip pürüzsüz hale getir (blender yoksa patates ezicisiyle ez).",
+   "Ocaktan alıp ılımasını bekle, yoğurdu bir kepçe çorbayla ılıtıp ekle; tuz ve karabiberle servis et."
+  ],
+  "ekipman": [
+   [
+    "ocak",
+    "blender"
+   ],
+   [
+    "ocak"
+   ]
+  ]
+ },
+ {
+  "id": "mantar_corbasi",
+  "ad": "Sütlü mantar çorbası",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 25,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "mantar",
+    "gram": 150
+   },
+   {
+    "malzeme": "sut",
+    "gram": 150
+   },
+   {
+    "malzeme": "un",
+    "gram": 12
+   },
+   {
+    "malzeme": "tereyagi",
+    "gram": 8
+   },
+   {
+    "malzeme": "sogan",
+    "gram": 20
+   },
+   {
+    "malzeme": "tam_bugday_ekmegi",
+    "gram": 50
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Mantarları küçük doğra, soğanı ince kıy.",
+   "Tereyağında soğanı kavur, mantarları ekleyip suyunu çekene kadar pişir.",
+   "Unu ekleyip 1 dakika kavur, ardından 1 su bardağı sıcak suyu topaklanmaması için çırparak ekle.",
+   "Sütü ekle ve kısık ateşte karıştırarak 8-10 dakika koyulaşana kadar pişir.",
+   "İsteğe göre yarısını blenderdan geçir; tuz ve karabiberle servis et."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
+  ]
+ },
+ {
+  "id": "firin_tavuk_karnabahar",
+  "ad": "Fırında tavuk but ve karnabahar",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 45,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "tavuk_but",
+    "gram": 170
+   },
+   {
+    "malzeme": "karnabahar",
+    "gram": 200
+   },
+   {
+    "malzeme": "sogan",
+    "gram": 30
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 10
+   },
+   {
+    "malzeme": "salca",
+    "gram": 5
+   },
+   {
+    "malzeme": "yogurt",
+    "gram": 60
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Salçayı zeytinyağı, kekik, pul biber ve tuzla karıştırıp sos yap.",
+   "Tavuk butları ve karnabahar çiçeklerini sosla iyice harmanla, soğanı iri doğrayıp ekle.",
+   "Tepsiye tek kat yay.",
+   "200 derecede 35-40 dakika (airfryer'da 190 derecede 22-25 dk) tavuğun içi pişip derisi kızarana kadar pişir.",
+   "Yoğurtla servis et."
+  ],
+  "ekipman": [
+   [
+    "firin"
+   ],
+   [
+    "airfryer"
+   ]
+  ]
+ },
+ {
+  "id": "ton_kinoa_salatasi",
+  "ad": "Ton balıklı kinoa salatası",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 20,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "kinoa",
+    "gram": 50
+   },
+   {
+    "malzeme": "ton_baligi",
+    "gram": 80
+   },
+   {
+    "malzeme": "domates",
+    "gram": 80
+   },
+   {
+    "malzeme": "salatalik",
+    "gram": 80
+   },
+   {
+    "malzeme": "marul",
+    "gram": 40
+   },
+   {
+    "malzeme": "limon",
+    "gram": 10
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 8
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Kinoayı yıkayıp iki katı suyla 12-15 dakika pişir ve soğut.",
+   "Ton balığını süzüp dağıt.",
+   "Domates, salatalık ve marulu doğra.",
+   "Tüm malzemeleri limon, zeytinyağı ve tuzla karıştırıp servis et."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
+  ]
+ },
+ {
+  "id": "tavuk_fajita",
+  "ad": "Kapya biberli tavuk fajita",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 25,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "tavuk_gogus",
+    "gram": 140
+   },
+   {
+    "malzeme": "kapya_biber",
+    "gram": 80
+   },
+   {
+    "malzeme": "sogan",
+    "gram": 50
+   },
+   {
+    "malzeme": "lavas",
+    "gram": 65
+   },
+   {
+    "malzeme": "yogurt",
+    "gram": 40
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 8
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Tavuğu, kapya biberi ve soğanı ince şeritler halinde doğra.",
+   "Tavuğu kimyon, toz kırmızı biber, sarımsak tozu ve tuzla harmanla.",
+   "Çok kızgın tavada tavuğu 5 dakika pişir, biber ve soğanı ekleyip 4 dakika daha yüksek ateşte çevir.",
+   "Lavaşları ısıt; yoğurt sürüp tavuklu karışımı paylaştır.",
+   "Sarıp hemen servis et."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
+  ]
+ },
+ {
+  "id": "kiymali_yesil_mercimek",
+  "ad": "Kıymalı yeşil mercimek",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 45,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "yesil_mercimek",
+    "gram": 60
+   },
+   {
+    "malzeme": "dana_kiyma",
+    "gram": 50
+   },
+   {
+    "malzeme": "sogan",
+    "gram": 30
+   },
+   {
+    "malzeme": "salca",
+    "gram": 10
+   },
+   {
+    "malzeme": "bulgur",
+    "gram": 15
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 5
+   },
+   {
+    "malzeme": "yogurt",
+    "gram": 60
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Mercimeği yıkayıp 15 dakika ön haşla, suyunu süz.",
+   "Kıymayı kavur, soğanı ekleyip pembeleştir, salçayı ilave et.",
+   "Mercimek ve bulguru ekleyip 2 su bardağı sıcak su ilave et.",
+   "Kısık ateşte mercimekler yumuşayana kadar 20-25 dakika pişir.",
+   "Yoğurtla servis et."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
+  ]
+ },
+ {
+  "id": "firin_kiymali_kabak",
+  "ad": "Fırında kıymalı kabak",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 40,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "kabak",
+    "gram": 250
+   },
+   {
+    "malzeme": "dana_kiyma",
+    "gram": 70
+   },
+   {
+    "malzeme": "domates",
+    "gram": 80
+   },
+   {
+    "malzeme": "sogan",
+    "gram": 25
+   },
+   {
+    "malzeme": "kasar",
+    "gram": 15
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 5
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Kabakları boyuna ikiye kes, içini kaşıkla oyarak kayık şekli ver; oyduğun kısmı doğra.",
+   "Kıymayı soğanla kavur, kabak içi ve rendelenmiş domatesi ekleyip 5 dakika pişir.",
+   "Kabak kayıklarını harçla doldur, tepsiye diz.",
+   "Üzerine kaşar serp; 190 derecede 25 dakika (airfryer'da 180 derecede 15 dk) pişir."
+  ],
+  "ekipman": [
+   [
+    "ocak",
+    "firin"
+   ],
+   [
+    "ocak",
+    "airfryer"
+   ]
+  ]
+ },
+ {
+  "id": "barbunyali_bulgur_salatasi",
+  "ad": "Barbunyalı bulgur salatası",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 30,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "barbunya",
+    "gram": 45
+   },
+   {
+    "malzeme": "bulgur",
+    "gram": 50
+   },
+   {
+    "malzeme": "domates",
+    "gram": 80
+   },
+   {
+    "malzeme": "kapya_biber",
+    "gram": 50
+   },
+   {
+    "malzeme": "maydanoz",
+    "gram": 15
+   },
+   {
+    "malzeme": "limon",
+    "gram": 15
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 10
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Barbunyayı önceden ıslatıp diri kalacak şekilde haşla.",
+   "Bulguru bir kaba al, üzerini geçecek kadar kaynar su dökerek kapağı kapalı 15 dakika şişir.",
+   "Domates, biber ve maydanozu küçük doğra.",
+   "Bulgur, barbunya ve sebzeleri limon, zeytinyağı, tuz ve pul biberle karıştır."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
+  ]
+ },
+ {
+  "id": "airfryer_falafel",
+  "ad": "Airfryer'da falafel ve yoğurt",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 30,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "nohut",
+    "gram": 70
+   },
+   {
+    "malzeme": "sogan",
+    "gram": 30
+   },
+   {
+    "malzeme": "maydanoz",
+    "gram": 20
+   },
+   {
+    "malzeme": "sarimsak",
+    "gram": 4
+   },
+   {
+    "malzeme": "un",
+    "gram": 10
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 5
+   },
+   {
+    "malzeme": "yogurt",
+    "gram": 80
+   },
+   {
+    "malzeme": "marul",
+    "gram": 50
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Nohudu bir gece önceden ıslat (haşlama!), süzüp kurula.",
+   "Nohut, soğan, maydanoz, sarımsak, kimyon ve tuzu blenderda iri kum kıvamına gelene kadar çek.",
+   "Unu ekleyip karıştır; ceviz büyüklüğünde parçalar alıp hafifçe bastırarak köfte yap.",
+   "Üzerlerine fırçayla zeytinyağı sür; airfryer'da 190 derecede 12-14 dakika, yarısında çevirerek pişir (fırında 200 derecede 20 dk).",
+   "Yoğurt ve marulla servis et."
+  ],
+  "ekipman": [
+   [
+    "blender",
+    "airfryer"
+   ],
+   [
+    "blender",
+    "firin"
+   ]
+  ]
+ },
+ {
+  "id": "kefir_findik",
+  "ad": "Kefir ve fındık",
+  "ogunler": [
+   "ara"
+  ],
+  "sure_dk": 1,
+  "porsiyon_araligi": [
+   0.5,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "kefir",
+    "gram": 250
+   },
+   {
+    "malzeme": "findik",
+    "gram": 15
+   }
+  ],
+  "adimlar": [
+   "Kefiri bardağa al, fındıkla birlikte tüket."
+  ],
+  "ekipman": [
+   []
+  ]
+ },
+ {
+  "id": "suzme_bal_ceviz",
+  "ad": "Süzme yoğurt, bal ve ceviz",
+  "ogunler": [
+   "ara"
+  ],
+  "sure_dk": 2,
+  "porsiyon_araligi": [
+   0.5,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "suzme_yogurt",
+    "gram": 150
+   },
+   {
+    "malzeme": "bal",
+    "gram": 8
+   },
+   {
+    "malzeme": "ceviz",
+    "gram": 10
+   }
+  ],
+  "adimlar": [
+   "Süzme yoğurdu kaseye al.",
+   "Üzerine kırılmış ceviz ekleyip balı gezdir."
+  ],
+  "ekipman": [
+   []
+  ]
+ },
+ {
+  "id": "lorlu_salata",
+  "ad": "Lorlu domates salatalık",
+  "ogunler": [
+   "ara",
+   "yan"
+  ],
+  "sure_dk": 5,
+  "porsiyon_araligi": [
+   0.5,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "lor",
+    "gram": 100
+   },
+   {
+    "malzeme": "domates",
+    "gram": 100
+   },
+   {
+    "malzeme": "salatalik",
+    "gram": 100
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 5
+   },
+   {
+    "malzeme": "maydanoz",
+    "gram": 5
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Domates ve salatalığı küp doğra.",
+   "Loru ufala, kıyılmış maydanozla birlikte ekle.",
+   "Zeytinyağı, tuz ve kekikle karıştır."
+  ],
+  "ekipman": [
+   []
+  ]
+ },
+ {
+  "id": "elma_fistik_ezmesi",
+  "ad": "Fıstık ezmeli elma dilimleri",
+  "ogunler": [
+   "ara"
+  ],
+  "sure_dk": 3,
+  "porsiyon_araligi": [
+   0.5,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "elma",
+    "gram": 150
+   },
+   {
+    "malzeme": "fistik_ezmesi",
+    "gram": 15
+   }
+  ],
+  "adimlar": [
+   "Elmayı çekirdeklerini çıkararak ince dilimle.",
+   "Her dilimin üzerine biraz fıstık ezmesi sür."
+  ],
+  "ekipman": [
+   []
+  ]
+ },
+ {
+  "id": "nohut_cerezi",
+  "ad": "Airfryer'da baharatlı nohut çerezi",
+  "ogunler": [
+   "ara"
+  ],
+  "sure_dk": 25,
+  "porsiyon_araligi": [
+   0.5,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "nohut",
+    "gram": 40
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 4
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Haşlanmış nohudu kağıt havluyla iyice kurula (kurudukça çıtır olur).",
+   "Zeytinyağı, kimyon, toz kırmızı biber ve tuzla harmanla.",
+   "Airfryer'da 190 derecede 15-18 dakika (fırında 200 derecede 30 dk), birkaç kez sallayarak çıtırlaşana kadar pişir.",
+   "Soğuyunca kavanozda 3 gün saklanır."
+  ],
+  "ekipman": [
+   [
+    "ocak",
+    "airfryer"
+   ],
+   [
+    "ocak",
+    "firin"
+   ]
+  ]
+ },
+ {
+  "id": "kefirli_muz_smoothie",
+  "ad": "Kefirli muz smoothie",
+  "ogunler": [
+   "ara"
+  ],
+  "sure_dk": 4,
+  "porsiyon_araligi": [
+   0.5,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "kefir",
+    "gram": 200
+   },
+   {
+    "malzeme": "muz",
+    "gram": 100
+   },
+   {
+    "malzeme": "yulaf",
+    "gram": 15
+   }
+  ],
+  "adimlar": [
+   "Muzu dilimle.",
+   "Kefir ve yulafla blenderda pürüzsüz olana kadar çek.",
+   "Hemen iç."
+  ],
+  "ekipman": [
+   [
+    "blender"
+   ]
+  ]
+ },
+ {
+  "id": "yogurtlu_yulaf",
+  "ad": "Süzme yoğurtlu yulaf kasesi",
+  "ogunler": [
+   "ara",
+   "kahvalti"
+  ],
+  "sure_dk": 3,
+  "porsiyon_araligi": [
+   0.5,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "suzme_yogurt",
+    "gram": 150
+   },
+   {
+    "malzeme": "yulaf",
+    "gram": 30
+   },
+   {
+    "malzeme": "bal",
+    "gram": 8
+   },
+   {
+    "malzeme": "portakal",
+    "gram": 100
+   }
+  ],
+  "adimlar": [
+   "Süzme yoğurt ve yulafı karıştır.",
+   "Portakalı soyup dilimleyerek ekle, balı gezdir."
+  ],
+  "ekipman": [
+   []
+  ]
+ },
+ {
+  "id": "peynir_ceviz",
+  "ad": "Beyaz peynir, ceviz ve salatalık",
+  "ogunler": [
+   "ara"
+  ],
+  "sure_dk": 2,
+  "porsiyon_araligi": [
+   0.5,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "beyaz_peynir",
+    "gram": 40
+   },
+   {
+    "malzeme": "ceviz",
+    "gram": 15
+   },
+   {
+    "malzeme": "salatalik",
+    "gram": 120
+   }
+  ],
+  "adimlar": [
+   "Salatalığı çubuk şeklinde doğra.",
+   "Beyaz peynir ve cevizle birlikte tabağa al."
+  ],
+  "ekipman": [
+   []
+  ]
+ },
+ {
+  "id": "tarcinli_elma",
+  "ad": "Fırında tarçınlı cevizli elma",
+  "ogunler": [
+   "ara"
+  ],
+  "sure_dk": 20,
+  "porsiyon_araligi": [
+   0.5,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "elma",
+    "gram": 180
+   },
+   {
+    "malzeme": "ceviz",
+    "gram": 10
+   },
+   {
+    "malzeme": "bal",
+    "gram": 6
+   }
+  ],
+  "adimlar": [
+   "Elmayı yıkayıp çekirdek evini oy, ikiye kes.",
+   "Oyuk kısımlara kırılmış ceviz koy, tarçın serp ve bal gezdir.",
+   "Airfryer'da 180 derecede 12 dakika, fırında 190 derecede 20 dakika ya da mikrodalgada 3-4 dakika yumuşayana kadar pişir."
+  ],
+  "ekipman": [
+   [
+    "airfryer"
+   ],
+   [
+    "firin"
+   ],
+   [
+    "mikrodalga"
+   ]
+  ]
+ },
+ {
+  "id": "tahinli_muz",
+  "ad": "Tahinli muz",
+  "ogunler": [
+   "ara"
+  ],
+  "sure_dk": 2,
+  "porsiyon_araligi": [
+   0.5,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "muz",
+    "gram": 120
+   },
+   {
+    "malzeme": "tahin",
+    "gram": 10
+   }
+  ],
+  "adimlar": [
+   "Muzu dilimle.",
+   "Üzerine tahin gezdir, isteğe göre tarçın serp."
+  ],
+  "ekipman": [
+   []
+  ]
+ },
+ {
+  "id": "brokoli_salatasi",
+  "ad": "Limonlu brokoli salatası",
+  "ogunler": [
+   "yan"
+  ],
+  "sure_dk": 10,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "brokoli",
+    "gram": 150
+   },
+   {
+    "malzeme": "limon",
+    "gram": 10
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 6
+   },
+   {
+    "malzeme": "sarimsak",
+    "gram": 2
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Brokoliyi küçük çiçeklere ayır ve kaynar suda 3 dakika haşla.",
+   "Hemen buzlu suya alarak rengini koru, süz.",
+   "Limon, zeytinyağı, ezilmiş sarımsak ve tuzla karıştır."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
+  ]
+ },
+ {
+  "id": "airfryer_patates",
+  "ad": "Airfryer'da baharatlı patates",
+  "ogunler": [
+   "yan"
+  ],
+  "sure_dk": 25,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "patates",
+    "gram": 180
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 6
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Patatesleri kabuklu ya da soyulmuş, elma dilim kes ve 10 dakika soğuk suda beklet.",
+   "Suyunu süzüp kağıt havluyla iyice kurula.",
+   "Zeytinyağı, kekik, toz biber ve tuzla harmanla.",
+   "Airfryer'da 190 derecede 18-20 dakika (fırında 210 derecede 30 dk), yarısında sallayarak pişir."
+  ],
+  "ekipman": [
+   [
+    "airfryer"
+   ],
+   [
+    "firin"
+   ]
+  ]
+ },
+ {
+  "id": "yogurtlu_karnabahar",
+  "ad": "Yoğurtlu karnabahar salatası",
+  "ogunler": [
+   "yan"
+  ],
+  "sure_dk": 15,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "karnabahar",
+    "gram": 150
+   },
+   {
+    "malzeme": "yogurt",
+    "gram": 100
+   },
+   {
+    "malzeme": "sarimsak",
+    "gram": 2
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 4
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Karnabaharı küçük çiçeklere ayırıp tuzlu suda 6-7 dakika haşla, süzüp soğut.",
+   "Yoğurdu ezilmiş sarımsak ve tuzla karıştır.",
+   "Karnabaharı yoğurtla harmanla, üzerine pul biberli zeytinyağı gezdir."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
+  ]
+ },
+ {
+  "id": "kinoa_pilavi",
+  "ad": "Sebzeli kinoa pilavı",
+  "ogunler": [
+   "yan"
+  ],
+  "sure_dk": 20,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "kinoa",
+    "gram": 50
+   },
+   {
+    "malzeme": "havuc",
+    "gram": 30
+   },
+   {
+    "malzeme": "sogan",
+    "gram": 20
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 5
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Kinoayı bol suyla yıka.",
+   "Soğan ve havucu küçük doğrayıp zeytinyağında 3 dakika kavur.",
+   "Kinoayı ekleyip 1 dakika çevir, iki katı sıcak su ve tuz ekle.",
+   "Kısık ateşte suyunu çekene kadar 12-15 dakika pişir, 5 dakika demlendir."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
+  ]
+ },
+ {
+  "id": "mantar_sote",
+  "ad": "Mantar sote",
+  "ogunler": [
+   "yan"
+  ],
+  "sure_dk": 12,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "mantar",
+    "gram": 150
+   },
+   {
+    "malzeme": "sogan",
+    "gram": 20
+   },
+   {
+    "malzeme": "tereyagi",
+    "gram": 5
+   },
+   {
+    "malzeme": "maydanoz",
+    "gram": 5
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Mantarları dilimle, soğanı ince doğra.",
+   "Tavayı iyice ısıt, tereyağında soğanı 1 dakika çevir.",
+   "Mantarları ekle, karıştırmadan 2 dakika bekle sonra suyunu çekene kadar sotele.",
+   "Tuz, karabiber ve maydanozla servis et."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
+  ]
+ },
+ {
+  "id": "kisir",
+  "ad": "Kısır",
+  "ogunler": [
+   "yan",
+   "ara"
+  ],
+  "sure_dk": 20,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "bulgur",
+    "gram": 50
+   },
+   {
+    "malzeme": "domates",
+    "gram": 60
+   },
+   {
+    "malzeme": "kapya_biber",
+    "gram": 30
+   },
+   {
+    "malzeme": "maydanoz",
+    "gram": 15
+   },
+   {
+    "malzeme": "salca",
+    "gram": 8
+   },
+   {
+    "malzeme": "limon",
+    "gram": 10
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 8
+   },
+   {
+    "malzeme": "marul",
+    "gram": 30
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "İnce bulguru kaba al, üzerini geçecek kadar kaynar su dök ve kapağı kapalı 15 dakika şişir.",
+   "Salçayı ve zeytinyağını ekleyip bulgurla iyice yoğur.",
+   "Domates, kapya biber ve maydanozu çok küçük doğrayıp ekle.",
+   "Limon suyu, nar ekşisi (varsa), tuz ve pul biberle tatlandır; marul yapraklarıyla servis et."
+  ],
+  "ekipman": [
+   [
+    "ocak"
+   ]
+  ]
+ },
+ {
+  "id": "mevsim_salatasi",
+  "ad": "Mevsim salatası",
+  "ogunler": [
+   "yan"
+  ],
+  "sure_dk": 8,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "marul",
+    "gram": 80
+   },
+   {
+    "malzeme": "domates",
+    "gram": 80
+   },
+   {
+    "malzeme": "salatalik",
+    "gram": 80
+   },
+   {
+    "malzeme": "havuc",
+    "gram": 30
+   },
+   {
+    "malzeme": "limon",
+    "gram": 10
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 6
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Marulu ince kıy, domates ve salatalığı doğra, havucu rendele.",
+   "Limon, zeytinyağı ve tuzla sos hazırla, servis etmeden hemen önce karıştır."
   ],
   "ekipman": [
    []

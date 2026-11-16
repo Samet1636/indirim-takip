@@ -86,6 +86,31 @@ def test_a101_hazir_urunler_malzeme_sayilmaz():
         assert adaylar(malzeme, katalog) == [], malzeme
 
 
+def test_yeni_malzemeler_eslesir():
+    # gerçek katalog adları (16.11.2026); her malzeme için doğru ürün alınır, benzer hazır ürünler elenir
+    durumlar = {
+        "suzme_yogurt": (("Mis Süzme Yoğurt 900 g", "sok", None),
+                         ["Migros Süzme Peynir 500 G", "Eker Çilekli Süzme Yoğurt 150 G"]),
+        "kefir": (("Birşah Sade Kefir 1 L", "a101", None),
+                  ["Altınkılıç Kefirix Orman Meyveli 250 Ml", "Altınkılıç Kefirim Çilekli Kefir 1 L"]),
+        "mantar": (("Kültür Mantarı 400 G", "migros", "Egzotik Sebzeler"),
+                   ["Samba Trüf Mantarı Patates Cipsi 135 G", "Knorr Kremalı Mantar Çorbası 68 G"]),
+        "brokoli": (("Brokoli Kg", "migros", "Mevsim Sebzeleri"),
+                    ["Belu Brokoli Çorbası 60 G", "Lods İçilebilir Brokoli Yemeği 500 Ml"]),
+        "kinoa": (("Yayla Gurme Beyaz Kinoa 250 G", "a101", None),
+                  ["Ülker Altınbaşak Çörekotlu & Kinoalı Bisküvi 5x40 G", "Yayla Gurme Fit Kırmızı Kinoalı Bulgur 360 G"]),
+        "lavas": (("Nimet Lavaş 12'li 840 G", "a101", None), []),
+        "barbunya": (("Anadolu Mutfağı Barbunya 1 kg", "sok", None),
+                     ["Çokça Barbunya Pilaki 400 G", "SuperFresh Barbunya Dondurulmuş 450 G"]),
+    }
+    for malzeme, ((dogru, market, kategori), yanlislar) in durumlar.items():
+        katalog = [{"market": market, "name": dogru, "price": 50.0, "category": kategori}]
+        katalog += [{"market": "a101", "name": y, "price": 10.0, "category": None} for y in yanlislar]
+        assert [p["name"] for p in adaylar(malzeme, katalog)] == [dogru], malzeme
+    lavas = adaylar("lavas", [{"market": "a101", "name": "Nimet Lavaş 12'li 840 G", "price": 79.0, "category": None}])
+    assert lavas[0]["miktar_g"] == 840                     # "12'li" adet değil, 840 g paket
+
+
 def test_tarif_maliyeti_hesaplanir():
     tablo = fiyat_tablosu(KATALOG)
     satirlar = {s["id"]: s for s in tarif_maliyetleri(tablo)}

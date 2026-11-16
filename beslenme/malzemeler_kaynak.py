@@ -53,6 +53,16 @@ M = [
  ("zeytinyagi","Zeytinyağı","yag",884,0,0,100,0,["zeytinyağı"],1000,False),
  ("aycicek_yagi","Ayçiçek yağı","yag",884,0,0,100,0,["ayçiçek yağı"],1000,False),
  ("tereyagi","Tereyağı","yag",717,0.9,0.1,81,0,["tereyağı"],250,False),
+ # 16.11.2026 eklenenler (tarif çeşitliliği: vejetaryen protein, airfryer/fırın sebzeleri, dürüm)
+ ("suzme_yogurt","Süzme yoğurt","sut_urunu",110,8.0,4.0,7.0,0,["süzme yoğurt"],500,False),
+ ("kefir","Kefir","sut_urunu",60,3.3,4.5,3.2,0,["kefir"],1000,False),
+ ("mantar","Kültür mantarı","sebze",22,3.1,3.3,0.3,1.0,["kültür mantarı","mantar"],400,False),
+ ("brokoli","Brokoli","sebze",34,2.8,6.6,0.4,2.6,["brokoli"],None,False),
+ ("karnabahar","Karnabahar","sebze",25,1.9,5.0,0.3,2.0,["karnabahar"],None,False),
+ ("kapya_biber","Kırmızı kapya biber","sebze",31,1.0,6.0,0.3,2.1,["kapya biber"],None,False),
+ ("kinoa","Kinoa (kuru)","tahil",368,14.1,64,6.1,7.0,["kinoa"],250,False),
+ ("lavas","Lavaş","tahil",290,9.0,50,6.0,3.0,["lavaş","tortilla"],390,False),
+ ("barbunya","Barbunya (kuru)","bakliyat",333,23,60,1.2,15,["barbunya"],1000,False),
  # dolapta olduğu varsayılanlar: haftalık alışverişe girmez, besin değeri ihmal edilir
  ("tuz_baharat","Tuz ve baharatlar","dolap",0,0,0,0,0,[],None,True),
 ]
