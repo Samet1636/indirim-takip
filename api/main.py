@@ -33,6 +33,7 @@ import tarif_ozet  # noqa: E402
 from hedef import hesapla  # noqa: E402
 from miktar import norm, norm_ad  # noqa: E402
 
+from . import karsilastirma  # noqa: E402
 from .isler import IsKuyrugu  # noqa: E402
 
 TIBBI_NOT = "Bu plan genel bilgilendirme amaçlıdır, tıbbi tavsiye değildir."
@@ -130,6 +131,10 @@ class PlanIstegi(Kisi):
     ara_ogun: int = Field(2, ge=0, le=2, description="günde en fazla kaç ara öğün")
 
 
+class ListeIstegi(BaseModel):
+    kalemler: List[str] = Field(..., min_length=1, max_length=40, description="her satır bir ürün: '2 L süt'")
+
+
 def kisi_sozlugu(k: Kisi) -> dict:
     return dict(kilo=k.kilo, boy=k.boy, yas=k.yas, cinsiyet=k.cinsiyet, aktivite=k.aktivite, hedef=k.hedef)
 
@@ -196,6 +201,16 @@ def uygulama_olustur() -> FastAPI:
                                  key=lambda m: m["ad"]),
             "tarif_sayisi": len(tarifler),
         }
+
+    @app.get("/karsilastir")
+    def karsilastir(q: str = Query(..., min_length=2, max_length=60)):
+        """Bir ürünün marketlerdeki fiyatları, birim fiyata (TL/L, TL/kg) göre."""
+        return karsilastirma.karsilastir(q, app.state.katalog.getir())
+
+    @app.post("/liste")
+    def liste(istek: ListeIstegi):
+        """Alışveriş listesi: her marketteki tutar, en ucuz tek market ve en iyi iki market."""
+        return karsilastirma.liste_hesapla(istek.kalemler, app.state.katalog.getir())
 
     @app.post("/hedef")
     def hedef(k: Kisi):
