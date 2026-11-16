@@ -33,7 +33,7 @@ import tarif_ozet  # noqa: E402
 from hedef import hesapla  # noqa: E402
 from miktar import norm, norm_ad  # noqa: E402
 
-from . import karsilastirma  # noqa: E402
+from . import karsilastirma, tarifler  # noqa: E402
 from .isler import IsKuyrugu  # noqa: E402
 
 TIBBI_NOT = "Bu plan genel bilgilendirme amaçlıdır, tıbbi tavsiye değildir."
@@ -201,6 +201,18 @@ def uygulama_olustur() -> FastAPI:
                                  key=lambda m: m["ad"]),
             "tarif_sayisi": len(tarifler),
         }
+
+    @app.get("/tarifler")
+    def tarif_listesi():
+        """Tüm tarifler: süre, besin, etiketler ve bugünkü fiyatlarla porsiyon maliyeti."""
+        return {"tarifler": tarifler.ozetler(app.state.katalog.getir())}
+
+    @app.get("/tarifler/{tarif_id}")
+    def tarif_detayi(tarif_id: str):
+        d = tarifler.detay(tarif_id, app.state.katalog.getir())
+        if d is None:
+            raise HTTPException(404, "Tarif bulunamadı.")
+        return d
 
     @app.get("/karsilastir")
     def karsilastir(q: str = Query(..., min_length=2, max_length=60)):
