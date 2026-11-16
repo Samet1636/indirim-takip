@@ -57,6 +57,11 @@ class IsKuyrugu:
             kayit = self._isler.get(is_id)
             return dict(kayit) if kayit else None
 
+    def bekleyen(self) -> int:
+        """Sırada bekleyen + şu an çalışan iş sayısı."""
+        with self._kilit:
+            return sum(1 for k in self._isler.values() if k["durum"] in ("bekliyor", "calisiyor"))
+
     def sira(self, is_id: str) -> int:
         """Bu işten önce bekleyen/çalışan iş sayısı (kullanıcıya 'sırada 2 kişi var' demek için)."""
         with self._kilit:

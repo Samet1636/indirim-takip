@@ -1,0 +1,23 @@
+# Render (render.com) kurulum tarifi: beslenme planı sunucusu.
+# Render'da "New > Blueprint" ile bu depo seçilince servis buradaki ayarlarla kurulur.
+services:
+  - type: web
+    name: indirim-takip-api
+    runtime: python
+    plan: free
+    region: frankfurt
+    buildCommand: pip install -r api/requirements.txt
+    startCommand: uvicorn api.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /saglik
+    # Bot her gün data/ altına commit atıyor; sunucu yalnızca kod değişince yeniden kurulsun.
+    # (Güncel katalog KATALOG_URL'den, çalışırken indirilir.)
+    buildFilter:
+      paths:
+        - api/**
+        - beslenme/**
+        - render.yaml
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: KATALOG_URL
+        value: https://samet1636.github.io/indirim-takip/data/katalog.json

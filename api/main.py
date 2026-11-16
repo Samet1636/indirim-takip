@@ -17,6 +17,7 @@ import json
 import os
 import sys
 import threading
+import time
 from pathlib import Path
 from typing import List, Literal, Optional
 
@@ -36,20 +37,48 @@ from .isler import IsKuyrugu  # noqa: E402
 
 TIBBI_NOT = "Bu plan genel bilgilendirme amaçlıdır, tıbbi tavsiye değildir."
 SURE_SINIRI = int(os.environ.get("PLAN_SURE_SINIRI", "60"))
+EN_FAZLA_BEKLEYEN = int(os.environ.get("EN_FAZLA_BEKLEYEN", "8"))   # sırada + çalışan plan işi
 
 
 # ---------------------------------------------------------------- katalog
 class Katalog:
-    """data/katalog.json'u okur; dosya değişince (bot her sabah günceller) yeniden yükler."""
+    """Ürün kataloğu.
+    - Yerelde: data/katalog.json'u okur; dosya değişince (bot her sabah günceller) yeniden yükler.
+    - Bulutta: KATALOG_URL tanımlıysa kataloğu oradan (GitHub Pages) indirir ve birkaç saatte bir
+      yeniler. Böylece sunucuyu her gün yeniden kurmaya gerek kalmaz. İndirme başarısız olursa
+      eldeki son katalogla (o da yoksa yerel dosyayla) devam eder."""
 
-    def __init__(self, yol: Path):
+    def __init__(self, yol: Path, url: Optional[str] = None, yenile_sn: int = 6 * 3600):
         self.yol = yol
+        self.url = url
+        self.yenile_sn = yenile_sn
         self._veri: List[dict] = []
         self._mtime: Optional[float] = None
+        self._uzak: Optional[List[dict]] = None
+        self._sonraki_deneme = 0.0
         self._kilit = threading.Lock()
+
+    def _indir(self) -> List[dict]:
+        import requests
+        r = requests.get(self.url, timeout=60)
+        r.raise_for_status()
+        veri = r.json()
+        if not isinstance(veri, list) or len(veri) < 1000:   # yarım/bozuk dosyaya karşı
+            raise ValueError("katalog beklenenden küçük")
+        return veri
 
     def getir(self) -> List[dict]:
         with self._kilit:
+            if self.url:
+                if time.time() >= self._sonraki_deneme:
+                    try:
+                        self._uzak = self._indir()
+                        self._sonraki_deneme = time.time() + self.yenile_sn
+                    except Exception as e:   # noqa: BLE001
+                        print(f"katalog indirilemedi: {type(e).__name__}: {e}", file=sys.stderr)
+                        self._sonraki_deneme = time.time() + 600   # 10 dk sonra tekrar dene
+                if self._uzak is not None:
+                    return self._uzak
             mtime = self.yol.stat().st_mtime
             if mtime != self._mtime:
                 self._veri = json.loads(self.yol.read_text(encoding="utf-8"))
@@ -99,7 +128,7 @@ def uygulama_olustur() -> FastAPI:
     app = FastAPI(title="İndirim Takip — Beslenme Planı", version="0.1.0")
     # Expo web önizlemesi için; telefon uygulaması CORS'a takılmaz. Kimlik bilgisi taşınmıyor.
     app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["GET", "POST"], allow_headers=["*"])
-    app.state.katalog = Katalog(katalog_yolu())
+    app.state.katalog = Katalog(katalog_yolu(), url=os.environ.get("KATALOG_URL") or None)
     app.state.kuyruk = IsKuyrugu()
 
     @app.exception_handler(ValueError)
@@ -155,6 +184,8 @@ def uygulama_olustur() -> FastAPI:
     def plan_baslat(istek: PlanIstegi):
         kisi = kisi_sozlugu(istek)
         hesapla(**kisi)   # 18 yaş altı vb. geçersiz girdiler iş kuyruğuna girmeden reddedilsin
+        if app.state.kuyruk.bekleyen() >= EN_FAZLA_BEKLEYEN:   # herkese açık sunucuda yığılmayı önle
+            raise HTTPException(429, "Şu an çok fazla plan hesaplanıyor. Lütfen birkaç dakika sonra tekrar dene.")
         katalog = app.state.katalog.getir()
 
         def is_():

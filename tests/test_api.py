@@ -117,6 +117,32 @@ def test_gercek_model_api_uzerinden(istemci, monkeypatch):
     assert len(s["sonuc"]["plan"]) == 7 and s["sonuc"]["marketler"] == ["sok"]
 
 
+def test_katalog_urlden_gelir_ve_hata_toleransi(tmp_path):
+    yerel = tmp_path / "katalog.json"
+    yerel.write_text(json.dumps([{"market": "sok", "name": "Yerel", "price": 1.0}]), encoding="utf-8")
+    k = main.Katalog(yerel, url="https://ornek.test/katalog.json", yenile_sn=3600)
+    sayac = {"n": 0}
+
+    def patlar():
+        sayac["n"] += 1
+        raise OSError("ağ yok")
+    k._indir = patlar
+    assert k.getir()[0]["name"] == "Yerel"            # indirilemezse yerel dosya
+    assert k.getir()[0]["name"] == "Yerel" and sayac["n"] == 1   # hemen tekrar denemez (10 dk bekler)
+    k._sonraki_deneme = 0                              # süre doldu say
+    k._indir = lambda: [{"market": "a101", "name": "Uzak", "price": 2.0}]
+    assert k.getir()[0]["name"] == "Uzak"
+    k._indir = patlar                                  # sonraki yenileme başarısız -> eldeki uzak veri kalır
+    k._sonraki_deneme = 0
+    assert k.getir()[0]["name"] == "Uzak"
+
+
+def test_kuyruk_doluysa_429(istemci, monkeypatch):
+    monkeypatch.setattr(main, "EN_FAZLA_BEKLEYEN", 0)
+    r = istemci.post("/plan", json=KISI)
+    assert r.status_code == 429 and "tekrar dene" in r.json()["detail"]
+
+
 def test_kuyruk_sira_ve_temizlik():
     k = IsKuyrugu()
     import threading
