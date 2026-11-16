@@ -77,6 +77,16 @@ def test_adaylarda_ucuz_kucuk_paket_var():
     assert "Bal 225 G" in adlar          # en küçük paket
 
 
+def test_tek_ekipmanla_plan_cikabilir():
+    # Sadece airfryer ya da sadece fırın (vejetaryen + 30 dk dahil) haftayı dolduracak kadar tarif bırakmalı
+    malz, tarifler = plan.tarif_ozet.yukle()
+    for ekipman in (["airfryer"], ["firin"]):
+        for paket in ("ekonomik", "vejetaryen"):
+            T = plan.tarif_sec(tarifler, malz, paket=paket, ekipman=ekipman, max_sure=30)
+            assert plan.yetersiz_turler(T) == [], (ekipman, paket)
+            assert sum("ana" in t["ogunler"] for t in T.values()) >= 10, (ekipman, paket)
+
+
 def test_yetersiz_tarif_hemen_doner():
     kisi = dict(kilo=75, boy=178, yas=23, cinsiyet="erkek", aktivite="orta", hedef="koru")
     s = plan.coz([], kisi, ekipman=["mikrodalga"])           # ana yemek yapılamaz

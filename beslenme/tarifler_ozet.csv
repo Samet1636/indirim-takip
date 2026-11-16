@@ -82,6 +82,20 @@ kiymali_yesil_mercimek;Kıymalı yeşil mercimek;ana;45;490.5;28.1;56.7;17.9;10.
 firin_kiymali_kabak;Fırında kıymalı kabak;ana;40;342.9;19.8;13.5;24.1;3.9;
 barbunyali_bulgur_salatasi;Barbunyalı bulgur salatası;ana;30;448.9;18.3;73.4;11.7;18.8;vejetaryen, vegan
 airfryer_falafel;Airfryer'da falafel ve yoğurt;ana;30;416.9;19.0;60.9;12.2;14.1;vejetaryen
+af_sebzeli_kasarli_durum;Airfryer'da kaşarlı sebzeli çıtır dürüm;ana;15;441.6;21.2;44.5;20.6;4.6;vejetaryen, pratik
+af_lorlu_rulo_borek;Airfryer'da lorlu ıspanaklı rulo börek;ana;20;460.0;26.9;47.5;18.9;4.0;vejetaryen, pratik
+af_yumurtali_patates;Fırında kaşarlı yumurtalı patates;ana;30;492.8;25.1;43.8;23.7;5.5;vejetaryen
+af_mantar_dolmasi;Kaşarlı lorlu mantar dolması;ana;20;450.4;31.7;39.1;20.2;7.0;vejetaryen, yuksek_protein, pratik
+af_peynirli_karnabahar;Fırında kaşarlı karnabahar;ana;30;483.9;30.0;39.4;24.6;9.5;vejetaryen
+af_beyaz_peynirli_sebze;Fırında beyaz peynirli sebze;ana;30;509.2;21.8;45.8;27.9;11.9;vejetaryen
+af_ekmek_kayigi;Yumurtalı kaşarlı ekmek kayığı;ana/kahvalti;15;480.4;32.4;40.5;20.6;7.0;vejetaryen, yuksek_protein, pratik
+af_brokoli_mucver;Airfryer'da brokoli mücveri;ana;25;445.1;23.5;38.0;23.4;5.9;vejetaryen
+af_lorlu_kabak_sandal;Lorlu kabak sandal;ana;30;440.8;32.6;34.0;20.4;6.5;vejetaryen, yuksek_protein
+af_sebzeli_omlet;Airfryer'da mantarlı sebzeli omlet;ana/kahvalti;20;491.7;37.7;29.2;24.9;6.2;vejetaryen, yuksek_protein, pratik
+af_patates_rosti;Çıtır patates mücveri ve yoğurt;ana;25;452.0;17.6;59.9;15.6;5.9;vejetaryen
+af_kasarli_tavuk_brokoli;Airfryer'da kaşarlı tavuk ve brokoli;ana;25;478.4;48.9;30.8;17.9;6.5;yuksek_protein
+af_kofte_patates;Airfryer'da köfte ve patates;ana;30;538.8;27.0;38.7;30.2;4.7;
+af_ton_kasarli_lavas;Ton balıklı kaşarlı sıcak lavaş;ana;12;423.9;35.0;39.7;13.4;3.5;yuksek_protein, pratik
 kefir_findik;Kefir ve fındık;ara;1;244.2;10.5;13.8;17.1;1.5;vejetaryen, pratik
 suzme_bal_ceviz;Süzme yoğurt, bal ve ceviz;ara;2;254.7;13.5;14.0;17.0;0.7;vejetaryen, pratik
 lorlu_salata;Lorlu domates salatalık;ara/yan;5;177.0;14.2;11.3;9.3;1.9;vejetaryen, yuksek_protein, pratik

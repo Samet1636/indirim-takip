@@ -446,6 +446,103 @@ t("airfryer_falafel", "Airfryer'da falafel ve yoğurt", ["ana"], 30,
    "Üzerlerine fırçayla zeytinyağı sür; airfryer'da 190 derecede 12-14 dakika, yarısında çevirerek pişir (fırında 200 derecede 20 dk).",
    "Yoğurt ve marulla servis et."])
 
+# ---------------- SADECE AIRFRYER / FIRIN İLE YAPILAN ANA YEMEKLER ----------------
+# Ocak gerektirmez (haşlama/soteleme yok). Mutfağında yalnızca airfryer ya da fırın olanlar için.
+t("af_sebzeli_kasarli_durum", "Airfryer'da kaşarlı sebzeli çıtır dürüm", ["ana"], 15,
+  {"lavas": 75, "kasar": 45, "kapya_biber": 50, "mantar": 60, "ispanak": 30, "zeytinyagi": 3, "tuz_baharat": 1},
+  ["Mantarı ve kapya biberi çok ince dilimle, ıspanağı iri kıy.",
+   "Lavaşın yarısına rendelenmiş kaşarın yarısını yay; sebzeleri diz, tuz ve kekik serp, kalan kaşarı ekle.",
+   "Lavaşı ikiye katlayıp üzerine fırçayla çok az zeytinyağı sür.",
+   "Airfryer'da 180 derecede 6-7 dakika, yarısında çevirerek (fırında 200 derecede 10 dk) kızarana kadar pişir.",
+   "Üçgen dilimleyip sıcak servis et."])
+t("af_lorlu_rulo_borek", "Airfryer'da lorlu ıspanaklı rulo börek", ["ana"], 20,
+  {"lavas": 75, "lor": 90, "ispanak": 80, "yumurta": 30, "yogurt": 80, "zeytinyagi": 5, "tuz_baharat": 1},
+  ["Ispanağı ince kıyıp tuzla ovarak suyunu sık; lor, karabiber ve pul biberle karıştır.",
+   "Lavaşı ikiye kes, harcı uzun kenar boyunca yayıp sıkıca rulo sar.",
+   "Yumurtayı zeytinyağıyla çırpıp ruloların üzerine sür.",
+   "Airfryer'da 180 derecede 9-10 dakika (fırında 190 derecede 18 dk) altın rengi olana kadar pişir.",
+   "Yoğurtla servis et."], artan=True)
+t("af_yumurtali_patates", "Fırında kaşarlı yumurtalı patates", ["ana"], 30,
+  {"patates": 250, "yumurta": 110, "kasar": 25, "zeytinyagi": 6, "tuz_baharat": 1},
+  ["Patatesi küçük küpler halinde doğra; zeytinyağı, tuz, kekik ve toz biberle harmanla.",
+   "Airfryer'a uygun kapta 190 derecede 15 dakika, bir kez karıştırarak pişir (fırında 210 derecede 22 dk).",
+   "Patateslerin arasında iki çukur açıp yumurtaları kır, kaşarı serp.",
+   "170 derecede 5-6 dakika daha, yumurta akı pişene kadar pişir."])
+t("af_mantar_dolmasi", "Kaşarlı lorlu mantar dolması", ["ana"], 20,
+  {"mantar": 200, "kasar": 35, "lor": 60, "sarimsak": 3, "tam_bugday_ekmegi": 70, "zeytinyagi": 5, "tuz_baharat": 1},
+  ["Mantarların saplarını çıkar; sapları ince kıy.",
+   "Kıyılmış sapları lor, ezilmiş sarımsak, tuz ve karabiberle karıştır.",
+   "Mantar şapkalarına zeytinyağı sür, harcı doldur ve üzerine kaşar serp.",
+   "Airfryer'da 180 derecede 10-12 dakika (fırında 200 derecede 18 dk) pişir.",
+   "Ekmeği son 2 dakika yanına koyup kızart, birlikte servis et."])
+t("af_peynirli_karnabahar", "Fırında kaşarlı karnabahar", ["ana"], 30,
+  {"karnabahar": 300, "yumurta": 55, "kasar": 35, "yogurt": 60, "tam_bugday_ekmegi": 50, "zeytinyagi": 5, "tuz_baharat": 1},
+  ["Karnabaharı küçük çiçeklere ayır; zeytinyağı ve tuzla harmanla.",
+   "Airfryer'da 180 derecede 12 dakika (fırında 200 derecede 18 dk) yumuşayana kadar ön pişir.",
+   "Yumurta, yoğurt, karabiber ve kaşarın yarısını çırp.",
+   "Karnabaharı fırın kabına al, sosu gezdir, kalan kaşarı serp.",
+   "170 derecede 8-10 dakika üzeri kızarana kadar pişir; ekmekle servis et."], artan=True)
+t("af_beyaz_peynirli_sebze", "Fırında beyaz peynirli sebze", ["ana"], 30,
+  {"patlican": 150, "kabak": 150, "kapya_biber": 80, "beyaz_peynir": 70, "zeytinyagi": 10, "tam_bugday_ekmegi": 60,
+   "tuz_baharat": 1},
+  ["Patlıcan, kabak ve kapya biberi iri küp doğra.",
+   "Zeytinyağı, kekik, tuz ve pul biberle harmanla.",
+   "Airfryer'da 190 derecede 15-17 dakika, iki kez sallayarak (fırında 210 derecede 25 dk) pişir.",
+   "Beyaz peyniri iri parçalar halinde üzerine ekle, 3 dakika daha pişir.",
+   "Ekmekle servis et."], artan=True)
+t("af_ekmek_kayigi", "Yumurtalı kaşarlı ekmek kayığı", ["ana", "kahvalti"], 15,
+  {"tam_bugday_ekmegi": 90, "yumurta": 110, "kasar": 25, "domates": 60, "tuz_baharat": 1},
+  ["Ekmek dilimlerinin ortasını bastırarak çukurlaştır (ya da küçük bir somunun içini oy).",
+   "Çukurlara ince domates dilimi koy, yumurtaları kır.",
+   "Tuz, karabiber ve kaşar serp.",
+   "Airfryer'da 170 derecede 8-9 dakika (fırında 190 derecede 12 dk) yumurta pişene kadar pişir."])
+t("af_brokoli_mucver", "Airfryer'da brokoli mücveri", ["ana"], 25,
+  {"brokoli": 200, "yumurta": 55, "un": 25, "beyaz_peynir": 40, "zeytinyagi": 6, "yogurt": 80, "tuz_baharat": 1},
+  ["Çiğ brokoliyi rendeyle ya da bıçakla pirinç iriliğinde kıy.",
+   "Yumurta, un, ufalanmış peynir, tuz ve karabiberle karıştır.",
+   "Pişirme kağıdına kaşıkla yassı köfteler bırak, üzerlerine zeytinyağı sür.",
+   "Airfryer'da 190 derecede 12-14 dakika, yarısında çevirerek (fırında 200 derecede 20 dk) pişir.",
+   "Yoğurtla servis et."], artan=True)
+t("af_lorlu_kabak_sandal", "Lorlu kabak sandal", ["ana"], 30,
+  {"kabak": 300, "lor": 100, "yumurta": 30, "kasar": 25, "tam_bugday_ekmegi": 50, "zeytinyagi": 4, "tuz_baharat": 1},
+  ["Kabakları boyuna ikiye kes, içini kaşıkla oyup oyduğun kısmı ince kıy.",
+   "Kıyılmış kabak içini lor, yumurta, tuz, karabiber ve dereotu (varsa) ile karıştır.",
+   "Kabak kayıklarına zeytinyağı sür, harcı doldur, kaşar serp.",
+   "Airfryer'da 180 derecede 15-17 dakika (fırında 190 derecede 25 dk) pişir; ekmekle servis et."], artan=True)
+t("af_sebzeli_omlet", "Airfryer'da mantarlı sebzeli omlet", ["ana", "kahvalti"], 20,
+  {"yumurta": 165, "mantar": 80, "kapya_biber": 50, "ispanak": 40, "kasar": 25, "tam_bugday_ekmegi": 50, "tuz_baharat": 1},
+  ["Mantarı ince dilimle, biberi küçük küp doğra, ıspanağı kıy.",
+   "Yumurtaları tuz ve karabiberle çırp; sebzeleri ve kaşarı ekle.",
+   "Yağlanmış ısıya dayanıklı kaba dök.",
+   "Airfryer'da 170 derecede 12-14 dakika (fırında 180 derecede 18 dk) ortası pişene kadar pişir.",
+   "Dilimleyip ekmekle servis et."])
+t("af_patates_rosti", "Çıtır patates mücveri ve yoğurt", ["ana"], 25,
+  {"patates": 250, "yumurta": 55, "un": 15, "zeytinyagi": 6, "yogurt": 120, "tuz_baharat": 1},
+  ["Patatesi rendele, temiz bir bezle suyunu iyice sık.",
+   "Yumurta, un, tuz ve karabiberle karıştır.",
+   "Pişirme kağıdına ince yassı köfteler bırak, zeytinyağı sür.",
+   "Airfryer'da 190 derecede 14-16 dakika, yarısında çevirerek (fırında 210 derecede 22 dk) çıtırlaşana kadar pişir.",
+   "Sarımsaklı ya da sade yoğurtla servis et."])
+t("af_kasarli_tavuk_brokoli", "Airfryer'da kaşarlı tavuk ve brokoli", ["ana"], 25,
+  {"tavuk_gogus": 160, "kasar": 25, "brokoli": 150, "patates": 120, "zeytinyagi": 6, "tuz_baharat": 1},
+  ["Tavuğu yanından keserek kelebek gibi aç; tuz, toz biber ve kekikle ov.",
+   "Patatesi ince elma dilim doğra, yağ ve tuzla harmanlayıp 190 derecede 8 dakika ön pişir.",
+   "Tavuğu ve brokoli çiçeklerini ekle, 10 dakika daha pişir (fırında toplam 30 dk, 200 derece).",
+   "Tavuğun üzerine kaşarı koyup 2 dakika eriyene kadar beklet."], artan=True)
+t("af_kofte_patates", "Airfryer'da köfte ve patates", ["ana"], 30,
+  {"dana_kiyma": 120, "sogan": 20, "patates": 200, "zeytinyagi": 4, "yogurt": 60, "tuz_baharat": 1},
+  ["Kıymayı rendelenmiş soğan, kimyon, karabiber ve tuzla 3 dakika yoğurup yassı köfteler yap.",
+   "Patatesi elma dilim doğra, zeytinyağı ve tuzla harmanla.",
+   "Patatesleri airfryer'da 190 derecede 10 dakika pişir.",
+   "Köfteleri ekleyip 10-12 dakika daha, yarısında çevirerek pişir (fırında 200 derecede toplam 35 dk).",
+   "Yoğurtla servis et."], artan=True)
+t("af_ton_kasarli_lavas", "Ton balıklı kaşarlı sıcak lavaş", ["ana"], 12,
+  {"lavas": 70, "ton_baligi": 80, "kasar": 30, "domates": 60, "kapya_biber": 30, "tuz_baharat": 1},
+  ["Ton balığını süzüp çatalla dağıt; küçük doğranmış kapya biber ve karabiberle karıştır.",
+   "Lavaşın yarısına kaşarın yarısını, ton karışımını ve domates dilimlerini diz; kalan kaşarı ekle.",
+   "Lavaşı kapatıp airfryer'da 180 derecede 6 dakika, bir kez çevirerek (fırında 200 derecede 9 dk) pişir.",
+   "Dilimleyip servis et."])
+
 # ---------------- ARA ÖĞÜNLER (yeni) ----------------
 t("kefir_findik", "Kefir ve fındık", ["ara"], 1,
   {"kefir": 250, "findik": 15}, ["Kefiri bardağa al, fındıkla birlikte tüket."], aralik=(0.5, 1.5))
@@ -710,7 +807,9 @@ EKIPMAN = {
     "airfryer_patates": [["airfryer"], ["firin"]], "mevsim_salatasi": PISIRMESIZ,
 }
 for _t in T:
-    _t["ekipman"] = EKIPMAN.get(_t["id"], OCAK)
+    # "af_" ile başlayanlar: ocak gerektirmeyen airfryer / fırın tarifleri
+    varsayilan = [["airfryer"], ["firin"]] if _t["id"].startswith("af_") else OCAK
+    _t["ekipman"] = EKIPMAN.get(_t["id"], varsayilan)
 
 json.dump(T, open("tarifler.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 print(len(T), "tarif")

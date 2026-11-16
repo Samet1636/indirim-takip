@@ -4327,6 +4327,783 @@
   ]
  },
  {
+  "id": "af_sebzeli_kasarli_durum",
+  "ad": "Airfryer'da kaşarlı sebzeli çıtır dürüm",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 15,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "lavas",
+    "gram": 75
+   },
+   {
+    "malzeme": "kasar",
+    "gram": 45
+   },
+   {
+    "malzeme": "kapya_biber",
+    "gram": 50
+   },
+   {
+    "malzeme": "mantar",
+    "gram": 60
+   },
+   {
+    "malzeme": "ispanak",
+    "gram": 30
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 3
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Mantarı ve kapya biberi çok ince dilimle, ıspanağı iri kıy.",
+   "Lavaşın yarısına rendelenmiş kaşarın yarısını yay; sebzeleri diz, tuz ve kekik serp, kalan kaşarı ekle.",
+   "Lavaşı ikiye katlayıp üzerine fırçayla çok az zeytinyağı sür.",
+   "Airfryer'da 180 derecede 6-7 dakika, yarısında çevirerek (fırında 200 derecede 10 dk) kızarana kadar pişir.",
+   "Üçgen dilimleyip sıcak servis et."
+  ],
+  "ekipman": [
+   [
+    "airfryer"
+   ],
+   [
+    "firin"
+   ]
+  ]
+ },
+ {
+  "id": "af_lorlu_rulo_borek",
+  "ad": "Airfryer'da lorlu ıspanaklı rulo börek",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 20,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "lavas",
+    "gram": 75
+   },
+   {
+    "malzeme": "lor",
+    "gram": 90
+   },
+   {
+    "malzeme": "ispanak",
+    "gram": 80
+   },
+   {
+    "malzeme": "yumurta",
+    "gram": 30
+   },
+   {
+    "malzeme": "yogurt",
+    "gram": 80
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 5
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Ispanağı ince kıyıp tuzla ovarak suyunu sık; lor, karabiber ve pul biberle karıştır.",
+   "Lavaşı ikiye kes, harcı uzun kenar boyunca yayıp sıkıca rulo sar.",
+   "Yumurtayı zeytinyağıyla çırpıp ruloların üzerine sür.",
+   "Airfryer'da 180 derecede 9-10 dakika (fırında 190 derecede 18 dk) altın rengi olana kadar pişir.",
+   "Yoğurtla servis et."
+  ],
+  "ekipman": [
+   [
+    "airfryer"
+   ],
+   [
+    "firin"
+   ]
+  ]
+ },
+ {
+  "id": "af_yumurtali_patates",
+  "ad": "Fırında kaşarlı yumurtalı patates",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 30,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "patates",
+    "gram": 250
+   },
+   {
+    "malzeme": "yumurta",
+    "gram": 110
+   },
+   {
+    "malzeme": "kasar",
+    "gram": 25
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 6
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Patatesi küçük küpler halinde doğra; zeytinyağı, tuz, kekik ve toz biberle harmanla.",
+   "Airfryer'a uygun kapta 190 derecede 15 dakika, bir kez karıştırarak pişir (fırında 210 derecede 22 dk).",
+   "Patateslerin arasında iki çukur açıp yumurtaları kır, kaşarı serp.",
+   "170 derecede 5-6 dakika daha, yumurta akı pişene kadar pişir."
+  ],
+  "ekipman": [
+   [
+    "airfryer"
+   ],
+   [
+    "firin"
+   ]
+  ]
+ },
+ {
+  "id": "af_mantar_dolmasi",
+  "ad": "Kaşarlı lorlu mantar dolması",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 20,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "mantar",
+    "gram": 200
+   },
+   {
+    "malzeme": "kasar",
+    "gram": 35
+   },
+   {
+    "malzeme": "lor",
+    "gram": 60
+   },
+   {
+    "malzeme": "sarimsak",
+    "gram": 3
+   },
+   {
+    "malzeme": "tam_bugday_ekmegi",
+    "gram": 70
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 5
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Mantarların saplarını çıkar; sapları ince kıy.",
+   "Kıyılmış sapları lor, ezilmiş sarımsak, tuz ve karabiberle karıştır.",
+   "Mantar şapkalarına zeytinyağı sür, harcı doldur ve üzerine kaşar serp.",
+   "Airfryer'da 180 derecede 10-12 dakika (fırında 200 derecede 18 dk) pişir.",
+   "Ekmeği son 2 dakika yanına koyup kızart, birlikte servis et."
+  ],
+  "ekipman": [
+   [
+    "airfryer"
+   ],
+   [
+    "firin"
+   ]
+  ]
+ },
+ {
+  "id": "af_peynirli_karnabahar",
+  "ad": "Fırında kaşarlı karnabahar",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 30,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "karnabahar",
+    "gram": 300
+   },
+   {
+    "malzeme": "yumurta",
+    "gram": 55
+   },
+   {
+    "malzeme": "kasar",
+    "gram": 35
+   },
+   {
+    "malzeme": "yogurt",
+    "gram": 60
+   },
+   {
+    "malzeme": "tam_bugday_ekmegi",
+    "gram": 50
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 5
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Karnabaharı küçük çiçeklere ayır; zeytinyağı ve tuzla harmanla.",
+   "Airfryer'da 180 derecede 12 dakika (fırında 200 derecede 18 dk) yumuşayana kadar ön pişir.",
+   "Yumurta, yoğurt, karabiber ve kaşarın yarısını çırp.",
+   "Karnabaharı fırın kabına al, sosu gezdir, kalan kaşarı serp.",
+   "170 derecede 8-10 dakika üzeri kızarana kadar pişir; ekmekle servis et."
+  ],
+  "ekipman": [
+   [
+    "airfryer"
+   ],
+   [
+    "firin"
+   ]
+  ]
+ },
+ {
+  "id": "af_beyaz_peynirli_sebze",
+  "ad": "Fırında beyaz peynirli sebze",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 30,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "patlican",
+    "gram": 150
+   },
+   {
+    "malzeme": "kabak",
+    "gram": 150
+   },
+   {
+    "malzeme": "kapya_biber",
+    "gram": 80
+   },
+   {
+    "malzeme": "beyaz_peynir",
+    "gram": 70
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 10
+   },
+   {
+    "malzeme": "tam_bugday_ekmegi",
+    "gram": 60
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Patlıcan, kabak ve kapya biberi iri küp doğra.",
+   "Zeytinyağı, kekik, tuz ve pul biberle harmanla.",
+   "Airfryer'da 190 derecede 15-17 dakika, iki kez sallayarak (fırında 210 derecede 25 dk) pişir.",
+   "Beyaz peyniri iri parçalar halinde üzerine ekle, 3 dakika daha pişir.",
+   "Ekmekle servis et."
+  ],
+  "ekipman": [
+   [
+    "airfryer"
+   ],
+   [
+    "firin"
+   ]
+  ]
+ },
+ {
+  "id": "af_ekmek_kayigi",
+  "ad": "Yumurtalı kaşarlı ekmek kayığı",
+  "ogunler": [
+   "ana",
+   "kahvalti"
+  ],
+  "sure_dk": 15,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "tam_bugday_ekmegi",
+    "gram": 90
+   },
+   {
+    "malzeme": "yumurta",
+    "gram": 110
+   },
+   {
+    "malzeme": "kasar",
+    "gram": 25
+   },
+   {
+    "malzeme": "domates",
+    "gram": 60
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Ekmek dilimlerinin ortasını bastırarak çukurlaştır (ya da küçük bir somunun içini oy).",
+   "Çukurlara ince domates dilimi koy, yumurtaları kır.",
+   "Tuz, karabiber ve kaşar serp.",
+   "Airfryer'da 170 derecede 8-9 dakika (fırında 190 derecede 12 dk) yumurta pişene kadar pişir."
+  ],
+  "ekipman": [
+   [
+    "airfryer"
+   ],
+   [
+    "firin"
+   ]
+  ]
+ },
+ {
+  "id": "af_brokoli_mucver",
+  "ad": "Airfryer'da brokoli mücveri",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 25,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "brokoli",
+    "gram": 200
+   },
+   {
+    "malzeme": "yumurta",
+    "gram": 55
+   },
+   {
+    "malzeme": "un",
+    "gram": 25
+   },
+   {
+    "malzeme": "beyaz_peynir",
+    "gram": 40
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 6
+   },
+   {
+    "malzeme": "yogurt",
+    "gram": 80
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Çiğ brokoliyi rendeyle ya da bıçakla pirinç iriliğinde kıy.",
+   "Yumurta, un, ufalanmış peynir, tuz ve karabiberle karıştır.",
+   "Pişirme kağıdına kaşıkla yassı köfteler bırak, üzerlerine zeytinyağı sür.",
+   "Airfryer'da 190 derecede 12-14 dakika, yarısında çevirerek (fırında 200 derecede 20 dk) pişir.",
+   "Yoğurtla servis et."
+  ],
+  "ekipman": [
+   [
+    "airfryer"
+   ],
+   [
+    "firin"
+   ]
+  ]
+ },
+ {
+  "id": "af_lorlu_kabak_sandal",
+  "ad": "Lorlu kabak sandal",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 30,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "kabak",
+    "gram": 300
+   },
+   {
+    "malzeme": "lor",
+    "gram": 100
+   },
+   {
+    "malzeme": "yumurta",
+    "gram": 30
+   },
+   {
+    "malzeme": "kasar",
+    "gram": 25
+   },
+   {
+    "malzeme": "tam_bugday_ekmegi",
+    "gram": 50
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 4
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Kabakları boyuna ikiye kes, içini kaşıkla oyup oyduğun kısmı ince kıy.",
+   "Kıyılmış kabak içini lor, yumurta, tuz, karabiber ve dereotu (varsa) ile karıştır.",
+   "Kabak kayıklarına zeytinyağı sür, harcı doldur, kaşar serp.",
+   "Airfryer'da 180 derecede 15-17 dakika (fırında 190 derecede 25 dk) pişir; ekmekle servis et."
+  ],
+  "ekipman": [
+   [
+    "airfryer"
+   ],
+   [
+    "firin"
+   ]
+  ]
+ },
+ {
+  "id": "af_sebzeli_omlet",
+  "ad": "Airfryer'da mantarlı sebzeli omlet",
+  "ogunler": [
+   "ana",
+   "kahvalti"
+  ],
+  "sure_dk": 20,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "yumurta",
+    "gram": 165
+   },
+   {
+    "malzeme": "mantar",
+    "gram": 80
+   },
+   {
+    "malzeme": "kapya_biber",
+    "gram": 50
+   },
+   {
+    "malzeme": "ispanak",
+    "gram": 40
+   },
+   {
+    "malzeme": "kasar",
+    "gram": 25
+   },
+   {
+    "malzeme": "tam_bugday_ekmegi",
+    "gram": 50
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Mantarı ince dilimle, biberi küçük küp doğra, ıspanağı kıy.",
+   "Yumurtaları tuz ve karabiberle çırp; sebzeleri ve kaşarı ekle.",
+   "Yağlanmış ısıya dayanıklı kaba dök.",
+   "Airfryer'da 170 derecede 12-14 dakika (fırında 180 derecede 18 dk) ortası pişene kadar pişir.",
+   "Dilimleyip ekmekle servis et."
+  ],
+  "ekipman": [
+   [
+    "airfryer"
+   ],
+   [
+    "firin"
+   ]
+  ]
+ },
+ {
+  "id": "af_patates_rosti",
+  "ad": "Çıtır patates mücveri ve yoğurt",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 25,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "patates",
+    "gram": 250
+   },
+   {
+    "malzeme": "yumurta",
+    "gram": 55
+   },
+   {
+    "malzeme": "un",
+    "gram": 15
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 6
+   },
+   {
+    "malzeme": "yogurt",
+    "gram": 120
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Patatesi rendele, temiz bir bezle suyunu iyice sık.",
+   "Yumurta, un, tuz ve karabiberle karıştır.",
+   "Pişirme kağıdına ince yassı köfteler bırak, zeytinyağı sür.",
+   "Airfryer'da 190 derecede 14-16 dakika, yarısında çevirerek (fırında 210 derecede 22 dk) çıtırlaşana kadar pişir.",
+   "Sarımsaklı ya da sade yoğurtla servis et."
+  ],
+  "ekipman": [
+   [
+    "airfryer"
+   ],
+   [
+    "firin"
+   ]
+  ]
+ },
+ {
+  "id": "af_kasarli_tavuk_brokoli",
+  "ad": "Airfryer'da kaşarlı tavuk ve brokoli",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 25,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "tavuk_gogus",
+    "gram": 160
+   },
+   {
+    "malzeme": "kasar",
+    "gram": 25
+   },
+   {
+    "malzeme": "brokoli",
+    "gram": 150
+   },
+   {
+    "malzeme": "patates",
+    "gram": 120
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 6
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Tavuğu yanından keserek kelebek gibi aç; tuz, toz biber ve kekikle ov.",
+   "Patatesi ince elma dilim doğra, yağ ve tuzla harmanlayıp 190 derecede 8 dakika ön pişir.",
+   "Tavuğu ve brokoli çiçeklerini ekle, 10 dakika daha pişir (fırında toplam 30 dk, 200 derece).",
+   "Tavuğun üzerine kaşarı koyup 2 dakika eriyene kadar beklet."
+  ],
+  "ekipman": [
+   [
+    "airfryer"
+   ],
+   [
+    "firin"
+   ]
+  ]
+ },
+ {
+  "id": "af_kofte_patates",
+  "ad": "Airfryer'da köfte ve patates",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 30,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": true,
+  "malzemeler": [
+   {
+    "malzeme": "dana_kiyma",
+    "gram": 120
+   },
+   {
+    "malzeme": "sogan",
+    "gram": 20
+   },
+   {
+    "malzeme": "patates",
+    "gram": 200
+   },
+   {
+    "malzeme": "zeytinyagi",
+    "gram": 4
+   },
+   {
+    "malzeme": "yogurt",
+    "gram": 60
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Kıymayı rendelenmiş soğan, kimyon, karabiber ve tuzla 3 dakika yoğurup yassı köfteler yap.",
+   "Patatesi elma dilim doğra, zeytinyağı ve tuzla harmanla.",
+   "Patatesleri airfryer'da 190 derecede 10 dakika pişir.",
+   "Köfteleri ekleyip 10-12 dakika daha, yarısında çevirerek pişir (fırında 200 derecede toplam 35 dk).",
+   "Yoğurtla servis et."
+  ],
+  "ekipman": [
+   [
+    "airfryer"
+   ],
+   [
+    "firin"
+   ]
+  ]
+ },
+ {
+  "id": "af_ton_kasarli_lavas",
+  "ad": "Ton balıklı kaşarlı sıcak lavaş",
+  "ogunler": [
+   "ana"
+  ],
+  "sure_dk": 12,
+  "porsiyon_araligi": [
+   0.75,
+   1.5
+  ],
+  "artan": false,
+  "malzemeler": [
+   {
+    "malzeme": "lavas",
+    "gram": 70
+   },
+   {
+    "malzeme": "ton_baligi",
+    "gram": 80
+   },
+   {
+    "malzeme": "kasar",
+    "gram": 30
+   },
+   {
+    "malzeme": "domates",
+    "gram": 60
+   },
+   {
+    "malzeme": "kapya_biber",
+    "gram": 30
+   },
+   {
+    "malzeme": "tuz_baharat",
+    "gram": 1
+   }
+  ],
+  "adimlar": [
+   "Ton balığını süzüp çatalla dağıt; küçük doğranmış kapya biber ve karabiberle karıştır.",
+   "Lavaşın yarısına kaşarın yarısını, ton karışımını ve domates dilimlerini diz; kalan kaşarı ekle.",
+   "Lavaşı kapatıp airfryer'da 180 derecede 6 dakika, bir kez çevirerek (fırında 200 derecede 9 dk) pişir.",
+   "Dilimleyip servis et."
+  ],
+  "ekipman": [
+   [
+    "airfryer"
+   ],
+   [
+    "firin"
+   ]
+  ]
+ },
+ {
   "id": "kefir_findik",
   "ad": "Kefir ve fındık",
   "ogunler": [
