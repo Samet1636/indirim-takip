@@ -77,6 +77,27 @@ def test_adaylarda_ucuz_kucuk_paket_var():
     assert "Bal 225 G" in adlar          # en küçük paket
 
 
+def test_sure_dolsa_da_sepet_sisirilmez(monkeypatch):
+    # Çözücü 2 saniyede kesilse bile (zayıf sunucu) alışveriş listesi ihtiyacı aşan paket içermemeli
+    def sahte_adaylar(katalog, malzemeler, marketler, her_market=3):
+        return {mid: [{"market": "sok", "name": f"{mid} 500 g", "price": 50.0, "miktar_g": 500.0, "tl_kg": 100.0,
+                       "acik_satis": False, "regular_price": None}] for mid in malzemeler}
+    monkeypatch.setattr(plan, "urun_adaylari", sahte_adaylar)
+    kisi = dict(kilo=75, boy=178, yas=23, cinsiyet="erkek", aktivite="orta", hedef="koru")
+    s = plan.coz([], kisi, max_market=1, sure_siniri=2)
+    if "plan" not in s:
+        return                                           # 2 sn'de çözüm bulunamadıysa sınanacak sepet yok
+    malz, tarifler = plan.tarif_ozet.yukle()
+    tarif = {t["id"]: t for t in tarifler}
+    ihtiyac = {}
+    for gun in s["plan"]:
+        for o in gun["ogunler"]:
+            for x in tarif[o["tarif"]]["malzemeler"]:
+                ihtiyac[malz[x["malzeme"]]["ad"]] = ihtiyac.get(malz[x["malzeme"]]["ad"], 0) + x["gram"] * o["porsiyon"]
+    for x in s["alisveris"]:
+        assert x["adet"] * 500 < ihtiyac[x["malzeme"]] + 500 + 25, x     # en fazla 1 paket yuvarlama payı
+
+
 def test_tek_ekipmanla_plan_cikabilir():
     # Sadece airfryer ya da sadece fırın (vejetaryen + 30 dk dahil) haftayı dolduracak kadar tarif bırakmalı
     malz, tarifler = plan.tarif_ozet.yukle()

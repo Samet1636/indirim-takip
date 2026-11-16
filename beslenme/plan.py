@@ -24,6 +24,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
 import re
 import sys
 from pathlib import Path
@@ -250,8 +251,28 @@ def coz(katalog, kisi: dict, paket: str = "ekonomik", max_market: int = 2, marke
                    for tid in kullanilan}
 
     liste, indirim_kazanci, plan_maliyeti = [], 0.0, 0.0
-    for key, var in n.items():
-        deger = var.value() or 0
+    # Çözücü süre sınırında durduysa (zayıf işlemcili sunucu) gereğinden fazla paket bırakmış olabilir:
+    # her malzemede ihtiyacı aşan fazlayı, kg'ı en pahalı üründen başlayarak kırp.
+    deger_of = {key: (var.value() or 0) for key, var in n.items()}
+    for mid in U:
+        ihtiyac = sum((v.value() or 0) * x["gram"] for (_, _, tt), v in p.items()
+                      for x in T[tt]["malzemeler"] if x["malzeme"] == mid)
+        anahtarlar = sorted((k for k in deger_of if urunler[k][0] == mid),
+                            key=lambda k: -(urunler[k][1]["price"] / urunler[k][1]["miktar_g"]))
+        fazla = sum(deger_of[k] * urunler[k][1]["miktar_g"] for k in anahtarlar) - ihtiyac
+        for k in anahtarlar:
+            if fazla <= 1e-6:
+                break
+            g = urunler[k][1]["miktar_g"]
+            if urunler[k][1]["acik_satis"] or k in n_paket:       # kesirli miktar
+                azalt = min(deger_of[k], fazla / g)
+            else:                                                  # tam paket
+                azalt = min(int(deger_of[k] + 1e-6), int(fazla // g))
+            deger_of[k] -= azalt
+            fazla -= azalt * g
+
+    for key in n:
+        deger = deger_of[key]
         if deger < 1e-3:
             continue
         mid, u = urunler[key]
@@ -260,7 +281,7 @@ def coz(katalog, kisi: dict, paket: str = "ekonomik", max_market: int = 2, marke
         if u["acik_satis"]:
             adet = round(deger, 2)
         elif key in n_paket:
-            adet = max(1, int(round(n_paket[key].value())))
+            adet = max(1, math.ceil(deger - 1e-6))      # kullanılan payı karşılayan en az tam paket
         else:
             adet = int(round(deger))
         tutar = round(adet * u["price"], 2)
