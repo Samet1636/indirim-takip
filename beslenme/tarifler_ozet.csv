@@ -113,3 +113,49 @@ kinoa_pilavi;Sebzeli kinoa pilavı;yan;20;248.5;7.5;36.7;8.1;4.7;vejetaryen, veg
 mantar_sote;Mantar sote;yan;12;78.6;5.1;7.1;4.6;2.0;vejetaryen, yuksek_protein, pratik
 kisir;Kısır;yan/ara;20;281.2;8.3;46.3;9.1;12.0;vejetaryen, vegan, pratik
 mevsim_salatasi;Mevsim salatası;yan;8;106.6;2.8;12.1;6.5;3.5;vejetaryen, vegan, pratik
+patatesli_yumurta;Patatesli yumurta;kahvalti;20;454.3;22.4;45.5;20.0;6.6;vejetaryen, pratik
+kasarli_mantarli_tost;Kaşarlı mantarlı tost;kahvalti;12;345.8;21.5;37.4;12.8;6.8;vejetaryen, pratik
+maydanozlu_peynirli_omlet;Maydanozlu peynirli omlet;kahvalti;10;428.9;26.5;26.8;23.9;5.0;vejetaryen, pratik
+elmali_tarcinli_yulaf;Elmalı tarçınlı yulaf lapası;kahvalti;10;462.5;16.7;65.5;16.8;8.9;vejetaryen, pratik
+zeytinli_kahvalti_salatasi;Peynirli zeytinli kahvaltı salatası;kahvalti;8;441.8;21.8;29.2;27.2;6.0;vejetaryen, pratik
+irmik_lapasi;Muzlu irmik lapası;kahvalti/ara;10;426.5;16.5;61.4;13.9;4.2;vejetaryen, pratik
+fistikli_yogurt_kasesi;Fıstık ezmeli yoğurt kasesi;kahvalti/ara;4;424.2;21.6;41.2;21.0;5.1;vejetaryen, pratik
+sebzeli_yumurta_tava;Sebzeli yumurta tavası (fırında);kahvalti;25;392.0;20.9;24.3;23.1;3.7;vejetaryen
+zeytinyagli_pirasa;Zeytinyağlı pırasa;ana/yan;40;363.0;6.0;58.6;13.0;6.8;vejetaryen, vegan
+kiymali_pirasa;Kıymalı pırasa;ana;40;475.6;18.6;56.1;20.6;6.1;
+kiymali_lahana;Kıymalı lahana yemeği;ana;40;398.8;19.0;38.4;20.2;8.8;
+zeytinyagli_lahana_sarmasi;Zeytinyağlı lahana sarması;ana;75;395.8;7.4;58.8;15.8;7.4;vejetaryen, vegan
+etsiz_cig_kofte;Etsiz çiğ köfte;ana/ara;30;363.1;11.4;64.3;9.5;16.2;vejetaryen, vegan
+yayla_corbasi;Yayla çorbası;ana;30;425.2;17.3;57.8;13.7;4.1;vejetaryen
+tavuk_sis;Fırında yoğurtlu tavuk şiş;ana;35;427.0;42.3;30.4;14.2;3.5;yuksek_protein
+mercimekli_eriste;Yeşil mercimekli erişte;ana;35;489.8;20.1;74.0;12.8;6.6;vejetaryen
+tereyagli_peynirli_eriste;Tereyağlı peynirli erişte;ana;20;543.5;17.9;64.3;24.3;4.3;vejetaryen, pratik
+tavuklu_eriste;Tavuklu erişte;ana;30;455.4;36.8;54.2;9.0;2.9;yuksek_protein
+kiymali_bezelye;Kıymalı bezelye yemeği;ana;30;331.0;18.9;40.4;10.8;10.2;
+zeytinyagli_bezelye;Zeytinyağlı bezelye;ana/yan;30;331.1;11.5;44.0;12.9;11.5;vejetaryen, vegan
+sebze_corbasi;Şehriyeli sebze çorbası;ana;30;392.4;13.4;64.4;9.6;9.0;vejetaryen, vegan
+domates_corbasi;Şehriyeli domates çorbası;ana;25;316.9;12.2;39.2;13.3;4.4;vejetaryen
+sehriyeli_tavuk_corbasi;Şehriyeli tavuk çorbası;ana;35;398.7;33.3;46.8;8.1;5.5;yuksek_protein
+patates_oturtma;Fırında kıymalı patates oturtma;ana;45;457.9;18.8;51.9;19.6;8.1;
+firin_makarna;Fırında yumurtalı peynirli makarna;ana;35;641.5;31.1;66.9;27.2;2.6;vejetaryen
+firin_karniyarik;Fırında karnıyarık;ana;50;348.0;16.1;23.1;22.8;9.7;
+biber_dolmasi;Bulgurlu kıymalı biber dolması;ana;60;447.8;19.6;52.7;19.0;13.1;
+nohutlu_tavuk;Nohutlu tavuk yemeği;ana;45;413.1;38.5;31.8;14.8;8.6;yuksek_protein
+mercimekli_bulgur_pilavi;Mercimekli bulgur pilavı;ana;35;523.4;21.7;85.8;12.9;17.8;vejetaryen
+kiymali_kuru_fasulye;Kıymalı kuru fasulye;ana;70;364.0;24.5;48.6;8.7;11.9;yuksek_protein
+mantarli_yogurtlu_makarna;Mantarlı yoğurtlu makarna;ana;20;431.7;17.9;69.7;9.7;3.8;vejetaryen, pratik
+ispanakli_kiymali_borek_lavas;Kıymalı ıspanaklı lavaş sarma;ana;30;472.7;25.4;47.1;20.9;5.3;
+kabak_yemegi;Kıymalı kabak yemeği;ana;30;302.4;16.7;30.1;13.7;4.3;
+taze_fasulye_kiymali;Kıymalı taze fasulye;ana;40;224.5;13.8;22.0;10.4;9.1;
+lahana_salatali_tavuk;Lahana salatalı ızgara tavuk;ana;25;442.6;42.3;32.7;15.8;8.0;yuksek_protein
+firin_sebzeli_kofte;Fırında sebzeli köfte (kabak ve havuç);ana;40;405.4;23.3;28.4;22.0;5.4;
+sutlac;Ballı fırın sütlaç;ara;45;255.2;8.3;41.0;6.8;0.4;vejetaryen
+irmik_helvasi;Cevizli irmik helvası (az şekerli);ara;25;315.2;8.3;37.7;15.3;1.7;vejetaryen
+havuc_tarator;Havuç tarator;ara/yan;15;235.0;6.9;19.2;15.7;4.1;vejetaryen, pratik
+lorlu_domates;Lorlu domates dilimleri;ara;5;149.6;11.3;8.6;8.5;1.8;vejetaryen, yuksek_protein, pratik
+muzlu_kefir;Tarçınlı muzlu kefir;ara;3;191.2;7.5;27.2;6.6;2.1;vejetaryen, pratik
+sehriyeli_pilav;Şehriyeli pirinç pilavı;yan;25;280.9;5.3;51.5;5.4;1.0;vejetaryen
+bezelyeli_pilav;Bezelyeli pirinç pilavı;yan;25;256.3;5.7;45.4;5.4;2.5;vejetaryen
+lahana_salatasi;Havuçlu lahana salatası;yan;10;109.8;2.4;13.5;6.3;5.2;vejetaryen, vegan, pratik
+patates_salatasi;Patates salatası;yan;25;223.8;4.2;34.0;8.3;4.9;vejetaryen, vegan
+firin_patlican_salatasi;Fırında patlıcan salatası;yan;35;156.3;5.0;16.6;9.1;6.1;vejetaryen

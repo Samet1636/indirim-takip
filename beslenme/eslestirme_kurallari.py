@@ -141,12 +141,25 @@ K = {
  "lavas": dict(ad=[r"lavas", r"tortilla"], haric=["cips", "pizza", "kizartma", "nacho", "kraker"], migros=["Lavaş"]),
  "barbunya": dict(ad=[r"barbunya"], haric=["dondurulmus", "pilaki", "haslanmis", "konserve", "yemegi", "salata"],
                   migros=["Barbunya"]),
+ # 18.11.2026 eklenenler (katalogdaki gerçek adlar incelenerek)
+ "beyaz_lahana": dict(kati=True, ad=[r"beyaz lahana", r"lahana beyaz", r"^lahana (kg|\d)"],
+                      haric=["tursu", "salata", "sarma", "kirmizi", "mor", "bruksel"],
+                      migros=["Mevsim Sebzeleri", "Doğranmış, Ayıklanmış Sebzeler"]),
+ "pirasa": dict(kati=True, ad=[r"^pirasa", r"\bpirasa (kg|demet|paket|\d)"], haric=["corba", "yemegi", "dondurulmus"],
+                migros=["Otlar, Yeşillikler", "Mevsim Sebzeleri"], tek_g=700),
+ "bezelye": dict(ad=[r"bezelye"], haric=["havuclu", "garnitur", "yemegi", "hazir", "cips", "mama", "corba", "protein"],
+                 migros=["Konserve Bezelye", "Dondurulmuş Sebze", "Haşlanmış"]),
+ "irmik": dict(ad=[r"\birmik\b"], haric=["mama", "helva", "tatli", "kasik", "bebek", "kek"], migros=["İrmik"]),
+ "sehriye": dict(ad=[r"sehriye"], haric=["corba", "hazir", "pilavi", "bardak", "noodle", "cesnili"], migros=["Şehriye"]),
+ "biber_salcasi": dict(ad=[r"biber salca"], haric=["sos", "ezme"], migros=["Biber Salçası"]),
+ "eriste": dict(ad=[r"\beriste\b"], haric=["bardak", "noodle", "korili", "cesnili", "hazir", "tavuk", "kori", "aci"],
+                migros=["Erişte", "Makarna"]),
 }
 
 # Uzun ömürlü kiler ürünleri: paketin artanı sonraki haftalara kalır. Plan maliyetinde
 # sadece kullanılan kısım sayılır (amortisman); taze ürünlerde ise paketin tamamı sayılır (israf).
 KILER = {"zeytinyagi", "aycicek_yagi", "tereyagi", "salca", "bal", "tahin", "fistik_ezmesi", "ceviz", "findik",
          "kirmizi_mercimek", "yesil_mercimek", "nohut", "kuru_fasulye", "bulgur", "pirinc", "makarna", "un",
-         "yulaf", "zeytin", "kinoa", "barbunya"}
+         "yulaf", "zeytin", "kinoa", "barbunya", "irmik", "sehriye", "biber_salcasi", "eriste"}
 for _m in KILER:
     K[_m]["kiler"] = True

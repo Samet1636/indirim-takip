@@ -621,6 +621,307 @@ t("mevsim_salatasi", "Mevsim salatası", ["yan"], 8,
   ["Marulu ince kıy, domates ve salatalığı doğra, havucu rendele.",
    "Limon, zeytinyağı ve tuzla sos hazırla, servis etmeden hemen önce karıştır."])
 
+# =====================================================================================
+# 18.11.2026: TÜRK EV YEMEKLERİ VE ÇEŞİTLİLİK (özgün; yeni malzemeler: lahana, pırasa, bezelye,
+# irmik, şehriye, biber salçası, erişte)
+# =====================================================================================
+
+# ---------------- KAHVALTI ----------------
+t("patatesli_yumurta", "Patatesli yumurta", ["kahvalti"], 20,
+  {"patates": 150, "yumurta": 110, "sogan": 30, "zeytinyagi": 8, "tam_bugday_ekmegi": 40, "tuz_baharat": 1},
+  ["Patatesi küçük küpler, soğanı ince doğra.",
+   "Tavada zeytinyağını ısıt; patatesleri kapağı kapalı, ara ara karıştırarak 8-10 dakika yumuşayana kadar pişir.",
+   "Soğanı ekleyip 2 dakika daha kavur.",
+   "Yumurtaları kırıp karıştır; tuz, karabiber ve pul biber serpip yumurta pişene kadar 2-3 dakika çevir.",
+   "Ekmekle sıcak servis et."])
+t("kasarli_mantarli_tost", "Kaşarlı mantarlı tost", ["kahvalti"], 12,
+  {"tam_bugday_ekmegi": 80, "kasar": 35, "mantar": 60, "domates": 50, "tuz_baharat": 1},
+  ["Mantarı ince dilimle, kuru tavada suyunu çekene kadar 4 dakika pişir; tuz ve kekik serp.",
+   "Ekmek dilimlerinin arasına kaşar, mantar ve ince domates dilimleri yerleştir.",
+   "Tost makinesinde 3-4 dakika (tavada iki yüzü 2'şer dakika, üstüne bastırarak) kızart."])
+t("maydanozlu_peynirli_omlet", "Maydanozlu peynirli omlet", ["kahvalti"], 10,
+  {"yumurta": 110, "beyaz_peynir": 35, "maydanoz": 15, "tereyagi": 5, "domates": 80, "tam_bugday_ekmegi": 50},
+  ["Yumurtaları çırp; ufalanmış beyaz peynir ve ince kıyılmış maydanozu ekle.",
+   "Tavada tereyağını erit, karışımı dök.",
+   "Kenarları pişince spatulayla ortaya doğru topla, kapağı kapalı kısık ateşte 2 dakika pişir.",
+   "İkiye katlayıp domates ve ekmekle servis et."])
+t("elmali_tarcinli_yulaf", "Elmalı tarçınlı yulaf lapası", ["kahvalti"], 10,
+  {"yulaf": 50, "sut": 200, "elma": 120, "ceviz": 10, "bal": 6},
+  ["Elmayı rendele ya da küçük küp doğra.",
+   "Yulaf, süt ve elmanın yarısını tencereye al; bir çay kaşığı tarçın ekle.",
+   "Kısık ateşte karıştırarak 5 dakika koyulaşana kadar pişir (mikrodalgada 2-3 dk).",
+   "Kalan elma, kırılmış ceviz ve balla servis et."])
+t("zeytinli_kahvalti_salatasi", "Peynirli zeytinli kahvaltı salatası", ["kahvalti"], 8,
+  {"beyaz_peynir": 50, "zeytin": 30, "domates": 120, "salatalik": 100, "maydanoz": 10, "zeytinyagi": 5,
+   "yumurta": 55, "tam_bugday_ekmegi": 40},
+  ["Yumurtayı 8 dakika haşlayıp soğuk suya al, soy ve dilimle.",
+   "Domates ve salatalığı küp doğra, maydanozu kıy.",
+   "Peyniri küp kes, zeytinleri ekle.",
+   "Hepsini zeytinyağı ve kekikle karıştır; ekmekle servis et."])
+t("irmik_lapasi", "Muzlu irmik lapası", ["kahvalti", "ara"], 10,
+  {"irmik": 40, "sut": 250, "muz": 80, "fistik_ezmesi": 10},
+  ["Sütü küçük bir tencerede ılıt.",
+   "İrmiği yağmur gibi serpiştirerek ve sürekli karıştırarak ekle (topaklanmasın).",
+   "Kısık ateşte karıştırarak 4-5 dakika koyulaşana kadar pişir.",
+   "Kaseye al; dilimlenmiş muz ve fıstık ezmesiyle servis et."])
+t("fistikli_yogurt_kasesi", "Fıstık ezmeli yoğurt kasesi", ["kahvalti", "ara"], 4,
+  {"suzme_yogurt": 170, "fistik_ezmesi": 15, "muz": 80, "yulaf": 20},
+  ["Süzme yoğurdu kaseye al.", "Fıstık ezmesini bir kaşık sıcak suyla açıp üzerine gezdir.",
+   "Dilimlenmiş muz ve yulafı ekleyerek servis et."], aralik=(0.75, 1.5))
+t("sebzeli_yumurta_tava", "Sebzeli yumurta tavası (fırında)", ["kahvalti"], 25,
+  {"yumurta": 110, "patates": 100, "kapya_biber": 50, "sogan": 25, "beyaz_peynir": 30, "zeytinyagi": 6, "tuz_baharat": 1},
+  ["Patatesi ince dilimle; zeytinyağı ve tuzla harmanlayıp fırın kabına yay.",
+   "Airfryer'da 190 derecede 10 dakika (fırında 200 derecede 15 dk) ön pişir.",
+   "Biber ve soğanı ince doğrayıp ekle, yumurtaları kır, peynir ufala.",
+   "170 derecede 7-8 dakika (fırında 180 derecede 10 dk) yumurtalar pişene kadar pişir."])
+
+# ---------------- ANA YEMEKLER ----------------
+t("zeytinyagli_pirasa", "Zeytinyağlı pırasa", ["ana", "yan"], 40,
+  {"pirasa": 250, "havuc": 50, "pirinc": 20, "sogan": 20, "zeytinyagi": 12, "limon": 10, "tuz_baharat": 1},
+  ["Pırasaları uzunlamasına kesip katları arasındaki toprağı bol suyla yıka, 2 cm'lik halkalar halinde doğra.",
+   "Soğanı ve halka doğranmış havucu zeytinyağında 3 dakika kavur.",
+   "Pırasayı ekleyip sönene kadar karıştır; yıkanmış pirinci ve 1 su bardağı sıcak suyu ekle.",
+   "Kapağı kapalı, kısık ateşte 25 dakika pişir; ocaktan almadan limon suyunu ekle.",
+   "Ilıyınca ya da soğuk servis et."], artan=True)
+t("kiymali_pirasa", "Kıymalı pırasa", ["ana"], 40,
+  {"pirasa": 250, "dana_kiyma": 60, "havuc": 40, "pirinc": 15, "salca": 8, "zeytinyagi": 5, "yogurt": 80, "tuz_baharat": 1},
+  ["Pırasayı iyice yıkayıp halka doğra, havucu küp kes.",
+   "Kıymayı suyunu çekene kadar kavur, salçayı ekleyip 1 dakika çevir.",
+   "Havuç ve pırasayı ekle, sönene kadar karıştır.",
+   "Pirinç ve 1 su bardağı sıcak su ekleyip kısık ateşte 25 dakika pişir.",
+   "Yoğurtla servis et."], artan=True)
+t("kiymali_lahana", "Kıymalı lahana yemeği", ["ana"], 40,
+  {"beyaz_lahana": 300, "dana_kiyma": 60, "sogan": 30, "pirinc": 15, "salca": 10, "biber_salcasi": 5, "zeytinyagi": 5,
+   "yogurt": 80, "tuz_baharat": 1},
+  ["Lahanayı iri parçalar halinde doğrayıp yıka.",
+   "Kıymayı kavur, soğanı ekleyip pembeleştir; salçaları ekle.",
+   "Lahanayı ekleyip sönene kadar 5 dakika karıştır.",
+   "Pirinç ve 1 su bardağı sıcak suyu ekle, kapağı kapalı kısık ateşte 25 dakika pişir.",
+   "Pul biber ve yoğurtla servis et."], artan=True)
+t("zeytinyagli_lahana_sarmasi", "Zeytinyağlı lahana sarması", ["ana"], 75,
+  {"beyaz_lahana": 200, "pirinc": 50, "sogan": 40, "salca": 10, "zeytinyagi": 15, "limon": 10, "maydanoz": 10,
+   "tuz_baharat": 1},
+  ["Lahananın yapraklarını ayır, kaynar suda 3-4 dakika haşlayıp süz; kalın damarlarını kes.",
+   "Soğanı zeytinyağında kavur, salça ve yıkanmış pirinci ekle; nane, karabiber, tuz ve maydanozla harcı hazırla.",
+   "Her yaprağa bir kaşık harç koyup kenarlarını kapatarak sıkıca sar.",
+   "Tencereye dizip üzerini geçmeyecek kadar sıcak su ve limon ekle, üzerine ters bir tabak kapat.",
+   "Kısık ateşte 40 dakika pişir; soğuk servis et."], artan=True)
+t("etsiz_cig_kofte", "Etsiz çiğ köfte", ["ana", "ara"], 30,
+  {"bulgur": 70, "biber_salcasi": 20, "salca": 10, "sogan": 30, "maydanoz": 15, "limon": 15, "zeytinyagi": 8,
+   "marul": 60, "tuz_baharat": 1},
+  ["İnce bulguru geniş bir kaba al, üzerine yarım çay bardağı sıcak su gezdirip 10 dakika kapağı kapalı beklet.",
+   "Rendelenmiş soğan, biber salçası, domates salçası, isot, kimyon ve tuzu ekle.",
+   "Eldiven takıp en az 10 dakika, bulgur yumuşayıp hamur kıvamına gelene kadar yoğur.",
+   "Zeytinyağı ve kıyılmış maydanozu ekleyip 2 dakika daha yoğur.",
+   "Avuçta sıkarak şekil ver; marul yaprakları ve limonla servis et."])
+t("yayla_corbasi", "Yayla çorbası", ["ana"], 30,
+  {"yogurt": 150, "pirinc": 30, "yumurta": 20, "un": 8, "tereyagi": 6, "tam_bugday_ekmegi": 50, "tuz_baharat": 1},
+  ["Pirinci 3 su bardağı suyla yumuşayana kadar 15 dakika haşla.",
+   "Yoğurt, yumurta ve unu bir kasede pürüzsüz olana kadar çırp.",
+   "Haşlanan pirinçten bir kepçe sıcak suyu yoğurda ekleyerek ılıt (kesilmesini önler).",
+   "Yoğurtlu karışımı tencereye yavaşça ekle; sürekli karıştırarak kaynayana kadar pişir.",
+   "Tereyağını kuru naneyle kızdırıp üzerine gezdir; ekmekle servis et."], artan=True)
+t("tavuk_sis", "Fırında yoğurtlu tavuk şiş", ["ana"], 35,
+  {"tavuk_gogus": 160, "yogurt": 40, "biber_salcasi": 10, "kapya_biber": 60, "sogan": 40, "zeytinyagi": 6,
+   "lavas": 40, "tuz_baharat": 1},
+  ["Tavuğu kuşbaşı doğra; yoğurt, biber salçası, zeytinyağı, kekik, kimyon ve tuzla en az 20 dakika marine et.",
+   "Biber ve soğanı iri parçalara ayır.",
+   "Tavuk ve sebzeleri sırayla şişlere diz (şiş yoksa tepsiye yay).",
+   "Airfryer'da 190 derecede 14-16 dakika, yarısında çevirerek (fırında 210 derecede 22 dk) pişir.",
+   "Isıtılmış lavaşla servis et."], artan=True)
+t("mercimekli_eriste", "Yeşil mercimekli erişte", ["ana"], 35,
+  {"eriste": 60, "yesil_mercimek": 40, "sogan": 30, "tereyagi": 6, "zeytinyagi": 4, "yogurt": 60, "tuz_baharat": 1},
+  ["Yeşil mercimeği 20 dakika haşla ve süz.",
+   "Erişteyi tuzlu suda 8-10 dakika haşla, süz.",
+   "Soğanı yağlarda pembeleşene kadar kavur, pul biber ekle.",
+   "Mercimek ve erişteyi ekleyip 2 dakika birlikte çevir.",
+   "Yoğurtla servis et."])
+t("tereyagli_peynirli_eriste", "Tereyağlı peynirli erişte", ["ana"], 20,
+  {"eriste": 80, "tereyagi": 10, "beyaz_peynir": 35, "ceviz": 10, "domates": 100, "tuz_baharat": 1},
+  ["Erişteyi bol tuzlu suda paket süresine göre haşla, süz.",
+   "Tavada tereyağını erit, cevizi 1 dakika kavur.",
+   "Erişteyi ekleyip tereyağıyla harmanla.",
+   "Ufalanmış beyaz peynirle tabağa al; doğranmış domatesle servis et."])
+t("tavuklu_eriste", "Tavuklu erişte", ["ana"], 30,
+  {"eriste": 70, "tavuk_gogus": 120, "sogan": 25, "salca": 8, "tereyagi": 5, "tuz_baharat": 1},
+  ["Tavuğu 20 dakika haşla, didikle; suyunu ayır.",
+   "Erişteyi tavuk suyunda yumuşayana kadar pişir, fazla suyu süz.",
+   "Soğanı tereyağında kavur, salçayı ekle.",
+   "Didiklenmiş tavuk ve erişteyi ekleyip 2 dakika birlikte çevir; karabiberle servis et."], artan=True)
+t("kiymali_bezelye", "Kıymalı bezelye yemeği", ["ana"], 30,
+  {"bezelye": 150, "dana_kiyma": 50, "havuc": 40, "patates": 70, "sogan": 25, "salca": 10, "tuz_baharat": 1},
+  ["Havuç ve patatesi küp doğra.",
+   "Kıymayı kavur, soğanı ekleyip pembeleştir; salçayı ekle.",
+   "Havuç, patates ve bezelyeyi ekleyip 2 dakika çevir.",
+   "1 su bardağı sıcak su ekle, kısık ateşte sebzeler yumuşayana kadar 20 dakika pişir."], artan=True)
+t("zeytinyagli_bezelye", "Zeytinyağlı bezelye", ["ana", "yan"], 30,
+  {"bezelye": 180, "havuc": 50, "patates": 70, "sogan": 30, "zeytinyagi": 12, "tuz_baharat": 1},
+  ["Soğanı zeytinyağında 3 dakika kavur.",
+   "Küp doğranmış havuç ve patatesi ekleyip 2 dakika çevir.",
+   "Bezelyeyi, bir tutam şekeri ve yarım su bardağı sıcak suyu ekle.",
+   "Kapağı kapalı, kısık ateşte 20 dakika pişir; dereotu varsa ekleyip ılık servis et."], artan=True)
+t("sebze_corbasi", "Şehriyeli sebze çorbası", ["ana"], 30,
+  {"havuc": 50, "patates": 80, "kabak": 80, "sogan": 30, "sehriye": 25, "salca": 8, "zeytinyagi": 7,
+   "tam_bugday_ekmegi": 50, "tuz_baharat": 1},
+  ["Tüm sebzeleri küçük küp doğra.",
+   "Soğanı zeytinyağında kavur, salçayı ekle.",
+   "Havuç ve patatesi ekleyip 3 su bardağı sıcak suyla 10 dakika pişir.",
+   "Kabak ve şehriyeyi ekleyip 8-10 dakika daha pişir; ekmekle servis et."], artan=True)
+t("domates_corbasi", "Şehriyeli domates çorbası", ["ana"], 25,
+  {"domates": 250, "sehriye": 25, "salca": 10, "un": 8, "tereyagi": 8, "sut": 50, "kasar": 15, "tuz_baharat": 1},
+  ["Domatesleri rendele (kabukları elinde kalsın).",
+   "Tereyağında unu 1 dakika kavur, salçayı ekle.",
+   "Domates ve 2 su bardağı sıcak suyu çırparak ekle; 10 dakika kaynat.",
+   "Şehriyeyi ekleyip 6-7 dakika pişir, sütü ekleyip ocaktan al.",
+   "Rendelenmiş kaşarla servis et."], artan=True)
+t("sehriyeli_tavuk_corbasi", "Şehriyeli tavuk çorbası", ["ana"], 35,
+  {"tavuk_gogus": 100, "sehriye": 30, "havuc": 30, "limon": 10, "tereyagi": 4, "tam_bugday_ekmegi": 50, "tuz_baharat": 1},
+  ["Tavuğu 4 su bardağı suda 20 dakika haşla, çıkarıp didikle.",
+   "Tavuk suyuna rendelenmiş havucu ve şehriyeyi ekleyip 8 dakika pişir.",
+   "Tavuğu geri ekle, tereyağı ve karabiberle tatlandır.",
+   "Limonla servis et."], artan=True)
+t("patates_oturtma", "Fırında kıymalı patates oturtma", ["ana"], 45,
+  {"patates": 250, "dana_kiyma": 70, "domates": 80, "kapya_biber": 40, "sogan": 25, "salca": 8, "zeytinyagi": 5,
+   "tuz_baharat": 1},
+  ["Patatesleri yarım cm kalınlığında dilimle, yağ ve tuzla harmanlayıp fırında 15 dakika ön pişir.",
+   "Kıymayı soğan ve biberle kavur, salça ve rendelenmiş domatesi ekleyip 5 dakika pişir.",
+   "Patatesleri fırın kabına diz, üzerine kıymalı harcı yay.",
+   "Yarım su bardağı sıcak su gezdirip 200 derecede 20 dakika (airfryer'da 180 derecede 12 dk) pişir."], artan=True)
+t("firin_makarna", "Fırında yumurtalı peynirli makarna", ["ana"], 35,
+  {"makarna": 80, "yumurta": 55, "sut": 100, "beyaz_peynir": 30, "kasar": 25, "tereyagi": 5, "tuz_baharat": 1},
+  ["Makarnayı haşlayıp süz, tereyağıyla karıştır.",
+   "Yumurta, süt, ufalanmış beyaz peynir ve karabiberi çırp.",
+   "Makarnayı yağlanmış fırın kabına yay, sosu üzerine dök.",
+   "Kaşarı serpip 190 derecede 20 dakika (airfryer'da 170 derecede 12 dk) üzeri kızarana kadar pişir.",
+   "10 dakika dinlendirip dilimle."], artan=True)
+t("firin_karniyarik", "Fırında karnıyarık", ["ana"], 50,
+  {"patlican": 250, "dana_kiyma": 70, "domates": 80, "sivri_biber": 30, "sogan": 25, "salca": 8, "zeytinyagi": 8,
+   "tuz_baharat": 1},
+  ["Patlıcanları alacalı soy, tuzlu suda 15 dakika beklet ve kurula.",
+   "Üzerlerine fırçayla zeytinyağı sürüp 200 derecede 20 dakika (airfryer'da 15 dk) yumuşayana kadar pişir.",
+   "Kıymayı soğan, biber ve rendelenmiş domatesle kavurup harç yap.",
+   "Patlıcanları ortadan yarıp harcı doldur, üzerlerine domates ve biber dilimi koy.",
+   "Salçalı su gezdirip 200 derecede 15 dakika daha pişir."], artan=True)
+t("biber_dolmasi", "Bulgurlu kıymalı biber dolması", ["ana"], 60,
+  {"kapya_biber": 200, "dana_kiyma": 50, "bulgur": 40, "domates": 60, "sogan": 25, "salca": 10, "zeytinyagi": 5,
+   "yogurt": 80, "tuz_baharat": 1},
+  ["Biberlerin tepesini kapak gibi kes, çekirdeklerini çıkar.",
+   "Kıyma, bulgur, rendelenmiş soğan ve domates, salça, nane, karabiber ve tuzu yoğurarak harç yap.",
+   "Biberleri harçla 3/4 oranında doldur, kapaklarını kapat.",
+   "Tencereye dik dizip yarısına kadar sıcak su ekle, kısık ateşte 40 dakika pişir.",
+   "Yoğurtla servis et."], artan=True)
+t("nohutlu_tavuk", "Nohutlu tavuk yemeği", ["ana"], 45,
+  {"tavuk_but": 150, "nohut": 40, "domates": 80, "sogan": 30, "salca": 8, "zeytinyagi": 6, "tuz_baharat": 1},
+  ["Nohudu önceden ıslatıp haşla.",
+   "Tavuğu kuşbaşı doğrayıp tencerede mühürle.",
+   "Soğan, salça ve rendelenmiş domatesi ekleyip 3 dakika pişir.",
+   "Nohut ve 1 su bardağı sıcak suyu ekle; kısık ateşte 25 dakika pişir."], artan=True)
+t("mercimekli_bulgur_pilavi", "Mercimekli bulgur pilavı", ["ana"], 35,
+  {"bulgur": 70, "yesil_mercimek": 40, "sogan": 40, "tereyagi": 6, "zeytinyagi": 4, "yogurt": 80, "tuz_baharat": 1},
+  ["Yeşil mercimeği 15 dakika ön haşla, süz.",
+   "Soğanı yemeklik doğrayıp yağlarda iyice kızart; yarısını süslemek için ayır.",
+   "Bulgur ve mercimeği ekleyip 2 dakika kavur, 1,5 su bardağı sıcak su ve tuz ekle.",
+   "Kısık ateşte suyunu çekene kadar 15 dakika pişir, 10 dakika demlendir.",
+   "Kızarmış soğan ve yoğurtla servis et."], artan=True)
+t("kiymali_kuru_fasulye", "Kıymalı kuru fasulye", ["ana"], 70,
+  {"kuru_fasulye": 70, "dana_kiyma": 40, "sogan": 40, "salca": 12, "biber_salcasi": 5, "tuz_baharat": 1},
+  ["Fasulyeyi bir gece önceden ıslat, 30 dakika (düdüklüde 10 dk) ön haşla.",
+   "Kıymayı kavur, soğanı ekleyip pembeleştir; salçaları ekle.",
+   "Fasulye ve üzerini geçecek kadar sıcak suyu ekle.",
+   "Kısık ateşte fasulyeler yumuşayana kadar 30-40 dakika pişir."], artan=True)
+t("mantarli_yogurtlu_makarna", "Mantarlı yoğurtlu makarna", ["ana"], 20,
+  {"makarna": 80, "mantar": 120, "yogurt": 100, "sarimsak": 3, "tereyagi": 6, "tuz_baharat": 1},
+  ["Makarnayı tuzlu suda haşla.",
+   "Mantarları dilimleyip tereyağında suyunu çekene kadar yüksek ateşte sotele.",
+   "Yoğurdu ezilmiş sarımsak ve tuzla karıştır.",
+   "Makarnayı tabağa al, yoğurdu ve mantarları üzerine ekle; pul biber serp."])
+t("ispanakli_kiymali_borek_lavas", "Kıymalı ıspanaklı lavaş sarma", ["ana"], 30,
+  {"lavas": 75, "ispanak": 120, "dana_kiyma": 60, "sogan": 25, "yogurt": 60, "yumurta": 20, "tuz_baharat": 1},
+  ["Kıymayı soğanla kavur, kıyılmış ıspanağı ekleyip sönene kadar pişir; tuz ve karabiber ekle.",
+   "Lavaşı ikiye kes, harcı uzun kenar boyunca yay ve rulo sar.",
+   "Yumurtayı çırpıp ruloların üzerine sür.",
+   "Airfryer'da 180 derecede 8-10 dakika (fırında 200 derecede 15 dk) kızarana kadar pişir; yoğurtla servis et."])
+t("kabak_yemegi", "Kıymalı kabak yemeği", ["ana"], 30,
+  {"kabak": 250, "dana_kiyma": 50, "domates": 80, "sogan": 25, "pirinc": 15, "salca": 6, "yogurt": 80, "tuz_baharat": 1},
+  ["Kabağı yarım ay doğra.",
+   "Kıymayı soğanla kavur, salça ve rendelenmiş domatesi ekle.",
+   "Kabak ve pirinci ekleyip yarım su bardağı sıcak su ilave et.",
+   "Kapağı kapalı, kısık ateşte 15-20 dakika pişir; yoğurtla servis et."], artan=True)
+t("taze_fasulye_kiymali", "Kıymalı taze fasulye", ["ana"], 40,
+  {"taze_fasulye": 220, "dana_kiyma": 50, "domates": 80, "sogan": 25, "salca": 6, "tam_bugday_ekmegi": 50,
+   "tuz_baharat": 1},
+  ["Fasulyelerin uçlarını kesip ikiye böl.",
+   "Kıymayı soğanla kavur, salça ve rendelenmiş domatesi ekle.",
+   "Fasulyeyi ekleyip yarım su bardağı sıcak su ilave et.",
+   "Kapağı kapalı, kısık ateşte 30 dakika pişir."], artan=True)
+t("lahana_salatali_tavuk", "Lahana salatalı ızgara tavuk", ["ana"], 25,
+  {"tavuk_gogus": 150, "beyaz_lahana": 120, "havuc": 40, "limon": 15, "zeytinyagi": 10, "tam_bugday_ekmegi": 50,
+   "tuz_baharat": 1},
+  ["Tavuğu ince açıp kekik, pul biber ve tuzla ov.",
+   "Kızgın tavada her yüzünü 4-5 dakika pişir (airfryer'da 190 derecede 12 dk).",
+   "Lahanayı ince kıy, havucu rendele; tuzla ovup limon ve zeytinyağıyla karıştır.",
+   "Dilimlenmiş tavuğu salata ve ekmekle servis et."])
+t("firin_sebzeli_kofte", "Fırında sebzeli köfte (kabak ve havuç)", ["ana"], 40,
+  {"dana_kiyma": 100, "kabak": 120, "havuc": 60, "sogan": 20, "patates": 100, "yumurta": 15, "tuz_baharat": 1},
+  ["Kıymayı rendelenmiş soğan, yumurta, kimyon ve tuzla yoğurup köfte yap.",
+   "Kabak, havuç ve patatesi iri doğrayıp tepsiye yay, araya köfteleri diz.",
+   "Üzerine az su gezdirip 200 derecede 30 dakika (airfryer'da 190 derecede 18 dk) pişir."], artan=True)
+
+# ---------------- ARA ÖĞÜNLER / TATLILAR ----------------
+t("sutlac", "Ballı fırın sütlaç", ["ara"], 45,
+  {"pirinc": 20, "sut": 200, "bal": 15, "un": 4},
+  ["Pirinci 1 su bardağı suda yumuşayana kadar 15 dakika haşla.",
+   "Sütü ekleyip kaynat; unu az soğuk sütle açıp karıştırarak ekle.",
+   "Kısık ateşte karıştırarak 10 dakika koyulaşana kadar pişir, ocaktan alıp balı ekle.",
+   "Kaselere paylaştır; isteğe göre fırında üstü kızarana kadar 5 dakika tut.",
+   "Soğutup tarçınla servis et."], artan=True, aralik=(0.75, 1.5))
+t("irmik_helvasi", "Cevizli irmik helvası (az şekerli)", ["ara"], 25,
+  {"irmik": 30, "tereyagi": 8, "sut": 100, "bal": 12, "ceviz": 8},
+  ["İrmiği tereyağında, sürekli karıştırarak 10-12 dakika rengi açık kahve olana kadar kavur.",
+   "Kırılmış cevizi ekleyip 1 dakika daha kavur.",
+   "Ilıtılmış süt ve balı ekleyip karıştır; kapağı kapalı 10 dakika demlendir.",
+   "Ilık servis et."], aralik=(0.5, 1.5))
+t("havuc_tarator", "Havuç tarator", ["ara", "yan"], 15,
+  {"havuc": 120, "yogurt": 120, "ceviz": 10, "sarimsak": 2, "zeytinyagi": 5},
+  ["Havucu rendele, zeytinyağında 4-5 dakika yumuşayana kadar sotele ve soğut.",
+   "Yoğurdu ezilmiş sarımsak ve tuzla çırp.",
+   "Havuç ve kırılmış cevizi ekleyip karıştır, soğuk servis et."], aralik=(0.5, 1.5))
+t("lorlu_domates", "Lorlu domates dilimleri", ["ara"], 5,
+  {"lor": 80, "domates": 150, "zeytinyagi": 5, "tuz_baharat": 1},
+  ["Domatesi kalın dilimle.", "Üzerine loru ufala, kekik ve pul biber serp.", "Zeytinyağı gezdirip servis et."],
+  aralik=(0.5, 1.5))
+t("muzlu_kefir", "Tarçınlı muzlu kefir", ["ara"], 3,
+  {"kefir": 200, "muz": 80},
+  ["Muzu çatalla ez.", "Kefirle iyice karıştır (blender varsa çek), tarçın serpip iç."], aralik=(0.5, 1.5))
+
+# ---------------- YANLAR ----------------
+t("sehriyeli_pilav", "Şehriyeli pirinç pilavı", ["yan"], 25,
+  {"pirinc": 55, "sehriye": 10, "tereyagi": 6, "tuz_baharat": 1},
+  ["Pirinci ılık tuzlu suda 15 dakika beklet ve süz.",
+   "Tereyağında şehriyeyi rengi kızarana kadar kavur.",
+   "Pirinci ekleyip 2 dakika çevir, 1,5 katı sıcak su ekle.",
+   "Kısık ateşte suyunu çekene kadar pişir, 10 dakika demlendir."], artan=True)
+t("bezelyeli_pilav", "Bezelyeli pirinç pilavı", ["yan"], 25,
+  {"pirinc": 50, "bezelye": 40, "tereyagi": 6, "tuz_baharat": 1},
+  ["Pirinci ılık tuzlu suda 15 dakika beklet ve süz.",
+   "Tereyağında pirinci 2 dakika kavur, bezelyeyi ekle.",
+   "1,5 katı sıcak su ve tuz ekleyip kısık ateşte suyunu çekene kadar pişir; 10 dakika demlendir."], artan=True)
+t("lahana_salatasi", "Havuçlu lahana salatası", ["yan"], 10,
+  {"beyaz_lahana": 150, "havuc": 40, "limon": 10, "zeytinyagi": 6, "tuz_baharat": 1},
+  ["Lahanayı çok ince kıy, tuzla ovarak 5 dakika beklet (yumuşar).",
+   "Havucu rendeleyip ekle.",
+   "Limon ve zeytinyağıyla karıştırıp servis et."])
+t("patates_salatasi", "Patates salatası", ["yan"], 25,
+  {"patates": 180, "sogan": 20, "maydanoz": 10, "limon": 10, "zeytinyagi": 8, "tuz_baharat": 1},
+  ["Patatesleri kabuklu haşla (20 dk), soyup küp doğra.",
+   "İnce doğranmış soğan ve maydanozu ekle.",
+   "Limon, zeytinyağı, pul biber ve tuzla karıştırıp ılık ya da soğuk servis et."])
+t("firin_patlican_salatasi", "Fırında patlıcan salatası", ["yan"], 35,
+  {"patlican": 200, "yogurt": 80, "sarimsak": 3, "zeytinyagi": 6, "tuz_baharat": 1},
+  ["Patlıcanları çatalla birkaç yerinden del; 220 derecede 30 dakika (airfryer'da 200 derecede 20 dk) közle.",
+   "Ilıyınca kabuklarını soyup bıçakla doğra.",
+   "Yoğurt, ezilmiş sarımsak, zeytinyağı ve tuzla karıştır."])
+
 # ---------------- MEVCUT TARİFLERİN AYRINTILI ADIMLARI ----------------
 # İlk 44 tarifin 2-3 satırlık kısa notları, uygulanabilir tarif adımlarıyla değiştirildi.
 AYRINTILI = {
@@ -805,6 +1106,17 @@ EKIPMAN = {
     "kefirli_muz_smoothie": [["blender"]], "yogurtlu_yulaf": PISIRMESIZ, "peynir_ceviz": PISIRMESIZ,
     "tarcinli_elma": [["airfryer"], ["firin"], ["mikrodalga"]], "tahinli_muz": PISIRMESIZ,
     "airfryer_patates": [["airfryer"], ["firin"]], "mevsim_salatasi": PISIRMESIZ,
+    # 18.11.2026 tarifleri
+    "kasarli_mantarli_tost": [["tost_makinesi"], ["ocak"], ["airfryer"]],
+    "elmali_tarcinli_yulaf": [["ocak"], ["mikrodalga"]], "zeytinli_kahvalti_salatasi": OCAK,
+    "fistikli_yogurt_kasesi": PISIRMESIZ, "sebzeli_yumurta_tava": [["airfryer"], ["firin"]],
+    "etsiz_cig_kofte": [["ocak"], ["mikrodalga"]],          # sadece sıcak su gerekiyor
+    "tavuk_sis": [["airfryer"], ["firin"]], "patates_oturtma": [["ocak", "firin"], ["ocak", "airfryer"]],
+    "firin_makarna": [["ocak", "firin"], ["ocak", "airfryer"]], "firin_karniyarik": [["ocak", "firin"], ["ocak", "airfryer"]],
+    "ispanakli_kiymali_borek_lavas": [["ocak", "airfryer"], ["ocak", "firin"]],
+    "lahana_salatali_tavuk": [["ocak"], ["airfryer"]], "firin_sebzeli_kofte": [["firin"], ["airfryer"]],
+    "sutlac": OCAK, "lorlu_domates": PISIRMESIZ, "muzlu_kefir": PISIRMESIZ, "lahana_salatasi": PISIRMESIZ,
+    "firin_patlican_salatasi": [["firin"], ["airfryer"]],
 }
 for _t in T:
     # "af_" ile başlayanlar: ocak gerektirmeyen airfryer / fırın tarifleri

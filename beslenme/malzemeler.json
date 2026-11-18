@@ -852,6 +852,113 @@
   "dolapta": false
  },
  {
+  "id": "beyaz_lahana",
+  "ad": "Beyaz lahana",
+  "kategori": "sebze",
+  "kcal": 25,
+  "protein": 1.3,
+  "karb": 5.8,
+  "yag": 0.1,
+  "lif": 2.5,
+  "arama": [
+   "lahana",
+   "beyaz lahana"
+  ],
+  "paket_g": null,
+  "dolapta": false
+ },
+ {
+  "id": "pirasa",
+  "ad": "Pırasa",
+  "kategori": "sebze",
+  "kcal": 61,
+  "protein": 1.5,
+  "karb": 14,
+  "yag": 0.3,
+  "lif": 1.8,
+  "arama": [
+   "pırasa"
+  ],
+  "paket_g": null,
+  "dolapta": false
+ },
+ {
+  "id": "bezelye",
+  "ad": "Bezelye",
+  "kategori": "sebze",
+  "kcal": 77,
+  "protein": 5.2,
+  "karb": 13.6,
+  "yag": 0.4,
+  "lif": 4.5,
+  "arama": [
+   "bezelye"
+  ],
+  "paket_g": 450,
+  "dolapta": false
+ },
+ {
+  "id": "irmik",
+  "ad": "İrmik",
+  "kategori": "tahil",
+  "kcal": 360,
+  "protein": 12.7,
+  "karb": 73,
+  "yag": 1.1,
+  "lif": 3.9,
+  "arama": [
+   "irmik"
+  ],
+  "paket_g": 500,
+  "dolapta": false
+ },
+ {
+  "id": "sehriye",
+  "ad": "Şehriye",
+  "kategori": "tahil",
+  "kcal": 371,
+  "protein": 13,
+  "karb": 75,
+  "yag": 1.5,
+  "lif": 3,
+  "arama": [
+   "şehriye",
+   "arpa şehriye"
+  ],
+  "paket_g": 500,
+  "dolapta": false
+ },
+ {
+  "id": "biber_salcasi",
+  "ad": "Biber salçası",
+  "kategori": "diger",
+  "kcal": 70,
+  "protein": 3,
+  "karb": 12,
+  "yag": 1,
+  "lif": 4,
+  "arama": [
+   "biber salçası"
+  ],
+  "paket_g": 650,
+  "dolapta": false
+ },
+ {
+  "id": "eriste",
+  "ad": "Erişte",
+  "kategori": "tahil",
+  "kcal": 370,
+  "protein": 13,
+  "karb": 72,
+  "yag": 2.5,
+  "lif": 3,
+  "arama": [
+   "erişte"
+  ],
+  "paket_g": 500,
+  "dolapta": false
+ },
+ {
   "id": "tuz_baharat",
   "ad": "Tuz ve baharatlar",
   "kategori": "dolap",

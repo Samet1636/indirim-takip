@@ -63,6 +63,14 @@ M = [
  ("kinoa","Kinoa (kuru)","tahil",368,14.1,64,6.1,7.0,["kinoa"],250,False),
  ("lavas","Lavaş","tahil",290,9.0,50,6.0,3.0,["lavaş","tortilla"],390,False),
  ("barbunya","Barbunya (kuru)","bakliyat",333,23,60,1.2,15,["barbunya"],1000,False),
+ # 18.11.2026 eklenenler (Türk ev yemekleri çeşitliliği; üç markette de bulunanlar)
+ ("beyaz_lahana","Beyaz lahana","sebze",25,1.3,5.8,0.1,2.5,["lahana","beyaz lahana"],None,False),
+ ("pirasa","Pırasa","sebze",61,1.5,14,0.3,1.8,["pırasa"],None,False),
+ ("bezelye","Bezelye","sebze",77,5.2,13.6,0.4,4.5,["bezelye"],450,False),
+ ("irmik","İrmik","tahil",360,12.7,73,1.1,3.9,["irmik"],500,False),
+ ("sehriye","Şehriye","tahil",371,13,75,1.5,3,["şehriye","arpa şehriye"],500,False),
+ ("biber_salcasi","Biber salçası","diger",70,3,12,1,4,["biber salçası"],650,False),
+ ("eriste","Erişte","tahil",370,13,72,2.5,3,["erişte"],500,False),
  # dolapta olduğu varsayılanlar: haftalık alışverişe girmez, besin değeri ihmal edilir
  ("tuz_baharat","Tuz ve baharatlar","dolap",0,0,0,0,0,[],None,True),
 ]
