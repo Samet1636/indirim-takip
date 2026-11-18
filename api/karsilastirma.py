@@ -38,6 +38,7 @@ EN_FAZLA_KALEM = 40
 TOLERANS = 0.25        # istenen miktarın en az %75'ini karşılayan paket sayısı yeterli
 
 _DIZIN: Optional[Dict[str, str]] = None
+_ARAMA_ONBELLEK: Dict[tuple, tuple] = {}     # (katalog kimliği, sorgu) -> (katalog, eşleşen ürünler)
 
 
 def _malzeme_dizini() -> Dict[str, str]:
@@ -152,7 +153,15 @@ def adaylar(sorgu: str, katalog: List[dict], cesit: Optional[str] = None
         kelimeler = [t for t in re.findall(r"[a-z0-9]+", nq) if len(t) >= 2]
         if not kelimeler:
             return [], None
-        bulunan = [p for p in katalog if _kelime_eslesir(kelimeler, norm_ad(p["name"]).split())]
+        anahtar = (id(katalog), " ".join(kelimeler))
+        kayit = _ARAMA_ONBELLEK.get(anahtar)
+        if kayit is not None and kayit[0] is katalog:
+            bulunan = kayit[1]
+        else:                          # çeşit değiştirince tüm katalog yeniden taranmasın
+            bulunan = [p for p in katalog if _kelime_eslesir(kelimeler, norm_ad(p["name"]).split())]
+            if len(_ARAMA_ONBELLEK) >= 200:
+                _ARAMA_ONBELLEK.clear()
+            _ARAMA_ONBELLEK[anahtar] = (katalog, bulunan)   # katalog referansı: id yeniden kullanılamaz
     if cesit:
         c = norm(cesit)
         bulunan = [p for p in bulunan if c in norm_ad(p["name"]).split()]
