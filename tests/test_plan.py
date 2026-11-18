@@ -98,6 +98,29 @@ def test_sure_dolsa_da_sepet_sisirilmez(monkeypatch):
         assert x["adet"] * 500 < ihtiyac[x["malzeme"]] + 500 + 25, x     # en fazla 1 paket yuvarlama payı
 
 
+def test_urunu_olmayan_malzeme_plani_bozmaz(monkeypatch):
+    # 18.11.2026 bulut hatası: bir malzemenin katalogda hiç ürünü yoksa min() boş listede çöküyordu
+    def eksikli_adaylar(katalog, malzemeler, marketler, her_market=3):
+        return {mid: [{"market": "sok", "name": f"{mid} Kg", "price": 100.0, "miktar_g": 1000.0, "tl_kg": 100.0,
+                       "acik_satis": True, "regular_price": None}]
+                for mid in malzemeler if mid not in ("eriste", "kinoa", "lavas")}
+    monkeypatch.setattr(plan, "urun_adaylari", eksikli_adaylar)
+    kisi = dict(kilo=75, boy=178, yas=23, cinsiyet="erkek", aktivite="orta", hedef="koru")
+    s = plan.coz([], kisi, max_market=1, sure_siniri=20)
+    assert "plan" in s, s
+    malz, tarifler = plan.tarif_ozet.yukle()
+    tarif = {t["id"]: t for t in tarifler}
+    for gun in s["plan"]:                                # fiyatı olmayan malzemeli tarif plana girmez
+        for o in gun["ogunler"]:
+            assert not {"eriste", "kinoa", "lavas"} & {x["malzeme"] for x in tarif[o["tarif"]]["malzemeler"]}
+
+
+def test_urun_adaylari_bos_malzemeyi_atlar():
+    sonuc = plan.urun_adaylari([{"market": "sok", "name": "Domates Kg", "price": 30.0, "category": None}],
+                               {"domates", "eriste"}, None)
+    assert "domates" in sonuc and "eriste" not in sonuc
+
+
 def test_tek_ekipmanla_plan_cikabilir():
     # Sadece airfryer ya da sadece fırın (vejetaryen + 30 dk dahil) haftayı dolduracak kadar tarif bırakmalı
     malz, tarifler = plan.tarif_ozet.yukle()

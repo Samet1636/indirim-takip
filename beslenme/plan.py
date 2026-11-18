@@ -98,7 +98,8 @@ def urun_adaylari(katalog: list[dict], malzemeler: set[str], marketler: set[str]
         for p in secilen:
             # adı rakam içermeyen "Kg" ürünleri tartıyla satılır -> istenen miktar kadar alınabilir
             p["acik_satis"] = p["miktar_g"] == 1000 and not re.search(r"\d", norm(p["name"]))
-        out[mid] = secilen
+        if secilen:          # hiç ürünü olmayan malzeme listeye girmesin (o malzemeyi kullanan tarifler elenir)
+            out[mid] = secilen
     return out
 
 
@@ -219,6 +220,8 @@ def coz(katalog, kisi: dict, paket: str = "ekonomik", max_market: int = 2, marke
         for m in {u["market"] for us in U.values() for u in us}:
             z[m] = pulp.LpVariable(f"z_{m}", cat="Binary")
         for mid, us in U.items():
+            if not us:       # güvenlik: ürünü olmayan malzeme (tarifleri zaten elendi)
+                continue
             ihtiyac = pulp.lpSum(v * x["gram"] for (_, _, tt), v in p.items()
                                  for x in T[tt]["malzemeler"] if x["malzeme"] == mid)
             alinan = []
