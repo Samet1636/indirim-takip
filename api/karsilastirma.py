@@ -55,10 +55,20 @@ def _malzeme_dizini() -> Dict[str, str]:
     return _DIZIN
 
 
+_YUMUSAMA = {"k": "g", "p": "b", "t": "d", "c": "c"}      # ekmek -> ekmeği, kitap -> kitabı (normda ğ -> g)
+
+
 def _kelime_var(t: str, kelimeler: List[str]) -> bool:
     """Kelimenin kendisi ya da iyelik/çoğul ekli hali: 'kahve' -> 'kahvesi' evet, 'kahverengi' hayır;
-    'sut' -> 'sutlu' hayır; 'deterjan' -> 'deterjani' evet."""
-    return any(w == t or (w.startswith(t) and IYELIK.fullmatch(w[len(t):])) for w in kelimeler)
+    'sut' -> 'sutlu' hayır; 'deterjan' -> 'deterjani' evet; 'ekmek' -> 'ekmegi' (ünsüz yumuşaması) evet."""
+    yumusak = t[:-1] + _YUMUSAMA[t[-1]] if len(t) > 3 and t[-1] in _YUMUSAMA else None
+    for w in kelimeler:
+        if w == t or (w.startswith(t) and IYELIK.fullmatch(w[len(t):])):
+            return True
+        if yumusak and w.startswith(yumusak) and len(w) > len(yumusak) and w[len(yumusak)] in "iu" \
+                and IYELIK.fullmatch(w[len(yumusak):]):
+            return True
+    return False
 
 
 _SAYI_RE = re.compile(r"(\d+)\s*'?\s*(?:li|lu|adet)\b")
@@ -83,7 +93,10 @@ def _acik_satis(urun: dict, q: float, birim: str) -> bool:
 # "Çikolata Kaplı Gofret", "Peynir Aromalı Cips", "Kahve Dolgulu Çikolata"
 _YAN_URUN = {"kapli", "kaplamali", "dolgulu", "aromali", "aroma", "parcali", "parcacikli", "soslu", "kremali",
              "karisimi", "tozu", "cicegi", "fincani", "bardagi", "kasigi", "demlik", "demligi", "kutusu",
-             "kabi", "seti", "makinesi", "ezmeli", "fistik", "findik", "badem"}
+             "kabi", "seti", "makinesi", "ezmeli", "fistik", "findik", "badem", "unu", "kitiri", "ustu",
+             "kirintisi", "mayasi"}
+# Belirli aramalarda ürünü başka türe çeviren kelimeler (adın herhangi bir yerinde): "Etli Ekmek" bir yemek
+_SORGU_HARIC = {"ekmek": ("etli", "pizza", "surme", "unu", "un", "mayasi", "kirinti")}
 _CESIT_DISI = {"karsi", "karsiti", "etkili", "icin", "ile", "ve", "the", "and"}   # çeşit adı olamayacak kelimeler
 
 
@@ -111,7 +124,8 @@ def _kelime_eslesir(kelimeler_sorgu: List[str], kelimeler_urun: List[str]) -> bo
     return (all(_kelime_var(t, kelimeler_urun) for t in kelimeler_sorgu)
             and not _yan_urun_mu(kelimeler_sorgu[-1], kelimeler_urun)
             and not any(_kelime_var(b, kelimeler_urun) for b in _BASKA_TUR
-                        if not any(t.startswith(b[:4]) for t in kelimeler_sorgu)))
+                        if not any(t.startswith(b[:4]) for t in kelimeler_sorgu))
+            and not any(h in kelimeler_urun for t in kelimeler_sorgu for h in _SORGU_HARIC.get(t, ())))
 
 
 def cesitler(bulunan: List[Tuple[dict, float, str]], sorgu: str, en_fazla: int = 8) -> List[dict]:
@@ -121,7 +135,7 @@ def cesitler(bulunan: List[Tuple[dict, float, str]], sorgu: str, en_fazla: int =
     if not sorgu_k:
         return []
     sayac: Counter = Counter()
-    etiket: Dict[str, str] = {}
+    etiketler: Dict[str, Counter] = {}
     for p, _, _ in bulunan:
         asil = p["name"].split()
         w = [re.sub(r"[^a-z0-9]", "", norm(x)) for x in asil]
@@ -129,12 +143,33 @@ def cesitler(bulunan: List[Tuple[dict, float, str]], sorgu: str, en_fazla: int =
             if _kelime_var(sorgu_k[-1], [w[i]]):
                 once = w[i - 1]
                 if len(once) >= 3 and once.isalpha() and once not in sorgu_k and once not in _CESIT_DISI:
-                    sayac[once] += 1
-                    etiket.setdefault(once, f"{_temiz(asil[i - 1])} {_temiz(asil[i])}")
+                    cid, bas = _cesit_koku(once), i - 1
+                    if i >= 3 and w[i - 2] in _IKILI_ON:            # "Tam Buğday Ekmeği", "Çok Tahıllı"
+                        cid, bas = f"{w[i - 2]} {cid}", i - 2
+                    sayac[cid] += 1
+                    etiketler.setdefault(cid, Counter())[" ".join(_temiz(x) for x in asil[bas:i + 1])] += 1
                 break
-    if "arada" in etiket:
-        etiket["arada"] = "3'ü 1 Arada"
-    return [{"id": c, "ad": etiket[c], "adet": n} for c, n in sayac.most_common(en_fazla) if n >= 3]
+    # Çipte yazan sayı, çeşit seçilince gelecek ürün sayısıyla aynı olsun ("Çavdarlı Tava Ekmeği" de çavdar)
+    adlar = [[re.sub(r"[^a-z0-9]", "", norm(x)) for x in p["name"].split()] for p, _, _ in bulunan]
+    adet = {c: sum(_cesit_uyar(c, a) for a in adlar) for c, n in sayac.items() if n >= 2}
+    out = [{"id": c, "ad": "3'ü 1 Arada" if c == "arada" else etiketler[c].most_common(1)[0][0], "adet": n}
+           for c, n in adet.items() if 3 <= n < len(bulunan)]
+    return sorted(out, key=lambda x: -sayac[x["id"]])[:en_fazla]   # asıl tür olanlar ("Kaşar Peyniri") önce
+
+
+_IKILI_ON = {"tam", "cok", "eksi", "bol"}       # iki kelimelik çeşitlerin ilk kelimesi
+
+
+def _cesit_koku(w: str) -> str:
+    """'cavdarli' -> 'cavdar', 'kepekli' -> 'kepek': ekli ve eksiz hali aynı çeşit sayılır."""
+    k = re.sub(r"l[iu]$", "", w)
+    return k if len(k) >= 3 else w
+
+
+def _cesit_uyar(cesit: str, kelimeler: List[str]) -> bool:
+    """Ürün adı çeşidin bütün kelimelerini (ekli halleri dahil: çavdar -> çavdarlı) içeriyor mu?"""
+    return all(any(w == c or (w.startswith(c) and re.fullmatch(r"l[iu]|s?[iu]|n?in|ler|lar", w[len(c):]))
+                   for w in kelimeler) for c in cesit.split())
 
 
 def _temiz(s: str) -> str:
@@ -164,7 +199,8 @@ def adaylar(sorgu: str, katalog: List[dict], cesit: Optional[str] = None
             _ARAMA_ONBELLEK[anahtar] = (katalog, bulunan)   # katalog referansı: id yeniden kullanılamaz
     if cesit:
         c = norm(cesit)
-        bulunan = [p for p in bulunan if c in norm_ad(p["name"]).split()]
+        bulunan = [p for p in bulunan
+                   if _cesit_uyar(c, [re.sub(r"[^a-z0-9]", "", norm(x)) for x in p["name"].split()])]
     out = []
     for p in bulunan:
         q, u = urun_miktari(p["name"])

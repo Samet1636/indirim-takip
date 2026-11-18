@@ -94,6 +94,38 @@ def test_kahve_aramasi_yan_urunleri_almaz_ve_cesit_sunar():
     assert k.karsilastir("gofret", KAHVE)["toplam"] == 1                      # aranan türse elenmez
 
 
+EKMEK = [{"market": m, "name": ad, "price": fiyat} for m, ad, fiyat in (
+    ("sok", "Uno Anadolu Tost Ekmeği 550 g", 50.0),               # ünsüz yumuşaması: ekmek -> ekmeği
+    ("migros", "Uno Büyük Tost Ekmeği 550 G", 55.0),
+    ("a101", "Nimet Tost Ekmek 550 G", 40.0),
+    ("a101", "Nimet Tam Buğday Ekmeği 350 G", 35.0),
+    ("sok", "Uno Anadolu Tam Buğday Ekmeği 350 g", 45.0),
+    ("migros", "İhe Tam Buğday Ekmeği 400 G", 60.0),
+    ("migros", "İyilik Çavdarlı Ekmek 400 G", 63.0),
+    ("migros", "Untad Çavdar Ekmeği 500 G", 120.0),
+    ("sok", "Uno Anadolu Çavdarlı Tava Ekmegi 450 g", 82.0),
+    ("migros", "Schar Mix B Glutensiz Ekmek Unu 1 Kg", 300.0),     # un, ekmek değil
+    ("a101", "Onefis Etli Ekmek Dondurulmuş 440 G", 150.0),        # yemek
+    ("sok", "Ülker Sürmix Ekmek Üstü Peynirli Çikolatalı Sürme 180 g", 60.0),
+)]
+
+
+def test_ekmek_cesitleri_ve_ekmek_unu():
+    r = k.karsilastir("ekmek", EKMEK)
+    adlar = {u["ad"] for u in r["urunler"]}
+    assert "Uno Anadolu Tost Ekmeği 550 g" in adlar
+    assert not any(x in a for a in adlar for x in ("Unu", "Etli", "Sürme")), adlar
+    assert r["toplam"] == 9
+    cesit = {c["id"]: c for c in r["cesitler"]}
+    assert cesit["tost"]["adet"] == 3
+    assert cesit["tam bugday"]["ad"] == "Tam Buğday Ekmeği" and cesit["tam bugday"]["adet"] == 3
+    assert cesit["cavdar"]["adet"] == 3                     # Çavdar + Çavdarlı tek çeşit
+    assert {u["ad"] for u in k.karsilastir("ekmek", EKMEK, cesit="cavdar")["urunler"]} == {
+        "İyilik Çavdarlı Ekmek 400 G", "Untad Çavdar Ekmeği 500 G", "Uno Anadolu Çavdarlı Tava Ekmegi 450 g"}
+    assert k.karsilastir("ekmek", EKMEK, cesit="tam bugday")["toplam"] == 3
+    assert k._kelime_var("ekmek", ["ekmegi"]) and not k._kelime_var("ekmek", ["ekmegin" + "x"])
+
+
 def test_liste_en_ucuz_market_ve_ikili_oneri():
     r = k.liste_hesapla(["1 L süt", "30 yumurta", "domates 2 kg", "çamaşır deterjanı", "uçan halı"], KATALOG)
     kalem = {x["satir"]: x for x in r["kalemler"]}
