@@ -60,6 +60,40 @@ def test_kelime_aramasi_ekli_halleri_almaz():
     assert k.karsilastir("xyz", KATALOG)["toplam"] == 0
 
 
+KAHVE = [{"market": m, "name": ad, "price": fiyat} for m, ad, fiyat in (
+    ("a101", "Cafex Kahve Beyazlatıcısı 200 G", 50.0),            # kahve değil: beyazlatıcı
+    ("migros", "Kahve Dünyası Tambol Sütlü Çikolata 77 G", 60.0),  # marka adında "Kahve"
+    ("migros", "Galler Yumuşak Kahve Dolgulu Bitter Çikolata 65 G", 70.0),
+    ("a101", "Cafex 3'ü 1 Arada Kahve 500 G", 150.0),
+    ("a101", "Keyfe Türk Kahvesi 100 G", 70.0),
+    ("sok", "Yemeneli Türk Kahvesi 100 g", 70.0),
+    ("migros", "Migros Türk Kahvesi 100 G", 72.0),
+    ("a101", "Cafex Filtre Kahve 250 G", 235.0),
+    ("sok", "Grandeo Filtre Kahve 250 g", 235.0),
+    ("migros", "Caffe Milano Filtre Kahve 500 G", 460.0),
+    ("sok", "Karmen Çikolata Gofret 38 g", 10.0),                  # çikolata aranınca gofret gelmez
+    ("migros", "Ülker Sütlü Çikolata 60 G", 30.0),
+    ("a101", "Eti Sütlü Çikolata 60 G", 28.0),
+    ("sok", "Torku Sütlü Çikolata 60 G", 29.0),
+)]
+
+
+def test_kahve_aramasi_yan_urunleri_almaz_ve_cesit_sunar():
+    r = k.karsilastir("kahve", KAHVE)
+    adlar = {u["ad"] for u in r["urunler"]}
+    assert not any("Beyazlatıcı" in a or "Çikolata" in a for a in adlar), adlar
+    assert r["toplam"] == 7
+    cesit = {c["id"]: c for c in r["cesitler"]}
+    assert cesit["turk"]["ad"] == "Türk Kahvesi" and cesit["turk"]["adet"] == 3
+    assert cesit["filtre"]["ad"] == "Filtre Kahve" and "keyfe" not in cesit   # ilk kelime marka
+    f = k.karsilastir("kahve", KAHVE, cesit="filtre")
+    assert f["cesit"] == "filtre" and f["toplam"] == 3 and all("Filtre" in u["ad"] for u in f["urunler"])
+    assert k.karsilastir("kahve", KAHVE, cesit="olmayan")["cesit"] is None      # bilinmeyen çeşit yok sayılır
+    ck = k.karsilastir("çikolata", KAHVE)
+    assert "Karmen Çikolata Gofret 38 g" not in {u["ad"] for u in ck["urunler"]} and ck["toplam"] == 5
+    assert k.karsilastir("gofret", KAHVE)["toplam"] == 1                      # aranan türse elenmez
+
+
 def test_liste_en_ucuz_market_ve_ikili_oneri():
     r = k.liste_hesapla(["1 L süt", "30 yumurta", "domates 2 kg", "çamaşır deterjanı", "uçan halı"], KATALOG)
     kalem = {x["satir"]: x for x in r["kalemler"]}
@@ -89,6 +123,7 @@ def test_api_uclari(tmp_path, monkeypatch):
     with TestClient(main.uygulama_olustur()) as c:
         assert c.get("/karsilastir", params={"q": "süt"}).json()["marketler"][0]["market"] == "a101"
         assert c.get("/karsilastir", params={"q": "s"}).status_code == 422
+        assert c.get("/karsilastir", params={"q": "süt", "cesit": "yok"}).json()["cesit"] is None
         r = c.post("/liste", json={"kalemler": ["süt", "yumurta"]})
         assert r.status_code == 200 and r.json()["oneri"]["tek"] is not None
         assert c.post("/liste", json={"kalemler": []}).status_code == 422

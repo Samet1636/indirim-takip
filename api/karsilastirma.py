@@ -78,8 +78,72 @@ def _acik_satis(urun: dict, q: float, birim: str) -> bool:
     return birim == "g" and q == 1000 and not re.search(r"\d", norm_ad(urun["name"]))
 
 
-def adaylar(sorgu: str, katalog: List[dict]) -> Tuple[List[Tuple[dict, float, str]], Optional[str]]:
-    """Sorguya uyan ürünler: [(ürün, paket miktarı, birim)], baskın birim."""
+# Aranan kelimeden hemen sonra gelince ürünün asıl kendisini değiştiren kelimeler:
+# "Çikolata Kaplı Gofret", "Peynir Aromalı Cips", "Kahve Dolgulu Çikolata"
+_YAN_URUN = {"kapli", "kaplamali", "dolgulu", "aromali", "aroma", "parcali", "parcacikli", "soslu", "kremali",
+             "karisimi", "tozu", "cicegi", "fincani", "bardagi", "kasigi", "demlik", "demligi", "kutusu",
+             "kabi", "seti", "makinesi", "ezmeli", "fistik", "findik", "badem"}
+_CESIT_DISI = {"karsi", "karsiti", "etkili", "icin", "ile", "ve", "the", "and"}   # çeşit adı olamayacak kelimeler
+
+
+def _yan_urun_mu(t: str, kelimeler: List[str]) -> bool:
+    """Aranan kelime ürünün kendisi değil de bir niteliği mi? Türkçe tamlamada asıl ürün sondadır:
+    'Kahve Beyazlatıcısı', 'Kahve Dünyası' (marka), 'Çay Kurabiyesi' -> kahve/çay değil.
+    Kelimenin YALIN hali iyelik ekli bir kelimeyle (-sı/-su) ya da _YAN_URUN'deki bir kelimeyle
+    devam ediyorsa ürün yan üründür. 'Türk Kahvesi' gibi kelimenin kendisi ekliyse sorun yok."""
+    for i, w in enumerate(kelimeler[:-1]):
+        if w != t:
+            continue
+        sonraki = kelimeler[i + 1]
+        if sonraki in _YAN_URUN or (len(sonraki) > 4 and re.search(r"[aeiou]s[iu]$", sonraki)):
+            return True
+    return False
+
+
+# Adında geçince ürünün başka bir türden olduğunu gösteren kelimeler: "Çikolata" aranınca
+# "Karmen Çikolata Gofret", "Ülker Kek Muz Çikolata" gelmesin. Sorguda geçiyorsa (gofret aranırsa) sayılmaz.
+_BASKA_TUR = ("gofret", "biskuvi", "kek", "kurabiye", "pasta", "dondurma", "puding", "cips", "kraker",
+              "gevrek", "gevregi", "draje", "sos", "surup", "likor", "krep", "waffle", "kruvasan", "helva")
+
+
+def _kelime_eslesir(kelimeler_sorgu: List[str], kelimeler_urun: List[str]) -> bool:
+    return (all(_kelime_var(t, kelimeler_urun) for t in kelimeler_sorgu)
+            and not _yan_urun_mu(kelimeler_sorgu[-1], kelimeler_urun)
+            and not any(_kelime_var(b, kelimeler_urun) for b in _BASKA_TUR
+                        if not any(t.startswith(b[:4]) for t in kelimeler_sorgu)))
+
+
+def cesitler(bulunan: List[Tuple[dict, float, str]], sorgu: str, en_fazla: int = 8) -> List[dict]:
+    """Aramayı daraltmak için çeşitler: aranan kelimenin hemen önündeki kelime
+    ('Filtre Kahve', 'Türk Kahvesi', 'Poşet Çay', 'Kaşar Peyniri'). İlk kelime marka sayılır, alınmaz."""
+    sorgu_k = norm(sorgu).split()
+    if not sorgu_k:
+        return []
+    sayac: Counter = Counter()
+    etiket: Dict[str, str] = {}
+    for p, _, _ in bulunan:
+        asil = p["name"].split()
+        w = [re.sub(r"[^a-z0-9]", "", norm(x)) for x in asil]
+        for i in range(2, len(w)):                # i-1 >= 1: ilk kelime (marka) çeşit olamaz
+            if _kelime_var(sorgu_k[-1], [w[i]]):
+                once = w[i - 1]
+                if len(once) >= 3 and once.isalpha() and once not in sorgu_k and once not in _CESIT_DISI:
+                    sayac[once] += 1
+                    etiket.setdefault(once, f"{_temiz(asil[i - 1])} {_temiz(asil[i])}")
+                break
+    if "arada" in etiket:
+        etiket["arada"] = "3'ü 1 Arada"
+    return [{"id": c, "ad": etiket[c], "adet": n} for c, n in sayac.most_common(en_fazla) if n >= 3]
+
+
+def _temiz(s: str) -> str:
+    return re.sub(r"^[^\w]+|[^\w]+$", "", s)
+
+
+def adaylar(sorgu: str, katalog: List[dict], cesit: Optional[str] = None
+            ) -> Tuple[List[Tuple[dict, float, str]], Optional[str]]:
+    """Sorguya uyan ürünler: [(ürün, paket miktarı, birim)], baskın birim.
+    cesit verilirse ('filtre') adında o kelime de geçen ürünlerle sınırlanır."""
     nq = norm(sorgu)
     mid = _malzeme_dizini().get(nq)
     if mid:
@@ -88,8 +152,10 @@ def adaylar(sorgu: str, katalog: List[dict]) -> Tuple[List[Tuple[dict, float, st
         kelimeler = [t for t in re.findall(r"[a-z0-9]+", nq) if len(t) >= 2]
         if not kelimeler:
             return [], None
-        bulunan = [p for p in katalog
-                   if all(_kelime_var(t, norm_ad(p["name"]).split()) for t in kelimeler)]
+        bulunan = [p for p in katalog if _kelime_eslesir(kelimeler, norm_ad(p["name"]).split())]
+    if cesit:
+        c = norm(cesit)
+        bulunan = [p for p in bulunan if c in norm_ad(p["name"]).split()]
     out = []
     for p in bulunan:
         q, u = urun_miktari(p["name"])
@@ -120,18 +186,24 @@ def miktar_metni(q: float, birim: str) -> str:
     return f"{int(round(q))} {'g' if birim == 'g' else 'ml'}"
 
 
-def karsilastir(sorgu: str, katalog: List[dict], adet: int = 30) -> dict:
-    """Tek ürün karşılaştırması: birim fiyata göre sıralı ürünler ve her marketin en iyisi."""
-    bulunan, birim = adaylar(sorgu, katalog)
+def karsilastir(sorgu: str, katalog: List[dict], adet: int = 30, cesit: Optional[str] = None) -> dict:
+    """Tek ürün karşılaştırması: birim fiyata göre sıralı ürünler ve her marketin en iyisi.
+    'cesitler' aramayı daraltma seçenekleridir (kahve -> Filtre / Türk Kahvesi / Çekirdek...)."""
+    hepsi, _ = adaylar(sorgu, katalog)
+    secenek = cesitler(hepsi, sorgu)
+    if cesit and not any(c["id"] == cesit for c in secenek):
+        cesit = None
+    bulunan, birim = adaylar(sorgu, katalog, cesit) if cesit else (hepsi, _)
     if not bulunan:
-        return {"sorgu": sorgu, "toplam": 0, "marketler": [], "urunler": []}
+        return {"sorgu": sorgu, "toplam": 0, "marketler": [], "urunler": [], "cesitler": [], "cesit": None}
     sirali = sorted(bulunan, key=lambda x: _birim_fiyat(*x))
     en_iyi: Dict[str, dict] = {}
     for p, q, u in sirali:
         en_iyi.setdefault(p["market"], _urun_ozeti(p, q, u))
     marketler = sorted(en_iyi.values(), key=lambda x: x["birim_fiyat"])
     return {"sorgu": sorgu, "birim": BIRIM_AD[birim], "toplam": len(sirali), "marketler": marketler,
-            "urunler": [_urun_ozeti(p, q, u) for p, q, u in sirali[:adet]]}
+            "urunler": [_urun_ozeti(p, q, u) for p, q, u in sirali[:adet]],
+            "cesitler": secenek, "cesit": cesit}
 
 
 # ----------------------------------------------------------------------------- alışveriş listesi

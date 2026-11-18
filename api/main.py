@@ -215,9 +215,10 @@ def uygulama_olustur() -> FastAPI:
         return d
 
     @app.get("/karsilastir")
-    def karsilastir(q: str = Query(..., min_length=2, max_length=60)):
-        """Bir ürünün marketlerdeki fiyatları, birim fiyata (TL/L, TL/kg) göre."""
-        return karsilastirma.karsilastir(q, app.state.katalog.getir())
+    def karsilastir(q: str = Query(..., min_length=2, max_length=60),
+                    cesit: Optional[str] = Query(None, max_length=30)):
+        """Bir ürünün marketlerdeki fiyatları, birim fiyata (TL/L, TL/kg) göre; cesit ile daraltılabilir."""
+        return karsilastirma.karsilastir(q, app.state.katalog.getir(), cesit=cesit)
 
     @app.post("/liste")
     def liste(istek: ListeIstegi):
