@@ -108,6 +108,21 @@ class BimScraper(BaseScraper):
 
     def scrape(self, katalog: bool = False, kategori_limit=None) -> list[Offer]:
         # BİM'in sitesinde fiyatlı tam bir ürün kataloğu yok, sadece aktüel ürünler var.
+        # Tam katalog (--katalog) marketfiyati.org.tr'den gelir (izinli, bkz. scrapers/marketfiyati.py).
+        try:
+            out = self._aktuel()
+        except Exception:
+            log.exception("bim: aktüel sayfası okunamadı")
+            out = []
+        if katalog:
+            from scrapers.marketfiyati import MarketFiyatiKatalog
+            try:
+                out += MarketFiyatiKatalog("bim", dump_dir=self.dump_dir, delay=self.delay).scrape(kategori_limit)
+            except Exception:
+                log.exception("bim: marketfiyati kataloğu okunamadı")
+        return out
+
+    def _aktuel(self) -> list[Offer]:
         html = self.get(AKTUEL_URL).text
         self.dump("aktuel.html", html)
         pages = find_period_links(html) or [(AKTUEL_URL, None)]

@@ -12,7 +12,8 @@ kullanıcıya dönük metinler Türkçe.
 scrapers/            Market scraper'ları (hepsi models.Offer listesi döndürür)
   base.py            Ortak HTTP oturumu, istekler arası gecikme, --dump, parse_tr_price
   migros.py          Migros REST API (rest/search/screens/...), fiyatlar KURUŞ
-  bim.py             BİM aktüel sayfası (HTML). BİM'in fiyatlı tam kataloğu YOK
+  bim.py             BİM aktüel sayfası (HTML); --katalog ile tam katalog marketfiyati.py'den eklenir
+  marketfiyati.py    marketfiyati.org.tr API (TÜBİTAK BİLGEM): BİM'in tüm ürünleri, tek şube (Kızılay'a en yakın)
   sok.py             ŞOK (Next.js RSC). Ürünler: initialSearchResult.results[].product / .prices
   a101.py            A101 Kapıda — Cloudflare korumalı. Playwright + bilgisayardaki Chrome ile
                      Store/search (kampanya) ve Store/listCategoryProducts (kategori) API'lerini dinler
@@ -62,11 +63,11 @@ Paket ekledikten sonra Metro'yu `--clear` ile yeniden başlat (yoksa "Unable to 
    dosyasını GitHub API ile yükler; bu push workflow'u `--no-scrape` modunda tetikler.
 3. A101 GitHub sunucularından taranamaz (Cloudflare "Bir dakika lütfen..." -> 403). Bunu tekrar deneme.
 4. Katalog kapsamı (16.11.2026): Migros ~18.700 (tam), ŞOK ~2.900 (tam; en büyük kategori 28 sayfa),
-   A101 ~2.250 (Kapıda tam; 17 kategori, ~2,5 dk), BİM ~700 (sadece aktüel).
-   - 16.11.2026 itibarıyla Görev Zamanlayıcı'da A101 görevi YOKTU; A101 verisi 14.11'den kalmaydı.
-   - BİM'in fiyatlı tam kataloğu kamuya açık hiçbir yerde yok (bim.com.tr: aktüel + afiş + fiyatsız marka listesi).
-   - marketfiyati.org.tr (TÜBİTAK BİLGEM) tüm zincirleri içeriyor AMA kullanım koşulları yazılı izin
-     olmadan ticari/başka amaçla kullanımı yasaklıyor. İzin alınmadan scraper yazma.
+   A101 ~2.250 (Kapıda tam; 17 kategori, ~2,5 dk), BİM ~2.300 (19.11.2026: ~1.750 katalog + ~570 aktüel).
+   - BİM'in fiyatlı tam kataloğu bim.com.tr'de yok; marketfiyati.org.tr'den alınıyor (~80 istek, ~4 dk).
+   - marketfiyati.org.tr (TÜBİTAK BİLGEM) kullanım koşulları yazılı izin istiyor. Kullanıcı izin aldığını
+     19.11.2026'da bildirdi. Sadece BİM için kullanılıyor; uygulamada kaynak notu ("BİM fiyatları:
+     marketfiyati.org.tr") kalmalı. İstekler arası gecikmeyi kaldırma, şube sayısını artırma.
 
 ## Komutlar
 

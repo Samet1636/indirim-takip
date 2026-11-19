@@ -29,6 +29,21 @@ def test_migros_parser():
     assert parse_migros_payload({}) == []
 
 
+def test_marketfiyati_parser():
+    from scrapers.marketfiyati import en_yakin_sube, parse_urunler
+    veri = json.loads((FIX / "marketfiyati_sample.json").read_text(encoding="utf-8"))
+    assert en_yakin_sube(veri["yakin"], "bim") == "bim-U645"
+    assert en_yakin_sube(veri["yakin"], "hakmar") is None
+    offers = {o.name: o for o in parse_urunler(veri["arama"], "bim")}
+    assert len(offers) == 5 and all(o.market == "bim" and o.market_product_id.startswith("mf-") for o in offers.values())
+    becel = offers["Becel Klasik Tereyağı Keyfi Margarin 250 Gr"]
+    assert becel.price == 43.0 and becel.regular_price == 86.0 and becel.discount_pct == 50.0
+    labne = offers["İçim Labne 400 Gr"]
+    assert labne.regular_price is None and not labne.is_discounted and labne.category
+    assert parse_urunler(veri["arama"], "a101") == []          # başka marketin fiyatı alınmaz
+    assert parse_urunler({}) == []
+
+
 def test_bim_parser():
     html = (FIX / "bim_sample.html").read_text(encoding="utf-8")
     offers = parse_bim_html(html, "2026-10-31")

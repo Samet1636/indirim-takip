@@ -1,0 +1,234 @@
+{
+ "arama": {
+  "numberOfFound": 258,
+  "searchResultType": 1,
+  "content": [
+   {
+    "id": "1XGP",
+    "title": "Sek Çilekli Milkshake 285 Ml",
+    "brand": "Sek",
+    "refinedVolumeOrWeight": "285 ML",
+    "categories": [
+     "170239-arm Yarım Yağlı Süt",
+     "1702-sütlü Mamuller",
+     "17-grup Spot"
+    ],
+    "main_category": "Süt",
+    "menu_category": "Süt Ürünleri ve Kahvaltılık",
+    "productDepotInfoList": [
+     {
+      "depotId": "bim-U645",
+      "depotName": "Izmir Caddesi Miniçankaya",
+      "price": 39.5,
+      "discountlessPrice": 47.5,
+      "unitPrice": "138,60 ₺/Lt",
+      "unitPriceValue": 138.5965,
+      "marketAdi": "bim",
+      "percentage": 0.0,
+      "longitude": 32.85077,
+      "latitude": 39.92031,
+      "indexTime": "19.11.2026 11:29",
+      "discount": true,
+      "discountRatio": 0.16842106,
+      "promotionText": null
+     }
+    ]
+   },
+   {
+    "id": "1O0V",
+    "title": "Torku Çilekli Süt 6x180 Ml",
+    "brand": "Torku",
+    "imageUrl": "https://cdn.marketfiyati.org.tr/bimimages/1705075.png",
+    "refinedVolumeOrWeight": "1.08 LT",
+    "categories": [
+     "170239-arm Yarım Yağlı Süt",
+     "1702-sütlü Mamuller",
+     "17-grup Spot"
+    ],
+    "main_category": "Süt",
+    "menu_category": "Süt Ürünleri ve Kahvaltılık",
+    "productDepotInfoList": [
+     {
+      "depotId": "bim-U645",
+      "depotName": "Izmir Caddesi Miniçankaya",
+      "price": 82.5,
+      "discountlessPrice": 92.5,
+      "unitPrice": "76,39 ₺/Lt",
+      "unitPriceValue": 76.388885,
+      "marketAdi": "bim",
+      "percentage": 0.0,
+      "longitude": 32.85077,
+      "latitude": 39.92031,
+      "indexTime": "19.11.2026 11:28",
+      "discount": true,
+      "discountRatio": 0.10810811,
+      "promotionText": null
+     }
+    ]
+   },
+   {
+    "id": "1NN3",
+    "title": "Becel Klasik Tereyağı Keyfi Margarin 250 Gr",
+    "brand": "Becel",
+    "imageUrl": "https://cdn.marketfiyati.org.tr/bim/900003.jpg",
+    "refinedVolumeOrWeight": "250 GR",
+    "categories": [
+     "09-katı Ve Sıvı Yağlar",
+     "0901-margari̇n",
+     "090102-margarin Kase"
+    ],
+    "main_category": "Tereyağı ve Margarin",
+    "menu_category": "Süt Ürünleri ve Kahvaltılık",
+    "productDepotInfoList": [
+     {
+      "depotId": "bim-U645",
+      "depotName": "Izmir Caddesi Miniçankaya",
+      "price": 43.0,
+      "discountlessPrice": 86.0,
+      "unitPrice": "172,00 ₺/Kg",
+      "unitPriceValue": 172.0,
+      "marketAdi": "bim",
+      "percentage": 0.0,
+      "longitude": 32.85077,
+      "latitude": 39.92031,
+      "indexTime": "19.11.2026 11:28",
+      "discount": true,
+      "discountRatio": 0.5,
+      "promotionText": null
+     }
+    ]
+   },
+   {
+    "id": "1YB5",
+    "title": "Bahçıvan Tam Yağlı Süzme Peynir 2x250 Gr",
+    "brand": "Bahçıvan",
+    "refinedVolumeOrWeight": "500 GR",
+    "categories": [
+     "1702-sütlü Mamuller",
+     "170219-süzme Peynirler",
+     "17-grup Spot"
+    ],
+    "main_category": "Peynir",
+    "menu_category": "Süt Ürünleri ve Kahvaltılık",
+    "productDepotInfoList": [
+     {
+      "depotId": "bim-U645",
+      "depotName": "Izmir Caddesi Miniçankaya",
+      "price": 139.0,
+      "unitPrice": "278,00 ₺/Kg",
+      "unitPriceValue": 278.0,
+      "marketAdi": "bim",
+      "percentage": 0.0,
+      "longitude": 32.85077,
+      "latitude": 39.92031,
+      "indexTime": "19.11.2026 11:29",
+      "discount": false,
+      "discountRatio": null,
+      "promotionText": null
+     }
+    ]
+   },
+   {
+    "id": "1Y1Y",
+    "title": "İçim Labne 400 Gr",
+    "brand": "İçim",
+    "imageUrl": "https://cdn.marketfiyati.org.tr/bimimages/201688.png",
+    "refinedVolumeOrWeight": "400 GR",
+    "categories": [
+     "Peynır",
+     "Gıda",
+     "Sürülebi̇li̇r Peyni̇r",
+     "0207-sürülebi̇li̇r&üçgen Peyni̇r",
+     "Peynir-günlük Servis",
+     "Self Servıs",
+     "Labne",
+     "020702-sürülebilir Peynir",
+     "Beyaz Peynir",
+     "02-sütlü Mamuller",
+     "Eritme Peynir"
+    ],
+    "main_category": "Peynir",
+    "menu_category": "Süt Ürünleri ve Kahvaltılık",
+    "productDepotInfoList": [
+     {
+      "depotId": "bim-U645",
+      "depotName": "Izmir Caddesi Miniçankaya",
+      "price": 155.0,
+      "unitPrice": "387,50 ₺/Kg",
+      "unitPriceValue": 387.5,
+      "marketAdi": "bim",
+      "percentage": 0.0,
+      "longitude": 32.85077,
+      "latitude": 39.92031,
+      "indexTime": "19.11.2026 11:30",
+      "discount": false,
+      "discountRatio": null,
+      "promotionText": null
+     }
+    ]
+   }
+  ]
+ },
+ "yakin": [
+  {
+   "id": "migros-9293",
+   "sellerName": "Karanfil Sk Kızılay Ankara M",
+   "location": {
+    "lon": 32.85505,
+    "lat": 39.92047
+   },
+   "marketName": "migros",
+   "distance": 88.78951623238689
+  },
+  {
+   "id": "sok-5869",
+   "sellerName": "Kızılay Selanik",
+   "location": {
+    "lon": 32.856422,
+    "lat": 39.919792
+   },
+   "marketName": "sok",
+   "distance": 227.45024248368532
+  },
+  {
+   "id": "sok-10653",
+   "sellerName": "Çankaya Izmir Cadde",
+   "location": {
+    "lon": 32.85113,
+    "lat": 39.921
+   },
+   "marketName": "sok",
+   "distance": 253.95041802720593
+  },
+  {
+   "id": "bim-U645",
+   "sellerName": "Izmir Caddesi Miniçankaya",
+   "location": {
+    "lon": 32.85077,
+    "lat": 39.92031
+   },
+   "marketName": "bim",
+   "distance": 288.98419260163735
+  },
+  {
+   "id": "bim-U639",
+   "sellerName": "Mithat Paşaçankaya",
+   "location": {
+    "lon": 32.857872,
+    "lat": 39.92217
+   },
+   "marketName": "bim",
+   "distance": 355.75416069604006
+  },
+  {
+   "id": "tarim_kredi-5008",
+   "sellerName": "Ankara Mithatpaşa Market",
+   "location": {
+    "lon": 32.85768,
+    "lat": 39.92251
+   },
+   "marketName": "tarim_kredi",
+   "distance": 359.5533140056553
+  }
+ ]
+}
