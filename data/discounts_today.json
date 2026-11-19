@@ -52,7 +52,7 @@
   "discount_pct": 61.8,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -66,7 +66,7 @@
   "discount_pct": 61.5,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -93,6 +93,20 @@
   "regular_price": 77.5,
   "discount_pct": 61.4,
   "is_campaign": 0,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Jacobs Barista Intense Filtre Kahve 200 G",
+  "url": "https://www.a101.com.tr/kapida/su-icecek/jacobs-barista-intense-filtre-kahve-200-g-_p-30001082",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/h0FRO4gsFd_256x256.png",
+  "category": "Kahve",
+  "price": 229.5,
+  "regular_price": 584.5,
+  "discount_pct": 60.7,
+  "is_campaign": 1,
   "valid_from": null,
   "scraped_on": "2026-11-19",
   "durum": "geçerli"
@@ -430,7 +444,7 @@
   "discount_pct": 55.0,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -444,7 +458,7 @@
   "discount_pct": 54.6,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -682,7 +696,7 @@
   "discount_pct": 53.5,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -696,7 +710,7 @@
   "discount_pct": 53.5,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -710,7 +724,7 @@
   "discount_pct": 53.5,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -744,15 +758,15 @@
  {
   "market": "a101",
   "name": "Nestle Nesfit Ballı Kırmızı Meyveli Tam Tahıl ve Pirinç Gevreği 400 G",
-  "url": "https://www.a101.com.tr/kapida/atistirmalik/nestle-nesfit-balli-kirmizi-meyveli-tam-tahil-ve-pirinc-gevregi-400-g_p-16000856",
+  "url": "https://www.a101.com.tr/kapida/sut-urunleri-kahvaltilik/nestle-nesfit-balli-kirmizi-meyveli-tam-tahil-ve-pirinc-gevregi-400-g_p-16000856",
   "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/CRD2PTs7nx_256x256.png",
-  "category": "Sağlıklı Atıştırmalıklar",
+  "category": "Kahvaltılık Gevrek",
   "price": 129.0,
   "regular_price": 275.0,
   "discount_pct": 53.1,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -962,7 +976,7 @@
   "discount_pct": 51.5,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -990,7 +1004,7 @@
   "discount_pct": 50.3,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -1004,7 +1018,7 @@
   "discount_pct": 50.3,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -1066,43 +1080,43 @@
  {
   "market": "a101",
   "name": "Nestle Nesfit Ballı Granola 300 G",
-  "url": "https://www.a101.com.tr/kapida/atistirmalik/nestle-nesfit-balli-granola-300-g_p-16002338",
+  "url": "https://www.a101.com.tr/kapida/sut-urunleri-kahvaltilik/nestle-nesfit-balli-granola-300-g_p-16002338",
   "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/ZbONCr3gtP_256x256.png",
-  "category": "Sağlıklı Atıştırmalıklar",
+  "category": "Kahvaltılık Gevrek",
   "price": 129.0,
   "regular_price": 259.0,
   "discount_pct": 50.2,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
   "market": "a101",
   "name": "Nestle Nesfit Kabak Çekirdekli Turna Yemişli Granola 300 G",
-  "url": "https://www.a101.com.tr/kapida/atistirmalik/nestle-nesfit-kabak-cekirdekli-turna-yemisli-granola-300-g-_p-16002341",
+  "url": "https://www.a101.com.tr/kapida/sut-urunleri-kahvaltilik/nestle-nesfit-kabak-cekirdekli-turna-yemisli-granola-300-g-_p-16002341",
   "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/i2nKygJCnt_256x256.png",
-  "category": "Sağlıklı Atıştırmalıklar",
+  "category": "Kahvaltılık Gevrek",
   "price": 129.0,
   "regular_price": 259.0,
   "discount_pct": 50.2,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
   "market": "a101",
   "name": "Nestle Nesfit Çikolatalı Granola 300 G",
-  "url": "https://www.a101.com.tr/kapida/atistirmalik/nestle-nesfit-cikolatali-granola-300-g-_p-16002339",
+  "url": "https://www.a101.com.tr/kapida/sut-urunleri-kahvaltilik/nestle-nesfit-cikolatali-granola-300-g-_p-16002339",
   "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/vsVXVp5N9c_256x256.png",
-  "category": "Sağlıklı Atıştırmalıklar",
+  "category": "Kahvaltılık Gevrek",
   "price": 129.0,
   "regular_price": 259.0,
   "discount_pct": 50.2,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -1144,7 +1158,7 @@
   "discount_pct": 50.1,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -1158,7 +1172,7 @@
   "discount_pct": 50.1,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -1284,21 +1298,35 @@
   "discount_pct": 50.0,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
   "market": "a101",
-  "name": "Doğuş Gurme Demlik Poşet Çay 100'lü",
-  "url": "https://www.a101.com.tr/kapida/su-icecek/dogus-gurme-demlik-poset-cay-100lu-_p-30000926",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/eOjesZ3u7B_256x256.png",
-  "category": "Çay",
-  "price": 150.0,
-  "regular_price": 299.95,
+  "name": "Bizim Margarin Paket 250 G",
+  "url": "https://www.a101.com.tr/kapida/sut-urunleri-kahvaltilik/bizim-margarin-paket-250-g_p-19000035",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/2X04ydDd4y_256x256.png",
+  "category": "Tereyağ, Margarin",
+  "price": 29.5,
+  "regular_price": 59.0,
   "discount_pct": 50.0,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Jacobs Çekirdek Kahve Espresso 500 G",
+  "url": "https://www.a101.com.tr/kapida/su-icecek/jacobs-cekirdek-kahve-espresso-500-g-_p-30001087",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/BTPA3R4PXh_256x256.png",
+  "category": "Kahve",
+  "price": 449.95,
+  "regular_price": 899.95,
+  "discount_pct": 50.0,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -1312,7 +1340,7 @@
   "discount_pct": 50.0,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -1326,7 +1354,7 @@
   "discount_pct": 50.0,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -1340,7 +1368,7 @@
   "discount_pct": 50.0,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -1354,7 +1382,7 @@
   "discount_pct": 50.0,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -1368,91 +1396,7 @@
   "discount_pct": 50.0,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Nivea Black & White Erkek Deodorant 150 ml",
-  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/nivea-black-white-erkek-deodorant-150-ml_p-24006922",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/tuiSV3O8ON_256x256.png",
-  "category": "Parfüm, Deodorant",
-  "price": 145.0,
-  "regular_price": 290.0,
-  "discount_pct": 50.0,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Nivea Black & White Kadın Deodorant 150 ml",
-  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/nivea-black-white-kadin-deodorant-150-ml_p-24006921",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/LIw7xqfYab_256x256.png",
-  "category": "Parfüm, Deodorant",
-  "price": 145.0,
-  "regular_price": 290.0,
-  "discount_pct": 50.0,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Nivea Fresh Active Erkek Deo Sprey 75 ml",
-  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/nivea-fresh-active-erkek-deo-sprey-75-ml_p-24006926",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/cQ597vvbWQ_256x256.png",
-  "category": "Parfüm, Deodorant",
-  "price": 145.0,
-  "regular_price": 290.0,
-  "discount_pct": 50.0,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Nivea Fresh Active Erkek Deodorant 150 ml",
-  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/nivea-fresh-active-erkek-deodorant-150-ml_p-24006920",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/gGSvEghoNc_256x256.png",
-  "category": "Parfüm, Deodorant",
-  "price": 145.0,
-  "regular_price": 290.0,
-  "discount_pct": 50.0,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Nivea Fresh Natural Kadın Deo Sprey 75 ml",
-  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/nivea-fresh-natural-kadin-deo-sprey-75-ml_p-24006927",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/emY4UIHrKv_256x256.png",
-  "category": "Parfüm, Deodorant",
-  "price": 145.0,
-  "regular_price": 290.0,
-  "discount_pct": 50.0,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Nivea Fresh Natural Kadın Deodorant 150 ml",
-  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/nivea-fresh-natural-kadin-deodorant-150-ml_p-24006923",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/0KxybJeF0h_256x256.png",
-  "category": "Parfüm, Deodorant",
-  "price": 145.0,
-  "regular_price": 290.0,
-  "discount_pct": 50.0,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -3412,7 +3356,7 @@
   "discount_pct": 48.3,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -3426,7 +3370,7 @@
   "discount_pct": 48.2,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -3552,7 +3496,7 @@
   "discount_pct": 47.0,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -3566,7 +3510,7 @@
   "discount_pct": 47.0,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -3664,7 +3608,7 @@
   "discount_pct": 46.6,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -3678,7 +3622,7 @@
   "discount_pct": 46.5,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -3818,7 +3762,7 @@
   "discount_pct": 45.9,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -3832,7 +3776,7 @@
   "discount_pct": 45.9,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -3959,20 +3903,6 @@
   "is_campaign": 0,
   "valid_from": null,
   "scraped_on": "2026-11-19",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Züber Nutzilla Kakaolu Fındık Kreması 315 G",
-  "url": "https://www.a101.com.tr/kapida/sut-urunleri-kahvaltilik/zuber-nutzilla-kakaolu-findik-kremasi-315-g_p-16002509",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/txQOUN-6If_256x256.png",
-  "category": "Sürülebilir Ürünler",
-  "price": 329.0,
-  "regular_price": 599.0,
-  "discount_pct": 45.1,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
   "durum": "geçerli"
  },
  {
@@ -4298,34 +4228,6 @@
   "durum": "geçerli"
  },
  {
-  "market": "a101",
-  "name": "Sleepy Bio Naturel Premium Plus Normal Hijyenik Ped 14'lü",
-  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/sleepy-bio-naturel-premium-plus-normal-hijyenik-ped-14lu_p-23001531",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/GGF8gZpga2_256x256.png",
-  "category": "Hijyenik Ped",
-  "price": 39.5,
-  "regular_price": 69.5,
-  "discount_pct": 43.2,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Sleepy Bio Naturel Premium Plus Uzun Hijyenik Ped 12'li",
-  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/sleepy-bio-naturel-premium-plus-uzun-hijyenik-ped-12li_p-23001529",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/MiMK-jkHpQ_256x256.png",
-  "category": "Hijyenik Ped",
-  "price": 39.5,
-  "regular_price": 69.5,
-  "discount_pct": 43.2,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
   "market": "sok",
   "name": "Elidor İpek Terapisi Serum 80 Ml",
   "url": "https://www.sokmarket.com.tr/elidor-ipek-terapisi-serum-80-ml-p-811233",
@@ -4447,6 +4349,20 @@
   "regular_price": 349.95,
   "discount_pct": 42.9,
   "is_campaign": 0,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Nescafe 2'si 1 Arada Kahve Kavanoz Hediyeli 20'li",
+  "url": "https://www.a101.com.tr/kapida/su-icecek/nescafe-2si-1-arada-kahve-kavanoz-hediyeli-20li_p-30001084",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/Nw27yoZ0O2_256x256.png",
+  "category": "Kahve",
+  "price": 149.0,
+  "regular_price": 259.0,
+  "discount_pct": 42.5,
+  "is_campaign": 1,
   "valid_from": null,
   "scraped_on": "2026-11-19",
   "durum": "geçerli"
@@ -4910,7 +4826,7 @@
   "discount_pct": 41.4,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -4924,7 +4840,7 @@
   "discount_pct": 41.4,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -4938,7 +4854,7 @@
   "discount_pct": 41.4,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -5036,7 +4952,7 @@
   "discount_pct": 41.2,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -5106,7 +5022,7 @@
   "discount_pct": 41.1,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -5246,7 +5162,7 @@
   "discount_pct": 40.4,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -5260,7 +5176,7 @@
   "discount_pct": 40.4,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -5279,20 +5195,6 @@
  },
  {
   "market": "a101",
-  "name": "İpek Kuru ve Yıpranmış Saçlar İçin Şampuan 480 ml",
-  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/ipek-kuru-ve-yipranmis-saclar-icin-sampuan-480-ml_p-24006199",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/jTfZJcBBeX_256x256.png",
-  "category": "Saç Bakım",
-  "price": 59.5,
-  "regular_price": 99.5,
-  "discount_pct": 40.2,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
   "name": "İpek Normal Saçlar İçin Şampuan 480 ml",
   "url": "https://www.a101.com.tr/kapida/kisisel-bakim/ipek-normal-saclar-icin-sampuan-480-ml_p-24006200",
   "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/Dlq0UR6dqO_256x256.png",
@@ -5302,7 +5204,7 @@
   "discount_pct": 40.2,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -5316,7 +5218,7 @@
   "discount_pct": 40.2,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -5330,7 +5232,7 @@
   "discount_pct": 40.2,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -5456,7 +5358,7 @@
   "discount_pct": 40.1,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -5470,7 +5372,7 @@
   "discount_pct": 40.1,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -5484,7 +5386,7 @@
   "discount_pct": 40.1,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -5554,7 +5456,7 @@
   "discount_pct": 40.0,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -10669,20 +10571,6 @@
  },
  {
   "market": "a101",
-  "name": "Felix Havuçlu Jöle İçinde Tavuklu Yaş Kedi Maması 85 G",
-  "url": "https://www.a101.com.tr/kapida/evcil-hayvan/felix-havuclu-jole-icinde-tavuklu-yas-kedi-mamasi-85-g_p-25006300",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/MVW6k4yro8_256x256.png",
-  "category": "Kedi",
-  "price": 24.0,
-  "regular_price": 39.95,
-  "discount_pct": 39.9,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
   "name": "Felix Sığır Etli Yaş Kedi Maması 85 G",
   "url": "https://www.a101.com.tr/kapida/evcil-hayvan/felix-sigir-etli-yas-kedi-mamasi-85-g_p-25004469",
   "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/v6y8N06A8y_256x256.png",
@@ -10692,7 +10580,7 @@
   "discount_pct": 39.9,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -10706,7 +10594,7 @@
   "discount_pct": 39.9,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -10720,7 +10608,7 @@
   "discount_pct": 39.9,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -10734,7 +10622,7 @@
   "discount_pct": 39.9,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -10748,7 +10636,7 @@
   "discount_pct": 39.8,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -10776,7 +10664,7 @@
   "discount_pct": 39.7,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -10790,7 +10678,7 @@
   "discount_pct": 39.7,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -10804,7 +10692,7 @@
   "discount_pct": 39.7,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -10846,7 +10734,7 @@
   "discount_pct": 39.5,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -11238,7 +11126,7 @@
   "discount_pct": 38.6,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -11280,7 +11168,7 @@
   "discount_pct": 38.4,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -11294,7 +11182,7 @@
   "discount_pct": 38.4,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -11308,7 +11196,7 @@
   "discount_pct": 38.4,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -11322,7 +11210,7 @@
   "discount_pct": 38.4,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -11392,7 +11280,7 @@
   "discount_pct": 38.1,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -11462,7 +11350,7 @@
   "discount_pct": 37.9,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -11476,7 +11364,7 @@
   "discount_pct": 37.9,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -11546,7 +11434,7 @@
   "discount_pct": 37.7,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -11560,7 +11448,7 @@
   "discount_pct": 37.7,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -11630,7 +11518,7 @@
   "discount_pct": 37.5,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -11952,7 +11840,7 @@
   "discount_pct": 36.8,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -11966,7 +11854,7 @@
   "discount_pct": 36.8,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -11994,7 +11882,7 @@
   "discount_pct": 36.7,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -12026,34 +11914,6 @@
   "durum": "geçerli"
  },
  {
-  "market": "a101",
-  "name": "Vanish Kosla Leke Çıkarıcı Beyazlar 1000 ml",
-  "url": "https://www.a101.com.tr/kapida/temizlik-urunleri/vanish-kosla-leke-cikarici-beyazlar-1000-ml_p-22002877",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/S8s2ARzZch_256x256.png",
-  "category": "Çamaşır",
-  "price": 199.5,
-  "regular_price": 314.5,
-  "discount_pct": 36.6,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Vanish Kosla Leke Çıkarıcı Renkliler 1000 ml",
-  "url": "https://www.a101.com.tr/kapida/temizlik-urunleri/vanish-kosla-leke-cikarici-renkliler-1000-ml_p-22002878",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/pxMZsz5R4m_256x256.png",
-  "category": "Çamaşır",
-  "price": 199.5,
-  "regular_price": 314.5,
-  "discount_pct": 36.6,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
   "market": "migros",
   "name": "Duru Baldo Pirinç 2 Kg",
   "url": "https://www.migros.com.tr/duru-baldo-pirinc-2-kg-p-f804f",
@@ -12077,6 +11937,20 @@
   "regular_price": 251.95,
   "discount_pct": 36.5,
   "is_campaign": 0,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Torku Sade Kremalı Bisküvi 4x61 G",
+  "url": "https://www.a101.com.tr/kapida/atistirmalik/torku-sade-kremali-biskuvi-4x61-g_p-17002879",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/cXqPemfrnp_256x256.png",
+  "category": "Bisküvi, Kraker",
+  "price": 35.0,
+  "regular_price": 55.0,
+  "discount_pct": 36.4,
+  "is_campaign": 1,
   "valid_from": null,
   "scraped_on": "2026-11-19",
   "durum": "geçerli"
@@ -12260,7 +12134,7 @@
   "discount_pct": 36.0,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -12274,7 +12148,7 @@
   "discount_pct": 36.0,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -12390,6 +12264,20 @@
   "durum": "geçerli"
  },
  {
+  "market": "a101",
+  "name": "Luppo Sandviç Kek 24x25 G",
+  "url": "https://www.a101.com.tr/kapida/atistirmalik/luppo-sandvic-kek-24x25-g_p-17003609",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/TB8-7jlz6o_256x256.png",
+  "category": "Kek",
+  "price": 180.0,
+  "regular_price": 280.0,
+  "discount_pct": 35.7,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
   "market": "migros",
   "name": "Ogx Bond Protein Repair Isı Koruyucu Sprey 193 Ml",
   "url": "https://www.migros.com.tr/ogx-bond-protein-repair-isi-koruyucu-sprey-193-ml-p-20dc20c",
@@ -12442,7 +12330,7 @@
   "discount_pct": 35.6,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -12484,7 +12372,7 @@
   "discount_pct": 35.2,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -12708,7 +12596,7 @@
   "discount_pct": 35.0,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -12722,7 +12610,7 @@
   "discount_pct": 35.0,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -12736,7 +12624,7 @@
   "discount_pct": 35.0,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -12792,21 +12680,7 @@
   "discount_pct": 34.9,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Kiwi Tavuklu Kaşık Krema Ödül Maması 5 Adet",
-  "url": "https://www.a101.com.tr/kapida/evcil-hayvan/kiwi-tavuklu-kasik-krema-odul-mamasi-5-adet_p-25010676",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/99eAp0zYZY_256x256.png",
-  "category": "Kedi",
-  "price": 129.5,
-  "regular_price": 199.0,
-  "discount_pct": 34.9,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -12820,7 +12694,7 @@
   "discount_pct": 34.9,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -12834,7 +12708,7 @@
   "discount_pct": 34.9,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -12848,7 +12722,7 @@
   "discount_pct": 34.9,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -12876,7 +12750,7 @@
   "discount_pct": 34.8,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -13100,7 +12974,7 @@
   "discount_pct": 34.4,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -13212,7 +13086,7 @@
   "discount_pct": 34.1,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -13226,7 +13100,7 @@
   "discount_pct": 34.1,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -13958,6 +13832,20 @@
   "durum": "geçerli"
  },
  {
+  "market": "a101",
+  "name": "Hisar Damla Sakızlı Türk Kahvesi 100 G",
+  "url": "https://www.a101.com.tr/kapida/su-icecek/hisar-damla-sakizli-turk-kahvesi-100-g_p-30001085",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/r1iLc7Cq59_256x256.png",
+  "category": "Kahve",
+  "price": 79.5,
+  "regular_price": 119.95,
+  "discount_pct": 33.7,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
   "market": "migros",
   "name": "Domestos Yoğun Kıvamlı Çamaşır Suyu Kötü Koku Karşıtı 1850 Ml",
   "url": "https://www.migros.com.tr/domestos-yogun-kivamli-camasir-suyu-kotu-koku-karsiti-1850-ml-p-1d24fde",
@@ -14038,7 +13926,7 @@
   "discount_pct": 33.6,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -14164,7 +14052,7 @@
   "discount_pct": 33.4,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -14575,6 +14463,20 @@
  },
  {
   "market": "a101",
+  "name": "Mudurnu Piliç Kanat Izgara 810 G",
+  "url": "https://www.a101.com.tr/kapida/et-tavuk-sarkuteri/mudurnu-pilic-kanat-izgara-810-g_p-11003598",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/C-2qjs05Mw_256x256.png",
+  "category": "Beyaz Et",
+  "price": 161.6,
+  "regular_price": 242.19,
+  "discount_pct": 33.3,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
   "name": "Ülker Çubuk Kraker 36x40 G",
   "url": "https://www.a101.com.tr/kapida/atistirmalik/ulker-cubuk-kraker-36x40-g_p-17003852",
   "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/c0D08OQJXJ_256x256.png",
@@ -14584,7 +14486,7 @@
   "discount_pct": 33.3,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -15359,16 +15261,16 @@
  },
  {
   "market": "a101",
-  "name": "Nescafe Matinal Kahve 100 G",
-  "url": "https://www.a101.com.tr/kapida/su-icecek/nescafe-matinal-kahve-100-g_p-30000494",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/NDaphf2Hjl_256x256.png",
-  "category": "Kahve",
-  "price": 135.0,
-  "regular_price": 199.0,
+  "name": "Didi Şeftali Aromalı Soğuk Çay 6x330 ml",
+  "url": "https://www.a101.com.tr/kapida/su-icecek/didi-seftali-aromali-soguk-cay-6x330-ml-_p-13003037",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/N9r-IpBG9a_256x256.png",
+  "category": "Soğuk Çay",
+  "price": 125.0,
+  "regular_price": 184.5,
   "discount_pct": 32.2,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -15718,7 +15620,7 @@
   "discount_pct": 31.7,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -15844,7 +15746,7 @@
   "discount_pct": 31.5,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -16236,7 +16138,7 @@
   "discount_pct": 31.2,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -16250,7 +16152,7 @@
   "discount_pct": 31.2,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -16264,7 +16166,7 @@
   "discount_pct": 31.2,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -16278,7 +16180,7 @@
   "discount_pct": 31.2,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -16530,21 +16432,7 @@
   "discount_pct": 30.8,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Nestle Kitkat Chunky Çikolatalı Gofret 38 G",
-  "url": "https://www.a101.com.tr/kapida/atistirmalik/nestle-kitkat-chunky-cikolatali-gofret-38-g_p-17002753",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/-z1dsJuygO_256x256.png",
-  "category": "Gofret",
-  "price": 22.5,
-  "regular_price": 32.5,
-  "discount_pct": 30.8,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -16794,6 +16682,20 @@
   "price": 16.95,
   "regular_price": 24.45,
   "discount_pct": 30.7,
+  "is_campaign": 0,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Nimet Sandviç Ekmeği 7x65 G",
+  "url": "https://www.a101.com.tr/kapida/firindan/nimet-sandvic-ekmegi-7x65-g_p-28000197",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/KcLM0hM6Jw_256x256.png",
+  "category": "Ekmek",
+  "price": 51.0,
+  "regular_price": 73.5,
+  "discount_pct": 30.6,
   "is_campaign": 0,
   "valid_from": null,
   "scraped_on": "2026-11-19",
@@ -17277,6 +17179,20 @@
  },
  {
   "market": "a101",
+  "name": "Palette Göz Alıcı Renkler Açık Sarı Saç Boyası 10-1",
+  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/palette-goz-alici-renkler-acik-sari-sac-boyasi-10-1_p-24003255",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/aNPnqVIcjj_256x256.png",
+  "category": "Saç Bakım",
+  "price": 139.0,
+  "regular_price": 199.0,
+  "discount_pct": 30.2,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
   "name": "Palette Göz Alıcı Renkler Kestane Saç Boyası 5-68",
   "url": "https://www.a101.com.tr/kapida/kisisel-bakim/palette-goz-alici-renkler-kestane-sac-boyasi-5-68_p-24003261",
   "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/LMzCIKNO1M_256x256.png",
@@ -17286,7 +17202,21 @@
   "discount_pct": 30.2,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Palette Göz Alıcı Renkler Koyu Kahve Saç Boyası 3-0",
+  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/palette-goz-alici-renkler-koyu-kahve-sac-boyasi-3-0_p-24003253",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/doyDV9Bytx_256x256.png",
+  "category": "Saç Bakım",
+  "price": 139.0,
+  "regular_price": 199.0,
+  "discount_pct": 30.2,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -17300,7 +17230,7 @@
   "discount_pct": 30.2,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -17314,21 +17244,21 @@
   "discount_pct": 30.2,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
   "market": "a101",
-  "name": "Palette Göz Alıcı Renkler Küllü Kumral Saç Boyası 7-1",
-  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/palette-goz-alici-renkler-kullu-kumral-sac-boyasi-7-1_p-24003259",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/MGQrJdRsO5_256x256.png",
+  "name": "Palette Göz Alıcı Renkler Siyah Saç Boyası 1-0",
+  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/palette-goz-alici-renkler-siyah-sac-boyasi-1-0_p-24003254",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/nl3vT6zVRN_256x256.png",
   "category": "Saç Bakım",
   "price": 139.0,
   "regular_price": 199.0,
   "discount_pct": 30.2,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -17342,7 +17272,7 @@
   "discount_pct": 30.2,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -17356,7 +17286,21 @@
   "discount_pct": 30.2,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Palette Göz Alıcı Renkler Çikolata Kahve Saç Boyası 3-65",
+  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/palette-goz-alici-renkler-cikolata-kahve-sac-boyasi-3-65_p-24003252",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/5Gu5CAahDc_256x256.png",
+  "category": "Saç Bakım",
+  "price": 139.0,
+  "regular_price": 199.0,
+  "discount_pct": 30.2,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -17524,7 +17468,7 @@
   "discount_pct": 30.1,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -17538,7 +17482,7 @@
   "discount_pct": 30.1,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -17552,7 +17496,7 @@
   "discount_pct": 30.1,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -17566,7 +17510,7 @@
   "discount_pct": 30.1,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -17734,7 +17678,21 @@
   "discount_pct": 30.0,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Nimet Tam Buğday Ekmeği 350 G",
+  "url": "https://www.a101.com.tr/kapida/firindan/nimet-tam-bugday-ekmegi-350-g_p-28000193",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/4xC41zYEXH_256x256.png",
+  "category": "Ekmek",
+  "price": 31.5,
+  "regular_price": 45.0,
+  "discount_pct": 30.0,
+  "is_campaign": 0,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -24986,7 +24944,7 @@
   "discount_pct": 29.7,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -25000,7 +24958,7 @@
   "discount_pct": 29.7,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -25014,7 +24972,7 @@
   "discount_pct": 29.7,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -25028,21 +24986,21 @@
   "discount_pct": 29.7,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
   "market": "a101",
-  "name": "Roka Adet",
-  "url": "https://www.a101.com.tr/kapida/meyve-sebze/roka-adet_p-20000778",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/qGsqnbQiVJ_256x256.png",
-  "category": "Yeşillik",
-  "price": 17.5,
-  "regular_price": 24.9,
+  "name": "Uno Tam Buğday Unlu Tava Ekmeği 450 G",
+  "url": "https://www.a101.com.tr/kapida/firindan/uno-tam-bugday-unlu-tava-ekmegi-450-g_p-28000673",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/jHBgeYaMbm_256x256.png",
+  "category": "Ekmek",
+  "price": 65.0,
+  "regular_price": 92.5,
   "discount_pct": 29.7,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -25075,20 +25033,6 @@
  },
  {
   "market": "a101",
-  "name": "Arpacık Soğan File 500 G",
-  "url": "https://www.a101.com.tr/kapida/meyve-sebze/arpacik-sogan-file-500-g_p-20000962",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/SJvbsWfiJM_256x256.png",
-  "category": "Sebze",
-  "price": 70.0,
-  "regular_price": 99.5,
-  "discount_pct": 29.6,
-  "is_campaign": 0,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
   "name": "Baby Turco Softcare Islak Havlu 4x70 Adet",
   "url": "https://www.a101.com.tr/kapida/anne-bebek/baby-turco-softcare-islak-havlu-4x70-adet_p-23001120",
   "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/p0q5gfgF2b_256x256.png",
@@ -25098,35 +25042,21 @@
   "discount_pct": 29.6,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
   "market": "a101",
-  "name": "Marul Adet",
-  "url": "https://www.a101.com.tr/kapida/meyve-sebze/marul-adet_p-20001122",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/TxFAtgCQv9_256x256.png",
-  "category": "Yeşillik",
-  "price": 56.0,
-  "regular_price": 79.5,
-  "discount_pct": 29.6,
-  "is_campaign": 0,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Polonez Hindi Fıstıklı Salam 2x90 G",
-  "url": "https://www.a101.com.tr/kapida/et-tavuk-sarkuteri/polonez-hindi-fistikli-salam-2x90-g_p-11003050",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/B48yohwxgh_256x256.png",
-  "category": "Şarküteri",
-  "price": 59.5,
-  "regular_price": 84.5,
+  "name": "Porsion İçli Köfte Dondurulmuş 320 G",
+  "url": "https://www.a101.com.tr/kapida/donuk-hazir-yemek-meze/porsion-icli-kofte-dondurulmus-320-g_p-21001578",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/k4Jvuh9RYD_256x256.png",
+  "category": "Donuk Hazır Yemek, Atıştırmalık",
+  "price": 95.0,
+  "regular_price": 135.0,
   "discount_pct": 29.6,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -25172,6 +25102,34 @@
   "durum": "geçerli"
  },
  {
+  "market": "a101",
+  "name": "Milkten Çikolatalı Puding 4x100 G",
+  "url": "https://www.a101.com.tr/kapida/donuk-hazir-yemek-meze/milkten-cikolatali-puding-4x100-g_p-12001750",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/nTxxwMi7LA_256x256.png",
+  "category": "Hazır Tatlı",
+  "price": 39.5,
+  "regular_price": 56.0,
+  "discount_pct": 29.5,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Çengelköy Salatalık Paket 500 G",
+  "url": "https://www.a101.com.tr/kapida/meyve-sebze/cengelkoy-salatalik-paket-500-g_p-20001129",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/OQfBdzmGbD_256x256.png",
+  "category": "Sebze",
+  "price": 49.0,
+  "regular_price": 69.5,
+  "discount_pct": 29.5,
+  "is_campaign": 0,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
   "market": "migros",
   "name": "Calgon Ultra Konsantre Çamaşır Makinesi Kireç Önleyici 750 G",
   "url": "https://www.migros.com.tr/calgon-ultra-konsantre-camasir-makinesi-kirec-onleyici-750-g-p-1cef3a2",
@@ -25180,6 +25138,20 @@
   "price": 429.95,
   "regular_price": 609.95,
   "discount_pct": 29.5,
+  "is_campaign": 0,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Mor Soğan Kg",
+  "url": "https://www.a101.com.tr/kapida/meyve-sebze/mor-sogan-kg_p-20001117",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/M7veFeetmD_256x256.png",
+  "category": "Sebze",
+  "price": 42.0,
+  "regular_price": 59.5,
+  "discount_pct": 29.4,
   "is_campaign": 0,
   "valid_from": null,
   "scraped_on": "2026-11-19",
@@ -25392,7 +25364,35 @@
   "discount_pct": 29.3,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Kırmızı Biber Paket 300 G",
+  "url": "https://www.a101.com.tr/kapida/meyve-sebze/kirmizi-biber-paket-300-g_p-20000026",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/KnYP0ACo88_256x256.png",
+  "category": "Sebze",
+  "price": 39.5,
+  "regular_price": 55.9,
+  "discount_pct": 29.3,
+  "is_campaign": 0,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Sarımsak File 200 G",
+  "url": "https://www.a101.com.tr/kapida/meyve-sebze/sarimsak-file-200-g_p-20000792",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/eYmRe6QFa8_256x256.png",
+  "category": "Sebze",
+  "price": 35.0,
+  "regular_price": 49.5,
+  "discount_pct": 29.3,
+  "is_campaign": 0,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -25406,21 +25406,7 @@
   "discount_pct": 29.3,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Taze Soğan Adet",
-  "url": "https://www.a101.com.tr/kapida/meyve-sebze/taze-sogan-adet_p-20000777",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/EdilebNMOR_256x256.png",
-  "category": "Yeşillik",
-  "price": 35.0,
-  "regular_price": 49.5,
-  "discount_pct": 29.3,
-  "is_campaign": 0,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -25435,20 +25421,6 @@
   "is_campaign": 1,
   "valid_from": null,
   "scraped_on": "2026-11-19",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Dolma Biber Paket 300 G",
-  "url": "https://www.a101.com.tr/kapida/meyve-sebze/dolma-biber-paket-300-g_p-20000025",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/3FCxj44VDV_256x256.png",
-  "category": "Sebze",
-  "price": 32.5,
-  "regular_price": 45.9,
-  "discount_pct": 29.2,
-  "is_campaign": 0,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
   "durum": "geçerli"
  },
  {
@@ -25546,7 +25518,7 @@
   "discount_pct": 29.1,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -25560,21 +25532,7 @@
   "discount_pct": 29.1,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Beyaz Lahana Kg",
-  "url": "https://www.a101.com.tr/kapida/meyve-sebze/beyaz-lahana-kg_p-20000774",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/RBk4UPlupI_256x256.png",
-  "category": "Sebze",
-  "price": 25.5,
-  "regular_price": 35.9,
-  "discount_pct": 29.0,
-  "is_campaign": 0,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -25588,7 +25546,21 @@
   "discount_pct": 29.0,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Taze Soğan Adet",
+  "url": "https://www.a101.com.tr/kapida/meyve-sebze/taze-sogan-adet_p-20000777",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/EdilebNMOR_256x256.png",
+  "category": "Yeşillik",
+  "price": 39.0,
+  "regular_price": 54.9,
+  "discount_pct": 29.0,
+  "is_campaign": 0,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -25630,7 +25602,7 @@
   "discount_pct": 28.9,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -25760,6 +25732,20 @@
   "durum": "geçerli"
  },
  {
+  "market": "a101",
+  "name": "Pınar Labne Peynir 3x180 G",
+  "url": "https://www.a101.com.tr/kapida/sut-urunleri-kahvaltilik/pinar-labne-peynir-3x180-g_p-12002485",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/7rvNHHPXKb_256x256.png",
+  "category": "Sürülebilir Peynir",
+  "price": 175.0,
+  "regular_price": 245.9,
+  "discount_pct": 28.8,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
   "market": "migros",
   "name": "Tursil Jel Yoğun Ferahlık 33 Yıkama",
   "url": "https://www.migros.com.tr/tursil-jel-yogun-ferahlik-33-yikama-p-1c9c94a",
@@ -25812,35 +25798,7 @@
   "discount_pct": 28.7,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Çarliston Biber Paket 300 G",
-  "url": "https://www.a101.com.tr/kapida/meyve-sebze/carliston-biber-paket-300-g_p-20000023",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/YXqDTE6PbB_256x256.png",
-  "category": "Sebze",
-  "price": 32.0,
-  "regular_price": 44.9,
-  "discount_pct": 28.7,
-  "is_campaign": 0,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Neutrogena Hızlı Emilen Bakım Kremi 200 ml",
-  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/neutrogena-hizli-emilen-bakim-kremi-200-ml_p-24001212",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/EFoS7KG24o_256x256.png",
-  "category": "Cilt Bakımı",
-  "price": 125.0,
-  "regular_price": 175.0,
-  "discount_pct": 28.6,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -25854,7 +25812,7 @@
   "discount_pct": 28.6,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -26027,16 +25985,30 @@
  },
  {
   "market": "a101",
-  "name": "Kırmızı Biber Paket 300 G",
-  "url": "https://www.a101.com.tr/kapida/meyve-sebze/kirmizi-biber-paket-300-g_p-20000026",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/KnYP0ACo88_256x256.png",
+  "name": "Salatalık Kg",
+  "url": "https://www.a101.com.tr/kapida/meyve-sebze/salatalik-kg_p-20000764",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/aucWrFYW7r_256x256.png",
   "category": "Sebze",
-  "price": 40.0,
-  "regular_price": 55.9,
-  "discount_pct": 28.4,
+  "price": 64.0,
+  "regular_price": 89.5,
+  "discount_pct": 28.5,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Salkım Domates Paket 500 G",
+  "url": "https://www.a101.com.tr/kapida/meyve-sebze/salkim-domates-paket-500-g_p-20000763",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/foNiCda-Vd_256x256.png",
+  "category": "Sebze",
+  "price": 64.0,
+  "regular_price": 89.5,
+  "discount_pct": 28.5,
+  "is_campaign": 0,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -26119,6 +26091,20 @@
   "regular_price": 459.95,
   "discount_pct": 28.3,
   "is_campaign": 0,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Cipso Tube Sade Patates Cipsi 160 G",
+  "url": "https://www.a101.com.tr/kapida/atistirmalik/cipso-tube-sade-patates-cipsi-160-g-_p-13002915",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/xqJhVLt2Ln_256x256.png",
+  "category": "Cips",
+  "price": 79.0,
+  "regular_price": 110.0,
+  "discount_pct": 28.2,
+  "is_campaign": 1,
   "valid_from": null,
   "scraped_on": "2026-11-19",
   "durum": "geçerli"
@@ -26246,21 +26232,35 @@
   "discount_pct": 28.1,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
   "market": "a101",
-  "name": "Sana Tereyağı Lezzeti Margarin 250 G",
-  "url": "https://www.a101.com.tr/kapida/sut-urunleri-kahvaltilik/sana-tereyagi-lezzeti-margarin-250-g_p-19000070",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/-Hm0lbxQ5N_256x256.png",
-  "category": "Tereyağ, Margarin",
+  "name": "Marul Göbek Adet",
+  "url": "https://www.a101.com.tr/kapida/meyve-sebze/marul-gobek-adet_p-20000776",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/fOx7ER4fKz_256x256.png",
+  "category": "Yeşillik",
   "price": 50.0,
   "regular_price": 69.5,
   "discount_pct": 28.1,
-  "is_campaign": 1,
+  "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Şeker Domates Paket 250 G",
+  "url": "https://www.a101.com.tr/kapida/meyve-sebze/seker-domates-paket-250-g_p-20001227",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/GnpFvlUUMh_256x256.png",
+  "category": "Sebze",
+  "price": 50.0,
+  "regular_price": 69.5,
+  "discount_pct": 28.1,
+  "is_campaign": 0,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -26428,7 +26428,7 @@
   "discount_pct": 27.9,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -26442,7 +26442,7 @@
   "discount_pct": 27.9,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -26587,16 +26587,16 @@
  },
  {
   "market": "a101",
-  "name": "Kabak Kg",
-  "url": "https://www.a101.com.tr/kapida/meyve-sebze/kabak-kg_p-20000773",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/Np6g774JS8_256x256.png",
-  "category": "Sebze",
-  "price": 57.5,
-  "regular_price": 79.5,
+  "name": "Nane Adet",
+  "url": "https://www.a101.com.tr/kapida/meyve-sebze/nane-adet_p-20000780",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/weo2CsFn5N_256x256.png",
+  "category": "Yeşillik",
+  "price": 18.0,
+  "regular_price": 24.9,
   "discount_pct": 27.7,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -26610,7 +26610,7 @@
   "discount_pct": 27.7,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -26629,6 +26629,34 @@
  },
  {
   "market": "a101",
+  "name": "Arpacık Soğan File 500 G",
+  "url": "https://www.a101.com.tr/kapida/meyve-sebze/arpacik-sogan-file-500-g_p-20000962",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/SJvbsWfiJM_256x256.png",
+  "category": "Sebze",
+  "price": 72.0,
+  "regular_price": 99.5,
+  "discount_pct": 27.6,
+  "is_campaign": 0,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Beyaz Lahana Kg",
+  "url": "https://www.a101.com.tr/kapida/meyve-sebze/beyaz-lahana-kg_p-20000774",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/RBk4UPlupI_256x256.png",
+  "category": "Sebze",
+  "price": 26.0,
+  "regular_price": 35.9,
+  "discount_pct": 27.6,
+  "is_campaign": 0,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
   "name": "Onet Maydanozlu Dana Köfte 500 G",
   "url": "https://www.a101.com.tr/kapida/et-tavuk-sarkuteri/onet-maydanozlu-dana-kofte-500-g_p-11003324",
   "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/TWVye2UndU_256x256.png",
@@ -26638,7 +26666,21 @@
   "discount_pct": 27.6,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Deveci Armut Kg",
+  "url": "https://www.a101.com.tr/kapida/meyve-sebze/deveci-armut-kg_p-20000812",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/gvlMjF3pcq_256x256.png",
+  "category": "Meyve",
+  "price": 55.0,
+  "regular_price": 75.9,
+  "discount_pct": 27.5,
+  "is_campaign": 0,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -26652,35 +26694,7 @@
   "discount_pct": 27.5,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Salkım Domates Paket 500 G",
-  "url": "https://www.a101.com.tr/kapida/meyve-sebze/salkim-domates-paket-500-g_p-20000763",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/foNiCda-Vd_256x256.png",
-  "category": "Sebze",
-  "price": 65.0,
-  "regular_price": 89.5,
-  "discount_pct": 27.4,
-  "is_campaign": 0,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Santa Maria Armut Kg",
-  "url": "https://www.a101.com.tr/kapida/meyve-sebze/santa-maria-armut-kg_p-20000813",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/L-oiCWgbdL_256x256.png",
-  "category": "Meyve",
-  "price": 65.0,
-  "regular_price": 89.5,
-  "discount_pct": 27.4,
-  "is_campaign": 0,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -26694,7 +26708,7 @@
   "discount_pct": 27.4,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -27342,6 +27356,34 @@
   "durum": "geçerli"
  },
  {
+  "market": "a101",
+  "name": "Dolma Biber Paket 300 G",
+  "url": "https://www.a101.com.tr/kapida/meyve-sebze/dolma-biber-paket-300-g_p-20000025",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/3FCxj44VDV_256x256.png",
+  "category": "Sebze",
+  "price": 29.0,
+  "regular_price": 39.5,
+  "discount_pct": 26.6,
+  "is_campaign": 0,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Marul Adet",
+  "url": "https://www.a101.com.tr/kapida/meyve-sebze/marul-adet_p-20001122",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/TxFAtgCQv9_256x256.png",
+  "category": "Yeşillik",
+  "price": 51.0,
+  "regular_price": 69.5,
+  "discount_pct": 26.6,
+  "is_campaign": 0,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
   "market": "migros",
   "name": "Dr.Oetker Hamur Kabartma Tozu 15'li Paket 150 G",
   "url": "https://www.migros.com.tr/droetker-hamur-kabartma-tozu-15li-paket-150-g-p-5c7d6b",
@@ -27399,6 +27441,20 @@
  },
  {
   "market": "a101",
+  "name": "Mudurnu Piliç Bonfile 870 G",
+  "url": "https://www.a101.com.tr/kapida/et-tavuk-sarkuteri/mudurnu-pilic-bonfile-870-g_p-11003601",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/DdTIgTnovU_256x256.png",
+  "category": "Beyaz Et",
+  "price": 216.63,
+  "regular_price": 294.93,
+  "discount_pct": 26.5,
+  "is_campaign": 0,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
   "name": "Superfresh Böğürtlen Dondurulmuş 300 G",
   "url": "https://www.a101.com.tr/kapida/meyve-sebze/superfresh-bogurtlen-dondurulmus-300-g_p-21001426",
   "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/yxqjEpBUWm_256x256.png",
@@ -27408,7 +27464,7 @@
   "discount_pct": 26.5,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -27548,7 +27604,7 @@
   "discount_pct": 26.3,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -27562,7 +27618,7 @@
   "discount_pct": 26.3,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -27576,7 +27632,7 @@
   "discount_pct": 26.3,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -27590,7 +27646,7 @@
   "discount_pct": 26.3,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -27674,7 +27730,7 @@
   "discount_pct": 26.2,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -27730,7 +27786,7 @@
   "discount_pct": 26.0,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -27745,20 +27801,6 @@
   "is_campaign": 0,
   "valid_from": null,
   "scraped_on": "2026-11-19",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Mudurnu Piliç Poşetli Bütün 1640 G",
-  "url": "https://www.a101.com.tr/kapida/et-tavuk-sarkuteri/mudurnu-pilic-posetli-butun-1640-g_p-11003579",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/wIdjFNGohr_256x256.png",
-  "category": "Beyaz Et",
-  "price": 164.0,
-  "regular_price": 221.4,
-  "discount_pct": 25.9,
-  "is_campaign": 0,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
   "durum": "geçerli"
  },
  {
@@ -28029,6 +28071,20 @@
  },
  {
   "market": "a101",
+  "name": "Mudurnu Piliç Baget 830 G",
+  "url": "https://www.a101.com.tr/kapida/et-tavuk-sarkuteri/mudurnu-pilic-baget-830-g_p-11003599",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/vSk7dO33Bn_256x256.png",
+  "category": "Beyaz Et",
+  "price": 98.77,
+  "regular_price": 132.8,
+  "discount_pct": 25.6,
+  "is_campaign": 0,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
   "name": "Off! Sinek Kovar Sprey 100 ml",
   "url": "https://www.a101.com.tr/kapida/temizlik-urunleri/off-sinek-kovar-sprey-100-ml_p-25000915",
   "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/7FnNW32x-1_256x256.png",
@@ -28038,7 +28094,7 @@
   "discount_pct": 25.5,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -28164,7 +28220,21 @@
   "discount_pct": 25.3,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Yemeye Hazır Avokado Paket",
+  "url": "https://www.a101.com.tr/kapida/meyve-sebze/yemeye-hazir-avokado-paket-_p-20001517",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/5iImav6WhH_256x256.png",
+  "category": "Meyve",
+  "price": 59.5,
+  "regular_price": 79.5,
+  "discount_pct": 25.2,
+  "is_campaign": 0,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -28248,7 +28318,7 @@
   "discount_pct": 25.1,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -28262,7 +28332,7 @@
   "discount_pct": 25.1,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -28407,6 +28477,20 @@
  },
  {
   "market": "a101",
+  "name": "Eti Fıstık İşi Antep Fıstıklı Bar Çikolata 50 G",
+  "url": "https://www.a101.com.tr/kapida/atistirmalik/eti-fistik-isi-antep-fistikli-bar-cikolata-50-g_p-27003146",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/tzavL9bE86_256x256.png",
+  "category": "Çikolata",
+  "price": 75.0,
+  "regular_price": 100.0,
+  "discount_pct": 25.0,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
   "name": "Togo Limonata Kavun Aromalı 1 L",
   "url": "https://www.a101.com.tr/kapida/su-icecek/togo-limonata-kavun-aromali-1-l_p-13003008",
   "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/oeayGbrfUl_256x256.png",
@@ -28416,7 +28500,7 @@
   "discount_pct": 25.0,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -28430,7 +28514,7 @@
   "discount_pct": 25.0,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -31109,34 +31193,6 @@
  },
  {
   "market": "a101",
-  "name": "Mudurnu Piliç Kanat Izgara 810 G",
-  "url": "https://www.a101.com.tr/kapida/et-tavuk-sarkuteri/mudurnu-pilic-kanat-izgara-810-g_p-11003598",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/C-2qjs05Mw_256x256.png",
-  "category": "Beyaz Et",
-  "price": 182.25,
-  "regular_price": 242.19,
-  "discount_pct": 24.7,
-  "is_campaign": 0,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Mudurnu Piliç Parmak Bonfile 980 G",
-  "url": "https://www.a101.com.tr/kapida/et-tavuk-sarkuteri/mudurnu-pilic-parmak-bonfile-980-g_p-11003595",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/AdKMge7iES_256x256.png",
-  "category": "Beyaz Et",
-  "price": 220.5,
-  "regular_price": 293.02,
-  "discount_pct": 24.7,
-  "is_campaign": 0,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
   "name": "Çaykur Tiryaki Çay 2 Kg",
   "url": "https://www.a101.com.tr/kapida/su-icecek/caykur-tiryaki-cay-2-kg_p-30000965",
   "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/az-D5B4ubV_256x256.png",
@@ -31146,7 +31202,7 @@
   "discount_pct": 24.7,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -31248,20 +31304,6 @@
   "durum": "geçerli"
  },
  {
-  "market": "a101",
-  "name": "Becel Klasik Kase Margarin 250 G",
-  "url": "https://www.a101.com.tr/kapida/sut-urunleri-kahvaltilik/becel-klasik-kase-margarin-250-g_p-19000004",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/ItPS1XgHFV_256x256.png",
-  "category": "Tereyağ, Margarin",
-  "price": 65.0,
-  "regular_price": 86.0,
-  "discount_pct": 24.4,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
   "market": "migros",
   "name": "Got2b Curlz Bukle Belirginleştiren Saç Spreyi 200 Ml",
   "url": "https://www.migros.com.tr/got2b-curlz-bukle-belirginlestiren-sac-spreyi-200-ml-p-20dc20e",
@@ -31360,20 +31402,6 @@
   "durum": "geçerli"
  },
  {
-  "market": "a101",
-  "name": "Domates Kg",
-  "url": "https://www.a101.com.tr/kapida/meyve-sebze/domates-kg_p-20000761",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/0YOQeAIoZ0_256x256.png",
-  "category": "Sebze",
-  "price": 57.5,
-  "regular_price": 75.9,
-  "discount_pct": 24.2,
-  "is_campaign": 0,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
   "market": "migros",
   "name": "Sudocrem Bebek Bakım  Kremi 60 G",
   "url": "https://www.migros.com.tr/sudocrem-bebek-bakim-kremi-60-g-p-1e22eb3",
@@ -31385,20 +31413,6 @@
   "is_campaign": 0,
   "valid_from": null,
   "scraped_on": "2026-11-19",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Klar Home Floral Oda Spreyi 500 ml",
-  "url": "https://www.a101.com.tr/kapida/ev-yasam/klar-home-floral-oda-spreyi-500-ml-_p-24007107",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/aClmrzwvpI_256x256.png",
-  "category": "Oda Kokuları",
-  "price": 189.0,
-  "regular_price": 249.0,
-  "discount_pct": 24.1,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
   "durum": "geçerli"
  },
  {
@@ -31441,20 +31455,6 @@
   "is_campaign": 0,
   "valid_from": null,
   "scraped_on": "2026-11-19",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Çengelköy Salatalık Paket 500 G",
-  "url": "https://www.a101.com.tr/kapida/meyve-sebze/cengelkoy-salatalik-paket-500-g_p-20001129",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/OQfBdzmGbD_256x256.png",
-  "category": "Sebze",
-  "price": 42.5,
-  "regular_price": 55.9,
-  "discount_pct": 24.0,
-  "is_campaign": 0,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
   "durum": "geçerli"
  },
  {
@@ -31613,20 +31613,6 @@
  },
  {
   "market": "a101",
-  "name": "Danone Yarım Yağlı Süt 1 L",
-  "url": "https://www.a101.com.tr/kapida/sut-urunleri-kahvaltilik/danone-yarim-yagli-sut-1-l_p-12003751",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/fAl2R9xa6o_256x256.png",
-  "category": "Süt",
-  "price": 49.5,
-  "regular_price": 65.0,
-  "discount_pct": 23.8,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
   "name": "Çiçeğim Çamaşır Sodası 500 G",
   "url": "https://www.a101.com.tr/kapida/temizlik-urunleri/cicegim-camasir-sodasi-500-g_p-22000356",
   "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/7OMPYav-8g_256x256.png",
@@ -31636,21 +31622,7 @@
   "discount_pct": 23.8,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Miss Arap Sabunu 1 L",
-  "url": "https://www.a101.com.tr/kapida/temizlik-urunleri/miss-arap-sabunu-1-l_p-22001298",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/WDlcxouzf8_256x256.png",
-  "category": "Genel Temizlik",
-  "price": 64.5,
-  "regular_price": 84.5,
-  "discount_pct": 23.7,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -31734,21 +31706,7 @@
   "discount_pct": 23.6,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Mudurnu Piliç Kök Kanat 900 G",
-  "url": "https://www.a101.com.tr/kapida/et-tavuk-sarkuteri/mudurnu-pilic-kok-kanat-900-g_p-11003594",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/v1pT8w49v9_256x256.png",
-  "category": "Beyaz Et",
-  "price": 157.5,
-  "regular_price": 206.1,
-  "discount_pct": 23.6,
-  "is_campaign": 0,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -31762,7 +31720,7 @@
   "discount_pct": 23.5,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -31850,6 +31808,20 @@
   "durum": "geçerli"
  },
  {
+  "market": "a101",
+  "name": "Cipso Yoğurt ve Mevsim Yeşillikleri Aromalı Cips 125 G",
+  "url": "https://www.a101.com.tr/kapida/atistirmalik/cipso-yogurt-ve-mevsim-yesillikleri-aromali-cips-125-g_p-13003032",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/VNRWzEtSeh_256x256.png",
+  "category": "Cips",
+  "price": 49.0,
+  "regular_price": 64.0,
+  "discount_pct": 23.4,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
   "market": "migros",
   "name": "Exotic Portakal Havuç Suyu 300 Ml",
   "url": "https://www.migros.com.tr/exotic-portakal-havuc-suyu-300-ml-p-7b2d9c",
@@ -31930,7 +31902,7 @@
   "discount_pct": 23.3,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -31944,7 +31916,7 @@
   "discount_pct": 23.3,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -31958,7 +31930,7 @@
   "discount_pct": 23.3,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -31972,7 +31944,7 @@
   "discount_pct": 23.3,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -31986,7 +31958,7 @@
   "discount_pct": 23.3,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -32000,7 +31972,7 @@
   "discount_pct": 23.3,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -32098,7 +32070,7 @@
   "discount_pct": 23.2,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -32127,20 +32099,6 @@
   "is_campaign": 1,
   "valid_from": null,
   "scraped_on": "2026-11-19",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Nimet Susamlı Hamburger Ekmeği 6x70 G",
-  "url": "https://www.a101.com.tr/kapida/firindan/nimet-susamli-hamburger-ekmegi-6x70-g_p-28000195",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/DGbwGshoex_256x256.png",
-  "category": "Ekmek",
-  "price": 60.0,
-  "regular_price": 78.0,
-  "discount_pct": 23.1,
-  "is_campaign": 0,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
   "durum": "geçerli"
  },
  {
@@ -32326,6 +32284,20 @@
   "durum": "geçerli"
  },
  {
+  "market": "a101",
+  "name": "Eti Canga Yer Fıstıklı Gofret 34 G",
+  "url": "https://www.a101.com.tr/kapida/atistirmalik/eti-canga-yer-fistikli-gofret-34-g_p-17002434",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/CKKwqWzPRH_256x256.png",
+  "category": "Gofret",
+  "price": 17.0,
+  "regular_price": 22.0,
+  "discount_pct": 22.7,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
   "market": "migros",
   "name": "L'Oréal Paris Men Expert Carbon Protect Anti Perspirant Roll On 50 Ml",
   "url": "https://www.migros.com.tr/loral-paris-men-expert-carbon-protect-anti-perspirant-roll-on-50-ml-p-21718aa",
@@ -32392,7 +32364,7 @@
   "discount_pct": 22.6,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -32518,7 +32490,7 @@
   "discount_pct": 22.3,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -32532,7 +32504,7 @@
   "discount_pct": 22.3,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -32546,7 +32518,7 @@
   "discount_pct": 22.3,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -32560,7 +32532,21 @@
   "discount_pct": 22.3,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Çarliston Biber Paket 300 G",
+  "url": "https://www.a101.com.tr/kapida/meyve-sebze/carliston-biber-paket-300-g_p-20000023",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/YXqDTE6PbB_256x256.png",
+  "category": "Sebze",
+  "price": 34.9,
+  "regular_price": 44.9,
+  "discount_pct": 22.3,
+  "is_campaign": 0,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -32588,7 +32574,7 @@
   "discount_pct": 22.2,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -32602,21 +32588,7 @@
   "discount_pct": 22.2,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Nimet Tam Buğday Ekmeği 350 G",
-  "url": "https://www.a101.com.tr/kapida/firindan/nimet-tam-bugday-ekmegi-350-g_p-28000193",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/4xC41zYEXH_256x256.png",
-  "category": "Ekmek",
-  "price": 35.0,
-  "regular_price": 45.0,
-  "discount_pct": 22.2,
-  "is_campaign": 0,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -32630,7 +32602,7 @@
   "discount_pct": 22.2,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -32872,20 +32844,6 @@
   "durum": "geçerli"
  },
  {
-  "market": "a101",
-  "name": "Mudurnu Piliç Baget 830 G",
-  "url": "https://www.a101.com.tr/kapida/et-tavuk-sarkuteri/mudurnu-pilic-baget-830-g_p-11003599",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/vSk7dO33Bn_256x256.png",
-  "category": "Beyaz Et",
-  "price": 103.75,
-  "regular_price": 132.8,
-  "discount_pct": 21.9,
-  "is_campaign": 0,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
   "market": "migros",
   "name": "Keskinoğlu Piliç Nugget 700 G",
   "url": "https://www.migros.com.tr/keskinoglu-pilic-nugget-700-g-p-ce231c",
@@ -32957,20 +32915,6 @@
  },
  {
   "market": "a101",
-  "name": "Danone Laktozsuz Süt 1 L",
-  "url": "https://www.a101.com.tr/kapida/sut-urunleri-kahvaltilik/danone-laktozsuz-sut-1-l_p-12003143",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/apfP2e6OHR_256x256.png",
-  "category": "Süt",
-  "price": 64.5,
-  "regular_price": 82.5,
-  "discount_pct": 21.8,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
   "name": "Hasata Pilavlık Yerli Pirinç 1 Kg",
   "url": "https://www.a101.com.tr/kapida/temel-gida/hasata-pilavlik-yerli-pirinc-1-kg_p-14002605",
   "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/nDnG1PwZto_256x256.png",
@@ -32980,21 +32924,7 @@
   "discount_pct": 21.8,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Mudurnu Piliç Bonfile 870 G",
-  "url": "https://www.a101.com.tr/kapida/et-tavuk-sarkuteri/mudurnu-pilic-bonfile-870-g_p-11003601",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/DdTIgTnovU_256x256.png",
-  "category": "Beyaz Et",
-  "price": 230.55,
-  "regular_price": 294.93,
-  "discount_pct": 21.8,
-  "is_campaign": 0,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -33065,20 +32995,6 @@
   "is_campaign": 0,
   "valid_from": null,
   "scraped_on": "2026-11-19",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Milkten Milkino Çocuk Sütü 200 ml",
-  "url": "https://www.a101.com.tr/kapida/sut-urunleri-kahvaltilik/milkten-milkino-cocuk-sutu-200-ml_p-12000158",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/CXON3UhLLT_256x256.png",
-  "category": "Süt",
-  "price": 14.5,
-  "regular_price": 18.5,
-  "discount_pct": 21.6,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
   "durum": "geçerli"
  },
  {
@@ -33288,7 +33204,7 @@
   "discount_pct": 21.5,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -33498,7 +33414,7 @@
   "discount_pct": 21.2,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -33554,7 +33470,7 @@
   "discount_pct": 21.1,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -33568,21 +33484,7 @@
   "discount_pct": 21.1,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Nimet Hamburger Ekmeği 8x54 G",
-  "url": "https://www.a101.com.tr/kapida/firindan/nimet-hamburger-ekmegi-8x54-g_p-28000200",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/8wG08gI1dX_256x256.png",
-  "category": "Ekmek",
-  "price": 60.0,
-  "regular_price": 76.0,
-  "discount_pct": 21.1,
-  "is_campaign": 0,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -33596,7 +33498,7 @@
   "discount_pct": 21.1,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -33638,7 +33540,7 @@
   "discount_pct": 21.0,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -33694,7 +33596,7 @@
   "discount_pct": 20.9,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -33708,7 +33610,7 @@
   "discount_pct": 20.9,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -33839,16 +33741,16 @@
  },
  {
   "market": "a101",
-  "name": "Nimet Tost Ekmek 550 G",
-  "url": "https://www.a101.com.tr/kapida/firindan/nimet-tost-ekmek-550-g_p-28000729",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/3sTGDva72D_256x256.png",
-  "category": "Ekmek",
-  "price": 40.0,
-  "regular_price": 50.5,
+  "name": "Nutella Kakaolu Fındık Kreması 630 G",
+  "url": "https://www.a101.com.tr/kapida/sut-urunleri-kahvaltilik/nutella-kakaolu-findik-kremasi-630-g_p-16002445",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/vAQWI2uCaq_256x256.png",
+  "category": "Sürülebilir Ürünler",
+  "price": 210.0,
+  "regular_price": 265.0,
   "discount_pct": 20.8,
-  "is_campaign": 0,
+  "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -33862,7 +33764,7 @@
   "discount_pct": 20.8,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -33974,7 +33876,7 @@
   "discount_pct": 20.6,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -34044,7 +33946,7 @@
   "discount_pct": 20.5,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -34058,7 +33960,7 @@
   "discount_pct": 20.4,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -34072,7 +33974,7 @@
   "discount_pct": 20.4,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -34114,7 +34016,21 @@
   "discount_pct": 20.3,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Ülker Çifte Kavrulmuş Pötibör Bisküvi 450 G",
+  "url": "https://www.a101.com.tr/kapida/atistirmalik/ulker-cifte-kavrulmus-potibor-biskuvi-450-g_p-17003261",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/zmuJza5sl7_256x256.png",
+  "category": "Bisküvi, Kraker",
+  "price": 55.0,
+  "regular_price": 69.0,
+  "discount_pct": 20.3,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -34147,6 +34063,20 @@
  },
  {
   "market": "a101",
+  "name": "Greyfurt Kg",
+  "url": "https://www.a101.com.tr/kapida/meyve-sebze/greyfurt-kg_p-20000824",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/1UtkKY-a9R_256x256.png",
+  "category": "Meyve",
+  "price": 39.5,
+  "regular_price": 49.5,
+  "discount_pct": 20.2,
+  "is_campaign": 0,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
   "name": "Lievito Artizan  Karışık Pizza Dondurulmuş 525 G",
   "url": "https://www.a101.com.tr/kapida/donuk-hazir-yemek-meze/lievito-artizan-karisik-pizza-dondurulmus-525-g_p-21001623",
   "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/psHkSxSvsv_256x256.png",
@@ -34156,7 +34086,7 @@
   "discount_pct": 20.2,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -34254,7 +34184,7 @@
   "discount_pct": 20.1,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -34268,7 +34198,7 @@
   "discount_pct": 20.1,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -34282,7 +34212,7 @@
   "discount_pct": 20.1,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -34296,7 +34226,7 @@
   "discount_pct": 20.1,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -34310,21 +34240,7 @@
   "discount_pct": 20.1,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Lievito Artizan Jambon Sandviç Dondurulmuş 195 G",
-  "url": "https://www.a101.com.tr/kapida/donuk-hazir-yemek-meze/lievito-artizan-jambon-sandvic-dondurulmus-195-g-_p-21001703",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/6JIdScqaqD_256x256.png",
-  "category": "Donuk Unlu Mamuller",
-  "price": 79.5,
-  "regular_price": 99.5,
-  "discount_pct": 20.1,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -34338,7 +34254,7 @@
   "discount_pct": 20.1,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -34352,7 +34268,7 @@
   "discount_pct": 20.1,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -34366,7 +34282,7 @@
   "discount_pct": 20.1,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -34380,7 +34296,7 @@
   "discount_pct": 20.1,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -34394,7 +34310,7 @@
   "discount_pct": 20.1,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -34604,7 +34520,7 @@
   "discount_pct": 20.0,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -34618,7 +34534,7 @@
   "discount_pct": 20.0,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -34632,7 +34548,7 @@
   "discount_pct": 20.0,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -34646,7 +34562,7 @@
   "discount_pct": 20.0,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -34660,7 +34576,7 @@
   "discount_pct": 20.0,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -34674,7 +34590,7 @@
   "discount_pct": 20.0,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -34688,7 +34604,7 @@
   "discount_pct": 20.0,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -34702,7 +34618,7 @@
   "discount_pct": 20.0,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -35472,21 +35388,7 @@
   "discount_pct": 19.9,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "İthal Muz Kg",
-  "url": "https://www.a101.com.tr/kapida/meyve-sebze/ithal-muz-kg_p-20000802",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/zXcoeSRFt-_256x256.png",
-  "category": "Meyve",
-  "price": 100.0,
-  "regular_price": 124.9,
-  "discount_pct": 19.9,
-  "is_campaign": 0,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -35500,7 +35402,21 @@
   "discount_pct": 19.8,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Ülker Çizi Çıtır Kraker Cheddar&Soğan 160 G",
+  "url": "https://www.a101.com.tr/kapida/atistirmalik/ulker-cizi-citir-kraker-cheddarsogan-160-g-_p-17003823",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/8sdmqgAeKY_256x256.png",
+  "category": "Bisküvi, Kraker",
+  "price": 51.0,
+  "regular_price": 63.5,
+  "discount_pct": 19.7,
+  "is_campaign": 0,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -35543,20 +35459,6 @@
   "is_campaign": 1,
   "valid_from": null,
   "scraped_on": "2026-11-19",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Hero Pouch Yaban Mersini & Muz Bebek Maması 100 G",
-  "url": "https://www.a101.com.tr/kapida/anne-bebek/hero-pouch-yaban-mersini-muz-bebek-mamasi-100-g_p-17003860",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/QHoLVRHECE_256x256.png",
-  "category": "Bebek Beslenme",
-  "price": 72.5,
-  "regular_price": 90.0,
-  "discount_pct": 19.4,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
   "durum": "geçerli"
  },
  {
@@ -35644,118 +35546,6 @@
   "durum": "geçerli"
  },
  {
-  "market": "a101",
-  "name": "Nuh'un Ankara Arpa Şehriye 500 G",
-  "url": "https://www.a101.com.tr/kapida/temel-gida/nuhun-ankara-arpa-sehriye-500-g_p-14001543",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/fdhR9ysZkK_256x256.png",
-  "category": "Makarna",
-  "price": 29.5,
-  "regular_price": 36.5,
-  "discount_pct": 19.2,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Nuh'un Ankara Boncuk Makarna 500 G",
-  "url": "https://www.a101.com.tr/kapida/temel-gida/nuhun-ankara-boncuk-makarna-500-g_p-14001599",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/DR3RB7EMzw_256x256.png",
-  "category": "Makarna",
-  "price": 29.5,
-  "regular_price": 36.5,
-  "discount_pct": 19.2,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Nuh'un Ankara Burgu Makarnası 500 G",
-  "url": "https://www.a101.com.tr/kapida/temel-gida/nuhun-ankara-burgu-makarnasi-500-g_p-14001541",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/91u6MAyQRu_256x256.png",
-  "category": "Makarna",
-  "price": 29.5,
-  "regular_price": 36.5,
-  "discount_pct": 19.2,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Nuh'un Ankara Fiyonk Makarnası 500 G",
-  "url": "https://www.a101.com.tr/kapida/temel-gida/nuhun-ankara-fiyonk-makarnasi-500-g_p-14000370",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/1Kd13lgbRu_256x256.png",
-  "category": "Makarna",
-  "price": 29.5,
-  "regular_price": 36.5,
-  "discount_pct": 19.2,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Nuh'un Ankara Linguine Makarna 500 G",
-  "url": "https://www.a101.com.tr/kapida/temel-gida/nuhun-ankara-linguine-makarna-500-g_p-14002434",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/iqceRDfdKS_256x256.png",
-  "category": "Makarna",
-  "price": 29.5,
-  "regular_price": 36.5,
-  "discount_pct": 19.2,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Nuh'un Ankara Spagetti Makarnası 500 G",
-  "url": "https://www.a101.com.tr/kapida/temel-gida/nuhun-ankara-spagetti-makarnasi-500-g_p-14001540",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/532lTM9Vob_256x256.png",
-  "category": "Makarna",
-  "price": 29.5,
-  "regular_price": 36.5,
-  "discount_pct": 19.2,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Nuh'un Ankara Yüksük Makarnası 500 G",
-  "url": "https://www.a101.com.tr/kapida/temel-gida/nuhun-ankara-yuksuk-makarnasi-500-g_p-14001542",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/ZNb7-mm0pX_256x256.png",
-  "category": "Makarna",
-  "price": 29.5,
-  "regular_price": 36.5,
-  "discount_pct": 19.2,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Sarımsak File 200 G",
-  "url": "https://www.a101.com.tr/kapida/meyve-sebze/sarimsak-file-200-g_p-20000792",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/eYmRe6QFa8_256x256.png",
-  "category": "Sebze",
-  "price": 40.0,
-  "regular_price": 49.5,
-  "discount_pct": 19.2,
-  "is_campaign": 0,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
   "market": "migros",
   "name": "Sek Yarım Yağlı Yoğurt 1500 G",
   "url": "https://www.migros.com.tr/sek-yarim-yagli-yogurt-1500-g-p-bec4ce",
@@ -35778,6 +35568,216 @@
   "price": 79.95,
   "regular_price": 99.0,
   "discount_pct": 19.2,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Flormar Color Joy Oje 048",
+  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/flormar-color-joy-oje-048-_p-24004991",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/uCMg404-b6_256x256.png",
+  "category": "Makyaj",
+  "price": 46.5,
+  "regular_price": 57.5,
+  "discount_pct": 19.1,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Flormar Color Joy Oje 246",
+  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/flormar-color-joy-oje-246_p-24006242",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/KaJaCcpKFI_256x256.png",
+  "category": "Makyaj",
+  "price": 46.5,
+  "regular_price": 57.5,
+  "discount_pct": 19.1,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Flormar Color Joy Oje 301",
+  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/flormar-color-joy-oje-301_p-24004253",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/0g3y3u3hhX_256x256.png",
+  "category": "Makyaj",
+  "price": 46.5,
+  "regular_price": 57.5,
+  "discount_pct": 19.1,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Flormar Color Joy Oje 310",
+  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/flormar-color-joy-oje-310_p-24004254",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/s7yF6J1PrO_256x256.png",
+  "category": "Makyaj",
+  "price": 46.5,
+  "regular_price": 57.5,
+  "discount_pct": 19.1,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Flormar Color Joy Oje 313",
+  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/flormar-color-joy-oje-313_p-24004257",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/dNNjYB1Y7F_256x256.png",
+  "category": "Makyaj",
+  "price": 46.5,
+  "regular_price": 57.5,
+  "discount_pct": 19.1,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Flormar Color Joy Oje 320",
+  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/flormar-color-joy-oje-320_p-24004258",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/kat4cw141q_256x256.png",
+  "category": "Makyaj",
+  "price": 46.5,
+  "regular_price": 57.5,
+  "discount_pct": 19.1,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Flormar Color Joy Oje 352",
+  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/flormar-color-joy-oje-352_p-24004260",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/5kM1ogxw7Q_256x256.png",
+  "category": "Makyaj",
+  "price": 46.5,
+  "regular_price": 57.5,
+  "discount_pct": 19.1,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Flormar Color Joy Oje 397",
+  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/flormar-color-joy-oje-397_p-24004268",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/8jNrWxiUu6_256x256.png",
+  "category": "Makyaj",
+  "price": 46.5,
+  "regular_price": 57.5,
+  "discount_pct": 19.1,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Flormar Color Joy Oje 452",
+  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/flormar-color-joy-oje-452_p-24004992",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/L2fkv3ve2Y_256x256.png",
+  "category": "Makyaj",
+  "price": 46.5,
+  "regular_price": 57.5,
+  "discount_pct": 19.1,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Flormar Color Joy Oje 453",
+  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/flormar-color-joy-oje-453_p-24004988",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/LlFn0KCS54_256x256.png",
+  "category": "Makyaj",
+  "price": 46.5,
+  "regular_price": 57.5,
+  "discount_pct": 19.1,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Flormar Color Joy Oje 464",
+  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/flormar-color-joy-oje-464_p-24006240",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/E7c1DKyPyc_256x256.png",
+  "category": "Makyaj",
+  "price": 46.5,
+  "regular_price": 57.5,
+  "discount_pct": 19.1,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Flormar Color Joy Oje 470",
+  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/flormar-color-joy-oje-470_p-24004264",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/XsFPEfS2KH_256x256.png",
+  "category": "Makyaj",
+  "price": 46.5,
+  "regular_price": 57.5,
+  "discount_pct": 19.1,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Flormar Color Joy Oje 472",
+  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/flormar-color-joy-oje-472-_p-24004984",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/LB4VoVGpuh_256x256.png",
+  "category": "Makyaj",
+  "price": 46.5,
+  "regular_price": 57.5,
+  "discount_pct": 19.1,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Flormar Color Joy Oje 514",
+  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/flormar-color-joy-oje-514-_p-24004985",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/u5ccdZ3pao_256x256.png",
+  "category": "Makyaj",
+  "price": 46.5,
+  "regular_price": 57.5,
+  "discount_pct": 19.1,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Flormar Color Joy Oje 554",
+  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/flormar-color-joy-oje-554_p-24006241",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/2pnulxnqsT_256x256.png",
+  "category": "Makyaj",
+  "price": 46.5,
+  "regular_price": 57.5,
+  "discount_pct": 19.1,
   "is_campaign": 1,
   "valid_from": null,
   "scraped_on": "2026-11-19",
@@ -35990,7 +35990,7 @@
   "discount_pct": 18.8,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -36004,7 +36004,7 @@
   "discount_pct": 18.8,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -36018,7 +36018,7 @@
   "discount_pct": 18.8,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -36032,7 +36032,7 @@
   "discount_pct": 18.8,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -36046,21 +36046,7 @@
   "discount_pct": 18.8,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Nescafe Xpress Vanilya Soğuk Kahve 250 ml",
-  "url": "https://www.a101.com.tr/kapida/su-icecek/nescafe-xpress-vanilya-soguk-kahve-250-ml_p-13002885",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/xkmDTqe1v4_256x256.png",
-  "category": "Soğuk Kahve",
-  "price": 65.0,
-  "regular_price": 80.0,
-  "discount_pct": 18.8,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -36102,21 +36088,7 @@
   "discount_pct": 18.6,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Sütaş Tam Yağlı Beyaz Peynir 700 G",
-  "url": "https://www.a101.com.tr/kapida/sut-urunleri-kahvaltilik/sutas-tam-yagli-beyaz-peynir-700-g_p-12000556",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/cwW1PSnB3K_256x256.png",
-  "category": "Beyaz Peynir",
-  "price": 219.0,
-  "regular_price": 269.0,
-  "discount_pct": 18.6,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -36270,21 +36242,7 @@
   "discount_pct": 18.4,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Nimet Sandviç Ekmeği 7x65 G",
-  "url": "https://www.a101.com.tr/kapida/firindan/nimet-sandvic-ekmegi-7x65-g_p-28000197",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/KcLM0hM6Jw_256x256.png",
-  "category": "Ekmek",
-  "price": 60.0,
-  "regular_price": 73.5,
-  "discount_pct": 18.4,
-  "is_campaign": 0,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -36312,7 +36270,7 @@
   "discount_pct": 18.3,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -36415,6 +36373,20 @@
  },
  {
   "market": "a101",
+  "name": "Portakal Kg",
+  "url": "https://www.a101.com.tr/kapida/meyve-sebze/portakal-kg_p-20000816",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/NasX2-Zzqm_256x256.png",
+  "category": "Meyve",
+  "price": 44.9,
+  "regular_price": 54.9,
+  "discount_pct": 18.2,
+  "is_campaign": 0,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
   "name": "Yurt Kuru Fasulye 400 G",
   "url": "https://www.a101.com.tr/kapida/donuk-hazir-yemek-meze/yurt-kuru-fasulye-400-g_p-18001464",
   "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/kazQNgClYP_256x256.png",
@@ -36424,7 +36396,7 @@
   "discount_pct": 18.2,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -36718,7 +36690,7 @@
   "discount_pct": 17.7,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -36760,7 +36732,7 @@
   "discount_pct": 17.5,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -36773,6 +36745,20 @@
   "regular_price": 120.0,
   "discount_pct": 17.5,
   "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Balık Dünyası Temizlenmiş Çipura Dondurulmuş 550 G",
+  "url": "https://www.a101.com.tr/kapida/et-tavuk-sarkuteri/balik-dunyasi-temizlenmis-cipura-dondurulmus-550-g_p-11002108",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/kouwOrBfks_256x256.png",
+  "category": "Donuk Et, Balık, Tavuk",
+  "price": 219.0,
+  "regular_price": 265.0,
+  "discount_pct": 17.4,
+  "is_campaign": 0,
   "valid_from": null,
   "scraped_on": "2026-11-19",
   "durum": "geçerli"
@@ -36844,7 +36830,7 @@
   "discount_pct": 17.3,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -37101,16 +37087,16 @@
  },
  {
   "market": "a101",
-  "name": "Ülker Bitter Çikolatalı Gofret 36 G",
-  "url": "https://www.a101.com.tr/kapida/atistirmalik/ulker-bitter-cikolatali-gofret-36-g_p-17002361",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/gzqadqdp2Q_256x256.png",
+  "name": "Ülker Beyaz Çikolatalı Gofret 35 G",
+  "url": "https://www.a101.com.tr/kapida/atistirmalik/ulker-beyaz-cikolatali-gofret-35-g_p-17002491",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/X1wLe3253A_256x256.png",
   "category": "Gofret",
   "price": 14.5,
   "regular_price": 17.5,
   "discount_pct": 17.1,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -37124,7 +37110,7 @@
   "discount_pct": 17.1,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -37241,34 +37227,6 @@
  },
  {
   "market": "a101",
-  "name": "Ahir Tam Yağlı Tost Peyniri 1 Kg",
-  "url": "https://www.a101.com.tr/kapida/sut-urunleri-kahvaltilik/ahir-tam-yagli-tost-peyniri-1-kg_p-12002669",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/rT0YKn8o6N_256x256.png",
-  "category": "Kaşar Peyniri",
-  "price": 349.0,
-  "regular_price": 419.0,
-  "discount_pct": 16.7,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Eti Tutku Kakao Kremalı Mozaik Bisküvi 100 G",
-  "url": "https://www.a101.com.tr/kapida/atistirmalik/eti-tutku-kakao-kremali-mozaik-biskuvi-100-g_p-17000110",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/iVeKdD0IDB_256x256.png",
-  "category": "Bisküvi, Kraker",
-  "price": 25.0,
-  "regular_price": 30.0,
-  "discount_pct": 16.7,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
   "name": "Lievito Artizan Pizza Dana Jambon Cheddar Dondurulmuş 480 G",
   "url": "https://www.a101.com.tr/kapida/donuk-hazir-yemek-meze/lievito-artizan-pizza-dana-jambon-cheddar-dondurulmus-480-g_p-21001582",
   "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/zh8hx4mnmw_256x256.png",
@@ -37278,7 +37236,21 @@
   "discount_pct": 16.7,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Peros Renkliler Sıvı Deterjan 3 L",
+  "url": "https://www.a101.com.tr/kapida/temizlik-urunleri/peros-renkliler-sivi-deterjan-3-l_p-22002520",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/qsCkQAr6dz_256x256.png",
+  "category": "Çamaşır",
+  "price": 199.0,
+  "regular_price": 239.0,
+  "discount_pct": 16.7,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -37292,7 +37264,7 @@
   "discount_pct": 16.7,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -37306,21 +37278,7 @@
   "discount_pct": 16.7,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Çaykur Tiryaki Siyah Çay 1 Kg",
-  "url": "https://www.a101.com.tr/kapida/su-icecek/caykur-tiryaki-siyah-cay-1-kg_p-13000056",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/o4FTq8vFR9_256x256.png",
-  "category": "Çay",
-  "price": 349.0,
-  "regular_price": 419.0,
-  "discount_pct": 16.7,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -37759,6 +37717,20 @@
  },
  {
   "market": "a101",
+  "name": "Sinangil Soğuk Baklava 400 G",
+  "url": "https://www.a101.com.tr/kapida/donuk-hazir-yemek-meze/sinangil-soguk-baklava-400-g_p-21001198",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/U96eP2tWln_256x256.png",
+  "category": "Dondurulmuş Tatlı",
+  "price": 199.5,
+  "regular_price": 239.0,
+  "discount_pct": 16.5,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
   "name": "Zühre Ana Ananas Sirkesi 500 ml",
   "url": "https://www.a101.com.tr/kapida/kisisel-bakim/zuhre-ana-ananas-sirkesi-500-ml_p-18003042",
   "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/DYvlpjxu-h_256x256.png",
@@ -37768,35 +37740,7 @@
   "discount_pct": 16.5,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Patates Kg",
-  "url": "https://www.a101.com.tr/kapida/meyve-sebze/patates-kg_p-20000794",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/e6oHnfxd91_256x256.png",
-  "category": "Sebze",
-  "price": 30.0,
-  "regular_price": 35.9,
-  "discount_pct": 16.4,
-  "is_campaign": 0,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Soğan Kg",
-  "url": "https://www.a101.com.tr/kapida/meyve-sebze/sogan-kg_p-20000796",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/x-vb-ATL7m_256x256.png",
-  "category": "Sebze",
-  "price": 30.0,
-  "regular_price": 35.9,
-  "discount_pct": 16.4,
-  "is_campaign": 0,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -37810,7 +37754,7 @@
   "discount_pct": 16.4,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -37824,7 +37768,7 @@
   "discount_pct": 16.3,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -37838,7 +37782,7 @@
   "discount_pct": 16.1,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -37936,7 +37880,7 @@
   "discount_pct": 15.5,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -37978,7 +37922,7 @@
   "discount_pct": 15.4,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -38039,6 +37983,20 @@
  },
  {
   "market": "a101",
+  "name": "Cumhuriyet Dana Kangal Sucuk 350 G",
+  "url": "https://www.a101.com.tr/kapida/et-tavuk-sarkuteri/cumhuriyet-dana-kangal-sucuk-350-g_p-11001053",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/9gUwZO1E9s_256x256.png",
+  "category": "Şarküteri",
+  "price": 449.0,
+  "regular_price": 530.0,
+  "discount_pct": 15.3,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
   "name": "Tadım Kuruyemiş Karışık Karnaval 180 G",
   "url": "https://www.a101.com.tr/kapida/atistirmalik/tadim-kuruyemis-karisik-karnaval-180-g_p-15001737",
   "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/YPi45rkOhv_256x256.png",
@@ -38048,7 +38006,7 @@
   "discount_pct": 15.2,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -38109,20 +38067,6 @@
  },
  {
   "market": "a101",
-  "name": "Tadım Festival Karışık Kuruyemiş 180 G",
-  "url": "https://www.a101.com.tr/kapida/atistirmalik/tadim-festival-karisik-kuruyemis-180-g_p-15000103",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/02PhykDI6d_256x256.png",
-  "category": "Kuruyemiş, Kuru Meyve",
-  "price": 174.0,
-  "regular_price": 204.95,
-  "discount_pct": 15.1,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
   "name": "Tadım Kuruyemiş Kavrulmuş Fındık İçi 180 G",
   "url": "https://www.a101.com.tr/kapida/atistirmalik/tadim-kuruyemis-kavrulmus-findik-ici-180-g_p-15001738",
   "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/gmGwmMp57W_256x256.png",
@@ -38132,7 +38076,7 @@
   "discount_pct": 15.1,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -38202,7 +38146,7 @@
   "discount_pct": 15.0,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -38216,7 +38160,7 @@
   "discount_pct": 15.0,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -38230,7 +38174,7 @@
   "discount_pct": 15.0,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -38244,7 +38188,7 @@
   "discount_pct": 15.0,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -38370,7 +38314,21 @@
   "discount_pct": 14.9,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Mudurnu Piliç Poşetli Bütün 1640 G",
+  "url": "https://www.a101.com.tr/kapida/et-tavuk-sarkuteri/mudurnu-pilic-posetli-butun-1640-g_p-11003579",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/wIdjFNGohr_256x256.png",
+  "category": "Beyaz Et",
+  "price": 188.6,
+  "regular_price": 221.4,
+  "discount_pct": 14.8,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -38384,7 +38342,7 @@
   "discount_pct": 14.8,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -38510,7 +38468,7 @@
   "discount_pct": 14.7,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -38524,7 +38482,7 @@
   "discount_pct": 14.7,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -38580,7 +38538,7 @@
   "discount_pct": 14.6,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -38622,7 +38580,21 @@
   "discount_pct": 14.4,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Starking Elma Kg",
+  "url": "https://www.a101.com.tr/kapida/meyve-sebze/starking-elma-kg_p-20000805",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/G8n35nxTDx_256x256.png",
+  "category": "Meyve",
+  "price": 59.5,
+  "regular_price": 69.5,
+  "discount_pct": 14.4,
+  "is_campaign": 0,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -38697,6 +38669,20 @@
  },
  {
   "market": "a101",
+  "name": "Yörsan Proteinli Laktozsuz Süt 4x1 L",
+  "url": "https://www.a101.com.tr/kapida/sut-urunleri-kahvaltilik/yorsan-proteinli-laktozsuz-sut-4x1-l_p-12003854",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/XgOnFUTHlE_256x256.png",
+  "category": "Süt",
+  "price": 299.0,
+  "regular_price": 349.0,
+  "discount_pct": 14.3,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
   "name": "Üstad İç Antep Fıstığı 120 G",
   "url": "https://www.a101.com.tr/kapida/atistirmalik/ustad-ic-antep-fistigi-120-g_p-15001705",
   "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/OeV5aRrFX6_256x256.png",
@@ -38706,7 +38692,7 @@
   "discount_pct": 14.3,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -38949,20 +38935,6 @@
  },
  {
   "market": "a101",
-  "name": "Tazelen Kahveli Whey Protein İçeceği 300 ml",
-  "url": "https://www.a101.com.tr/kapida/su-icecek/tazelen-kahveli-whey-protein-icecegi-300-ml_p-12002758",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/In0QGXuDmq_256x256.png",
-  "category": "Gazsız İçecekler",
-  "price": 64.5,
-  "regular_price": 75.0,
-  "discount_pct": 14.0,
-  "is_campaign": 0,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
   "name": "Üstad Dana Kangal Sucuk 400 G",
   "url": "https://www.a101.com.tr/kapida/et-tavuk-sarkuteri/ustad-dana-kangal-sucuk-400-g_p-11003091",
   "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/FeqO0csXXc_256x256.png",
@@ -38972,7 +38944,7 @@
   "discount_pct": 14.0,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -39070,7 +39042,7 @@
   "discount_pct": 13.8,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -39084,7 +39056,7 @@
   "discount_pct": 13.8,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -39112,7 +39084,7 @@
   "discount_pct": 13.7,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -39126,7 +39098,7 @@
   "discount_pct": 13.7,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -39298,6 +39270,20 @@
   "durum": "geçerli"
  },
  {
+  "market": "a101",
+  "name": "Red Globe Üzüm Kg",
+  "url": "https://www.a101.com.tr/kapida/meyve-sebze/red-globe-uzum-kg_p-20001179",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/z37yseOc72_256x256.png",
+  "category": "Meyve",
+  "price": 65.9,
+  "regular_price": 75.9,
+  "discount_pct": 13.2,
+  "is_campaign": 0,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
   "market": "migros",
   "name": "Lay's Baharatlı Parti Boy 160 G",
   "url": "https://www.migros.com.tr/lays-baharatli-parti-boy-160-g-p-4d8454",
@@ -39462,7 +39448,7 @@
   "discount_pct": 13.0,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -39476,7 +39462,7 @@
   "discount_pct": 13.0,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -39495,6 +39481,48 @@
  },
  {
   "market": "a101",
+  "name": "Berona Tavuklu Noodle Paket 75 G",
+  "url": "https://www.a101.com.tr/kapida/temel-gida/berona-tavuklu-noodle-paket-75-g_p-14001825",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/RTosZuXlSh_256x256.png",
+  "category": "Mantı, Noodle",
+  "price": 13.5,
+  "regular_price": 15.5,
+  "discount_pct": 12.9,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Granny Smith Elma Kg",
+  "url": "https://www.a101.com.tr/kapida/meyve-sebze/granny-smith-elma-kg_p-20000809",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/BB6Ileqn17_256x256.png",
+  "category": "Meyve",
+  "price": 69.5,
+  "regular_price": 79.5,
+  "discount_pct": 12.6,
+  "is_campaign": 0,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Nar Kg",
+  "url": "https://www.a101.com.tr/kapida/meyve-sebze/nar-kg-_p-20000825",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/-RmXBspEEH_256x256.png",
+  "category": "Meyve",
+  "price": 69.5,
+  "regular_price": 79.5,
+  "discount_pct": 12.6,
+  "is_campaign": 0,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
   "name": "Tarabya Tam Yağlı Taze Kaşar Peyniri 500 G",
   "url": "https://www.a101.com.tr/kapida/sut-urunleri-kahvaltilik/tarabya-tam-yagli-taze-kasar-peyniri-500-g_p-12002666",
   "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/h0Vz6yzjQf_256x256.png",
@@ -39504,7 +39532,7 @@
   "discount_pct": 12.6,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -39812,7 +39840,7 @@
   "discount_pct": 11.8,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -39957,6 +39985,34 @@
  },
  {
   "market": "a101",
+  "name": "Kırmızı Erik Kg",
+  "url": "https://www.a101.com.tr/kapida/meyve-sebze/kirmizi-erik-kg_p-20001134",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/QIUnTrAgII_256x256.png",
+  "category": "Meyve",
+  "price": 79.5,
+  "regular_price": 89.5,
+  "discount_pct": 11.2,
+  "is_campaign": 0,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Santa Maria Armut Kg",
+  "url": "https://www.a101.com.tr/kapida/meyve-sebze/santa-maria-armut-kg_p-20000813",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/L-oiCWgbdL_256x256.png",
+  "category": "Meyve",
+  "price": 79.5,
+  "regular_price": 89.5,
+  "discount_pct": 11.2,
+  "is_campaign": 0,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
   "name": "Şokoley Kakaolu Fındık Kreması 500 G",
   "url": "https://www.a101.com.tr/kapida/sut-urunleri-kahvaltilik/sokoley-kakaolu-findik-kremasi-500-g_p-16001689",
   "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/JIoNrP92Vr_256x256.png",
@@ -39966,7 +40022,7 @@
   "discount_pct": 11.2,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -40022,7 +40078,7 @@
   "discount_pct": 11.1,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -40036,7 +40092,7 @@
   "discount_pct": 11.1,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -40110,20 +40166,6 @@
   "durum": "geçerli"
  },
  {
-  "market": "a101",
-  "name": "Beşler Dana Mangal Sucuk 100 G",
-  "url": "https://www.a101.com.tr/kapida/et-tavuk-sarkuteri/besler-dana-mangal-sucuk-100-g_p-11003114",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/IrbpojOSbq_256x256.png",
-  "category": "Şarküteri",
-  "price": 64.5,
-  "regular_price": 72.5,
-  "discount_pct": 11.0,
-  "is_campaign": 0,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
   "market": "sok",
   "name": "Karmen Çokorulo Beyaz 18 g",
   "url": "https://www.sokmarket.com.tr/karmen-cokorulo-beyaz-18-g-p-3898",
@@ -40176,7 +40218,7 @@
   "discount_pct": 10.8,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -40278,6 +40320,20 @@
   "durum": "geçerli"
  },
  {
+  "market": "a101",
+  "name": "Ayva Kg",
+  "url": "https://www.a101.com.tr/kapida/meyve-sebze/ayva-kg_p-20000815",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/1LtQQ7p2Cm_256x256.png",
+  "category": "Meyve",
+  "price": 75.9,
+  "regular_price": 84.9,
+  "discount_pct": 10.6,
+  "is_campaign": 0,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
   "market": "migros",
   "name": "Yörsan Susurluk Ayran %2,3 Yağlı 1 L",
   "url": "https://www.migros.com.tr/yorsan-susurluk-ayran-23-yagli-1-l-p-b03d6b",
@@ -40287,6 +40343,20 @@
   "regular_price": 84.95,
   "discount_pct": 10.6,
   "is_campaign": 0,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Mendiva Islak Havlu 101'li",
+  "url": "https://www.a101.com.tr/kapida/kagit-urunleri/mendiva-islak-havlu-101li_p-23000471",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/cBCxNiOjdO_256x256.png",
+  "category": "Islak Mendil",
+  "price": 47.0,
+  "regular_price": 52.5,
+  "discount_pct": 10.5,
+  "is_campaign": 1,
   "valid_from": null,
   "scraped_on": "2026-11-19",
   "durum": "geçerli"
@@ -40316,7 +40386,7 @@
   "discount_pct": 10.3,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -40335,20 +40405,6 @@
  },
  {
   "market": "a101",
-  "name": "Birşah Tam Kıvamında Homojenize Yoğurt 3 Kg",
-  "url": "https://www.a101.com.tr/kapida/sut-urunleri-kahvaltilik/birsah-tam-kivaminda-homojenize-yogurt-3-kg_p-12000116",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/Yk0JfP6BHZ_256x256.png",
-  "category": "Yoğurt",
-  "price": 179.0,
-  "regular_price": 199.0,
-  "discount_pct": 10.1,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
   "name": "Çokça Köz Biber 680 G",
   "url": "https://www.a101.com.tr/kapida/temel-gida/cokca-koz-biber-680-g_p-18002037",
   "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/5MRngib3q0_256x256.png",
@@ -40358,7 +40414,7 @@
   "discount_pct": 10.1,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -40517,6 +40573,34 @@
  },
  {
   "market": "a101",
+  "name": "Mango Adet",
+  "url": "https://www.a101.com.tr/kapida/meyve-sebze/mango-adet_p-20000858",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/OwEd-fjxMv_256x256.png",
+  "category": "Meyve",
+  "price": 59.5,
+  "regular_price": 65.9,
+  "discount_pct": 9.7,
+  "is_campaign": 0,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Fanta Portakal Aromalı Gazlı İçecek 3 L",
+  "url": "https://www.a101.com.tr/kapida/su-icecek/fanta-portakal-aromali-gazli-icecek-3-l_p-13003173",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/6bgFuGWaUI_256x256.png",
+  "category": "Gazlı İçecekler",
+  "price": 97.5,
+  "regular_price": 107.5,
+  "discount_pct": 9.3,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
   "name": "Hero Baby Gourmet Muz Muhallebili Kavanoz Bebek Maması 120 G",
   "url": "https://www.a101.com.tr/kapida/anne-bebek/hero-baby-gourmet-muz-muhallebili-kavanoz-bebek-mamasi-120-g_p-17003863",
   "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/CWWlBRYxHt_256x256.png",
@@ -40526,7 +40610,7 @@
   "discount_pct": 9.2,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -40540,7 +40624,7 @@
   "discount_pct": 9.2,
   "is_campaign": 0,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -40554,7 +40638,21 @@
   "discount_pct": 9.2,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Trabzon Hurma Kg",
+  "url": "https://www.a101.com.tr/kapida/meyve-sebze/trabzon-hurma-kg_p-20001021",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/SBerz3-npG_256x256.png",
+  "category": "Meyve",
+  "price": 99.5,
+  "regular_price": 109.5,
+  "discount_pct": 9.1,
+  "is_campaign": 0,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -40568,7 +40666,7 @@
   "discount_pct": 8.6,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -40582,21 +40680,7 @@
   "discount_pct": 8.3,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Yudum Egemden Natürel Sızma Zeytinyağı 2 L",
-  "url": "https://www.a101.com.tr/kapida/temel-gida/yudum-egemden-naturel-sizma-zeytinyagi-2-l_p-19001090",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/XTAFe4MtKY_256x256.png",
-  "category": "Sıvı Yağlar",
-  "price": 549.0,
-  "regular_price": 599.0,
-  "discount_pct": 8.3,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -40624,7 +40708,7 @@
   "discount_pct": 8.0,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -40638,7 +40722,7 @@
   "discount_pct": 7.8,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -40666,7 +40750,21 @@
   "discount_pct": 7.6,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Yemeye Hazır Mango",
+  "url": "https://www.a101.com.tr/kapida/meyve-sebze/yemeye-hazir-mango_p-20001359",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/IwtiqTWNXt_256x256.png",
+  "category": "Meyve",
+  "price": 79.5,
+  "regular_price": 85.9,
+  "discount_pct": 7.5,
+  "is_campaign": 0,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -40680,7 +40778,7 @@
   "discount_pct": 6.8,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -40726,6 +40824,34 @@
   "durum": "geçerli"
  },
  {
+  "market": "a101",
+  "name": "Mistral 2 Katlı Tuvalet Kağıdı 16'lı",
+  "url": "https://www.a101.com.tr/kapida/kagit-urunleri/mistral-2-katli-tuvalet-kagidi-16li_p-23001530",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/KmRNEGf2vO_256x256.png",
+  "category": "Tuvalet Kağıdı",
+  "price": 119.0,
+  "regular_price": 127.0,
+  "discount_pct": 6.3,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Tarabya Tereyağı 1 Kg",
+  "url": "https://www.a101.com.tr/kapida/sut-urunleri-kahvaltilik/tarabya-tereyagi-1-kg_p-12003786",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/QAkrFIlwRe_256x256.png",
+  "category": "Tereyağ, Margarin",
+  "price": 469.0,
+  "regular_price": 499.0,
+  "discount_pct": 6.0,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
   "market": "sok",
   "name": "Pantene Onarıcı Şampuan 400 Ml+Argan Yağı 100 Ml",
   "url": "https://www.sokmarket.com.tr/pantene-onarici-sampuan-400-ml-argan-yagi-100-ml-p-824571",
@@ -40741,100 +40867,72 @@
  },
  {
   "market": "a101",
-  "name": "Agiss Ağda Bandı 55'li",
-  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/agiss-agda-bandi-55li_p-24004141",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/dwN0hSUATe_256x256.png",
-  "category": "Ağda Epilasyon",
-  "price": 64.0,
-  "regular_price": null,
-  "discount_pct": null,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Agiss Ağda Bezi 25 Metre",
-  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/agiss-agda-bezi-25-metre_p-24001597",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/eZKIaZKRN3_256x256.png",
-  "category": "Ağda Epilasyon",
+  "name": "Aqualin Beyaz Sabun Köpük Sabun 400 ml",
+  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/aqualin-beyaz-sabun-kopuk-sabun-400-ml_p-22002682",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/GOb6N44sfd_256x256.png",
+  "category": "Duş, Banyo, Sabun",
   "price": 59.5,
   "regular_price": null,
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
   "market": "a101",
-  "name": "Altınkılıç Kefirim Çilekli Kefir 1 L",
-  "url": "https://www.a101.com.tr/kapida/su-icecek/altinkilic-kefirim-cilekli-kefir-1-l_p-12003341",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/MMpZNiGwyq_256x256.png",
-  "category": "Ayran, Kefir",
-  "price": 125.0,
-  "regular_price": null,
-  "discount_pct": null,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Altınkılıç Laktozsuz Kefir Şeftali & Chia 250 ml",
-  "url": "https://www.a101.com.tr/kapida/su-icecek/altinkilic-laktozsuz-kefir-seftali-chia-250-ml_p-12003693",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/aVePQxSAXz_256x256.png",
-  "category": "Ayran, Kefir",
+  "name": "Aqualin Manolya Köpük Sabun 400 ml",
+  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/aqualin-manolya-kopuk-sabun-400-ml_p-22002683",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/3nT6X8SO4W_256x256.png",
+  "category": "Duş, Banyo, Sabun",
   "price": 59.5,
   "regular_price": null,
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
   "market": "a101",
-  "name": "Ardacam Cam Ayaklı Kase 15 cm",
-  "url": "https://www.a101.com.tr/kapida/ev-yasam/ardacam-cam-ayakli-kase-15-cm_p-26076273",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/eT-rKxs-1d_256x256.png",
+  "name": "Aynalı Sunum Tepsisi 31x21 cm",
+  "url": "https://www.a101.com.tr/kapida/ev-yasam/aynali-sunum-tepsisi-31x21-cm_p-26063246",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/ajO3p2llEe_256x256.png",
   "category": "Mutfak Gereçleri",
-  "price": 99.5,
+  "price": 129.5,
   "regular_price": null,
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
   "market": "a101",
-  "name": "Bager Çok Amaçlı Saklama Kutusu 27 L",
-  "url": "https://www.a101.com.tr/kapida/ev-yasam/bager-cok-amacli-saklama-kutusu-27-l_p-26076327",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/IpjOvlbpKn_256x256.png",
-  "category": "Ev Gereçleri",
-  "price": 249.0,
+  "name": "Bahçeden Mango ve Ananas Aromalı İçecek 250 ml",
+  "url": "https://www.a101.com.tr/kapida/su-icecek/bahceden-mango-ve-ananas-aromali-icecek-250-ml_p-13003424",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/PVEJ89woyL_256x256.png",
+  "category": "Gazsız İçecekler",
+  "price": 14.0,
   "regular_price": null,
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
   "market": "a101",
-  "name": "Berona Tagliatelle Makarna 500 G",
-  "url": "https://www.a101.com.tr/kapida/temel-gida/berona-tagliatelle-makarna-500-g-_p-14002423",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/VgT6sxKUQm_256x256.png",
-  "category": "Makarna",
-  "price": 69.5,
+  "name": "Benorganic Kırmızı Meyveler %100 Meyve Suyu 946 ml",
+  "url": "https://www.a101.com.tr/kapida/su-icecek/benorganic-kirmizi-meyveler-100-meyve-suyu-946-ml_p-13002494",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/U8vKoggoTE_256x256.png",
+  "category": "Gazsız İçecekler",
+  "price": 129.5,
   "regular_price": null,
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -40848,7 +40946,21 @@
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Bi'Lezzetli Parmak Patates Dondurulmuş 1 Kg",
+  "url": "https://www.a101.com.tr/kapida/meyve-sebze/bilezzetli-parmak-patates-dondurulmus-1-kg_p-21001620",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/GjWyS0NecB_256x256.png",
+  "category": "Donuk Meyve, Sebze",
+  "price": 109.5,
+  "regular_price": null,
+  "discount_pct": null,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -40862,7 +40974,77 @@
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Borosilikat Kupa 4'lü 230 ml",
+  "url": "https://www.a101.com.tr/kapida/ev-yasam/borosilikat-kupa-4lu-230-ml_p-26063282",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/OpyDMMJKew_256x256.png",
+  "category": "Mutfak Gereçleri",
+  "price": 225.0,
+  "regular_price": null,
+  "discount_pct": null,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Box Up Kilitli Saklama Kabı 1,3 Lt",
+  "url": "https://www.a101.com.tr/kapida/ev-yasam/box-up-kilitli-saklama-kabi-13-lt_p-26076765",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/XRwfdHKFiG_256x256.png",
+  "category": "Mutfak Gereçleri",
+  "price": 89.5,
+  "regular_price": null,
+  "discount_pct": null,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Box Up Yuvarlak Sunum Tepsisi",
+  "url": "https://www.a101.com.tr/kapida/ev-yasam/box-up-yuvarlak-sunum-tepsisi_p-26070143",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/h4PMmLoVlU_256x256.png",
+  "category": "Mutfak Gereçleri",
+  "price": 129.5,
+  "regular_price": null,
+  "discount_pct": null,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Cafecrown Toz İçecek Salep 400 G",
+  "url": "https://www.a101.com.tr/kapida/su-icecek/cafecrown-toz-icecek-salep-400-g_p-30001086",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/nViE19NvKt_256x256.png",
+  "category": "Kahve",
+  "price": 149.5,
+  "regular_price": null,
+  "discount_pct": null,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Cafecrown Toz İçecek Sıcak Çikolata 400 G",
+  "url": "https://www.a101.com.tr/kapida/su-icecek/cafecrown-toz-icecek-sicak-cikolata-400-g_p-30001088",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/wvjLbjaDgz_256x256.png",
+  "category": "Kahve",
+  "price": 149.5,
+  "regular_price": null,
+  "discount_pct": null,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -40876,7 +41058,7 @@
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -40890,7 +41072,7 @@
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -40904,7 +41086,7 @@
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -40918,35 +41100,7 @@
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Cambu Çift Cidarlı Kase 300 Cc",
-  "url": "https://www.a101.com.tr/kapida/ev-yasam/cambu-cift-cidarli-kase-300-cc_p-26070824",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/IZ57NJEio4_256x256.png",
-  "category": "Mutfak Gereçleri",
-  "price": 129.5,
-  "regular_price": null,
-  "discount_pct": null,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Cambu Çift Cidarlı Kase 500 Cc",
-  "url": "https://www.a101.com.tr/kapida/ev-yasam/cambu-cift-cidarli-kase-500-cc_p-26070826",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/pKrrXIG578_256x256.png",
-  "category": "Mutfak Gereçleri",
-  "price": 169.5,
-  "regular_price": null,
-  "discount_pct": null,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -40960,21 +41114,7 @@
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Cipso Tırtıklı Peynir Soğan Aromalı Patates Cipsi 160 G",
-  "url": "https://www.a101.com.tr/kapida/atistirmalik/cipso-tirtikli-peynir-sogan-aromali-patates-cipsi-160-g_p-13003033",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/UWZi8JsxgO_256x256.png",
-  "category": "Cips",
-  "price": 59.5,
-  "regular_price": null,
-  "discount_pct": null,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -40988,7 +41128,21 @@
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Danone Kakaolu Puding Hazır Tatlı 210 G",
+  "url": "https://www.a101.com.tr/kapida/donuk-hazir-yemek-meze/danone-kakaolu-puding-hazir-tatli-210-g_p-12003848",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/5yPjdycjWi_256x256.png",
+  "category": "Hazır Tatlı",
+  "price": 29.5,
+  "regular_price": null,
+  "discount_pct": null,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -41002,77 +41156,21 @@
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
   "market": "a101",
-  "name": "Denta Ekstra Yumuşak Diş Fırçası 3'lü",
-  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/denta-ekstra-yumusak-dis-fircasi-3lu_p-24007322",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/T90yCw7kg8_256x256.png",
-  "category": "Ağız Bakım Ürünleri",
-  "price": 85.0,
-  "regular_price": null,
-  "discount_pct": null,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Dimes Karamürverli Meyve Nektarı 1 L",
-  "url": "https://www.a101.com.tr/kapida/su-icecek/dimes-karamurverli-meyve-nektari-1-l_p-13003426",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/TwLKPUB9TO_256x256.png",
+  "name": "Dimes Mükellef Acılı Şalgam Suyu 1 L",
+  "url": "https://www.a101.com.tr/kapida/su-icecek/dimes-mukellef-acili-salgam-suyu-1-l_p-13003431",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/BsG-hOSRpW_256x256.png",
   "category": "Gazsız İçecekler",
-  "price": 75.0,
+  "price": 45.0,
   "regular_price": null,
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Domestos Ultra Çam Ferahlığı Çamaşır Suyu 1850 ml",
-  "url": "https://www.a101.com.tr/kapida/temizlik-urunleri/domestos-ultra-cam-ferahligi-camasir-suyu-1850-ml_p-22002640",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/e4d6YTFzrM_256x256.png",
-  "category": "Çamaşır",
-  "price": 199.0,
-  "regular_price": null,
-  "discount_pct": null,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Dove Invisible Deodorant 150 ml",
-  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/dove-invisible-deodorant-150-ml-_p-24006078",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/-ywsShxBRA_256x256.png",
-  "category": "Parfüm, Deodorant",
-  "price": 299.0,
-  "regular_price": null,
-  "discount_pct": null,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Dove Men Clean Deodorant 150 ml",
-  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/dove-men-clean-deodorant-150-ml-_p-24006082",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/Rs-QB5C0P5_256x256.png",
-  "category": "Parfüm, Deodorant",
-  "price": 299.0,
-  "regular_price": null,
-  "discount_pct": null,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -41086,7 +41184,7 @@
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -41100,7 +41198,7 @@
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -41114,49 +41212,35 @@
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
   "market": "a101",
-  "name": "Hascevher Metal Sosluk Tava 14 cm",
-  "url": "https://www.a101.com.tr/kapida/ev-yasam/hascevher-metal-sosluk-tava-14-cm-_p-26063711",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/KNvy211Cnh_256x256.png",
+  "name": "Fruko Gazoz Gazlı İçecek 1 L",
+  "url": "https://www.a101.com.tr/kapida/su-icecek/fruko-gazoz-gazli-icecek-1-l_p-13003433",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/xPlq5ovV69_256x256.png",
+  "category": "Gazlı İçecekler",
+  "price": 55.0,
+  "regular_price": null,
+  "discount_pct": null,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Herevin Kilitli Saklama Kutusu 4 Bölmeli",
+  "url": "https://www.a101.com.tr/kapida/ev-yasam/herevin-kilitli-saklama-kutusu-4-bolmeli_p-26076746",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/Z8mUJh8uPb_256x256.png",
   "category": "Mutfak Gereçleri",
-  "price": 369.0,
+  "price": 99.5,
   "regular_price": null,
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Herevin Bölmeli Kaplumbağa Mama Tabağı",
-  "url": "https://www.a101.com.tr/kapida/anne-bebek/herevin-bolmeli-kaplumbaga-mama-tabagi_p-26076740",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/GJVtro35eO_256x256.png",
-  "category": "Bebek Beslenme",
-  "price": 29.5,
-  "regular_price": null,
-  "discount_pct": null,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Herevin Tuz Biber Öğütücü",
-  "url": "https://www.a101.com.tr/kapida/ev-yasam/herevin-tuz-biber-ogutucu_p-26073922",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/XCGAoMFraW_256x256.png",
-  "category": "Mutfak Gereçleri",
-  "price": 189.5,
-  "regular_price": null,
-  "discount_pct": null,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -41170,7 +41254,7 @@
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -41184,7 +41268,7 @@
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -41198,7 +41282,77 @@
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Kinder Pingui Süt Dolgulu Kek 4x30 G",
+  "url": "https://www.a101.com.tr/kapida/atistirmalik/kinder-pingui-sut-dolgulu-kek-4x30-g-_p-12000792",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/46h-I8Bapt_256x256.png",
+  "category": "Kek",
+  "price": 95.0,
+  "regular_price": null,
+  "discount_pct": null,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Koska Kakaolu Helva 175 G",
+  "url": "https://www.a101.com.tr/kapida/sut-urunleri-kahvaltilik/koska-kakaolu-helva-175-g_p-16001654",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/veYoZ33Yed_256x256.png",
+  "category": "Helva, Tahin, Pekmez",
+  "price": 59.5,
+  "regular_price": null,
+  "discount_pct": null,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Koska Pekmez 1150 G",
+  "url": "https://www.a101.com.tr/kapida/sut-urunleri-kahvaltilik/koska-pekmez-1150-g_p-16002506",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/M1V23VWxt5_256x256.png",
+  "category": "Helva, Tahin, Pekmez",
+  "price": 279.0,
+  "regular_price": null,
+  "discount_pct": null,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Koska Sade Helva 175 G",
+  "url": "https://www.a101.com.tr/kapida/sut-urunleri-kahvaltilik/koska-sade-helva-175-g_p-16001655",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/Pojzisafs6_256x256.png",
+  "category": "Helva, Tahin, Pekmez",
+  "price": 59.5,
+  "regular_price": null,
+  "discount_pct": null,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Koska Tahin 900 G",
+  "url": "https://www.a101.com.tr/kapida/sut-urunleri-kahvaltilik/koska-tahin-900-g_p-16002507",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/ffglBdQfpT_256x256.png",
+  "category": "Helva, Tahin, Pekmez",
+  "price": 239.0,
+  "regular_price": null,
+  "discount_pct": null,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -41212,21 +41366,21 @@
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
   "market": "a101",
-  "name": "L'Oréal Paris Nemlendirici Krem 50 ml",
-  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/loral-paris-nemlendirici-krem-50-ml_p-24001063",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/pze2nwkXb1_256x256.png",
-  "category": "Cilt Bakımı",
-  "price": 299.0,
+  "name": "Lav Aras Su Bardağı 200 Cc 3'lü",
+  "url": "https://www.a101.com.tr/kapida/ev-yasam/lav-aras-su-bardagi-200-cc-3lu_p-26081130",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/lYAJGtmMFE_256x256.png",
+  "category": "Mutfak Gereçleri",
+  "price": 99.5,
   "regular_price": null,
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -41240,7 +41394,7 @@
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -41254,91 +41408,35 @@
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
   "market": "a101",
-  "name": "Long Chips Sade Patates Cips 75 G",
-  "url": "https://www.a101.com.tr/kapida/atistirmalik/long-chips-sade-patates-cips-75-g_p-13003438",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/JMmteqdHX4_256x256.png",
-  "category": "Cips",
-  "price": 95.0,
-  "regular_price": null,
-  "discount_pct": null,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Long Chips Trüf Mantarlı Patates Cipsi 75 G",
-  "url": "https://www.a101.com.tr/kapida/atistirmalik/long-chips-truf-mantarli-patates-cipsi-75-g_p-13003437",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/i8cmHWpen-_256x256.png",
-  "category": "Cips",
-  "price": 95.0,
-  "regular_price": null,
-  "discount_pct": null,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Morfose Metamorfose Onarıcı Bakım Fön Suyu 200 ml",
-  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/morfose-metamorfose-onarici-bakim-fon-suyu-200-ml_p-24007304",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/v0kyD4alsw_256x256.png",
+  "name": "Morfose Milk Therapy Kremsi Saç Maskesi 25 ml",
+  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/morfose-milk-therapy-kremsi-sac-maskesi-25-ml-_p-24006279",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/gDyLoQq2a1_256x256.png",
   "category": "Saç Bakım",
-  "price": 139.5,
+  "price": 25.0,
   "regular_price": null,
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
   "market": "a101",
-  "name": "Morfose Metamorfose Onarıcı Bakım Şampuan 400 ml",
-  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/morfose-metamorfose-onarici-bakim-sampuan-400-ml_p-24007302",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/R0oG8FTAgY_256x256.png",
+  "name": "Morfose Milk Therapy Saç Köpüğü 200 ml",
+  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/morfose-milk-therapy-sac-kopugu-200-ml_p-24005876",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/gW8WXENkBt_256x256.png",
   "category": "Saç Bakım",
-  "price": 169.5,
+  "price": 189.0,
   "regular_price": null,
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Morfose Metamorfose Parlaklık Verici Fön Suyu 200 ml",
-  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/morfose-metamorfose-parlaklik-verici-fon-suyu-200-ml_p-24007301",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/zzZIlsIxZM_256x256.png",
-  "category": "Saç Bakım",
-  "price": 139.5,
-  "regular_price": null,
-  "discount_pct": null,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Morfose Metamorfose Parlaklık Verici Şampuan 400 ml",
-  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/morfose-metamorfose-parlaklik-verici-sampuan-400-ml_p-24007303",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/gSFfmGJwbf_256x256.png",
-  "category": "Saç Bakım",
-  "price": 169.5,
-  "regular_price": null,
-  "discount_pct": null,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -41352,7 +41450,7 @@
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -41366,7 +41464,7 @@
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -41380,7 +41478,7 @@
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -41394,21 +41492,35 @@
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
   "market": "a101",
-  "name": "Orkide Mısırözü Yağı 4 L",
-  "url": "https://www.a101.com.tr/kapida/temel-gida/orkide-misirozu-yagi-4-l-_p-19001145",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/1IkQmjuauH_256x256.png",
-  "category": "Sıvı Yağlar",
-  "price": 429.0,
+  "name": "Nimet Peynirli Mini Rulo Börek Dondurulmuş 500 G",
+  "url": "https://www.a101.com.tr/kapida/donuk-hazir-yemek-meze/nimet-peynirli-mini-rulo-borek-dondurulmus-500-g_p-21001599",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/mhG6AUxpQu_256x256.png",
+  "category": "Donuk Unlu Mamuller",
+  "price": 89.5,
   "regular_price": null,
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Nubi Sürpriz Oyuncak Paketi",
+  "url": "https://www.a101.com.tr/kapida/ev-yasam/nubi-surpriz-oyuncak-paketi_p-25010780",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/vTBv4oilx9_256x256.png",
+  "category": "Oyuncak",
+  "price": 149.5,
+  "regular_price": null,
+  "discount_pct": null,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -41422,7 +41534,7 @@
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -41436,7 +41548,7 @@
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -41450,7 +41562,7 @@
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -41464,21 +41576,7 @@
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Papia Egzotik 3 Katlı Tuvalet Kağıdı 16'lı",
-  "url": "https://www.a101.com.tr/kapida/kagit-urunleri/papia-egzotik-3-katli-tuvalet-kagidi-16li_p-23001609",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/Xgbl6Tpxz1_256x256.png",
-  "category": "Tuvalet Kağıdı",
-  "price": 299.0,
-  "regular_price": null,
-  "discount_pct": null,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -41492,21 +41590,63 @@
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
   "market": "a101",
-  "name": "Pepsi Gazlı İçecek Kola 2 L",
-  "url": "https://www.a101.com.tr/kapida/su-icecek/pepsi-gazli-icecek-kola-2-l_p-13000036",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/9CXwlWsmxW_256x256.png",
-  "category": "Gazlı İçecekler",
-  "price": 79.5,
+  "name": "Patis Love Dondurulmuş Kola Aromalı Vişne 150 G",
+  "url": "https://www.a101.com.tr/kapida/donuk-hazir-yemek-meze/patis-love-dondurulmus-kola-aromali-visne-150-g_p-21001736",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/KiN7AA76gn_256x256.png",
+  "category": "Donuk Tatlılar",
+  "price": 149.5,
   "regular_price": null,
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Patos Acı Baharat Aromalı Mısır Cipsi 220 G",
+  "url": "https://www.a101.com.tr/kapida/atistirmalik/patos-aci-baharat-aromali-misir-cipsi-220-g-_p-13003110",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/kTrCQ1u9is_256x256.png",
+  "category": "Cips",
+  "price": 69.5,
+  "regular_price": null,
+  "discount_pct": null,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Patos Rolls Acı Kırmızı Biber Aromalı Mısır Cipsi 220 G",
+  "url": "https://www.a101.com.tr/kapida/atistirmalik/patos-rolls-aci-kirmizi-biber-aromali-misir-cipsi-220-g_p-13003103",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/GgeFY22Wkp_256x256.png",
+  "category": "Cips",
+  "price": 69.5,
+  "regular_price": null,
+  "discount_pct": null,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Paşabahçe İnce Belli Çay Bardağı 6'lı",
+  "url": "https://www.a101.com.tr/kapida/ev-yasam/pasabahce-ince-belli-cay-bardagi-6li_p-25003315",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/X3frLwTjOo_256x256.png",
+  "category": "Mutfak Gereçleri",
+  "price": 129.5,
+  "regular_price": null,
+  "discount_pct": null,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -41520,35 +41660,161 @@
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
   "market": "a101",
-  "name": "Polonez Zeytinyağlı & Otlu Piliç Füme 150 G",
-  "url": "https://www.a101.com.tr/kapida/et-tavuk-sarkuteri/polonez-zeytinyagli-otlu-pilic-fume-150-g_p-11003231",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/mKrFdXEr0b_256x256.png",
+  "name": "Polonez Karabiberli Hindi Füme Salam 90 G",
+  "url": "https://www.a101.com.tr/kapida/et-tavuk-sarkuteri/polonez-karabiberli-hindi-fume-salam-90-g_p-11003450",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/KW8e8BEm7I_256x256.png",
   "category": "Şarküteri",
-  "price": 59.5,
+  "price": 47.5,
   "regular_price": null,
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
   "market": "a101",
-  "name": "Pınar Lezzet Keyfi Hindi Salam 900 G",
-  "url": "https://www.a101.com.tr/kapida/et-tavuk-sarkuteri/pinar-lezzet-keyfi-hindi-salam-900-g-_p-11003122",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/MeHqZkcVMV_256x256.png",
-  "category": "Şarküteri",
-  "price": 155.0,
+  "name": "Porgold Opal Fileli Pasta Tabağı 18 cm",
+  "url": "https://www.a101.com.tr/kapida/ev-yasam/porgold-opal-fileli-pasta-tabagi-18-cm-_p-26061562",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/gs0UVScpwN_256x256.png",
+  "category": "Mutfak Gereçleri",
+  "price": 89.5,
   "regular_price": null,
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Porgold Opal Fileli Servis Tabağı 25 cm",
+  "url": "https://www.a101.com.tr/kapida/ev-yasam/porgold-opal-fileli-servis-tabagi-25-cm-_p-26061563",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/vdii86rU0y_256x256.png",
+  "category": "Mutfak Gereçleri",
+  "price": 109.5,
+  "regular_price": null,
+  "discount_pct": null,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Porgold Opal Fileli Yemek Tabağı 20 cm",
+  "url": "https://www.a101.com.tr/kapida/ev-yasam/porgold-opal-fileli-yemek-tabagi-20-cm-_p-26061561",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/su7D2-cP8S_256x256.png",
+  "category": "Mutfak Gereçleri",
+  "price": 99.5,
+  "regular_price": null,
+  "discount_pct": null,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Porgold Opal Fileli Çorba Kasesi 13 cm",
+  "url": "https://www.a101.com.tr/kapida/ev-yasam/porgold-opal-fileli-corba-kasesi-13-cm-_p-26061566",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/uIy7jUaffs_256x256.png",
+  "category": "Mutfak Gereçleri",
+  "price": 79.5,
+  "regular_price": null,
+  "discount_pct": null,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Porgold Rimli Fincan Seti 4 Parça",
+  "url": "https://www.a101.com.tr/kapida/ev-yasam/porgold-rimli-fincan-seti-4-parca-_p-26063034",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/4LEBCSdRfG_256x256.png",
+  "category": "Mutfak Gereçleri",
+  "price": 229.0,
+  "regular_price": null,
+  "discount_pct": null,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Pınar Dana Kangal Sucuk 450 G",
+  "url": "https://www.a101.com.tr/kapida/et-tavuk-sarkuteri/pinar-dana-kangal-sucuk-450-g-_p-11003166",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/T2Nrly6pZ6_256x256.png",
+  "category": "Şarküteri",
+  "price": 359.0,
+  "regular_price": null,
+  "discount_pct": null,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Pınar Lezzet Keyfi Hindi Salam 75 G",
+  "url": "https://www.a101.com.tr/kapida/et-tavuk-sarkuteri/pinar-lezzet-keyfi-hindi-salam-75-g_p-11001456",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/3dZjTdy8Za_256x256.png",
+  "category": "Şarküteri",
+  "price": 25.5,
+  "regular_price": null,
+  "discount_pct": null,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Pınar Lezzet Keyfi Hindi Uzun Sosis 430 G",
+  "url": "https://www.a101.com.tr/kapida/et-tavuk-sarkuteri/pinar-lezzet-keyfi-hindi-uzun-sosis-430-g-_p-11003121",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/xbTvxFJ325_256x256.png",
+  "category": "Şarküteri",
+  "price": 99.5,
+  "regular_price": null,
+  "discount_pct": null,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Ramiz Dondurulmuş Dana İnegöl Köfte 500 G",
+  "url": "https://www.a101.com.tr/kapida/et-tavuk-sarkuteri/ramiz-dondurulmus-dana-inegol-kofte-500-g_p-11003346",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/GNJdyVR6Zv_256x256.png",
+  "category": "Şarküteri",
+  "price": 379.0,
+  "regular_price": null,
+  "discount_pct": null,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Rayan Renkli Cam Su Bardağı 6'lı",
+  "url": "https://www.a101.com.tr/kapida/ev-yasam/rayan-renkli-cam-su-bardagi-6li_p-26075321",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/-zoXGdQzl4_256x256.png",
+  "category": "Mutfak Gereçleri",
+  "price": 199.5,
+  "regular_price": null,
+  "discount_pct": null,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -41562,7 +41828,7 @@
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -41576,7 +41842,7 @@
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -41590,21 +41856,7 @@
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Sensodyne Tam Koruma ve Beyazlatıcı Diş Macunu 50 ml",
-  "url": "https://www.a101.com.tr/kapida/kisisel-bakim/sensodyne-tam-koruma-ve-beyazlatici-dis-macunu-50-ml_p-24007295",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/aWjaRVx2Yu_256x256.png",
-  "category": "Ağız Bakım Ürünleri",
-  "price": 99.5,
-  "regular_price": null,
-  "discount_pct": null,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -41618,7 +41870,7 @@
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -41632,7 +41884,7 @@
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -41646,7 +41898,7 @@
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -41660,77 +41912,35 @@
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
   "market": "a101",
-  "name": "Smart Harvest Akdeniz Sebze Karışımı Dondurulmuş 454 G",
-  "url": "https://www.a101.com.tr/kapida/meyve-sebze/smart-harvest-akdeniz-sebze-karisimi-dondurulmus-454-g_p-21001694",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/1wum3ZV1tT_256x256.png",
-  "category": "Donuk Meyve, Sebze",
-  "price": 125.0,
+  "name": "Sushida Ton Balıklı Onigiri Dondurulmuş 250 G",
+  "url": "https://www.a101.com.tr/kapida/donuk-hazir-yemek-meze/sushida-ton-balikli-onigiri-dondurulmus-250-g_p-11003292",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/Z6HBd2pd9o_256x256.png",
+  "category": "Donuk Hazır Yemek, Atıştırmalık",
+  "price": 199.5,
   "regular_price": null,
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
   "market": "a101",
-  "name": "Spongebob Pizza Margarita Dondurulmuş 290 G",
-  "url": "https://www.a101.com.tr/kapida/donuk-hazir-yemek-meze/spongebob-pizza-margarita-dondurulmus-290-g_p-21001730",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/ZxrLJB2u4C_256x256.png",
-  "category": "Dondurulmuş Gıda",
-  "price": 149.5,
-  "regular_price": null,
-  "discount_pct": null,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Tat Domates Salçası 830 G",
-  "url": "https://www.a101.com.tr/kapida/temel-gida/tat-domates-salcasi-830-g_p-18002124",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/nzVT1J97GW_256x256.png",
-  "category": "Salça",
-  "price": 69.5,
-  "regular_price": null,
-  "discount_pct": null,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Tat Ketçap Mayonez Seti 650 G / 575 G",
-  "url": "https://www.a101.com.tr/kapida/temel-gida/tat-ketcap-mayonez-seti-650-g-575-g_p-18002427",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/92EobGWftC_256x256.png",
-  "category": "Soslar, Sirkeler",
+  "name": "Tahsildaroğlu Beyaz Peynir 400 G",
+  "url": "https://www.a101.com.tr/kapida/sut-urunleri-kahvaltilik/tahsildaroglu-beyaz-peynir-400-g_p-12003845",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/ffYEOXD7H3_256x256.png",
+  "category": "Beyaz Peynir",
   "price": 159.5,
   "regular_price": null,
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
-  "durum": "geçerli"
- },
- {
-  "market": "a101",
-  "name": "Tivoli Kelebek Detaylı Lokumluk",
-  "url": "https://www.a101.com.tr/kapida/ev-yasam/tivoli-kelebek-detayli-lokumluk_p-26072567",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/tMWYmQS5tN_256x256.png",
-  "category": "Mutfak Gereçleri",
-  "price": 149.5,
-  "regular_price": null,
-  "discount_pct": null,
-  "is_campaign": 1,
-  "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -41744,7 +41954,7 @@
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -41758,7 +41968,21 @@
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Torku Frema Kakaolu Fındıklı Krema 1,5 Kg",
+  "url": "https://www.a101.com.tr/kapida/sut-urunleri-kahvaltilik/torku-frema-kakaolu-findikli-krema-15-kg_p-16001337",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/6EBXtKvynp_256x256.png",
+  "category": "Sürülebilir Ürünler",
+  "price": 289.0,
+  "regular_price": null,
+  "discount_pct": null,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -41772,7 +41996,7 @@
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -41786,7 +42010,7 @@
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -41800,21 +42024,21 @@
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
   "market": "a101",
-  "name": "Urve Mıknatıslı Ayakkabı Çekeceği 58 cm",
-  "url": "https://www.a101.com.tr/kapida/ev-yasam/urve-miknatisli-ayakkabi-cekecegi-58-cm_p-26080729",
-  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/IHjZkKGC2p_256x256.png",
-  "category": "Ev Gereçleri",
-  "price": 79.5,
+  "name": "You Can Blue Enerji İçeceği 500 ml",
+  "url": "https://www.a101.com.tr/kapida/su-icecek/you-can-blue-enerji-icecegi-500-ml_p-13002657",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/5o-3jPISQw_256x256.png",
+  "category": "Enerji İçeceği",
+  "price": 45.0,
   "regular_price": null,
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
@@ -41828,7 +42052,63 @@
   "discount_pct": null,
   "is_campaign": 1,
   "valid_from": null,
-  "scraped_on": "2026-11-16",
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Yumoş Uzman Kolay Ütü Konsantre Yumuşatıcı 1200 ml",
+  "url": "https://www.a101.com.tr/kapida/temizlik-urunleri/yumos-uzman-kolay-utu-konsantre-yumusatici-1200-ml_p-22002604",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/efhuZOKenL_256x256.png",
+  "category": "Çamaşır",
+  "price": 299.0,
+  "regular_price": null,
+  "discount_pct": null,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Yumoş Uzman Renk Koruma Konsantre Yumuşatıcı 1200 ml",
+  "url": "https://www.a101.com.tr/kapida/temizlik-urunleri/yumos-uzman-renk-koruma-konsantre-yumusatici-1200-ml-_p-22002603",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/IHylUQziiA_256x256.png",
+  "category": "Çamaşır",
+  "price": 299.0,
+  "regular_price": null,
+  "discount_pct": null,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Yörsan Yumuşak Süzme Beyaz Peynir 400 G",
+  "url": "https://www.a101.com.tr/kapida/sut-urunleri-kahvaltilik/yorsan-yumusak-suzme-beyaz-peynir-400-g_p-12003843",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/TWxLtbF0Ch_256x256.png",
+  "category": "Beyaz Peynir",
+  "price": 139.5,
+  "regular_price": null,
+  "discount_pct": null,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
+  "durum": "geçerli"
+ },
+ {
+  "market": "a101",
+  "name": "Ülker Çikolatalı Sürülebilir Peynir 180 G",
+  "url": "https://www.a101.com.tr/kapida/sut-urunleri-kahvaltilik/ulker-cikolatali-surulebilir-peynir-180-g_p-12003846",
+  "image_url": "https://cdn2.a101.com.tr/dbmk89vnr/CALL/Image/get/jEVNgj79b0_256x256.png",
+  "category": "Sürülebilir Peynir",
+  "price": 45.0,
+  "regular_price": null,
+  "discount_pct": null,
+  "is_campaign": 1,
+  "valid_from": null,
+  "scraped_on": "2026-11-19",
   "durum": "geçerli"
  },
  {
