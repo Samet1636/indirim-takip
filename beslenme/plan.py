@@ -109,6 +109,16 @@ def urun_adaylari(katalog: list[dict], malzemeler: set[str], marketler: set[str]
     return out
 
 
+# Tartıyla satılan ürünlerde (sarımsak, domates, soğan...) markette alınabilecek en az miktar (g).
+# Plan 50 g sarımsak isterse alışveriş listesine en az bu kadar yazılır; model de bu fazlayı maliyete katar.
+ACIK_SATIS_MIN_G = 250
+ACIK_SATIS_MIN_OZEL: dict = {}          # malzemeye özel istisna gerekirse: {"zencefil": 100}
+
+
+def acik_satis_min_kg(mid: str) -> float:
+    return ACIK_SATIS_MIN_OZEL.get(mid, ACIK_SATIS_MIN_G) / 1000
+
+
 # Öğle ve akşam yemeğinde aynı gün tekrarlanmaması gereken "ana" malzemeler
 BAZ_MALZEME = ["kirmizi_mercimek", "yesil_mercimek", "nohut", "kuru_fasulye", "barbunya", "tavuk_gogus",
                "tavuk_but", "dana_kiyma", "ton_baligi", "makarna", "kinoa"]
@@ -238,6 +248,11 @@ def coz(katalog, kisi: dict, paket: str = "ekonomik", max_market: int = 2, marke
                 if u["acik_satis"] or not tam_paket:
                     # açık satış: kg cinsinden. 1. aşamada tüm ürünler kesirli (paket yuvarlaması 2. aşamada)
                     n[key] = pulp.LpVariable(f"n_{key}", lowBound=0)
+                    if u["acik_satis"] and tam_paket:
+                        # markette 50 g sarımsak alınmaz: alınacaksa en az ACIK_SATIS_MIN_G kadar
+                        b = pulp.LpVariable(f"b_{key}", cat="Binary")
+                        prob += n[key] <= 20 * b
+                        prob += n[key] >= acik_satis_min_kg(mid) * b
                 elif K[mid].get("kiler"):
                     n[key] = pulp.LpVariable(f"n_{key}", lowBound=0)              # kullanılan pay (kesirli)
                     n_paket[key] = pulp.LpVariable(f"np_{key}", lowBound=0, upBound=20, cat="Integer")
@@ -341,10 +356,12 @@ def coz(katalog, kisi: dict, paket: str = "ekonomik", max_market: int = 2, marke
             continue
         mid, u = urunler[key]
         kiler = bool(K[mid].get("kiler")) and not u["acik_satis"]
-        plan_maliyeti += deger * u["price"]                 # bu haftanın planına düşen pay
         if u["acik_satis"]:
-            adet = round(deger, 2)
-        else:
+            # en az ACIK_SATIS_MIN_G, 50 g'lık adımlarla yukarı yuvarlanmış (tartıda böyle alınır);
+            # fazlası da bu haftanın harcamasıdır
+            deger = adet = max(acik_satis_min_kg(mid), math.ceil(deger * 20 - 1e-6) / 20)
+        plan_maliyeti += deger * u["price"]                 # bu haftanın planına düşen pay
+        if not u["acik_satis"]:
             adet = max(1, math.ceil(deger - 1e-6))      # ihtiyacı karşılayan en az tam paket
         tutar = round(adet * u["price"], 2)
         if u.get("regular_price"):

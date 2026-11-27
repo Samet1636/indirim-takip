@@ -42,6 +42,30 @@ def test_eslestirme_eler_ve_birim_fiyat():
     assert [p["name"] for p in adaylar("portakal", KATALOG)] == ["Portakal Kg"]      # meyve suyu elendi
 
 
+def test_yeni_marketlerdeki_yanlis_eslesmeler():
+    # 27.11.2026: CarrefourSA / Hakmar / Tarım Kredi ürün adlarıyla çıkan yanlış eşleşmeler
+    yanlis = {
+        "tavuk_but": "Yumoş Açık Hava Etkisi Mavi Gelincik 1.44 Lt",          # "gel-incik"
+        "bal": "Bal Kabağı Soyulmuş 1 Kg",
+        "tereyagi": "Sana Tereyağ Lezzeti 250 Gr",
+        "zeytin": "Dalan Granül Matik Zeytin Mucizesi 1 Kg",
+        "sivri_biber": "Mutlu Çarliston Makarna 500 Gr",
+        "ispanak": "Tatsu Ispanaklı Peynirli Gül Böreği 1 Kg",
+        "patates": "SuperFresh Patates Garnitürü 450 Gr",
+        "tam_bugday_ekmegi": "Filiz Tam Buğday Kalem 350 Gr",
+        "kinoa": "Sek Quark Kayısı-Kinoa 140 Gr",
+        "yulaf": "Alpro Yulaf İçeceği 1 Lt",
+        "suzme_yogurt": "Elmas Hanım Süzme Yoğurtlu Tarhana 400 Gr",
+        "ceviz": "Harmony Ceviz Parçacıklı Tahin Kreması 400 Gr",
+    }
+    for mid, ad in yanlis.items():
+        assert adaylar(mid, [{"market": "carrefour", "name": ad, "price": 50.0, "category": None}]) == [], (mid, ad)
+    dogru = {"tavuk_but": "Şenpiliç Lezita Kemiksiz Tavuk But 1 Kg", "bal": "Carrefour Çiçek Balı 460 Gr",
+             "tereyagi": "Carrefour Tereyağı 500 Gr", "zeytin": "Nadide Siyah Zeytin 600 Gr"}
+    for mid, ad in dogru.items():
+        assert len(adaylar(mid, [{"market": "hakmar", "name": ad, "price": 50.0, "category": None}])) == 1, (mid, ad)
+
+
 def test_gevrek_ekmek_veya_yulaf_sayilmaz():
     # "Gevreği" normalize edilince "gevregi" olur; "gevrek" kuralı bunu yakalamıyordu
     katalog = [

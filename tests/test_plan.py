@@ -46,6 +46,10 @@ def test_plan_kisitlari(monkeypatch):
         for b in plan.BAZ_MALZEME:
             assert sum(any(x["malzeme"] == b for x in tarif[t]["malzemeler"]) for t in ana) <= 1, (gun["gun"], b)
     assert s["marketler"] == ["sok"]                    # tek market ve ucuz olanı
+    # tartıyla satılanlar: en az 250 g, 50 g'lık adımlarla (markette 50 g sarımsak alınmaz)
+    for x in s["alisveris"]:
+        assert x["birim"] == "kg" and x["adet"] >= 0.25 - 1e-9, x
+        assert abs(x["adet"] * 20 - round(x["adet"] * 20)) < 1e-6, x
     # tarif detayları uygulama için döner
     for tid in sayac:
         d = s["tarifler"][tid]
