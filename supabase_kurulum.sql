@@ -9,6 +9,11 @@ create table if not exists public.plan_kullanim (
 
 create index if not exists plan_kullanim_kullanici_zaman on public.plan_kullanim (kullanici_id, olusturma);
 
+-- Proje "yeni tablolara otomatik API erişimi" kapalı kuruldu: sadece giriş yapmış kullanıcılara,
+-- sadece okuma ve ekleme izni ver (giriş yapmamış "anon" rolüne hiçbir izin yok; silme/güncelleme yok)
+revoke all on public.plan_kullanim from anon, authenticated;
+grant select, insert on public.plan_kullanim to authenticated;
+
 alter table public.plan_kullanim enable row level security;
 
 drop policy if exists "kendi kayitlarini gorur" on public.plan_kullanim;

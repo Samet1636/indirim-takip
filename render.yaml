@@ -24,3 +24,11 @@ services:
         value: "110"
       - key: KATALOG_URL
         value: https://samet1636.github.io/indirim-takip/data/katalog.json
+      # Hesap + haftalık ücretsiz plan hakkı (api/hesap.py). Publishable anahtar herkese açıktır;
+      # sunucu gizli anahtar kullanmaz, istekleri kullanıcının kendi oturumuyla yapar.
+      - key: SUPABASE_URL
+        value: https://ldzjsmxzhmmlgbwpkaxj.supabase.co
+      - key: SUPABASE_ANON_KEY
+        value: sb_publishable_NoiXH_rygiBolrj-Vp39mA_8r1RrwYE
+      - key: HAFTALIK_PLAN
+        value: "1"
