@@ -60,6 +60,29 @@ def test_parse_tr_date():
     assert parse_tr_date("2 Ocak", date(2026, 12, 30)) == "2027-01-02"
 
 
+def test_a101_bilgisayar_yedegi_cift_kayit_olusturmaz(tmp_path, monkeypatch):
+    import run
+    from models import Offer
+    bugun = date.today().isoformat()
+    imp = tmp_path / "imports"
+    imp.mkdir()
+    kapida = [Offer("a101", "kapida-1", "Süt 1 L", 30.0, scraped_on=bugun).__dict__]
+    (imp / "a101.json").write_text(json.dumps(kapida, ensure_ascii=False), encoding="utf-8")
+    yol = tmp_path / "t.db"
+    conn = db.connect(yol)
+    db.save_offers(conn, [Offer("a101", f"mf-{i}", f"Ürün {i}", 10.0, scraped_on=bugun) for i in range(3)])
+    assert db.fresh_count(conn, "a101", "mf-") == 3
+    monkeypatch.chdir(tmp_path)
+    (tmp_path / "data").mkdir()                               # run.py çıktıları buraya yazar
+    monkeypatch.setattr(run, "A101_YEDEK_ESIGI", 3)          # marketfiyati verisi güncel -> dosya atlanır
+    monkeypatch.setattr("sys.argv", ["run.py", "--no-scrape", "--import-dir", str(imp), "--db", str(yol)])
+    run.main()
+    assert db.connect(yol).execute("SELECT COUNT(*) FROM products WHERE market_product_id='kapida-1'").fetchone()[0] == 0
+    monkeypatch.setattr(run, "A101_YEDEK_ESIGI", 500)        # marketfiyati çalışmadıysa yedek alınır
+    run.main()
+    assert db.connect(yol).execute("SELECT COUNT(*) FROM products WHERE market_product_id='kapida-1'").fetchone()[0] == 1
+
+
 def test_db_roundtrip(tmp_path):
     conn = db.connect(tmp_path / "t.db")
     offers = parse_migros_payload(json.loads((FIX / "migros_sample.json").read_text(encoding="utf-8")))

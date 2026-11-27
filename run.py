@@ -27,11 +27,17 @@ import db
 from models import Offer
 from scrapers.a101 import A101Scraper
 from scrapers.bim import BimScraper
+from scrapers.marketfiyati import A101MarketFiyatiScraper, CarrefourScraper, HakmarScraper, TarimKrediScraper
 from scrapers.migros import MigrosScraper
 from scrapers.sok import SokScraper
 
-SCRAPERS = {"migros": MigrosScraper, "bim": BimScraper, "a101": A101Scraper, "sok": SokScraper}
+# "a101" = Kapıda sitesi (Playwright, sadece bilgisayarda); "a101_mf" = A101 mağaza fiyatları
+# marketfiyati.org.tr'den (GitHub'da çalışır). İkisi de market="a101" ürün üretir.
+SCRAPERS = {"migros": MigrosScraper, "bim": BimScraper, "a101": A101Scraper, "sok": SokScraper,
+            "a101_mf": A101MarketFiyatiScraper, "carrefour": CarrefourScraper, "hakmar": HakmarScraper,
+            "tarim_kredi": TarimKrediScraper}
 OFFER_FIELDS = {f.name for f in dataclasses.fields(Offer)}
+A101_YEDEK_ESIGI = 500     # son 2 günde bu kadar marketfiyati A101 ürünü varsa bilgisayar dosyası alınmaz
 
 
 def load_offers(path: Path) -> list[Offer]:
@@ -102,6 +108,11 @@ def main() -> int:
 
     if args.import_dir and conn:
         for f in sorted(Path(args.import_dir).glob("*.json")):
+            # A101 artık marketfiyati'den geliyor; bilgisayarın yüklediği Kapıda dosyası sadece yedek.
+            # İkisi birden alınırsa aynı ürün iki kez görünür.
+            if f.stem == "a101" and db.fresh_count(conn, "a101", "mf-") >= A101_YEDEK_ESIGI:
+                logging.info("%s atlandı: A101 marketfiyati'den güncel geliyor (yedek dosya)", f)
+                continue
             try:
                 offers = load_offers(f)
                 db.save_offers(conn, offers)

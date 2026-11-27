@@ -98,6 +98,12 @@ def urun_adaylari(katalog: list[dict], malzemeler: set[str], marketler: set[str]
         for p in secilen:
             # adı rakam içermeyen "Kg" ürünleri tartıyla satılır -> istenen miktar kadar alınabilir
             p["acik_satis"] = p["miktar_g"] == 1000 and not re.search(r"\d", norm(p["name"]))
+        # Aynı markette en az bu kadar büyük ve bundan pahalı olmayan başka paket varsa bu ürüne hiç gerek
+        # yok (o paket her durumda en az onun kadar iyi). Modeli küçültür: 5+ markette çözücü süreye sığmıyordu.
+        secilen = [p for p in secilen if not any(
+            q is not p and q["market"] == p["market"] and q["miktar_g"] >= p["miktar_g"] and q["price"] <= p["price"]
+            and (q["miktar_g"], q["price"]) != (p["miktar_g"], p["price"]) and q["acik_satis"] == p["acik_satis"]
+            for q in secilen)]
         if secilen:          # hiç ürünü olmayan malzeme listeye girmesin (o malzemeyi kullanan tarifler elenir)
             out[mid] = secilen
     return out
@@ -155,7 +161,8 @@ def coz(katalog, kisi: dict, paket: str = "ekonomik", max_market: int = 2, marke
     T = tarif_sec(tarifler, malz, paket, ekipman, alerjen, haric_malzeme, max_sure)
     if T:
         gerekli = {x["malzeme"] for t in T.values() for x in t["malzemeler"] if not malz[x["malzeme"]]["dolapta"]}
-        U = urun_adaylari(katalog, gerekli, marketler)
+        market_sayisi = len(marketler) if marketler else len({p["market"] for p in katalog})
+        U = urun_adaylari(katalog, gerekli, marketler, her_market=3 if market_sayisi <= 4 else 2)
         eksik = [m for m in gerekli if not U.get(m)]
         if eksik:   # fiyatı bulunamayan malzemeyi kullanan tarifleri çıkar
             T = {k: t for k, t in T.items() if not any(x["malzeme"] in eksik for x in t["malzemeler"])}

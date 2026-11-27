@@ -74,7 +74,11 @@ def test_adaylarda_ucuz_kucuk_paket_var():
                for g, fiyat in ((850, 360.0), (1000, 400.0), (2000, 780.0), (460, 230.0), (225, 150.0), (300, 140.0))]
     adlar = {p["name"] for p in plan.urun_adaylari(katalog, {"bal"}, None, her_market=2)["bal"]}
     assert "Bal 300 G" in adlar          # paket fiyatı en düşük
-    assert "Bal 225 G" in adlar          # en küçük paket
+    assert "Bal 225 G" not in adlar      # 300 g daha büyük ve daha ucuz: 225 g'a hiç gerek yok
+    katalog[4]["price"] = 120.0          # 225 g artık en ucuz paket -> kalır
+    plan._ADAY_ONBELLEK.clear()
+    adlar = {p["name"] for p in plan.urun_adaylari(katalog, {"bal"}, None, her_market=2)["bal"]}
+    assert "Bal 225 G" in adlar and "Bal 300 G" not in adlar
 
 
 def test_sure_dolsa_da_sepet_sisirilmez(monkeypatch):

@@ -82,8 +82,13 @@ def test_plan_isi_akisi(istemci, monkeypatch):
     assert gelen["katalog"][0]["name"] == "Domates Kg"
     assert gelen["ekipman"] == ["ocak", "airfryer"] and gelen["alerjen"] == ["gluten"]
     assert gelen["max_sure"] == 30 and gelen["ara_ogun"] == 1 and gelen["haric_malzeme"] == []
-    # tanımsız ekipman reddedilir
+    # varsayılan: ülke genelindeki zincirler; bölgesel Hakmar / Tarım Kredi ancak seçilirse
+    assert gelen["marketler"] == {"migros", "sok", "a101", "bim", "carrefour"}
+    r = istemci.post("/plan", json={**KISI, "marketler": ["hakmar", "migros"]})
+    assert bekle(istemci, r.json()["is_id"]) and gelen["marketler"] == {"hakmar", "migros"}
+    # tanımsız ekipman / market reddedilir
     assert istemci.post("/plan", json={**KISI, "ekipman": ["kazan"]}).status_code == 422
+    assert istemci.post("/plan", json={**KISI, "marketler": ["metro"]}).status_code == 422
 
 
 def test_secenekler(istemci):

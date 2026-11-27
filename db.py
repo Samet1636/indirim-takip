@@ -118,6 +118,17 @@ def save_offers(conn: sqlite3.Connection, offers: list[Offer]) -> int:
     return changed
 
 
+def fresh_count(conn: sqlite3.Connection, market: str, id_prefix: str, days: int = 2,
+                today: str | None = None) -> int:
+    """Son `days` günde görülmüş, kimliği id_prefix ile başlayan ürün sayısı
+    (ör. marketfiyati'den gelen A101 ürünleri: market='a101', id_prefix='mf-')."""
+    today_d = date.fromisoformat(today) if today else date.today()
+    since = (today_d - timedelta(days=days)).isoformat()
+    return conn.execute(
+        "SELECT COUNT(*) FROM products WHERE market=? AND market_product_id LIKE ? AND last_seen >= ?",
+        (market, id_prefix + "%", since)).fetchone()[0]
+
+
 def catalog(conn: sqlite3.Connection, today: str | None = None, stale_days: int = 3) -> list[dict]:
     """Tüm ürünler sekmesi: son stale_days gün içinde görülmüş bütün ürünler."""
     today_d = date.fromisoformat(today) if today else date.today()

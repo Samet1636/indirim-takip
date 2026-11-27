@@ -121,6 +121,10 @@ ALERJEN_ADI = {"sut": "Süt ürünleri", "yumurta": "Yumurta", "gluten": "Gluten
                "balik": "Balık", "susam": "Susam / tahin"}
 
 
+PlanMarketi = Literal["migros", "sok", "a101", "bim", "carrefour", "hakmar", "tarim_kredi"]
+ULKE_GENELI = ["migros", "sok", "a101", "bim", "carrefour"]     # plan için varsayılan marketler
+
+
 class PlanIstegi(Kisi):
     paket: Literal["ekonomik", "vejetaryen", "yuksek_protein", "pratik"] = "ekonomik"
     market: int = Field(2, ge=1, le=4, description="en fazla kaç markete gidilsin")
@@ -129,6 +133,9 @@ class PlanIstegi(Kisi):
     haric_malzeme: List[str] = Field(default_factory=list, description="istenmeyen malzeme id'leri")
     max_sure: Optional[int] = Field(None, ge=5, le=240, description="tarif başına en fazla dakika")
     ara_ogun: int = Field(2, ge=0, le=2, description="günde en fazla kaç ara öğün")
+    marketler: Optional[List[PlanMarketi]] = Field(
+        None, description="plana girebilecek marketler; boşsa ülke genelindeki zincirler (Hakmar ve "
+                          "Tarım Kredi bölgesel olduğu için ancak açıkça seçilirse girer)")
 
 
 class ListeIstegi(BaseModel):
@@ -259,7 +266,8 @@ def uygulama_olustur() -> FastAPI:
         def is_():
             return plan.coz(katalog, kisi, paket=istek.paket, max_market=istek.market,
                             sure_siniri=SURE_SINIRI, ekipman=istek.ekipman, alerjen=istek.alerjen,
-                            haric_malzeme=istek.haric_malzeme, max_sure=istek.max_sure, ara_ogun=istek.ara_ogun)
+                            haric_malzeme=istek.haric_malzeme, max_sure=istek.max_sure, ara_ogun=istek.ara_ogun,
+                            marketler=set(istek.marketler or ULKE_GENELI))
 
         is_id = app.state.kuyruk.gonder(is_)
         with app.state.ip_kilit:

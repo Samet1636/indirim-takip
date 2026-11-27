@@ -13,7 +13,9 @@ scrapers/            Market scraper'ları (hepsi models.Offer listesi döndürü
   base.py            Ortak HTTP oturumu, istekler arası gecikme, --dump, parse_tr_price
   migros.py          Migros REST API (rest/search/screens/...), fiyatlar KURUŞ
   bim.py             BİM aktüel sayfası (HTML); --katalog ile tam katalog marketfiyati.py'den eklenir
-  marketfiyati.py    marketfiyati.org.tr API (TÜBİTAK BİLGEM): BİM'in tüm ürünleri, tek şube (Kızılay'a en yakın)
+  marketfiyati.py    marketfiyati.org.tr API (TÜBİTAK BİLGEM): BİM, A101 (a101_mf), CarrefourSA, Hakmar,
+                     Tarım Kredi. Market başına tek şube (sabit noktaya yakın 3 şubeden en çok ürünlüsü;
+                     Hakmar/Tarım Kredi İstanbul, diğerleri Ankara Kızılay). Market başına ~2-4 dk
   sok.py             ŞOK (Next.js RSC). Ürünler: initialSearchResult.results[].product / .prices
   a101.py            A101 Kapıda — Cloudflare korumalı. Playwright + bilgisayardaki Chrome ile
                      Store/search (kampanya) ve Store/listCategoryProducts (kategori) API'lerini dinler
@@ -59,15 +61,20 @@ Paket ekledikten sonra Metro'yu `--clear` ile yeniden başlat (yoksa "Unable to 
 
 1. GitHub Actions (her sabah): `python run.py --skip a101 --katalog --import-dir data/imports`
    -> data/prices.db, data/discounts_today.json, data/katalog.json güncellenir, commit'lenir, Pages'e yayınlanır.
-2. Yerel bilgisayar (Görev Zamanlayıcı, a101_gunluk.bat): A101'i tarar, `data/imports/a101.json`
-   dosyasını GitHub API ile yükler; bu push workflow'u `--no-scrape` modunda tetikler.
-3. A101 GitHub sunucularından taranamaz (Cloudflare "Bir dakika lütfen..." -> 403). Bunu tekrar deneme.
+2. A101 artık GitHub'da marketfiyati'den gelir (`a101_mf`, mağaza fiyatları). Yerel bilgisayar
+   (Görev Zamanlayıcı, a101_gunluk.bat) A101 Kapıda'yı tarayıp `data/imports/a101.json` yükler; bu dosya
+   sadece YEDEK: son 2 günde ≥500 marketfiyati A101 ürünü varsa içe aktarılmaz (run.py A101_YEDEK_ESIGI),
+   yoksa aynı ürün iki kez görünürdü. 23-26.11.2026'da bilgisayar açılmadığı için A101 uygulamadan düşmüştü.
+3. A101 Kapıda GitHub sunucularından taranamaz (Cloudflare "Bir dakika lütfen..." -> 403). Bunu tekrar deneme.
 4. Katalog kapsamı (16.11.2026): Migros ~18.700 (tam), ŞOK ~2.900 (tam; en büyük kategori 28 sayfa),
    A101 ~2.250 (Kapıda tam; 17 kategori, ~2,5 dk), BİM ~2.300 (19.11.2026: ~1.750 katalog + ~570 aktüel).
    - BİM'in fiyatlı tam kataloğu bim.com.tr'de yok; marketfiyati.org.tr'den alınıyor (~80 istek, ~4 dk).
    - marketfiyati.org.tr (TÜBİTAK BİLGEM) kullanım koşulları yazılı izin istiyor. Kullanıcı izin aldığını
-     19.11.2026'da bildirdi. Sadece BİM için kullanılıyor; uygulamada kaynak notu ("BİM fiyatları:
-     marketfiyati.org.tr") kalmalı. İstekler arası gecikmeyi kaldırma, şube sayısını artırma.
+     19.11.2026'da bildirdi. Migros ve ŞOK kendi sitelerinden (daha geniş), diğerleri buradan. Uygulamada
+     kaynak notu (karsilastir.js KaynakNotu) kalmalı. İstekler arası gecikmeyi kaldırma, şube sayısını artırma.
+   - Plan varsayılan olarak ülke genelindeki 5 zincirle kurulur (api/main.py ULKE_GENELI); Hakmar ve
+     Tarım Kredi bölgesel, ancak `marketler` ile seçilirse girer. 5+ markette aday ürün sayısı düşürülür
+     (her_market=2) ve baskın paketler elenir; yoksa çözücü 60 sn'ye sığmıyor.
 
 ## Komutlar
 
