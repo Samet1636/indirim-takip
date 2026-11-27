@@ -34,7 +34,7 @@ from hedef import hesapla  # noqa: E402
 from miktar import norm, norm_ad  # noqa: E402
 
 from . import hesap as hesap_modulu  # noqa: E402
-from . import karsilastirma, tarifler  # noqa: E402
+from . import benzer, karsilastirma, tarifler  # noqa: E402
 from .isler import IsKuyrugu  # noqa: E402
 
 TIBBI_NOT = "Bu plan genel bilgilendirme amaçlıdır, tıbbi tavsiye değildir."
@@ -259,6 +259,16 @@ def uygulama_olustur() -> FastAPI:
                     cesit: Optional[str] = Query(None, max_length=30)):
         """Bir ürünün marketlerdeki fiyatları, birim fiyata (TL/L, TL/kg) göre; cesit ile daraltılabilir."""
         return karsilastirma.karsilastir(q, app.state.katalog.getir(), cesit=cesit)
+
+    @app.get("/urun")
+    def urun_detayi(market: str = Query(..., max_length=20), ad: str = Query(..., min_length=2, max_length=200),
+                    fiyat: Optional[float] = Query(None, gt=0)):
+        """Ürün detay sayfası: birim fiyat, öteki marketlerdeki karşılığı ve daha ucuz benzerleri.
+        Ürün katalogda yoksa (örn. sadece aktüel listesinde) fiyat verilirse yine hesaplanır."""
+        d = benzer.benzerleri(market, ad, app.state.katalog.getir(), fiyat)
+        if d is None:
+            raise HTTPException(404, "Ürün bulunamadı.")
+        return d
 
     @app.post("/liste")
     def liste(istek: ListeIstegi):

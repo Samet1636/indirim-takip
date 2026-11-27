@@ -61,6 +61,51 @@ def test_urun_arama(tmp_path, monkeypatch):
         assert r["toplam"] == 3 and len(r["urunler"]) == 1
 
 
+def test_urun_detayi_benzerleri(tmp_path, monkeypatch):
+    katalog = tmp_path / "katalog.json"
+    katalog.write_text(json.dumps([
+        {"market": "bim", "name": "Dost Yağlı Süt 1 Lt", "price": 32.5, "category": "Süt"},
+        {"market": "bim", "name": "Dost Yağlı Süt 5 Lt", "price": 140.0},          # aynı market, daha ucuz/L
+        {"market": "sok", "name": "Pınar Yağlı Süt 1 L", "price": 59.9},           # benzer, farklı marka
+        {"market": "sok", "name": "Pınar Yağlı Süt 500 ml", "price": 35.0},        # aynı markette daha az benzer değil
+        {"market": "a101", "name": "Dost Yağlı Süt 1 L", "price": 34.0},           # aynı ürün
+        {"market": "a101", "name": "Dost Yağlı Süt 200 ml", "price": 9.0},         # aynı marka ama küçük paket
+        {"market": "migros", "name": "Dost Yağlı Süt %3 1 L", "price": 45.0},      # yağ oranı farklı: aynı değil
+        {"market": "a101", "name": "Ülker Sütlü Çikolata 80 g", "price": 30.0},    # süt değil
+        {"market": "migros", "name": "Kahve Dünyası Süt Kahvesi 250 ml", "price": 20.0},  # süt değil
+        {"market": "migros", "name": "Pınar Kaşar Peyniri 500 g", "price": 200.0},
+    ], ensure_ascii=False), encoding="utf-8")
+    monkeypatch.setenv("KATALOG_YOLU", str(katalog))
+    with TestClient(main.uygulama_olustur()) as c:
+        d = c.get("/urun", params={"market": "bim", "ad": "Dost Yağlı Süt 1 Lt"}).json()
+        assert d["urun"]["birim_fiyat"] == 32.5 and d["urun"]["birim"] == "L" and d["urun"]["paket"] == "1 L"
+        assert d["tur"] == "sut" and d["liste_satiri"] == "Yağlı Süt 1 Lt"
+        dm = {o["market"]: o for o in d["diger_marketler"]}
+        assert set(dm) == {"a101", "sok", "migros"}             # çikolata ve kahve süt sayılmaz
+        assert dm["a101"]["ayni"] and dm["a101"]["ad"] == "Dost Yağlı Süt 1 L"     # 200 ml değil, 1 L
+        assert not dm["sok"]["ayni"] and not dm["migros"]["ayni"]
+        assert [o["market"] for o in d["diger_marketler"]] == ["a101", "migros", "sok"]   # birim fiyata göre
+        assert [o["ad"] for o in d["daha_ucuz"]] == ["Dost Yağlı Süt 5 Lt"]       # 28 TL/L < 32,5
+        # katalogda olmayan ürün (örn. sadece aktüel listesinde): fiyatla yine hesaplanır
+        assert c.get("/urun", params={"market": "bim", "ad": "Torku Yağlı Süt 1 L"}).status_code == 404
+        d = c.get("/urun", params={"market": "bim", "ad": "Torku Yağlı Süt 1 L", "fiyat": 30}).json()
+        assert d["urun"]["birim_fiyat"] == 30.0 and d["diger_marketler"]
+
+
+def test_benzer_tur_ve_kok():
+    from api import benzer
+    assert benzer.tur_kelimesi("Pınar Süt %1 Yağlı 1 L") == "sut"          # sondaki sıfat tür değil
+    assert benzer.tur_kelimesi("Tadım Tuzlu Yer Fıstığı 180 Gr") == benzer.kok("fistik") == "fistik"
+    assert benzer.kok("kahvesi") == "kahve"
+    katalog = [
+        {"market": "migros", "name": "Tuzlu Yer Fıstık Kg", "price": 75.0},
+        {"market": "a101", "name": "Tadım Tuzlu Yer Fıstığı 180 Gr", "price": 76.5},
+        {"market": "bim", "name": "Emsal Yer Fıstığı Ezmesi 1 Kg", "price": 99.0},     # ezme, fıstık değil
+    ]
+    d = benzer.benzerleri("migros", "Tuzlu Yer Fıstık Kg", katalog)
+    assert [o["market"] for o in d["diger_marketler"]] == ["a101"]
+
+
 def test_hedef_ve_guvenlik(istemci):
     r = istemci.post("/hedef", json=KISI)
     assert r.status_code == 200
