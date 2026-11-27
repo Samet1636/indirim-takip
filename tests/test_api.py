@@ -13,6 +13,13 @@ from api.isler import IsKuyrugu
 KISI = dict(kilo=75, boy=178, yas=23, cinsiyet="erkek", aktivite="orta", hedef="koru")
 
 
+@pytest.fixture(autouse=True)
+def hesapsiz(monkeypatch):
+    # Bilgisayarda Supabase ayarları tanımlı olsa bile testler ağa çıkmasın, hesapsız başlasın
+    monkeypatch.delenv("SUPABASE_URL", raising=False)
+    monkeypatch.delenv("SUPABASE_ANON_KEY", raising=False)
+
+
 @pytest.fixture
 def istemci(tmp_path, monkeypatch):
     katalog = tmp_path / "katalog.json"
@@ -166,6 +173,90 @@ def test_kisi_basi_plan_siniri(istemci, monkeypatch):
     bekle(istemci, ikinci.json()["is_id"])
     r = istemci.post("/plan", json=KISI, headers=ip_a)                        # 3. plan: saatlik sınır
     assert r.status_code == 429 and "Bir saatte en fazla 2 plan" in r.json()["detail"], r.json()
+
+
+class SahteHesap:
+    """Supabase yerine: 'iyi' ve 'diger' geçerli oturumlar, plan zamanları bellekte."""
+    def __init__(self):
+        self.kayit = {"iyi": [], "diger": []}
+
+    def kullanici(self, token):
+        return {"id": f"u-{token}", "email": f"{token}@ornek.com"} if token in self.kayit else None
+
+    def kullanimlar(self, token, gun=7):
+        from datetime import datetime, timedelta, timezone
+        sinir = datetime.now(timezone.utc) - timedelta(days=gun)
+        return [t for t in self.kayit[token] if t >= sinir]
+
+    def kullanim_ekle(self, token):
+        from datetime import datetime, timezone
+        self.kayit[token].append(datetime.now(timezone.utc))
+
+
+def test_hesap_ve_haftalik_hak(istemci, monkeypatch):
+    sahte = SahteHesap()
+    istemci.app.state.hesap = sahte
+    sonuclar = iter([{"durum": "Yetersiz tarif", "yetersiz": ["ana"]},             # plan çıkmadı: hak düşmez
+                     {"durum": "Optimal", "plan": [{"gun": "Pzt"}], "alisveris": []},
+                     {"durum": "Optimal", "plan": [{"gun": "Pzt"}], "alisveris": []}])
+    monkeypatch.setattr(main.plan, "coz", lambda *a, **k: next(sonuclar))
+    iyi = {"Authorization": "Bearer iyi"}
+    assert istemci.post("/plan", json=KISI).status_code == 401                       # giriş yok
+    r = istemci.post("/plan", json=KISI, headers={"Authorization": "Bearer sahte"})
+    assert r.status_code == 401 and "tekrar giriş" in r.json()["detail"]
+    assert istemci.get("/hak", headers=iyi).json() == {"hesap_gerekli": True, "haftalik": 1, "kalan": 1,
+                                                       "yenilenme": None, "yenilenme_metni": None}
+    bekle(istemci, istemci.post("/plan", json=KISI, headers=iyi).json()["is_id"])
+    assert sahte.kayit["iyi"] == []                                                   # yetersiz tarif: hak duruyor
+    s = bekle(istemci, istemci.post("/plan", json=KISI, headers=iyi).json()["is_id"])
+    assert s["durum"] == "bitti" and len(sahte.kayit["iyi"]) == 1
+    r = istemci.post("/plan", json=KISI, headers=iyi)                                # bu hafta ikinci plan yok
+    assert r.status_code == 403 and "Bu haftaki ücretsiz planını kullandın" in r.json()["detail"]
+    h = istemci.get("/hak", headers=iyi).json()
+    assert h["kalan"] == 0 and h["yenilenme"] and h["yenilenme_metni"]
+    # başka bir kullanıcının hakkı etkilenmez
+    assert istemci.post("/plan", json=KISI, headers={"Authorization": "Bearer diger"}).status_code == 202
+
+
+def test_hak_durumu_ve_supabase_istekleri():
+    from datetime import datetime, timedelta, timezone
+    from api import hesap
+    t = datetime(2026, 11, 27, 9, 0, tzinfo=timezone.utc)
+    d = hesap.hak_durumu([t], 1)
+    assert d["kalan"] == 0 and d["yenilenme"].startswith("2026-12-04") and d["yenilenme_metni"] == "4 Aralık 12:00"
+    assert hesap.hak_durumu([], 1)["kalan"] == 1 and hesap.hak_durumu([t], 2)["kalan"] == 1
+
+    class Cevap:
+        def __init__(self, kod, govde=None):
+            self.status_code, self._g = kod, govde
+
+        def json(self):
+            return self._g
+
+    class SahteHttp:
+        def __init__(self):
+            self.istekler = []
+
+        def get(self, url, headers, timeout, params=None):
+            self.istekler.append(("GET", url, headers, params))
+            if url.endswith("/auth/v1/user"):
+                return Cevap(200, {"id": "abc", "email": "a@b.c"}) if headers["Authorization"] == "Bearer iyi" else Cevap(401)
+            return Cevap(200, [{"olusturma": "2026-11-27T09:00:00+00:00"}])
+
+        def post(self, url, json, timeout, headers):
+            self.istekler.append(("POST", url, headers, json))
+            return Cevap(201)
+
+    http = SahteHttp()
+    h = hesap.SupabaseHesap("https://proje.supabase.co/", "acik-anahtar", oturum=http)
+    assert h.kullanici("iyi") == {"id": "abc", "email": "a@b.c"} and h.kullanici("kotu") is None
+    h.kullanici("iyi")
+    assert sum(1 for i in http.istekler if i[1].endswith("/user")) == 2               # 'iyi' önbellekten
+    assert h.kullanimlar("iyi") == [t]
+    h.kullanim_ekle("iyi")
+    yontem, url, basliklar, _ = http.istekler[-1]
+    assert yontem == "POST" and url == "https://proje.supabase.co/rest/v1/plan_kullanim"
+    assert basliklar["apikey"] == "acik-anahtar" and basliklar["Authorization"] == "Bearer iyi"
 
 
 def test_kuyruk_doluysa_429(istemci, monkeypatch):

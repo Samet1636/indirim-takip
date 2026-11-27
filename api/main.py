@@ -33,6 +33,7 @@ import tarif_ozet  # noqa: E402
 from hedef import hesapla  # noqa: E402
 from miktar import norm, norm_ad  # noqa: E402
 
+from . import hesap as hesap_modulu  # noqa: E402
 from . import karsilastirma, tarifler  # noqa: E402
 from .isler import IsKuyrugu  # noqa: E402
 
@@ -40,6 +41,15 @@ TIBBI_NOT = "Bu plan genel bilgilendirme amaçlıdır, tıbbi tavsiye değildir.
 SURE_SINIRI = int(os.environ.get("PLAN_SURE_SINIRI", "60"))
 EN_FAZLA_BEKLEYEN = int(os.environ.get("EN_FAZLA_BEKLEYEN", "8"))   # sırada + çalışan plan işi
 IP_SAATLIK_PLAN = int(os.environ.get("IP_SAATLIK_PLAN", "6"))       # kişi (IP) başına saatlik plan
+HAFTALIK_PLAN = int(os.environ.get("HAFTALIK_PLAN", "1"))           # hesap başına 7 günde ücretsiz plan
+
+
+def oturum_anahtari(request) -> Optional[str]:
+    """'Authorization: Bearer <anahtar>' başlığındaki Supabase oturum anahtarı."""
+    b = request.headers.get("authorization") or ""
+    if not b.lower().startswith("bearer "):
+        return None
+    return b[7:].strip() or None
 
 
 def istemci_ip(request) -> str:
@@ -157,6 +167,28 @@ def uygulama_olustur() -> FastAPI:
     app.state.ip_gecmis = {}      # ip -> son bir saatteki plan isteklerinin zamanları
     app.state.ip_son_is = {}      # ip -> son plan işinin numarası
     app.state.ip_kilit = threading.Lock()
+    app.state.hesap = hesap_modulu.ortamdan()     # None: hesap zorunlu değil (yerel geliştirme)
+
+    def giris_yapan(request):
+        """Hesap zorunluysa oturumu doğrular: (kullanıcı, anahtar). Değilse (None, None)."""
+        if app.state.hesap is None:
+            return None, None
+        token = oturum_anahtari(request)
+        if not token:
+            raise HTTPException(401, "Plan oluşturmak için giriş yapmalısın.")
+        try:
+            kullanici = app.state.hesap.kullanici(token)
+        except hesap_modulu.HesapHatasi:
+            raise HTTPException(503, "Hesap sunucusuna şu an ulaşılamıyor. Biraz sonra tekrar dene.")
+        if not kullanici:
+            raise HTTPException(401, "Oturumun sona ermiş; lütfen tekrar giriş yap.")
+        return kullanici, token
+
+    def hak(token) -> dict:
+        try:
+            return hesap_modulu.hak_durumu(app.state.hesap.kullanimlar(token), HAFTALIK_PLAN)
+        except hesap_modulu.HesapHatasi:
+            raise HTTPException(503, "Hesap sunucusuna şu an ulaşılamıyor. Biraz sonra tekrar dene.")
 
     def isit():   # ürün eşleştirmesini ilk plan isteğini bekletmeden, arka planda hazırla
         try:
@@ -238,16 +270,30 @@ def uygulama_olustur() -> FastAPI:
         h = hesapla(**kisi_sozlugu(k))
         return {"hedef": h.__dict__, "not": TIBBI_NOT}
 
+    @app.get("/hak")
+    def hak_sorgu(request: Request):
+        """Giriş yapan kullanıcının bu haftaki ücretsiz plan hakkı."""
+        if app.state.hesap is None:
+            return {"hesap_gerekli": False, "haftalik": None, "kalan": None, "yenilenme": None}
+        _, token = giris_yapan(request)
+        return {"hesap_gerekli": True, **hak(token)}
+
     @app.post("/plan", status_code=202)
     def plan_baslat(istek: PlanIstegi, request: Request):
         kisi = kisi_sozlugu(istek)
         hesapla(**kisi)   # 18 yaş altı vb. geçersiz girdiler iş kuyruğuna girmeden reddedilsin
+        kullanici, token = giris_yapan(request)
+        if kullanici:
+            h = hak(token)
+            if h["kalan"] <= 0:
+                raise HTTPException(403, f"Bu haftaki ücretsiz planını kullandın. Yeni planını "
+                                         f"{h['yenilenme_metni']} itibarıyla oluşturabilirsin.")
         if app.state.kuyruk.bekleyen() >= EN_FAZLA_BEKLEYEN:   # herkese açık sunucuda yığılmayı önle
             raise HTTPException(429, "Şu an çok fazla plan hesaplanıyor. Lütfen birkaç dakika sonra tekrar dene.")
 
-        # Kişi başı sınır (IP adresine göre): aynı anda tek plan, saatte en fazla IP_SAATLIK_PLAN plan.
+        # Kişi başı sınır (hesap ya da IP adresine göre): aynı anda tek plan, saatte en fazla IP_SAATLIK_PLAN.
         # Biri sürekli plan isteyerek sunucuyu meşgul edip diğer kullanıcıları bekletemesin.
-        ip = istemci_ip(request)
+        ip = f"hesap:{kullanici['id']}" if kullanici else istemci_ip(request)
         simdi = time.time()
         with app.state.ip_kilit:
             onceki = app.state.ip_son_is.get(ip)
@@ -265,10 +311,17 @@ def uygulama_olustur() -> FastAPI:
         katalog = app.state.katalog.getir()
 
         def is_():
-            return plan.coz(katalog, kisi, paket=istek.paket, max_market=istek.market,
-                            sure_siniri=SURE_SINIRI, ekipman=istek.ekipman, alerjen=istek.alerjen,
-                            haric_malzeme=istek.haric_malzeme, max_sure=istek.max_sure, ara_ogun=istek.ara_ogun,
-                            marketler=set(istek.marketler or ULKE_GENELI))
+            sonuc = plan.coz(katalog, kisi, paket=istek.paket, max_market=istek.market,
+                             sure_siniri=SURE_SINIRI, ekipman=istek.ekipman, alerjen=istek.alerjen,
+                             haric_malzeme=istek.haric_malzeme, max_sure=istek.max_sure, ara_ogun=istek.ara_ogun,
+                             marketler=set(istek.marketler or ULKE_GENELI))
+            # Hak sadece plan gerçekten çıktıysa düşer ("Yetersiz tarif" ya da çözümsüzlükte düşmez)
+            if kullanici and sonuc.get("plan"):
+                try:
+                    app.state.hesap.kullanim_ekle(token)
+                except hesap_modulu.HesapHatasi as e:
+                    print(f"plan kullanımı kaydedilemedi: {e}", file=sys.stderr)
+            return sonuc
 
         is_id = app.state.kuyruk.gonder(is_)
         with app.state.ip_kilit:
