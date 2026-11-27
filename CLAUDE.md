@@ -41,7 +41,15 @@ beslenme/
 api/                 Beslenme planı sunucusu (FastAPI). Paketleri api/requirements.txt'te
   main.py            GET /saglik, POST /hedef, POST /plan (iş no döner), GET /plan/{is_id};
                      katalog.json'u dosya değişince yeniden okur; "tıbbi tavsiye değildir" notu ekler
-  isler.py           Bellekte iş kuyruğu (tek işçi; çözüm ~70 sn). Supabase aşamasında tabloya taşınacak
+                     GET /urunler, /karsilastir, POST /liste, GET /urun (detay: birim fiyat, diğer marketler,
+                     daha ucuz benzerleri -> benzer.py), GET /hak (haftalık hak + premium)
+  isler.py           Bellekte iş kuyruğu (tek işçi; çözüm ~70 sn). Biten işler 1 saat saklanır
+  hesap.py           Supabase hesabı: kullanıcıyı doğrular, plan_kullanim tablosundan 7 günlük hakkı sayar.
+                     Sunucuda GİZLİ Supabase anahtarı YOK (kullanıcının oturumu + RLS). Kurulum: supabase_kurulum.sql
+                     (tablo + hesabi_sil() fonksiyonu; Supabase web > SQL Editor'da çalıştırılır, SSMS'de değil)
+  premium.py         Premium aylık abonelik: RevenueCat'e sorar (REVENUECAT_SECRET_KEY sadece Render panelinde).
+                     Ücretsiz HAFTALIK_PLAN=1, premium HAFTALIK_PREMIUM=7. Satın alma uygulamada (react-native-purchases);
+                     dijital özellik olduğu için mağaza içi satın alma ZORUNLU (iyzico/sanal POS kullanılamaz)
 tests/               pytest testleri (ağa çıkmaz; tests/fixtures altında gerçek site örnekleri)
 .github/workflows/daily.yml   Her gün 04:00 UTC: "tara" işi (Migros/ŞOK/BİM + data/imports içe aktar,
                               commit) ve "yayinla" işi (GitHub Pages)

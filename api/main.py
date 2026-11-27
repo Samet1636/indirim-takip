@@ -19,7 +19,7 @@ import sys
 import threading
 import time
 from pathlib import Path
-from typing import List, Literal, Optional
+from typing import List, Literal, Optional, Tuple
 
 from fastapi import FastAPI, HTTPException, Query, Request
 from fastapi.middleware.cors import CORSMiddleware
@@ -34,6 +34,7 @@ from hedef import hesapla  # noqa: E402
 from miktar import norm, norm_ad  # noqa: E402
 
 from . import hesap as hesap_modulu  # noqa: E402
+from . import premium as premium_modulu  # noqa: E402
 from . import benzer, karsilastirma, tarifler  # noqa: E402
 from .isler import IsKuyrugu  # noqa: E402
 
@@ -42,6 +43,7 @@ SURE_SINIRI = int(os.environ.get("PLAN_SURE_SINIRI", "60"))
 EN_FAZLA_BEKLEYEN = int(os.environ.get("EN_FAZLA_BEKLEYEN", "8"))   # sırada + çalışan plan işi
 IP_SAATLIK_PLAN = int(os.environ.get("IP_SAATLIK_PLAN", "6"))       # kişi (IP) başına saatlik plan
 HAFTALIK_PLAN = int(os.environ.get("HAFTALIK_PLAN", "1"))           # hesap başına 7 günde ücretsiz plan
+HAFTALIK_PREMIUM = int(os.environ.get("HAFTALIK_PREMIUM", "7"))     # premium abonede 7 günde plan
 
 
 def oturum_anahtari(request) -> Optional[str]:
@@ -168,6 +170,7 @@ def uygulama_olustur() -> FastAPI:
     app.state.ip_son_is = {}      # ip -> son plan işinin numarası
     app.state.ip_kilit = threading.Lock()
     app.state.hesap = hesap_modulu.ortamdan()     # None: hesap zorunlu değil (yerel geliştirme)
+    app.state.premium = premium_modulu.ortamdan()  # None: kimse premium değil (anahtar tanımlı değil)
 
     def giris_yapan(request):
         """Hesap zorunluysa oturumu doğrular: (kullanıcı, anahtar). Değilse (None, None)."""
@@ -184,11 +187,26 @@ def uygulama_olustur() -> FastAPI:
             raise HTTPException(401, "Oturumun sona ermiş; lütfen tekrar giriş yap.")
         return kullanici, token
 
-    def hak(token) -> dict:
+    def premium_durumu(kullanici, taze=False) -> Tuple[Optional[bool], Optional[str]]:
+        """(premium mu, bitiş). RevenueCat'e ulaşılamazsa (None, None): ücretsiz hak yine kullanılabilir."""
+        if app.state.premium is None:
+            return False, None
         try:
-            return hesap_modulu.hak_durumu(app.state.hesap.kullanimlar(token), HAFTALIK_PLAN)
+            aktif, bitis = app.state.premium.durum(kullanici["id"], taze=taze)
+        except premium_modulu.PremiumHatasi as e:
+            print(f"premium durumu alınamadı: {e}", file=sys.stderr)
+            return None, None
+        return aktif, (bitis.isoformat() if bitis else None)
+
+    def hak(kullanici, token, taze=False) -> dict:
+        premium, bitis = premium_durumu(kullanici, taze)
+        haftalik = HAFTALIK_PREMIUM if premium else HAFTALIK_PLAN
+        try:
+            h = hesap_modulu.hak_durumu(app.state.hesap.kullanimlar(token), haftalik)
         except hesap_modulu.HesapHatasi:
             raise HTTPException(503, "Hesap sunucusuna şu an ulaşılamıyor. Biraz sonra tekrar dene.")
+        return {**h, "premium": bool(premium), "premium_bitis": bitis, "premium_dogrulanamadi": premium is None,
+                "premium_haftalik": HAFTALIK_PREMIUM}
 
     def isit():   # ürün eşleştirmesini ilk plan isteğini bekletmeden, arka planda hazırla
         try:
@@ -281,12 +299,13 @@ def uygulama_olustur() -> FastAPI:
         return {"hedef": h.__dict__, "not": TIBBI_NOT}
 
     @app.get("/hak")
-    def hak_sorgu(request: Request):
-        """Giriş yapan kullanıcının bu haftaki ücretsiz plan hakkı."""
+    def hak_sorgu(request: Request, yenile: bool = False):
+        """Giriş yapan kullanıcının bu haftaki plan hakkı ve premium durumu.
+        yenile=1: satın almadan hemen sonra aboneliği RevenueCat'e yeniden sor."""
         if app.state.hesap is None:
             return {"hesap_gerekli": False, "haftalik": None, "kalan": None, "yenilenme": None}
-        _, token = giris_yapan(request)
-        return {"hesap_gerekli": True, **hak(token)}
+        kullanici, token = giris_yapan(request)
+        return {"hesap_gerekli": True, **hak(kullanici, token, taze=yenile)}
 
     @app.post("/plan", status_code=202)
     def plan_baslat(istek: PlanIstegi, request: Request):
@@ -294,10 +313,16 @@ def uygulama_olustur() -> FastAPI:
         hesapla(**kisi)   # 18 yaş altı vb. geçersiz girdiler iş kuyruğuna girmeden reddedilsin
         kullanici, token = giris_yapan(request)
         if kullanici:
-            h = hak(token)
+            h = hak(kullanici, token)
             if h["kalan"] <= 0:
+                if h["premium_dogrulanamadi"]:
+                    raise HTTPException(503, "Abonelik durumun şu an doğrulanamadı. Biraz sonra tekrar dene.")
+                if h["premium"]:
+                    raise HTTPException(403, f"Bu haftaki {h['haftalik']} planını kullandın. Yeni planını "
+                                             f"{h['yenilenme_metni']} itibarıyla oluşturabilirsin.")
                 raise HTTPException(403, f"Bu haftaki ücretsiz planını kullandın. Yeni planını "
-                                         f"{h['yenilenme_metni']} itibarıyla oluşturabilirsin.")
+                                         f"{h['yenilenme_metni']} itibarıyla oluşturabilir ya da Premium ile "
+                                         f"her hafta {HAFTALIK_PREMIUM} plan oluşturabilirsin.")
         if app.state.kuyruk.bekleyen() >= EN_FAZLA_BEKLEYEN:   # herkese açık sunucuda yığılmayı önle
             raise HTTPException(429, "Şu an çok fazla plan hesaplanıyor. Lütfen birkaç dakika sonra tekrar dene.")
 

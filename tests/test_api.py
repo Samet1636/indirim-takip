@@ -18,6 +18,7 @@ def hesapsiz(monkeypatch):
     # Bilgisayarda Supabase ayarları tanımlı olsa bile testler ağa çıkmasın, hesapsız başlasın
     monkeypatch.delenv("SUPABASE_URL", raising=False)
     monkeypatch.delenv("SUPABASE_ANON_KEY", raising=False)
+    monkeypatch.delenv("REVENUECAT_SECRET_KEY", raising=False)
 
 
 @pytest.fixture
@@ -249,8 +250,9 @@ def test_hesap_ve_haftalik_hak(istemci, monkeypatch):
     assert istemci.post("/plan", json=KISI).status_code == 401                       # giriş yok
     r = istemci.post("/plan", json=KISI, headers={"Authorization": "Bearer sahte"})
     assert r.status_code == 401 and "tekrar giriş" in r.json()["detail"]
-    assert istemci.get("/hak", headers=iyi).json() == {"hesap_gerekli": True, "haftalik": 1, "kalan": 1,
-                                                       "yenilenme": None, "yenilenme_metni": None}
+    assert istemci.get("/hak", headers=iyi).json() == {
+        "hesap_gerekli": True, "haftalik": 1, "kalan": 1, "yenilenme": None, "yenilenme_metni": None,
+        "premium": False, "premium_bitis": None, "premium_dogrulanamadi": False, "premium_haftalik": 7}
     bekle(istemci, istemci.post("/plan", json=KISI, headers=iyi).json()["is_id"])
     assert sahte.kayit["iyi"] == []                                                   # yetersiz tarif: hak duruyor
     s = bekle(istemci, istemci.post("/plan", json=KISI, headers=iyi).json()["is_id"])
@@ -261,6 +263,74 @@ def test_hesap_ve_haftalik_hak(istemci, monkeypatch):
     assert h["kalan"] == 0 and h["yenilenme"] and h["yenilenme_metni"]
     # başka bir kullanıcının hakkı etkilenmez
     assert istemci.post("/plan", json=KISI, headers={"Authorization": "Bearer diger"}).status_code == 202
+
+
+class SahtePremium:
+    def __init__(self, aboneler=(), hata=False):
+        self.aboneler, self.hata = set(aboneler), hata
+
+    def durum(self, kullanici_id, taze=False):
+        from datetime import datetime, timedelta, timezone
+        from api.premium import PremiumHatasi
+        if self.hata:
+            raise PremiumHatasi("ulaşılamadı")
+        if kullanici_id in self.aboneler:
+            return True, datetime.now(timezone.utc) + timedelta(days=20)
+        return False, None
+
+
+def test_premium_haftalik_hak(istemci, monkeypatch):
+    sahte = SahteHesap()
+    istemci.app.state.hesap = sahte
+    istemci.app.state.premium = SahtePremium(aboneler={"u-iyi"})
+    monkeypatch.setattr(main, "HAFTALIK_PREMIUM", 2)
+    monkeypatch.setattr(main.plan, "coz", lambda *a, **k: {"durum": "Optimal", "plan": [{"gun": "Pzt"}], "alisveris": []})
+    iyi, diger = {"Authorization": "Bearer iyi"}, {"Authorization": "Bearer diger"}
+    h = istemci.get("/hak", headers=iyi).json()
+    assert h["premium"] and h["haftalik"] == 2 and h["kalan"] == 2 and h["premium_bitis"]
+    for _ in range(2):
+        bekle(istemci, istemci.post("/plan", json=KISI, headers=iyi).json()["is_id"])
+    r = istemci.post("/plan", json=KISI, headers=iyi)
+    assert r.status_code == 403 and "Bu haftaki 2 planını kullandın" in r.json()["detail"]
+    # premium olmayan: 1 plan, sonra Premium teklifi
+    bekle(istemci, istemci.post("/plan", json=KISI, headers=diger).json()["is_id"])
+    r = istemci.post("/plan", json=KISI, headers=diger)
+    assert r.status_code == 403 and "Premium ile her hafta 2 plan" in r.json()["detail"]
+    # RevenueCat'e ulaşılamazsa: ücretsiz hak bittiyse 503 (premium üyeyi yanlışlıkla engellemeyelim)
+    istemci.app.state.premium = SahtePremium(hata=True)
+    assert istemci.get("/hak", headers=diger).json()["premium_dogrulanamadi"] is True
+    assert istemci.post("/plan", json=KISI, headers=diger).status_code == 503
+
+
+def test_revenuecat_cevabi_ve_istek():
+    from datetime import datetime, timezone
+    from api import premium
+    simdi = datetime(2026, 12, 1, tzinfo=timezone.utc)
+    hak = lambda **h: {"subscriber": {"entitlements": {"premium": h}}}   # noqa: E731
+    assert premium.aktif_hak({"subscriber": {"entitlements": {}}}, simdi=simdi) == (False, None)
+    assert premium.aktif_hak(hak(expires_date="2026-12-20T10:00:00Z"), simdi=simdi)[0] is True
+    assert premium.aktif_hak(hak(expires_date="2026-11-20T10:00:00Z"), simdi=simdi)[0] is False   # bitmiş
+    assert premium.aktif_hak(hak(expires_date="2026-11-30T10:00:00Z",
+                                 grace_period_expires_date="2026-12-05T10:00:00Z"), simdi=simdi)[0] is True
+    assert premium.aktif_hak(hak(expires_date=None), simdi=simdi) == (True, None)                # ömür boyu
+
+    class Cevap:
+        status_code = 200
+        def json(self):   # noqa: E301
+            return hak(expires_date="2999-01-01T00:00:00Z")
+
+    class Oturum:
+        def __init__(self):
+            self.istekler = []
+        def get(self, url, **k):   # noqa: E301
+            self.istekler.append((url, k["headers"]["Authorization"]))
+            return Cevap()
+
+    o = Oturum()
+    rc = premium.RevenueCat("sk_test", oturum=o)
+    assert rc.durum("abc-123")[0] and rc.durum("abc-123")[0] and rc.durum("abc-123", taze=True)[0]
+    # önbellek; taze=True da aynı kişi için 10 sn içinde tekrar sormaz (RevenueCat'i yormasın)
+    assert o.istekler == [("https://api.revenuecat.com/v1/subscribers/abc-123", "Bearer sk_test")]
 
 
 def test_hak_durumu_ve_supabase_istekleri():

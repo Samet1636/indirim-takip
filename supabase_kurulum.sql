@@ -23,3 +23,24 @@ create policy "kendi kayitlarini gorur" on public.plan_kullanim
 drop policy if exists "kendi kaydini ekler" on public.plan_kullanim;
 create policy "kendi kaydini ekler" on public.plan_kullanim
   for insert to authenticated with check (kullanici_id = auth.uid());
+
+-- Hesap silme (Apple ve Google, hesap açılabilen uygulamada uygulama içinden silmeyi zorunlu tutar).
+-- Giriş yapmış kullanıcı SADECE kendi hesabını silebilir; plan_kullanim satırları "on delete cascade"
+-- ile birlikte silinir. security definer: fonksiyon auth.users'a yetkili olarak erişir, ama içinde
+-- yalnızca auth.uid() (isteği yapan kişi) kullanılır. Sunucuya gizli anahtar gerekmez.
+create or replace function public.hesabi_sil()
+returns void
+language plpgsql
+security definer
+set search_path = ''
+as $$
+begin
+  if auth.uid() is null then
+    raise exception 'Giriş yapılmamış';
+  end if;
+  delete from auth.users where id = auth.uid();
+end;
+$$;
+
+revoke all on function public.hesabi_sil() from public, anon;
+grant execute on function public.hesabi_sil() to authenticated;

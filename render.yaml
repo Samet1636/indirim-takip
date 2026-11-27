@@ -32,3 +32,7 @@ services:
         value: sb_publishable_NoiXH_rygiBolrj-Vp39mA_8r1RrwYE
       - key: HAFTALIK_PLAN
         value: "1"
+      # Premium abonede 7 günde plan sayısı (api/premium.py). Abonelik RevenueCat'ten doğrulanır;
+      # REVENUECAT_SECRET_KEY GİZLİDİR: buraya yazılmaz, Render panelinde Environment'a elle girilir.
+      - key: HAFTALIK_PREMIUM
+        value: "7"
