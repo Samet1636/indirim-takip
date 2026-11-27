@@ -140,6 +140,7 @@ class PlanIstegi(Kisi):
 
 class ListeIstegi(BaseModel):
     kalemler: List[str] = Field(..., min_length=1, max_length=40, description="her satır bir ürün: '2 L süt'")
+    marketler: Optional[List[PlanMarketi]] = Field(None, description="gidilebilecek marketler; boşsa hepsi")
 
 
 def kisi_sozlugu(k: Kisi) -> dict:
@@ -230,7 +231,7 @@ def uygulama_olustur() -> FastAPI:
     @app.post("/liste")
     def liste(istek: ListeIstegi):
         """Alışveriş listesi: her marketteki tutar, en ucuz tek market ve en iyi iki market."""
-        return karsilastirma.liste_hesapla(istek.kalemler, app.state.katalog.getir())
+        return karsilastirma.liste_hesapla(istek.kalemler, app.state.katalog.getir(), istek.marketler)
 
     @app.post("/hedef")
     def hedef(k: Kisi):

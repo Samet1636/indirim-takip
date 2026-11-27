@@ -159,3 +159,7 @@ def test_api_uclari(tmp_path, monkeypatch):
         r = c.post("/liste", json={"kalemler": ["süt", "yumurta"]})
         assert r.status_code == 200 and r.json()["oneri"]["tek"] is not None
         assert c.post("/liste", json={"kalemler": []}).status_code == 422
+        # sadece seçilen marketler: A101 ve ŞOK seçilince Migros hiç önerilmez
+        r = c.post("/liste", json={"kalemler": ["süt"], "marketler": ["a101", "sok"]}).json()
+        assert {s["market"] for k in r["kalemler"] for s in k["secenekler"]} <= {"a101", "sok"}
+        assert c.post("/liste", json={"kalemler": ["süt"], "marketler": ["metro"]}).status_code == 422

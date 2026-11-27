@@ -285,11 +285,14 @@ def _en_ucuz_secim(urunler: List[Tuple[dict, float, str]], miktar: float) -> dic
     return en_iyi
 
 
-def liste_hesapla(satirlar: List[str], katalog: List[dict]) -> dict:
+def liste_hesapla(satirlar: List[str], katalog: List[dict], marketler: Optional[List[str]] = None) -> dict:
+    """marketler verilirse sadece o marketlerin ürünleri hesaba girer (kullanıcının gidebildikleri)."""
     kalemler = []
     for satir in [s.strip() for s in satirlar if s and s.strip()][:EN_FAZLA_KALEM]:
         sorgu, q, u, carpan = satir_ayir(satir)
         bulunan, birim = adaylar(sorgu, katalog) if sorgu else ([], None)
+        if marketler:
+            bulunan = [x for x in bulunan if x[0]["market"] in marketler]
         if not bulunan:
             kalemler.append({"satir": satir, "sorgu": sorgu, "bulunamadi": True, "secenekler": []})
             continue
