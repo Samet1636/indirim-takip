@@ -168,4 +168,4 @@ def _market_scraper(market_adi: str):
 CarrefourScraper = _market_scraper("carrefour")
 HakmarScraper = _market_scraper("hakmar")
 A101MarketFiyatiScraper = _market_scraper("a101")
-TarimKrediScraper = _market_scraper("tarim_kredi")
+# Tarım Kredi: scrapers/tarimkredi.py (kendi sitesindeki kampanyalar + buradan katalog)

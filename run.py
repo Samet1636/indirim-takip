@@ -27,9 +27,10 @@ import db
 from models import Offer
 from scrapers.a101 import A101Scraper
 from scrapers.bim import BimScraper
-from scrapers.marketfiyati import A101MarketFiyatiScraper, CarrefourScraper, HakmarScraper, TarimKrediScraper
+from scrapers.marketfiyati import A101MarketFiyatiScraper, CarrefourScraper, HakmarScraper
 from scrapers.migros import MigrosScraper
 from scrapers.sok import SokScraper
+from scrapers.tarimkredi import TarimKrediScraper
 
 # "a101" = Kapıda sitesi (Playwright, sadece bilgisayarda); "a101_mf" = A101 mağaza fiyatları
 # marketfiyati.org.tr'den (GitHub'da çalışır). İkisi de market="a101" ürün üretir.
@@ -38,6 +39,7 @@ SCRAPERS = {"migros": MigrosScraper, "bim": BimScraper, "a101": A101Scraper, "so
             "tarim_kredi": TarimKrediScraper}
 OFFER_FIELDS = {f.name for f in dataclasses.fields(Offer)}
 A101_YEDEK_ESIGI = 500     # son 2 günde bu kadar marketfiyati A101 ürünü varsa katalogda Kapıda ürünleri gösterilmez
+TK_KATALOG_ESIGI = 200     # Tarım Kredi için aynısı (kampanya ürünleri sadece İndirimler sekmesinde)
 
 
 def load_offers(path: Path) -> list[Offer]:
@@ -126,8 +128,11 @@ def main() -> int:
         out.write_text(json.dumps(db.todays_discounts(conn), ensure_ascii=False, indent=1), encoding="utf-8")
         logging.info("%s yazıldı", out)
         # Tüm ürünler sekmesi için (boyutu küçük tutmak için girintisiz)
-        a101_mf = db.fresh_count(conn, "a101", "mf-") >= A101_YEDEK_ESIGI
-        kat = db.catalog(conn, sadece_onek={"a101": "mf-"} if a101_mf else None)
+        # Katalog marketfiyati'den gelirken aynı marketin kendi sitesinden gelen ürünleri katalogda
+        # çift görünmesin (A101 Kapıda, Tarım Kredi kampanyaları); onlar İndirimler sekmesinde kalır.
+        sadece_mf = {m: "mf-" for m, esik in (("a101", A101_YEDEK_ESIGI), ("tarim_kredi", TK_KATALOG_ESIGI))
+                     if db.fresh_count(conn, m, "mf-") >= esik}
+        kat = db.catalog(conn, sadece_onek=sadece_mf or None)
         Path("data/katalog.json").write_text(json.dumps(kat, ensure_ascii=False, separators=(",", ":")),
                                              encoding="utf-8")
         logging.info("data/katalog.json yazıldı (%d ürün)", len(kat))

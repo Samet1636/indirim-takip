@@ -55,6 +55,24 @@ def test_marketfiyati_sube_secimi():
     assert ornek_kategoriler(["A", "B", "C"]) == ["A", "B"]                            # adlar değişirse
 
 
+def test_tarimkredi_kampanya():
+    from scrapers.tarimkredi import baslangic_tarihi, kampanya_linkleri, parse_kampanya
+    html = (FIX / "tarimkredi_kampanya.html").read_text(encoding="utf-8")
+    assert kampanya_linkleri(html) == ["https://www.tkkoop.com.tr/haftalik-kampanyalar/yildonumu-kampanyasi"]
+    urunler, baslangic = parse_kampanya(html, date(2026, 11, 28))
+    assert baslangic == "2026-11-24"
+    assert [(o.name, o.price) for o in urunler] == [
+        ("ASPEROX ULTRA YAĞ ÇÖZÜCÜ SPREY", 99.0), ("MOLPED PURE&SOFT NORMAL 24 S.EKO", 252.5),
+        ("TK YAĞLI SADE SÜT", 12.9)]
+    sut = urunler[2]
+    assert sut.market == "tarim_kredi" and sut.market_product_id == "tk-tk-yagli-sade-sut-200-ml"
+    assert sut.is_campaign and sut.is_discounted and sut.valid_from == "2026-11-24"
+    assert sut.url.endswith("/urun/tk-yagli-sade-sut-200-ml") and sut.image_url.startswith("https://")
+    assert baslangic_tarihi("28 Kasım - 3 Aralık", date(2026, 11, 28)) == "2026-11-28"
+    assert baslangic_tarihi("29 Aralık - 4 Ocak", date(2027, 1, 2)) == "2026-12-29"
+    assert baslangic_tarihi("KOOP MARKET") is None
+
+
 def test_bim_parser():
     html = (FIX / "bim_sample.html").read_text(encoding="utf-8")
     offers = parse_bim_html(html, "2026-10-31")
@@ -98,6 +116,13 @@ def test_a101_kapida_indirimleri_katalogda_cift_olmaz(tmp_path, monkeypatch):
     monkeypatch.setattr(run, "A101_YEDEK_ESIGI", 500)
     run.main()
     assert "Süt 1 L" in [p["name"] for p in oku("katalog.json")]
+    # Tarım Kredi kampanya ürünleri de marketfiyati kataloğu varken sadece İndirimler'de
+    db.save_offers(conn, [Offer("tarim_kredi", f"mf-{i}", f"TK {i}", 5.0, scraped_on=bugun) for i in range(2)]
+                   + [Offer("tarim_kredi", "tk-sut", "TK SÜT", 4.0, is_campaign=True, scraped_on=bugun)])
+    monkeypatch.setattr(run, "TK_KATALOG_ESIGI", 2)
+    run.main()
+    assert "TK SÜT" not in [p["name"] for p in oku("katalog.json")]
+    assert "TK SÜT" in [p["name"] for p in oku("discounts_today.json")]
 
 
 def test_db_roundtrip(tmp_path):

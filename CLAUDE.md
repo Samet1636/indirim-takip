@@ -16,6 +16,9 @@ scrapers/            Market scraper'ları (hepsi models.Offer listesi döndürü
   marketfiyati.py    marketfiyati.org.tr API (TÜBİTAK BİLGEM): BİM, A101 (a101_mf), CarrefourSA, Hakmar,
                      Tarım Kredi. Market başına tek şube (sabit noktaya yakın 3 şubeden en çok ürünlüsü;
                      Hakmar/Tarım Kredi İstanbul, diğerleri Ankara Kızılay). Market başına ~2-4 dk
+  tarimkredi.py      Tarım Kredi: tkkoop.com.tr haftalık kampanyaları (HTML, eski fiyat yok -> is_campaign) +
+                     --katalog ile marketfiyati kataloğu. Kampanya ürünleri (tk- önekli) katalogdan çıkarılır.
+                     Hakmar'ın indirimleri sadece broşür RESMİ (hakmar.com.tr/indirim), okunamıyor
   sok.py             ŞOK (Next.js RSC). Ürünler: initialSearchResult.results[].product / .prices
   a101.py            A101 Kapıda — Cloudflare korumalı. Playwright + bilgisayardaki Chrome ile
                      Store/search (kampanya) ve Store/listCategoryProducts (kategori) API'lerini dinler
