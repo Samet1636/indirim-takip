@@ -44,6 +44,17 @@ def test_marketfiyati_parser():
     assert parse_urunler({}) == []
 
 
+def test_marketfiyati_sube_secimi():
+    from scrapers.marketfiyati import ornek_kategoriler, sube_sec
+    # 27.11.2026 Tarım Kredi: en yakın şube hiç ürün göstermiyordu
+    adaylar = ["tarim_kredi-5373", "tarim_kredi-5372", "tarim_kredi-5500"]
+    assert sube_sec(adaylar, {"tarim_kredi-5373": 0, "tarim_kredi-5372": 569, "tarim_kredi-5500": 487}) == "tarim_kredi-5372"
+    assert sube_sec(adaylar, {s: 10 for s in adaylar}) == "tarim_kredi-5373"          # eşitse en yakın
+    kat = ["Meyve ve Sebze", "Temel Gıda", "İçecek", "Atıştırmalık ve Tatlı"]
+    assert ornek_kategoriler(kat) == ["Temel Gıda", "Atıştırmalık ve Tatlı"]
+    assert ornek_kategoriler(["A", "B", "C"]) == ["A", "B"]                            # adlar değişirse
+
+
 def test_bim_parser():
     html = (FIX / "bim_sample.html").read_text(encoding="utf-8")
     offers = parse_bim_html(html, "2026-10-31")
@@ -81,6 +92,12 @@ def test_a101_bilgisayar_yedegi_cift_kayit_olusturmaz(tmp_path, monkeypatch):
     monkeypatch.setattr(run, "A101_YEDEK_ESIGI", 500)        # marketfiyati çalışmadıysa yedek alınır
     run.main()
     assert db.connect(yol).execute("SELECT COUNT(*) FROM products WHERE market_product_id='kapida-1'").fetchone()[0] == 1
+    katalog = lambda: [p["name"] for p in json.loads((tmp_path / "data" / "katalog.json").read_text(encoding="utf-8"))]  # noqa: E731
+    assert "Süt 1 L" in katalog()                            # yedek alındıysa katalogda da görünür
+    # Daha önce alınmış Kapıda ürünleri, marketfiyati A101'i gelince katalogda çift görünmez
+    monkeypatch.setattr(run, "A101_YEDEK_ESIGI", 3)
+    run.main()
+    assert "Süt 1 L" not in katalog() and len(katalog()) == 3
 
 
 def test_db_roundtrip(tmp_path):

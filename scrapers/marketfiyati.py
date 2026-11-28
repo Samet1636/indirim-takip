@@ -48,6 +48,20 @@ def yakin_subeler(yakinlar: List[dict], market: str, n: int = 3) -> List[str]:
     return [d["id"] for d in sorted(adaylar, key=lambda d: d.get("distance") or 0)[:n]]
 
 
+ORNEK_KATEGORILER = ("Temel Gıda", "Atıştırmalık ve Tatlı")
+
+
+def ornek_kategoriler(kategoriler: List[str]) -> List[str]:
+    """Şube karşılaştırması için iki kategori (adları değişirse listenin ilk ikisi)."""
+    secili = [k for k in ORNEK_KATEGORILER if k in kategoriler]
+    return secili if len(secili) == 2 else kategoriler[:2]
+
+
+def sube_sec(adaylar: List[str], sayilar: dict) -> str:
+    """En çok ürünü olan şube; eşitse en yakın olan (adaylar yakından uzağa sıralı)."""
+    return max(adaylar, key=lambda s: (sayilar.get(s, 0), -adaylar.index(s)))
+
+
 def parse_urunler(veri: dict, market: str = "bim") -> List[Offer]:
     """searchByCategories yanıtını Offer listesine çevirir (sadece o marketin şube fiyatları)."""
     out = []
@@ -100,14 +114,18 @@ class MarketFiyatiKatalog(BaseScraper):
         if not adaylar or not kategoriler:
             log.warning("marketfiyati: %s şubesi bulunamadı", self.market)
             return []
-        # Küçük şubelerde raf eksik listelenebiliyor: en yakın 3 şubeden en çok ürünü olanı seç
-        ornek = "Temel Gıda" if "Temel Gıda" in kategoriler else kategoriler[0]
+        # Şubelerin listesi günden güne değişiyor; en yakın şube bazen hiç ürün göstermiyor (Tarım Kredi
+        # 27.11.2026: en yakın şube 0, diğerleri 200-360). En yakın 3 şubeden en çok ürünü olanı seç;
+        # tek kategori yanıltıcı olabildiği için iki kategorinin toplamına bak.
+        ornekler = ornek_kategoriler(kategoriler)
         sayilar = {}
         for s in adaylar:
-            sayilar[s] = self.post("/v3/searchByCategories", {"pages": 0, "size": 1, "menu_category": [ornek],
-                                                              **konum, "distance": 5, "depots": [s]}).get("numberOfFound") or 0
-        sube = max(adaylar, key=lambda s: sayilar[s])
-        log.info("marketfiyati: %s şubesi %s, %d kategori", self.market, sube, len(kategoriler))
+            sayilar[s] = sum(self.post("/v3/searchByCategories", {"pages": 0, "size": 1, "menu_category": [k],
+                                                                  **konum, "distance": 5, "depots": [s]}
+                                       ).get("numberOfFound") or 0 for k in ornekler)
+        sube = sube_sec(adaylar, sayilar)
+        log.info("marketfiyati: %s şubesi %s (%s örnek ürün sayıları: %s), %d kategori", self.market, sube,
+                 "+".join(ornekler), sayilar, len(kategoriler))
         bulunan: dict = {}
         for kat in kategoriler[:kategori_limit]:
             sayfa, toplam = 0, None

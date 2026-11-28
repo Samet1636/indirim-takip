@@ -129,13 +129,20 @@ def fresh_count(conn: sqlite3.Connection, market: str, id_prefix: str, days: int
         (market, id_prefix + "%", since)).fetchone()[0]
 
 
-def catalog(conn: sqlite3.Connection, today: str | None = None, stale_days: int = 3) -> list[dict]:
-    """Tüm ürünler sekmesi: son stale_days gün içinde görülmüş bütün ürünler."""
+def catalog(conn: sqlite3.Connection, today: str | None = None, stale_days: int = 3,
+            sadece_onek: dict | None = None) -> list[dict]:
+    """Tüm ürünler sekmesi: son stale_days gün içinde görülmüş bütün ürünler.
+    sadece_onek={'a101': 'mf-'}: o marketten sadece kimliği bu önekle başlayanlar alınır (A101
+    marketfiyati'den gelirken bilgisayarın eski Kapıda ürünleri de listede kalıp çift görünmesin)."""
     today_d = date.fromisoformat(today) if today else date.today()
     stale = (today_d - timedelta(days=stale_days)).isoformat()
+    kosul, degerler = "", [stale]
+    for market, onek in (sadece_onek or {}).items():
+        kosul += " AND NOT (market = ? AND market_product_id NOT LIKE ?)"
+        degerler += [market, onek + "%"]
     rows = conn.execute(
-        """SELECT market, name, category, price, regular_price, discount_pct, url, image_url
-           FROM products WHERE last_seen >= ? ORDER BY market, category, name""", (stale,)).fetchall()
+        f"""SELECT market, name, category, price, regular_price, discount_pct, url, image_url
+           FROM products WHERE last_seen >= ?{kosul} ORDER BY market, category, name""", degerler).fetchall()
     return [dict(r) for r in rows]
 
 

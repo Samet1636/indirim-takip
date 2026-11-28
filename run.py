@@ -128,7 +128,8 @@ def main() -> int:
         out.write_text(json.dumps(db.todays_discounts(conn), ensure_ascii=False, indent=1), encoding="utf-8")
         logging.info("%s yazıldı", out)
         # Tüm ürünler sekmesi için (boyutu küçük tutmak için girintisiz)
-        kat = db.catalog(conn)
+        a101_mf = db.fresh_count(conn, "a101", "mf-") >= A101_YEDEK_ESIGI
+        kat = db.catalog(conn, sadece_onek={"a101": "mf-"} if a101_mf else None)
         Path("data/katalog.json").write_text(json.dumps(kat, ensure_ascii=False, separators=(",", ":")),
                                              encoding="utf-8")
         logging.info("data/katalog.json yazıldı (%d ürün)", len(kat))
