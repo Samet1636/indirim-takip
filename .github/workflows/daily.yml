@@ -22,7 +22,12 @@ jobs:
   tara:
     runs-on: ubuntu-latest
     steps:
+      # Kuyrukta bekleyen bir çalışma, tetiklendiği andaki eski commit'ten değil main'in o anki
+      # son halinden başlasın. Yoksa önceki çalışmanın kaydettiği prices.db ile çakışıp
+      # "Sonuçları repoya kaydet" adımında düşüyor (27.11.2026'da oldu, 50 dk'lık tarama boşa gitti).
       - uses: actions/checkout@v4
+        with:
+          ref: main
 
       - uses: actions/setup-python@v5
         with:
