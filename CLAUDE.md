@@ -71,8 +71,9 @@ Paket ekledikten sonra Metro'yu `--clear` ile yeniden başlat (yoksa "Unable to 
    -> data/prices.db, data/discounts_today.json, data/katalog.json güncellenir, commit'lenir, Pages'e yayınlanır.
 2. A101 artık GitHub'da marketfiyati'den gelir (`a101_mf`, mağaza fiyatları). Yerel bilgisayar
    (Görev Zamanlayıcı, a101_gunluk.bat) A101 Kapıda'yı tarayıp `data/imports/a101.json` yükler; bu dosya
-   sadece YEDEK: son 2 günde ≥500 marketfiyati A101 ürünü varsa içe aktarılmaz (run.py A101_YEDEK_ESIGI),
-   yoksa aynı ürün iki kez görünürdü. 23-26.11.2026'da bilgisayar açılmadığı için A101 uygulamadan düşmüştü.
+   her zaman içe aktarılır çünkü marketfiyati A101 indirim bilgisi VERMİYOR (İndirimler sekmesindeki A101
+   kampanyaları buradan). Son 2 günde ≥500 marketfiyati A101 ürünü varsa Kapıda ürünleri katalogdan
+   çıkarılır (run.py A101_YEDEK_ESIGI, db.catalog sadece_onek), yoksa aynı ürün iki kez görünürdü. 23-26.11.2026'da bilgisayar açılmadığı için A101 uygulamadan düşmüştü.
 3. A101 Kapıda GitHub sunucularından taranamaz (Cloudflare "Bir dakika lütfen..." -> 403). Bunu tekrar deneme.
 4. Katalog kapsamı (16.11.2026): Migros ~18.700 (tam), ŞOK ~2.900 (tam; en büyük kategori 28 sayfa),
    A101 ~2.250 (Kapıda tam; 17 kategori, ~2,5 dk), BİM ~2.300 (19.11.2026: ~1.750 katalog + ~570 aktüel).

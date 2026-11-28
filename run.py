@@ -37,7 +37,7 @@ SCRAPERS = {"migros": MigrosScraper, "bim": BimScraper, "a101": A101Scraper, "so
             "a101_mf": A101MarketFiyatiScraper, "carrefour": CarrefourScraper, "hakmar": HakmarScraper,
             "tarim_kredi": TarimKrediScraper}
 OFFER_FIELDS = {f.name for f in dataclasses.fields(Offer)}
-A101_YEDEK_ESIGI = 500     # son 2 günde bu kadar marketfiyati A101 ürünü varsa bilgisayar dosyası alınmaz
+A101_YEDEK_ESIGI = 500     # son 2 günde bu kadar marketfiyati A101 ürünü varsa katalogda Kapıda ürünleri gösterilmez
 
 
 def load_offers(path: Path) -> list[Offer]:
@@ -108,11 +108,9 @@ def main() -> int:
 
     if args.import_dir and conn:
         for f in sorted(Path(args.import_dir).glob("*.json")):
-            # A101 artık marketfiyati'den geliyor; bilgisayarın yüklediği Kapıda dosyası sadece yedek.
-            # İkisi birden alınırsa aynı ürün iki kez görünür.
-            if f.stem == "a101" and db.fresh_count(conn, "a101", "mf-") >= A101_YEDEK_ESIGI:
-                logging.info("%s atlandı: A101 marketfiyati'den güncel geliyor (yedek dosya)", f)
-                continue
+            # A101 kataloğu marketfiyati'den geliyor ama orada indirim bilgisi yok; bilgisayarın
+            # yüklediği Kapıda dosyası her zaman alınır: İndirimler sekmesi A101 kampanyalarını
+            # buradan gösterir. Çift görünmesin diye katalogdan aşağıda çıkarılır.
             try:
                 offers = load_offers(f)
                 db.save_offers(conn, offers)

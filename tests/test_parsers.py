@@ -71,7 +71,7 @@ def test_parse_tr_date():
     assert parse_tr_date("2 Ocak", date(2026, 12, 30)) == "2027-01-02"
 
 
-def test_a101_bilgisayar_yedegi_cift_kayit_olusturmaz(tmp_path, monkeypatch):
+def test_a101_kapida_indirimleri_katalogda_cift_olmaz(tmp_path, monkeypatch):
     import run
     from models import Offer
     bugun = date.today().isoformat()
@@ -85,19 +85,19 @@ def test_a101_bilgisayar_yedegi_cift_kayit_olusturmaz(tmp_path, monkeypatch):
     assert db.fresh_count(conn, "a101", "mf-") == 3
     monkeypatch.chdir(tmp_path)
     (tmp_path / "data").mkdir()                               # run.py çıktıları buraya yazar
-    monkeypatch.setattr(run, "A101_YEDEK_ESIGI", 3)          # marketfiyati verisi güncel -> dosya atlanır
+    kapida[0].update(regular_price=40.0)                      # Kapıda'da indirimli
+    (imp / "a101.json").write_text(json.dumps(kapida, ensure_ascii=False), encoding="utf-8")
+    oku = lambda ad: json.loads((tmp_path / "data" / ad).read_text(encoding="utf-8"))  # noqa: E731
     monkeypatch.setattr("sys.argv", ["run.py", "--no-scrape", "--import-dir", str(imp), "--db", str(yol)])
-    run.main()
-    assert db.connect(yol).execute("SELECT COUNT(*) FROM products WHERE market_product_id='kapida-1'").fetchone()[0] == 0
-    monkeypatch.setattr(run, "A101_YEDEK_ESIGI", 500)        # marketfiyati çalışmadıysa yedek alınır
-    run.main()
-    assert db.connect(yol).execute("SELECT COUNT(*) FROM products WHERE market_product_id='kapida-1'").fetchone()[0] == 1
-    katalog = lambda: [p["name"] for p in json.loads((tmp_path / "data" / "katalog.json").read_text(encoding="utf-8"))]  # noqa: E731
-    assert "Süt 1 L" in katalog()                            # yedek alındıysa katalogda da görünür
-    # Daha önce alınmış Kapıda ürünleri, marketfiyati A101'i gelince katalogda çift görünmez
+    # marketfiyati verisi güncel: Kapıda ürünü katalogda çift görünmez ama indirimi listede kalır
     monkeypatch.setattr(run, "A101_YEDEK_ESIGI", 3)
     run.main()
-    assert "Süt 1 L" not in katalog() and len(katalog()) == 3
+    assert [p["name"] for p in oku("katalog.json")] == ["Ürün 0", "Ürün 1", "Ürün 2"]
+    assert [p["name"] for p in oku("discounts_today.json")] == ["Süt 1 L"]
+    # marketfiyati çalışmadıysa Kapıda ürünleri katalogda da görünür (yedek)
+    monkeypatch.setattr(run, "A101_YEDEK_ESIGI", 500)
+    run.main()
+    assert "Süt 1 L" in [p["name"] for p in oku("katalog.json")]
 
 
 def test_db_roundtrip(tmp_path):
